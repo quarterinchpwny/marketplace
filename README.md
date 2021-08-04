@@ -7,7 +7,7 @@
 - Yarn Version ^1.22.10
 - Git Version 2.24.3
 ## Setups
-- git clone https://carlmagumpara0001@bitbucket.org/lexmeet/lexweb-kodego.git
+- git clone https://{your user name}@bitbucket.org/lexmeet/lexweb-kodego.git
 - cd lexweb-kodego
 - yarn install
 - composer install
