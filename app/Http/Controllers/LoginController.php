@@ -5,10 +5,11 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Auth;
+use App\Http\Requests\LoginRequest;
 
 class LoginController extends Controller
 {
-    public function logIn(Request $request)
+    public function logIn(LoginRequest $request)
     {
         if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
             if ($user = User::where('email', '=', $request->email)->with(['lawyer'])->first()) {

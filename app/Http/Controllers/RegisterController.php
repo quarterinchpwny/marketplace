@@ -7,10 +7,11 @@ use App\Models\User;
 use App\Models\Lawyer;
 use Auth;
 use Hash;
+use App\Http\Requests\RegisterRequest;
 
 class RegisterController extends Controller
 {
-    public function register(Request $request)
+    public function register(RegisterRequest $request)
     {
         if ($user = User::create([
             'role_id' => 1,
