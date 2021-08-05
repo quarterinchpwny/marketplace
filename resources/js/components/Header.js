@@ -20,7 +20,7 @@ function Header() {
           {auth.isAuthenticated ? (
             <React.Fragment>
               <Navbar.Text>
-                Signed in as: {auth.getName}
+                Signed in as: Atty. {auth.getName}
               </Navbar.Text>
               <NavDropdown title="Settings" alignRight>
                 <NavDropdown.Item as={Link} to="/profile">
