@@ -16,21 +16,18 @@ function Register() {
   const history = useHistory();
   const location = useLocation();
 
-  const submit = (values, callback, setErrors) => {
-    axios.post('/register', values)
-    .then(response => {
+  const submit = async (values, callback, setErrors) => {
+    try {
+      const response = await axios.post('/register', values);
       dispatch(updateState(storeUser(response.data.user)))
       .then(() => dispatch(updateState(storeToken(response.data.token))))
-      .then(() => {
-        history.push('/dashboard');
-      });
-    })
-    .catch(error => {
+      .then(() => history.push('/dashboard'));
+    } catch (error) {
       callback();
       if (error && error.response && error.response.status === 422) {
         setErrors(error.response.data.errors);
       }
-    });
+    }
   }
 
   if (auth.isAuthenticated) {
@@ -59,7 +56,7 @@ function Register() {
                     last_name: '',
                     email: '', 
                     password: '', 
-                    retype_password: '',
+                    password_confirmation: '',
                   }}
                   validate={values => {
                    const errors = {};
@@ -79,10 +76,10 @@ function Register() {
                    if (!values.password) {
                      errors.password = 'The password field is required.';
                    }
-                   if (!values.retype_password) {
-                     errors.retype_password = 'The retype password field is required.';
-                   } else if (values.password !== values.retype_password) {
-                     errors.retype_password = 'The password does not match in retype password';
+                   if (!values.password_confirmation) {
+                     errors.password_confirmation = 'The retype password field is required.';
+                   } else if (values.password !== values.password_confirmation) {
+                     errors.password_confirmation = 'The password does not match in retype password';
                    }
 
                    return errors;
@@ -156,14 +153,14 @@ function Register() {
                     <Form.Group>
                       <Form.Control 
                         type="password" 
-                        name="retype_password"
+                        name="password_confirmation"
                         placeholder="Retype Password"
-                        value={values.retype_password}
+                        value={values.password_confirmation}
                         onChange={handleChange}
                         onBlur={handleBlur}
-                        className={errors.retype_password && touched.retype_password && 'is-invalid'}
+                        className={errors.password_confirmation && touched.password_confirmation && 'is-invalid'}
                       />
-                      {errors.retype_password && touched.retype_password && <div className="invalid-feedback">{errors.retype_password}</div>}
+                      {errors.password_confirmation && touched.password_confirmation && <div className="invalid-feedback">{errors.password_confirmation}</div>}
                     </Form.Group>
                     <Button variant="secondary" type="submit" block>
                       {isSubmitting ? 'Please wait...' : 'Register'}

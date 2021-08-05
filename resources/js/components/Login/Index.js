@@ -16,21 +16,18 @@ function Login() {
   const history = useHistory();
   const location = useLocation();
 
-  const submit = (values, callback, setErrors) => {
-    axios.post('/login', values)
-    .then(response => {
+  const submit = async (values, callback, setErrors) => {
+    try {
+      const response = await axios.post('/login', values);
       dispatch(updateState(storeUser(response.data.user)))
       .then(() => dispatch(updateState(storeToken(response.data.token))))
-      .then(() => {
-        history.push('/dashboard');
-      });
-    })
-    .catch(error => {
+      .then(() => history.push('/dashboard'));
+    } catch (error) {
       callback();
       if (error && error.response && error.response.status === 422) {
         setErrors(error.response.data.errors);
       }
-    });
+    }
   }
 
   if (auth.isAuthenticated) {
