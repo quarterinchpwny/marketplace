@@ -6624,7 +6624,7 @@ function Login() {
                       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_15__.default.Control, {
                         type: "email",
                         name: "email",
-                        placeholder: "Enter Email",
+                        placeholder: "Email",
                         value: values.email,
                         onChange: handleChange,
                         onBlur: handleBlur,
@@ -6849,7 +6849,7 @@ function Register() {
                       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_15__.default.Control, {
                         type: "text",
                         name: "first_name",
-                        placeholder: "Enter First Name",
+                        placeholder: "First Name",
                         value: values.first_name,
                         onChange: handleChange,
                         onBlur: handleBlur,
@@ -6862,7 +6862,7 @@ function Register() {
                       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_15__.default.Control, {
                         type: "text",
                         name: "last_name",
-                        placeholder: "Enter Last Name",
+                        placeholder: "Last Name",
                         value: values.last_name,
                         onChange: handleChange,
                         onBlur: handleBlur,
@@ -6875,7 +6875,7 @@ function Register() {
                       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_15__.default.Control, {
                         type: "email",
                         name: "email",
-                        placeholder: "Enter Email",
+                        placeholder: "Email",
                         value: values.email,
                         onChange: handleChange,
                         onBlur: handleBlur,

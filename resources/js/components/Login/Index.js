@@ -95,7 +95,7 @@ function Login() {
                       <Form.Control 
                         type="email" 
                         name="email"
-                        placeholder="Enter Email"
+                        placeholder="Email"
                         value={values.email}
                         onChange={handleChange}
                         onBlur={handleBlur}

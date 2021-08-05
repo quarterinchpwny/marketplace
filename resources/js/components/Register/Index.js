@@ -109,7 +109,7 @@ function Register() {
                       <Form.Control 
                         type="text"
                         name="first_name"
-                        placeholder="Enter First Name"
+                        placeholder="First Name"
                         value={values.first_name}
                         onChange={handleChange}
                         onBlur={handleBlur}
@@ -121,7 +121,7 @@ function Register() {
                       <Form.Control 
                         type="text"
                         name="last_name"
-                        placeholder="Enter Last Name"
+                        placeholder="Last Name"
                         value={values.last_name}
                         onChange={handleChange}
                         onBlur={handleBlur}
@@ -133,7 +133,7 @@ function Register() {
                       <Form.Control 
                         type="email" 
                         name="email"
-                        placeholder="Enter Email"
+                        placeholder="Email"
                         value={values.email}
                         onChange={handleChange}
                         onBlur={handleBlur}
