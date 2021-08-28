@@ -4973,7 +4973,7 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 var menu_btn = document.querySelector("#menu-btn");
 var sidebar = document.querySelector("#sidebar");
-var container = document.querySelector(".my-container");
+var container = document.querySelector(".main-container");
 menu_btn.addEventListener("click", function () {
   sidebar.classList.toggle("active-nav");
   container.classList.toggle("active-cont");
