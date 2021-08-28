@@ -21,6 +21,7 @@
         "axios": "^0.21.1",
         "boostrap": "^2.0.0",
         "bootstrap": "5.1.0",
+        "bootstrap-darkmode": "^0.9.1",
         "jquery": "^3.6.0",
         "laravel-mix": "^6.0.28",
         "popper.js": "^1.16.1"

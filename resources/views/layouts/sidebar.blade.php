@@ -33,7 +33,7 @@
         </li>
       </ul>
     </div>
-    <div class="p-1 my-container active-cont">
+    <div class="p-1 main-container active-cont">
       @include('layouts.nav', ['from' => 'sidebar'])
       <main class="py-4">
         @yield('content')
