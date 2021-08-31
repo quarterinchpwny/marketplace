@@ -6,12 +6,11 @@ use Illuminate\Auth\Passwords\CanResetPassword;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-use Laravel\Passport\HasApiTokens;
 use App\Models\Lawyer;
 
 class User extends Authenticatable
 {
-    use HasApiTokens, Notifiable, SoftDeletes, CanResetPassword;
+    use Notifiable, SoftDeletes, CanResetPassword;
 
     protected $table = 'users';
 
