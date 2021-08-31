@@ -14,9 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::post('login', [\App\Http\Controllers\LoginController::class, 'logIn'])->middleware(\Spatie\HttpLogger\Middlewares\HttpLogger::class);
-Route::post('register', [\App\Http\Controllers\RegisterController::class, 'register'])->middleware(\Spatie\HttpLogger\Middlewares\HttpLogger::class);
-
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });

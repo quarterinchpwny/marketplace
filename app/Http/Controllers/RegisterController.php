@@ -11,6 +11,16 @@ use App\Http\Requests\RegisterRequest;
 
 class RegisterController extends Controller
 {
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function index()
+    {
+        return view('auth.register');
+    }
+
     public function register(RegisterRequest $request)
     {
         if ($user = User::create([
@@ -25,11 +35,11 @@ class RegisterController extends Controller
                   'last_name' => $request->last_name,
               ])) {
                 if ($user = User::where('email', '=', $request->email)->with(['lawyer'])->first()) {
-                    return response()->json(['result' => 'success', 'token' => $user->createToken('User Token'), 'user' => $user], 200);
+                    return redirect('login')->withSuccess('Register Success.');
                 }
             }
         }
 
-        return response()->json(['errors' => ['email' => ['Register Failed']]], 422);
+        return redirect('register')->withError('Register details are not valid');
     }
 }
