@@ -42,3 +42,73 @@
   background-color: #100901;
   color: #fff;
 }
+
+//// Masculine ////
+
+//mixins
+@mixin button-font {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: white;
+  }
+
+//color variables
+$header-darkblue: #092059;
+$all-buttons: #1F3C88;
+$all-cards: #CEDDEF;
+$footer-darkblue: #021D5E;
+$buttons-darkblue: #1E3B87;
+
+// header and nav
+#topContent{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: $header-darkblue;
+    height: 100px;
+}
+#headerLogo{
+    position: relative;
+    left: 450px;
+}
+#blue-rect{
+    background-color: $header-darkblue;
+    height: 200px;
+}
+#lblue-signup{
+    position: relative;
+    bottom:300px;
+    background-color: rgb(206, 221, 239, 0.8);
+    padding: 40px 40px 30px 40px;
+    height: 300px;
+    width: 1000px;
+}
+#buttonBlue{
+    @include button-font();
+    background-color: $buttons-darkblue;
+    align-items: center;
+    border: none;
+    border-radius: 6px;
+    width: 260px; height: 55px;
+}
+#buttonBlue2{
+    @include button-font();
+    font-size: 15px;
+    background-color: $buttons-darkblue;
+    align-items: center;
+    border: none;
+    border-radius: 6px;
+    width: 260px; height: 55px;
+}
+.secondRow{
+    padding-top: 5px;
+    padding-bottom: 20;
+}
+.thirdRow{
+    padding-top: 13px;
+    position: relative;
+    left: 250px;
+    font-size: 23px;
+}
+.lastRow{
+    padding-top: 13px;
+}

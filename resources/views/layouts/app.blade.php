@@ -15,11 +15,17 @@
   <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
+  <!-- Header and Navbar -->
+  <div class="container-fluid" id="topContent">
+        <img src="/images/headerLogo.svg" alt="Rizal Logo" id="headerLogo">
+    </div>
   <div id="app">
      @include('layouts.nav', ['from' => 'app'])
     <main class="py-4">
-      @yield('content')
+      
     </main>
   </div>
+ 
+  @yield('testing')
 </body>
 </html>

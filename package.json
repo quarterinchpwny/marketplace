@@ -13,7 +13,6 @@
         "production": "mix --production"
     },
     "devDependencies": {
-<<<<<<< HEAD
         "@babel/core": "^7.14.6",
         "@babel/preset-react": "^7.14.5",
         "@loadable/babel-plugin": "^5.13.0",
@@ -49,11 +48,6 @@
         "url-loader": "^1.1.2",
         "vue-template-compiler": "^2.6.12",
         "webpack-cli": "^4.7.2"
-=======
-        "resolve-url-loader": "^4.0.0",
-        "sass": "^1.38.1",
-        "sass-loader": "^12.1.0"
->>>>>>> origin/master
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.15.4",
