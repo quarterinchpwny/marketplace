@@ -1,5 +1,5 @@
-@extends ('design.design')
+@extends('designs.design')
 
 @section('content')
-    Hello, Lexweb.
+    Hello
 @endsection
