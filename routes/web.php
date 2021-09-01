@@ -15,8 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 // Public Routes
 
-Route::get('/', [App\Http\Controllers\AppController::class, 'lexweb.home'])->name('home');
-
+Route::get('/contents', [App\Http\Controllers\AppController::class, 'home'])->name('content');
 
 // Carl Note
 // if route changes not work try to run "php artisan optimize"
