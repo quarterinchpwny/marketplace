@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 <body>
+<<<<<<< HEAD
     <!-- Header and Navbar -->
     <div class="container-fluid" id="topContent">
         <img src="/images/headerLogo.svg" alt="Rizal Logo" id="headerLogo">
@@ -86,5 +87,19 @@
             @yield('content')
         </main>
     </div>
+=======
+  <!-- Header and Navbar -->
+  <div class="container-fluid" id="topContent">
+        <img src="/images/headerLogo.svg" alt="Rizal Logo" id="headerLogo">
+    </div>
+  <div id="app">
+     @include('layouts.nav', ['from' => 'app'])
+    <main class="py-4">
+      
+    </main>
+  </div>
+ 
+  @yield('testing')
+>>>>>>> dfb09ca39e70c374d37bd307175f20abb28241d7
 </body>
 </html>
