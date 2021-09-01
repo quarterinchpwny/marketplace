@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class PricingController extends Controller
+class ContentController extends Controller
 {
     public function index(){
-        return view('pricing');
+        return view('content');
         }
 }

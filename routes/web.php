@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 // Public Routes
 Route::get('/', [App\Http\Controllers\AppController::class, 'index'])->name('home');
 
-Route::get('/pricing', [App\Http\Controllers\PricingController::class, 'index'])->name('pricing');
+Route::get('/content', [App\Http\Controllers\ContentController::class, 'index'])->name('content');
 
 
 

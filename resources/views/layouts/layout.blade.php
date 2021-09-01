@@ -13,9 +13,15 @@
 </head>
 <body>
   
-    @csrf
-
-    @yield('pricing')
-    
+  
+    @yield('main')
+    @yield('step1')
+    @yield('step2')
+    @yield('step3')
+    @yield('step4')
+    @yield('step5')
+    @yield('step6')
+    @yield('step7')
+    @yield('step8')
 </body>
 </html>
