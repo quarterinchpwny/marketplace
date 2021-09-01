@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Public Routes
-Route::get('/', [App\Http\Controllers\AppController::class, 'home'])->name('content');
+Route::get('/content', [App\Http\Controllers\AppController::class, 'index'])->name('content');
 
 // Route::middleware(['guest'])->group(function () {
 //   Route::get('login', [App\Http\Controllers\LoginController::class, 'index'])->name('login');
