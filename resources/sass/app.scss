@@ -5,40 +5,134 @@
 @import 'variables';
 
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
+//@import '~bootstrap/scss/bootstrap';
 
-// Bootstrap Darkmode
-// @import "~bootstrap-darkmode/darktheme";
-
-.side-navbar {
-  width: 250px;
-  height: 100%;
-  position: fixed;
-  margin-left: -300px;
-  background-color: #FFFFFF;
-  transition: 0.5s;
+//mixins
+@mixin button-font {
+    font-family: Helvetica;
+    font-size: 18px;
+    color: white;
+  }
+@mixin header-blue{
+    background-color: $all-blue;
+    height: 250px;
+}
+@mixin header-styling{
+    font-family: 'Archivo', sans-serif;;
+    font-size: 30px;
+    color: white;
+    padding-top: 30px;
+    font-weight: bold;
+    position: relative;
+    left: 530px;
+}
+@mixin frame-canvas{
+    height: 320px;
+    background-color: #FA8072;
 }
 
-.nav-link:active,
-.nav-link:focus,
-.nav-link:hover {
-  background-color: #ffffff26;
-}
+   
 
-.main-container {
-  transition: 0.4s;
-}
 
-.active-nav {
-  margin-left: 0;
-}
+//color variables
+$header-darkblue: #092059;
+$all-blue: #1F3C88;
+$all-cards: #CEDDEF;
+$footer-darkblue: #021D5E;
+$buttons-darkblue: #1E3B87;
 
-/* for main section */
-.active-cont {
-  margin-left: 250px;
+// header and nav
+#topContent{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: $header-darkblue;
+    height: 100px;
 }
-
-#menu-btn {
-  background-color: #100901;
-  color: #fff;
+#headerLogo{
+    position: relative;
+    left: 450px;
+}
+#blue-rect{
+    @include header-blue();
+    position: relative;
+    bottom: 300px;
+}
+#white-rect{
+    @include header-blue();
+    background-color: white;
+    position: relative;
+    bottom: 300px;
+}
+#lblue-signup{
+    position: relative;
+    bottom:300px;
+    background-color: rgb(206, 221, 239, 0.8);
+    padding: 40px 40px 30px 40px;
+    height: 300px;
+    width: 1000px;
+}
+#buttonBlue{
+    @include button-font();
+    background-color: $buttons-darkblue;
+    align-items: center;
+    border: none;
+    border-radius: 6px;
+    width: 260px; height: 55px;
+}
+#buttonBlue2{
+    @include button-font();
+    font-size: 15px;
+    background-color: $buttons-darkblue;
+    align-items: center;
+    border: none;
+    border-radius: 6px;
+    width: 260px; height: 55px;
+}
+.secondRow{
+    padding-top: 5px;
+    padding-bottom: 20;
+}
+.thirdRow{
+    padding-top: 13px;
+    position: relative;
+    left: 250px;
+    font-size: 23px;
+}
+.lastRow{
+    padding-top: 13px;
+}
+#headerStyleBlue{
+    @include header-styling();
+    color: $all-blue;
+}
+#headerStyleWhite{
+    @include header-styling();
+}
+#frameBlue{
+    @include frame-canvas();
+    background-color: #E63E6D;
+    position: relative;
+    bottom:300px;
+}
+#frameWhite{
+    @include frame-canvas();
+    position: relative;
+    bottom:300px;
+}
+.card-body{
+    background-color: $all-cards;
+    font-family: 'Archivo', sans-serif;
+    width: 600px; height: 500;
+    position: relative;
+    left: 30px; bottom:100px;
+    border-radius: 13px;
+}
+.lawUpdatesImage{
+    position: relative;
+    left: 700px; bottom: 400px;
+    border-radius: 13px;
+}
+.card{
+    width: 250px; height: 800;
+    border-radius: 13px;
 }

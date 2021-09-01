@@ -1,0 +1,137 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+#topContent {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #092059;
+  height: 100px;
+}
+
+#headerLogo {
+  position: relative;
+  left: 450px;
+}
+
+#blue-rect {
+  background-color: #1F3C88;
+  height: 250px;
+  position: relative;
+  bottom: 300px;
+}
+
+#white-rect {
+  background-color: #1F3C88;
+  height: 250px;
+  background-color: white;
+  position: relative;
+  bottom: 300px;
+}
+
+#lblue-signup {
+  position: relative;
+  bottom: 300px;
+  background-color: rgba(206, 221, 239, 0.8);
+  padding: 40px 40px 30px 40px;
+  height: 300px;
+  width: 1000px;
+}
+
+#buttonBlue {
+  font-family: Helvetica;
+  font-size: 18px;
+  color: white;
+  background-color: #1E3B87;
+  align-items: center;
+  border: none;
+  border-radius: 6px;
+  width: 260px;
+  height: 55px;
+}
+
+#buttonBlue2 {
+  font-family: Helvetica;
+  font-size: 18px;
+  color: white;
+  font-size: 15px;
+  background-color: #1E3B87;
+  align-items: center;
+  border: none;
+  border-radius: 6px;
+  width: 260px;
+  height: 55px;
+}
+
+.secondRow {
+  padding-top: 5px;
+  padding-bottom: 20;
+}
+
+.thirdRow {
+  padding-top: 13px;
+  position: relative;
+  left: 250px;
+  font-size: 23px;
+}
+
+.lastRow {
+  padding-top: 13px;
+}
+
+#headerStyleBlue {
+  font-family: "Archivo", sans-serif;
+  font-size: 30px;
+  color: white;
+  padding-top: 30px;
+  font-weight: bold;
+  position: relative;
+  left: 530px;
+  color: #1F3C88;
+}
+
+#headerStyleWhite {
+  font-family: "Archivo", sans-serif;
+  font-size: 30px;
+  color: white;
+  padding-top: 30px;
+  font-weight: bold;
+  position: relative;
+  left: 530px;
+}
+
+#frameBlue {
+  height: 320px;
+  background-color: #FA8072;
+  background-color: #E63E6D;
+  position: relative;
+  bottom: 300px;
+}
+
+#frameWhite {
+  height: 320px;
+  background-color: #FA8072;
+  position: relative;
+  bottom: 300px;
+}
+
+.card-body {
+  background-color: #CEDDEF;
+  font-family: "Archivo", sans-serif;
+  width: 600px;
+  height: 500;
+  position: relative;
+  left: 30px;
+  bottom: 100px;
+  border-radius: 13px;
+}
+
+.lawUpdatesImage {
+  position: relative;
+  left: 700px;
+  bottom: 400px;
+  border-radius: 13px;
+}
+
+.card {
+  width: 250px;
+  height: 800;
+  border-radius: 13px;
+}
