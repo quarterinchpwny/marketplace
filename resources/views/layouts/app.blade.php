@@ -26,10 +26,15 @@
   
   <div id="app">
      @include('layouts.nav', ['from' => 'app'])
-
+        @yield('content')
   </div>
   <main class="py-0">
-        @yield('testing')
+            @yield('signUp')
+            @yield('Services')
+            @yield('PracticeAreas')
+            @yield('LawUpdates')
+            @yield('EverydayLaw')
+            @yield('Footer')
       </main>
  
 </body>

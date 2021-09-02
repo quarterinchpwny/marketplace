@@ -33,6 +33,10 @@ Route::middleware(['auth'])->group(function () {
   });
 });
 
+Route::get('/Masculine', function(){
+  return view('layouts.home');
+}); 
+
 
 // Carl Note
 // if route changes not work try to run "php artisan optimize"
