@@ -1,10 +1,20 @@
 @extends('layouts.layout')
 @section('main')
-<header class="masthead">
-  <div class="container">
-      <div class="masthead-heading">Start E-Lawyering. </div>
-      <div class="masthead-subheading">Create Your Own</div>
-      <a class="btn  w-25 btn-primary btn-xl text-uppercase" href="#step1">Sumite</a>
+<header class = "masthead">
+  <div class="container"style="margin-top:auto">
+    <div class="row align-items-center justify-content-between ">
+      <div class="col-lg ">
+        <div class="masthead-main">Start E-Lawyering. </div>
+        <div class="masthead-subheading">Create Your Own Website with </div>
+        <div class="masthead-heading"> LEXWEB WEBSITE BUILDER</div>
+        <a class="w-100 btn btn-lg btn-primary" href="#step1">START HERE</a>
+      </div>
+     
+      <div class="col">
+      <img class="mw-100" style="margin-top:auto" src="/images/devices.png" alt="">
+      </div>
+  </div>
+  
   </div>
 </header>
 @endsection
@@ -19,7 +29,7 @@
 </svg>
     
 
-<div class="container" style="padding-top: 2.4rem;padding-bottom: 2.4rem;" id="step1">
+<div class="container" style="padding-top: 2.4rem;padding-bottom: 2.4rem; max-width: 960px;" id="step1">
   <div class="tracking-progress-bar text-center">
     <div class="tracking-progress-bar__item tracking-progress-bar__item--first tracking-progress-bar__item--active">1</div>
   
@@ -42,7 +52,7 @@
     <div class="tracking-progress-bar__item">8</div>
   </div>
 <div class="p-3 pb-md-4 mx-auto text-center">
-    <h2 class="display-5 fw-normal">Step 1 - Choose Your Plan</h1>
+    <h2 class="display-5 fw-normal">Step 1 - Choose Your Plan</h2>
     
   </div>
 
@@ -259,7 +269,7 @@
                   </tr>
                 </tbody>
               </table>
-              <button type="button" class="w-100 btn btn-lg btn-orange">Select</button>
+              <a type="button" class="w-100 btn btn-lg btn-orange" href="#step2">Select</a>
             </div>
         </div>
       </div>
@@ -277,7 +287,7 @@
 @endsection
 
 @section('step2')
-<div class="container " style="padding-top: 2.4rem;padding-bottom: 2.4rem;">
+<div class="container " style="padding-top: 2.4rem;padding-bottom: 2.4rem;" id="step2">
   <div class="tracking-progress-bar text-center">
     <div class="tracking-progress-bar__item tracking-progress-bar__item--first tracking-progress-bar__item--active">1</div>
   
@@ -301,8 +311,24 @@
   </div>
 
   <div class="p-3 pb-md-4 mx-auto text-center">
-    <h2 class="display-5 fw-normal">Step 2 - Set up your Domain</h1>
-    
+    <h2 class="display-5 fw-normal">Step 2 - Set up your Domain</h2>
+      <section class="newsletter">
+        <div class="container">
+        <div class="row">
+        <div class="col-sm-12">
+          <div class="content">
+            <h2 class="q">Create a New Domain</h2>
+          <div class="input-group">
+                 <input type="email" class="form-control" placeholder="Ex. lawfirm.lexmeet.com">
+                 <span class="input-group-btn">
+                 <p class="btn " >.lexmeet.com</p>
+                 </span>
+                  </div>
+          </div>
+        </div>
+        </div>
+        </div>
+        </section>
   </div>
 </div>
 @endsection
