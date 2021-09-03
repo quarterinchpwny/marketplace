@@ -54,11 +54,69 @@
 @endsection
 @section('PracticeAreas')
 <!-- Practice Areas -->
+<<<<<<< HEAD
 <div class="container-fluid" id="white-rect"><p id="headerStyleBlue">PRACTICE AREAS</p></div>
 <div class="container-fluid" id="frameBlue">
 <div class="card"> 
         <img src="/images/Family.jpg" class="card-img-top">
         <a href="#" class="btn btn-primary">Personal & Family Law</a> 
+=======
+
+<div class="container-fluid" id="white-rect"><p id="headerStyleBlue">PRACTICE AREAS</p></div>
+<div class="container-fluid" id="frameBlue"></div>
+<div class="container" style="background-color:rgb(206, 221, 239, 0)" id="areasHolder">
+<div class="row">
+      <div class="col-3">
+        <div class="card"> 
+          <img src="/images/Family.jpg" class="card-img-top">
+          <a href="#" class="btn btn-primary">Personal & Family Law</a> 
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card"> 
+          <img src="/images/Civil.jpg" class="card-img-top">
+          <a href="#" class="btn btn-primary">Civil Law</a> 
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card"> 
+          <img src="/images/Commercial.jpg" class="card-img-top">
+          <a href="#" class="btn btn-primary">Commercial Law</a> 
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card"> 
+          <img src="/images/Labor.jpg" class="card-img-top">
+          <a href="#" class="btn btn-primary">Labor Law</a> 
+        </div>
+      </div>
+</div>
+<div class="row">
+      <div class="col-3">
+        <div class="card"> 
+          <img src="/images/Immigration.jpg" class="card-img-top">
+          <a href="#" class="btn btn-primary">Immigration Law</a> 
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card"> 
+          <img src="/images/Criminal.jpg" class="card-img-top">
+          <a href="#" class="btn btn-primary">Criminal Law</a> 
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card"> 
+          <img src="/images/Taxation.jpg" class="card-img-top">
+          <a href="#" class="btn btn-primary">Taxation Law</a> 
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card"> 
+          <img src="/images/Special.jpg" class="card-img-top">
+          <a href="#" class="btn btn-primary">Special Services</a> 
+        </div>
+      </div>
+>>>>>>> 99b4f55c7af67519263dfc3e62731c8598aa4fd2
 </div>
 </div>
 @endsection

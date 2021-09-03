@@ -18,13 +18,18 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 <body>
   <!-- Header and Navbar -->
   <div class="container-fluid" id="topContent">
         <img src="/images/headerLogo.svg" alt="Rizal Logo" id="headerLogo">
     </div>
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 99b4f55c7af67519263dfc3e62731c8598aa4fd2
   <div id="app">
      @include('layouts.nav', ['from' => 'app'])
         @yield('content')
@@ -37,6 +42,10 @@
             @yield('EverydayLaw')
             @yield('Footer')
       </main>
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 99b4f55c7af67519263dfc3e62731c8598aa4fd2
 </body>
 </html>

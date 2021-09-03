@@ -74,6 +74,7 @@
 </nav>
 
 
+<<<<<<< HEAD
 @section('testing')
 
 
@@ -272,3 +273,5 @@ At that time, text message or e-mail message, as it was not yet widely used and 
 
 
 @endsection
+=======
+>>>>>>> 99b4f55c7af67519263dfc3e62731c8598aa4fd2
