@@ -9,7 +9,7 @@
     <title>Lexweb Neutral</title>
 </head>
 <body>
-    <nav class="navbar nagbar-expand-lg navbar-light bg-ntlightcream p-6 justify-between">
+    <!-- <nav class="navbar nagbar-expand-lg navbar-light bg-ntlightcream p-6 justify-between">
         <div class="container-fluid">
             <ul class="nav justify-content-end"> 
                 <li class="nav-item"> 
@@ -35,7 +35,7 @@
                 </li>
             </ul>
         </div>
-    </nav>
+    </nav> -->
     @yield('content')
     @yield('index')
 </body>

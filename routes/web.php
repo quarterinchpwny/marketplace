@@ -15,7 +15,9 @@ use Illuminate\Http\Request;
 
 // Public Routes
 Route::get('/content', [App\Http\Controllers\AppController::class, 'index'])->name('content');
-    
+
+Route::get('/NeutralHome', [App\Http\Controllers\NeutralHomeController:: class, 'index'])->name('NeutralHome');
+
 Route::middleware(['guest'])->group(function () {
   Route::get('login', [App\Http\Controllers\LoginController::class, 'index'])->name('login');
   Route::post('login', [App\Http\Controllers\LoginController::class, 'logIn'])->name('post.login'); 
