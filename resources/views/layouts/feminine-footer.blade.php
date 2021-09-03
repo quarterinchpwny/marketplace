@@ -78,6 +78,11 @@
                     <div class="card-body">
                         <span class="footer-brand-logo">RLO</span> <br>
                         <span class="footer-brand-name">Rizal Law Office</span> <br>
+
+                        <div class="footer-brand-logo">
+                            <img src="{{ URL::to('/') }}/feminine-logo/Rizal_Law_Office_Logo V1 White.png" alt="Rizal Law Office Logo">
+                        </div>
+
                         <span class="footer-brand-tagline"></span> Lorem ipsum dolor sit amet. <br>
 
                         <div class="footer-powered-by">
