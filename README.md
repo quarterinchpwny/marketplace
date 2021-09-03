@@ -20,6 +20,7 @@
 - DB_DATABASE=lexweb
 - DB_USERNAME= your sql username
 - DB_PASSWORD= your sql password
+##### run "php artisan migrate"
 ## Terminal Commands
 - php artisan serve
 - yarn run watch
