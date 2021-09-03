@@ -16,6 +16,13 @@ use Illuminate\Support\Facades\Route;
 // Public Routes
 Route::get('/', [App\Http\Controllers\AppController::class, 'index'])->name('home');
 
+Route::get('/content', [App\Http\Controllers\ContentController::class, 'index'])->name('content');
+
+
+
+
+
+
 Route::middleware(['guest'])->group(function () {
   Route::get('login', [App\Http\Controllers\LoginController::class, 'index'])->name('login');
   Route::post('login', [App\Http\Controllers\LoginController::class, 'logIn'])->name('post.login'); 
