@@ -22,6 +22,7 @@ Route::get('/content', [App\Http\Controllers\ContentController::class, 'index'])
 
 
 
+
 Route::middleware(['guest'])->group(function () {
   Route::get('login', [App\Http\Controllers\LoginController::class, 'index'])->name('login');
   Route::post('login', [App\Http\Controllers\LoginController::class, 'logIn'])->name('post.login'); 
