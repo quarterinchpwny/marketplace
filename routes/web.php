@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/navigation', [App\Http\Controllers\NavController::class, 'index'])->name('navigation');
+
+Route::get('/banner', [App\Http\Controllers\BannerController::class, 'index'])->name('banner');
+
 // Public Routes
 Route::get('/', [App\Http\Controllers\AppController::class, 'index'])->name('home');
 
