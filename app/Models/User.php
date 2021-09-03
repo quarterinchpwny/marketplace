@@ -2,43 +2,43 @@
 
 namespace App\Models;
 
-use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Auth\Passwords\CanResetPassword;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-use Laravel\Sanctum\HasApiTokens;
+use App\Models\Lawyer;
 
 class User extends Authenticatable
 {
-    use HasApiTokens, HasFactory, Notifiable;
+    use Notifiable, SoftDeletes, CanResetPassword;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
+    protected $table = 'users';
+
     protected $fillable = [
-        'name',
+        'image',
         'email',
         'password',
+        'role_id',
+        'status',
+        'remember_token',
+        'provider',
+        'provider_id',
+        'last_login',
+        'affiliate_id',
+        'referred_by',
     ];
 
-    /**
-     * The attributes that should be hidden for arrays.
-     *
-     * @var array
-     */
+    protected $dates = [
+        'last_login',
+    ];
+
     protected $hidden = [
         'password',
-        'remember_token',
+        'provider_id',
     ];
 
-    /**
-     * The attributes that should be cast to native types.
-     *
-     * @var array
-     */
-    protected $casts = [
-        'email_verified_at' => 'datetime',
-    ];
+    public function lawyer()
+    {
+        return $this->hasOne(Lawyer::class);
+    }
 }

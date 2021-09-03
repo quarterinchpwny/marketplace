@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
-@section('content')
-
+@section('signUp')
 <img src="/images/bgLandingPage.png" class="landingBackground" alt="bgHomeImage" width="1350" height="720">
 <div class="container" id="lblue-signup">
     <!-- Sign up -->
@@ -22,7 +21,7 @@
             <p>Remember me</p>
         </div>
         <div class="col-sm-4">
-         <a href="url">Forgot Password?</a>
+              <a href="url">Forgot Password?</a>
         </div>
     </div>
     </div>
@@ -47,11 +46,13 @@
     </div>
     </div>
 </div>
-
-
+@endsection
+@section('Services')
 <!-- Our Services -->
 <div class="container-fluid" id="blue-rect"><p id="headerStyleWhite">OUR SERVICES</p></div>
 <div class="container-fluid" id="frameWhite"></div>
+@endsection
+@section('PracticeAreas')
 <!-- Practice Areas -->
 <div class="container-fluid" id="white-rect"><p id="headerStyleBlue">PRACTICE AREAS</p></div>
 <div class="container-fluid" id="frameBlue">
@@ -60,6 +61,8 @@
         <a href="#" class="btn btn-primary">Personal & Family Law</a> 
 </div>
 </div>
+@endsection
+@section('LawUpdates')
 <!-- Law Updates -->
 <div class="container-fluid" id="white-rect"><p id="headerStyleBlue">LAW UPDATES</p></div>
 <div class="container-fluid" id="frameBlue">
@@ -76,6 +79,8 @@ At that time, text message or e-mail message, as it was not yet widely used and 
 
       <img src="/images/laptop-lawupdates.jpg" class="lawUpdatesImage" alt="LapUpdatesPic" width="550" height="300">
 </div>
+@endsection
+@section('EverydayLaw')
 <!-- Everyday Law -->
 <div class="container-fluid" id="blue-rect"><p id="headerStyleWhite">EVERYDAY LAW</p></div>
 <div class="container-fluid" id="frameWhite">
@@ -87,10 +92,10 @@ At that time, text message or e-mail message, as it was not yet widely used and 
         Ano ang panganib kung ikaw ay pipirma bilang co-maker sa isang loan?
         </p>
         <a href="#" class="btn btn-primary">Learn more</a>
-      </div>
-
-      
 </div>
+</div>
+@endsection
+@section('Footer')
 <!-- Footer -->
 
 <footer class="text-center text-lg-start text-light pt-5" style="background-color: #092059;">
@@ -129,9 +134,10 @@ At that time, text message or e-mail message, as it was not yet widely used and 
         <!-- Grid column -->
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <!-- Content -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            <i class="fas fa-gem me-3"></i>Company name
-          </h6>
+          <div class="container-fluid" >
+                <img src="/images/headerLogo.svg" alt="Rizal Logo" id="logoFooter">
+          </div>
+
           <p>
            Lorem ipsum dolor sit amet
           </p>
@@ -191,5 +197,5 @@ At that time, text message or e-mail message, as it was not yet widely used and 
   <!-- Copyright -->
 </footer>
 <!-- Footer -->
-
 @endsection
+

@@ -1,5 +1,8 @@
 {
+    "name": "LexWeb",
+    "version": "0.1.0",
     "private": true,
+    "license": "MIT license",
     "scripts": {
         "dev": "npm run development",
         "development": "mix",
@@ -10,8 +13,6 @@
         "production": "mix --production"
     },
     "devDependencies": {
-<<<<<<< HEAD
-=======
         "@babel/core": "^7.14.6",
         "@babel/preset-react": "^7.14.5",
         "@loadable/babel-plugin": "^5.13.0",
@@ -50,17 +51,13 @@
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.15.4",
->>>>>>> dfb09ca39e70c374d37bd307175f20abb28241d7
         "@popperjs/core": "^2.9.3",
-        "axios": "^0.21",
-        "bootstrap": "^5.0.0-beta3",
-        "jquery": "^3.6",
-        "laravel-mix": "^6.0.6",
-        "lodash": "^4.17.19",
-        "popper.js": "^1.16.1",
-        "postcss": "^8.1.14",
-        "resolve-url-loader": "^4.0.0",
-        "sass": "^1.32.11",
-        "sass-loader": "^11.0.1"
+        "axios": "^0.21.1",
+        "boostrap": "^2.0.0",
+        "bootstrap": "5.1.0",
+        "bootstrap-darkmode": "^0.9.1",
+        "jquery": "^3.6.0",
+        "laravel-mix": "^6.0.28",
+        "popper.js": "^1.16.1"
     }
 }

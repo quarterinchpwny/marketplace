@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\CrushController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,14 +13,30 @@ use App\Http\Controllers\CrushController;
 |
 */
 
+// Public Routes
+Route::get('/', [App\Http\Controllers\AppController::class, 'index'])->name('home');
 
+Route::middleware(['guest'])->group(function () {
+  Route::get('login', [App\Http\Controllers\LoginController::class, 'index'])->name('login');
+  Route::post('login', [App\Http\Controllers\LoginController::class, 'logIn'])->name('post.login'); 
+  Route::get('register', [App\Http\Controllers\RegisterController::class, 'index'])->name('register');
+  Route::post('register', [App\Http\Controllers\RegisterController::class, 'register'])->name('post.register');
+});
+Route::post('logout', [App\Http\Controllers\LoginController::class, 'logOut'])->name('logout');
 
-Route::get('/', function(){
-    return view('posts.test');
+// Athenticated Routes
+Route::middleware(['auth'])->group(function () {
+  Route::get('dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard'); 
+  Route::group(['prefix' => 'account'], function () {
+      Route::get('/', [App\Http\Controllers\AccountController::class, 'index'])->name('account');
+      Route::post('update', [App\Http\Controllers\AccountController::class, 'updateAccount'])->name('account.update'); 
+  });
+});
+
+Route::get('/Masculine', function(){
+  return view('layouts.home');
 }); 
 
 
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::post('submit', [CrushController::class, 'index'])-> name('Rsubmit');
+// Carl Note
+// if route changes not work try to run "php artisan optimize"

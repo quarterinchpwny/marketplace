@@ -3,7 +3,6 @@
 
 // Variables
 @import 'variables';
-
 // Bootstrap
 //@import '~bootstrap/scss/bootstrap';
 
@@ -30,33 +29,14 @@
     height: 320px;
     background-color: #FA8072;
 }
+//themes
+$theme-colors: (
+    "dark": #092059
+);
 
-   
-
-
-<<<<<<< HEAD
 //color variables
 $header-darkblue: #092059;
 $all-blue: #1F3C88;
-=======
-#menu-btn {
-  background-color: #100901;
-  color: #fff;
-}
-
-//// Masculine ////
-
-//mixins
-@mixin button-font {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    color: white;
-  }
-
-//color variables
-$header-darkblue: #092059;
-$all-buttons: #1F3C88;
->>>>>>> dfb09ca39e70c374d37bd307175f20abb28241d7
 $all-cards: #CEDDEF;
 $footer-darkblue: #021D5E;
 $buttons-darkblue: #1E3B87;
@@ -73,7 +53,6 @@ $buttons-darkblue: #1E3B87;
     left: 450px;
 }
 #blue-rect{
-<<<<<<< HEAD
     @include header-blue();
     position: relative;
     bottom: 300px;
@@ -83,10 +62,6 @@ $buttons-darkblue: #1E3B87;
     background-color: white;
     position: relative;
     bottom: 300px;
-=======
-    background-color: $header-darkblue;
-    height: 200px;
->>>>>>> dfb09ca39e70c374d37bd307175f20abb28241d7
 }
 #lblue-signup{
     position: relative;
@@ -126,7 +101,6 @@ $buttons-darkblue: #1E3B87;
 .lastRow{
     padding-top: 13px;
 }
-<<<<<<< HEAD
 #headerStyleBlue{
     @include header-styling();
     color: $all-blue;
@@ -162,5 +136,3 @@ $buttons-darkblue: #1E3B87;
     width: 250px; height: 800;
     border-radius: 13px;
 }
-=======
->>>>>>> dfb09ca39e70c374d37bd307175f20abb28241d7

@@ -13,14 +13,22 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->rememberToken();
+        Schema::create('users', function(Blueprint $table) {
+            $table->integer('id', true);
+            $table->string('image')->nullable();
+            $table->string('email', 100)->nullable();
+            $table->string('password', 60)->nullable();
+            $table->integer('role_id')->nullable()->comment('1=Individual Lawyer, 2=Client, 3=Lawfirm');
+            $table->string('remember_token', 100)->nullable();
+            $table->integer('status')->nullable()->comment('0=Not Ative, 1=Active, 2=Suspended');
+            $table->string('provider', 191)->nullable();
+            $table->string('provider_id', 191)->nullable();
+            $table->dateTime('last_login')->nullable();
+            $table->string('referred_by', 191)->nullable();
+            $table->string('affiliate_id', 191)->nullable()->unique('users_affiliate_id_unique');
+            $table->boolean('terms_and_condition_agreement')->default(0);
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
