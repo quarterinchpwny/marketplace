@@ -49,7 +49,44 @@
 @endsection
 @section('Services')
 <!-- Our Services -->
-<div class="container-fluid" id="blue-rect"><p id="headerStyleWhite">OUR SERVICES</p></div>
+<div class="container-fluid" id="blue-rect"><p id="headerStyleWhite">OUR SERVICES</p>
+<div class="container" style="background-color:rgb(206, 221, 239, 0)" id="areasHolder">
+<div class="row">
+      <div class="col-3">
+        <div class="card text-center"> 
+          <img src="/images/ASSIST.svg" class="card-img-top" width="200" height="200">
+          <h2>ASSIST</h2>
+          <p>Free legal assesment</p>
+          <a href="#" class="btn btn-primary text-light">Ask Lawyers</a> 
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card text-center"> 
+          <img src="/images/CONSULT.svg" class="card-img-top" width="200" height="200">
+          <h2>CONSULT</h2>
+          <p>Paid legal consultation</p>
+          <a href="#" class="btn btn-primary text-light">Submit Legal Problem</a> 
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card text-center"> 
+          <img src="/images/WORKS.svg" class="card-img-top" width="200" height="200">
+          <h2>WORKS</h2>
+          <p>Free legal fee crowdsourcing and paid legal works escrow delivery</p>
+          <a href="#" class="btn btn-primary text-light">Request Proposal</a> 
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card text-center"> 
+          <img src="/images/Docs.svg" class="card-img-top" width="200" height="200">
+          <h2>DOCS</h2>
+          <p>Create your own legal documents from hundreds of templates</p>
+          <a href="#" class="btn btn-primary text-light">Create Legal Document</a> 
+        </div>
+      </div>
+</div>
+</div>
+</div>
 <div class="container-fluid" id="frameWhite"></div>
 @endsection
 @section('PracticeAreas')
@@ -62,32 +99,31 @@
         <a href="#" class="btn btn-primary">Personal & Family Law</a> 
 =======
 
-<div class="container-fluid" id="white-rect"><p id="headerStyleBlue">PRACTICE AREAS</p></div>
-<div class="container-fluid" id="frameBlue"></div>
+<div class="container-fluid" id="white-rect"><p id="headerStyleBlue">PRACTICE AREAS</p>
 <div class="container" style="background-color:rgb(206, 221, 239, 0)" id="areasHolder">
 <div class="row">
       <div class="col-3">
         <div class="card"> 
           <img src="/images/Family.jpg" class="card-img-top">
-          <a href="#" class="btn btn-primary">Personal & Family Law</a> 
+          <a href="#" class="btn btn-primary text-light">Personal & Family Law</a> 
         </div>
       </div>
       <div class="col-3">
         <div class="card"> 
           <img src="/images/Civil.jpg" class="card-img-top">
-          <a href="#" class="btn btn-primary">Civil Law</a> 
+          <a href="#" class="btn btn-primary text-light">Civil Law</a> 
         </div>
       </div>
       <div class="col-3">
         <div class="card"> 
           <img src="/images/Commercial.jpg" class="card-img-top">
-          <a href="#" class="btn btn-primary">Commercial Law</a> 
+          <a href="#" class="btn btn-primary text-light">Commercial Law</a> 
         </div>
       </div>
       <div class="col-3">
         <div class="card"> 
           <img src="/images/Labor.jpg" class="card-img-top">
-          <a href="#" class="btn btn-primary">Labor Law</a> 
+          <a href="#" class="btn btn-primary text-light">Labor Law</a> 
         </div>
       </div>
 </div>
@@ -95,30 +131,34 @@
       <div class="col-3">
         <div class="card"> 
           <img src="/images/Immigration.jpg" class="card-img-top">
-          <a href="#" class="btn btn-primary">Immigration Law</a> 
+          <a href="#" class="btn btn-primary text-light">Immigration Law</a> 
         </div>
       </div>
       <div class="col-3">
         <div class="card"> 
           <img src="/images/Criminal.jpg" class="card-img-top">
-          <a href="#" class="btn btn-primary">Criminal Law</a> 
+          <a href="#" class="btn btn-primary text-light">Criminal Law</a> 
         </div>
       </div>
       <div class="col-3">
         <div class="card"> 
           <img src="/images/Taxation.jpg" class="card-img-top">
-          <a href="#" class="btn btn-primary">Taxation Law</a> 
+          <a href="#" class="btn btn-primary text-light">Taxation Law</a> 
         </div>
       </div>
       <div class="col-3">
         <div class="card"> 
           <img src="/images/Special.jpg" class="card-img-top">
-          <a href="#" class="btn btn-primary">Special Services</a> 
+          <a href="#" class="btn btn-primary text-light">Special Services</a> 
         </div>
       </div>
 >>>>>>> 99b4f55c7af67519263dfc3e62731c8598aa4fd2
 </div>
 </div>
+</div>
+<div class="container-fluid" id="frameBlue">
+</div>
+
 @endsection
 @section('LawUpdates')
 <!-- Law Updates -->
@@ -132,7 +172,7 @@
 These writings printed in papers or paper-based documents are popularly known then as our documentary evidence. 
 
 At that time, text message or e-mail message, as it was not yet widely used and known in the Philippines, are not considered as documentary evidence by our courts of law.</p>
-        <a href="#" class="btn btn-primary">Learn more</a>
+        <a href="#" class="btn btn-primary text-light">Learn more</a>
       </div>
 
       <img src="/images/laptop-lawupdates.jpg" class="lawUpdatesImage" alt="LapUpdatesPic" width="550" height="300">
@@ -149,7 +189,7 @@ At that time, text message or e-mail message, as it was not yet widely used and 
 
         Ano ang panganib kung ikaw ay pipirma bilang co-maker sa isang loan?
         </p>
-        <a href="#" class="btn btn-primary">Learn more</a>
+        <a href="#" class="btn btn-primary text-light">Learn more</a>
 </div>
 </div>
 @endsection

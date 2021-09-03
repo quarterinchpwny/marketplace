@@ -4,7 +4,7 @@
 // Variables
 @import 'variables';
 // Bootstrap
-//@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap/scss/bootstrap';
 
 //mixins
 @mixin button-font {
@@ -31,7 +31,7 @@
 }
 //themes
 $theme-colors: (
-    "dark": #092059
+    "primary": #092059
 );
 
 //color variables
@@ -144,7 +144,6 @@ $buttons-darkblue: #1E3B87;
 }
 #areasHolder{
     position: relative;
-    bottom: 750px;
     z-index: 5;
     padding: 0px 40px 0px 40px
 }
