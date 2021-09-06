@@ -105,7 +105,7 @@
                     <div class="law-updates-header card-title text-center">LAW UPDATES</div>
 
                     <div class="law-updates-picture py-3 text-center container-fluid">
-                        <img src="{{ URL::to('/') }}/feminine-image/law-update.jpg" class="img-law-updates img-fluid rounded mx-auto d-block" alt="Featured Law Update">
+                        <img src="{{ URL::to('/') }}/feminine-image/law-update.jpeg" class="img-law-updates img-fluid rounded mx-auto d-block" alt="Featured Law Update">
                     </div>
 
                     <div class="law-updates-blog-title py-4">Can your text message or e-mail message be used as evidence in court? </div>
