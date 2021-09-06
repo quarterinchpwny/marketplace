@@ -28,25 +28,25 @@
             <!-- Navigation links -->
             <div class="collapse navbar-collapse justify-content-end" id="main-nav">
                 <ul class="nav justify-content-start nav-font">
-                    <li class="nav-item">
+                    <li class="nav-item px-2">
                     <a class="nav-link active" href="#home">Home</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item px-2">
                     <a class="nav-link" href="#profile">Profile</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item px-2">
                     <a class="nav-link" href="#services">Our Services</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item px-2">
                     <a class="nav-link" href="#law-updates">Law Updates</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item px-2">
                     <a class="nav-link" href="#law-practice">Law Practice</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item px-2">
                     <a class="nav-link" href="#EverydayLaw">Everyday Law</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item px-2">
                     <a class="nav-link" href="#Blog">Blog</a>
                     </li>
                 </ul>
@@ -129,7 +129,7 @@
         <div class="flex justify-center bs-dirtywhite-bg">
             <div class="container-fluid">
                 <h2 class="os-title">Our Services</h2>
-                <hr style="width: 188px; margin-bottom: 35px;">
+                <hr style="width: 188px; margin-bottom: 30px;">
                 <div class="row">
                     <div class="col">
                         <div class="card">
