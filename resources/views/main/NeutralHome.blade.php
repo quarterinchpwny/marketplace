@@ -8,7 +8,10 @@
     <!-- Bootstrap and JavaScript -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-
+    <!-- Raleway Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="{{ URL::asset('css/layout.css'); }}" rel="stylesheet">
     <title>LexHome</title>
 </head>
@@ -54,7 +57,7 @@
     <section id="ourservices">
         <div class="flex justify-center bs-dirtywhite-bg">
             <div class="container">
-                <h3>Our Services</h3>
+                <h3 class="os-title">Our Services</h3>
                 <hr>
                 <div class="row">
                     <div class="col-sm-3">
@@ -101,5 +104,37 @@
             </div>
         </div>
     </section>
+
+    <section id="everyday-law">
+            <div class="container-fluid">
+                <div class="row">
+                    <h2>Everyday Law </h2>
+                    <hr style="width: 188px;">
+                </div>
+                <div class="row" style="padding-left: 10px;">
+
+                    <div class="col-2 justify-content-center" style="padding-right: 0px;">
+                        <img src="{{ URL::to('/') }}/NeutralHome_Graphics/law_video.png" alt="">
+                    </div>
+
+                    <div class="col-1">
+                    </div>
+
+                    <div class="col-7" >
+                        <div id="updates-heading">
+                            <p>Can your text message or e-mail message be used as evidence in court?</p>
+                        </div>
+                        <div id="updates-content">
+                            <p>Before the advent of computer age, we have been familiar with the use of documentary evidence in court such as contracts, agreements, letters and other writings.</p>
+                            <p>These writings printed in papers or paper-based documents are popularly known then as our documentary evidence.</p>
+                            <p>At that time, text message or e-mail message, as it was not yet widely used and known in the Philippines, are not considered as documentary evidence by our courts of law. </p>
+                        </div>
+                        <div style="padding-top:30px">
+                            <a class="btn" href="#" role="button" id="areas_seemore" >SEE MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 </body>
 </html>
