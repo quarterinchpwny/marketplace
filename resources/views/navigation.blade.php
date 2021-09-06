@@ -72,7 +72,10 @@
         
         <!-- Navigation Bar -->
         <nav class="navbar">
-            <div class="logo">LOGO</div>
+            <div>
+                <img class="img-fluid" src="images/Logo2.png" alt="logo2" width="70px"> 
+                <img class="img-fluid" src="images/Logo1.png" alt="logo1" width="320px">  
+            </div>
             <div class="navbar-links">
                 <ul>
                     <li><a href="#">Home</a></li>
