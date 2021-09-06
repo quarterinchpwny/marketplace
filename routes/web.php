@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/navigation', [App\Http\Controllers\NavController::class, 'index'])->name('navigation');
 
-Route::get('/banner', [App\Http\Controllers\BannerController::class, 'index'])->name('banner');
+Route::get('/banner-area', [App\Http\Controllers\BannerController::class, 'index'])->name('banner-area');
 
 // Public Routes
 Route::get('/', [App\Http\Controllers\AppController::class, 'index'])->name('home');
