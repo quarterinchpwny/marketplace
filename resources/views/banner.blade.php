@@ -79,8 +79,7 @@
                 border-radius: 10px;
                 border: solid 1px #B5375B;
                 font-weight: 700;
-                font-size: 24px; 
-                
+                font-size: 24px;   
             }
             .input-group{
                 width: 500px;
