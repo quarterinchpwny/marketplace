@@ -22,7 +22,7 @@ Route::get('/', [App\Http\Controllers\AppController::class, 'index'])->name('hom
 
 Route::middleware(['guest'])->group(function () {
   Route::get('login', [App\Http\Controllers\LoginController::class, 'index'])->name('login');
-  Route::post('login', [App\Http\Controllers\LoginController::class, 'logIn'])->name('post.login'); 
+  Route::post('login', [App\Http\Controllers\LoginController::class, 'logIn'])->name('post.login');
   Route::get('register', [App\Http\Controllers\RegisterController::class, 'index'])->name('register');
   Route::post('register', [App\Http\Controllers\RegisterController::class, 'register'])->name('post.register');
 });
@@ -30,13 +30,14 @@ Route::post('logout', [App\Http\Controllers\LoginController::class, 'logOut'])->
 
 // Athenticated Routes
 Route::middleware(['auth'])->group(function () {
-  Route::get('dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard'); 
+  Route::get('dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
   Route::group(['prefix' => 'account'], function () {
       Route::get('/', [App\Http\Controllers\AccountController::class, 'index'])->name('account');
-      Route::post('update', [App\Http\Controllers\AccountController::class, 'updateAccount'])->name('account.update'); 
+      Route::post('update', [App\Http\Controllers\AccountController::class, 'updateAccount'])->name('account.update');
   });
 });
 
+Route::get('/feminine', [App\Http\Controllers\FeminineHomepageController::class, 'index'])->name('feminine');
 
 // Carl Note
 // if route changes not work try to run "php artisan optimize"
