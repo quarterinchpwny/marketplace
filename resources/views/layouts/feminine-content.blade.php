@@ -75,6 +75,9 @@
                 font-weight: 700;
             }
 
+            .img-law-updates, .img-everyday-law {
+            }
+
             .law-updates-blog-title, .everyday-law-blog-title {
                 font-size: 24px;
                 font-weight: 700;
@@ -101,7 +104,9 @@
                     <hr class="header-line-left border-1 mx-auto">
                     <div class="law-updates-header card-title text-center">LAW UPDATES</div>
 
-                    <div class="law-updates-picture py-3 text-center">pix here</div>
+                    <div class="law-updates-picture py-3 text-center container-fluid">
+                        <img src="{{ URL::to('/') }}/feminine-image/law-update.jpg" class="img-law-updates img-fluid rounded mx-auto d-block" alt="Featured Law Update">
+                    </div>
 
                     <div class="law-updates-blog-title py-4">Can your text message or e-mail message be used as evidence in court? </div>
 
@@ -125,8 +130,8 @@
                     <hr class="header-line-right border-1 mx-auto">
                     <div class="everyday-law-header card-title text-center">EVERYDAY LAW</div>
 
-                    <div class="everyday-law-picture py-3 text-center">
-                        <img src="{{ URL::to('/') }}/feminine-logo/everyday law sample pic.jpg" alt="Featured Everyday Law">
+                    <div class="everyday-law-picture py-3 text-center container-fluid">
+                        <img src="{{ URL::to('/') }}/feminine-image/everyday-law-sample-pic.jpg" class="img-everyday-law img-fluid rounded mx-auto d-block" alt="Featured Everyday Law">
                     </div>
 
                     <div class="everyday-law-blog-title py-4">Co-maker ng 'di nagbayad sa utang, tama ba na ikaw ang singilin? </div>

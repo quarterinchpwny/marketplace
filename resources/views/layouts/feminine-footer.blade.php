@@ -58,7 +58,6 @@
 
             .footer-brand, .footer-visit-us, .footer-contact-us, .footer-follow-us {
                 background-color: transparent;
-                width: 20rem;
             }
 
             .footer-brand, .footer-contact-us{
