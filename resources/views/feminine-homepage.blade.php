@@ -75,9 +75,6 @@
                 font-weight: 700;
             }
 
-            .img-law-updates, .img-everyday-law {
-            }
-
             .law-updates-blog-title, .everyday-law-blog-title {
                 font-size: 24px;
                 font-weight: 700;
@@ -103,8 +100,7 @@
 
     <body>
         <div class="blog-section row">
-            <!-- Law Updates -->
-            <div class="law-updates col-lg-6 pb-3">
+            <div class="law-updates col-xl-6 pb-3 container-fluid">
                 <div class="card-body px-5">
                     <hr class="header-line-left border-1 mx-auto">
                     <div class="law-updates-header card-title text-center mt-4">LAW UPDATES</div>
@@ -113,7 +109,7 @@
                         <img src="{{ URL::to('/') }}/feminine-image/law-update.jpeg" class="img-law-updates img-fluid rounded mx-auto d-block" alt="Featured Law Update">
                     </div>
 
-                    <div class="law-updates-blog-title">Can your text message or e-mail message be used as evidence in court? </div>
+                    <div class="law-updates-blog-title pb-4">Can your text message or e-mail message be used as evidence in court? </div>
 
                     <div class="law-updates-blog-content">
                         Before the advent of computer age, we have been familiar with the use of documentary evidence in court such as contracts, agreements, letters and other writings. <br>
@@ -130,8 +126,7 @@
                 </div>
             </div>
 
-            <!-- Everyday Law -->
-            <div class="everyday-law col-lg-6 pb-5 position-relative">
+            <div class="everyday-law col-xl-6 pb-5 container-fluid">
                 <div class="card-body px-5">
                     <hr class="header-line-right border-1 mx-auto">
                     <div class="everyday-law-header card-title text-center mt-4">EVERYDAY LAW</div>
@@ -140,7 +135,7 @@
                         <img src="{{ URL::to('/') }}/feminine-image/everyday-law-sample-pic.jpg" class="img-everyday-law img-fluid rounded mx-auto d-block" alt="Featured Everyday Law">
                     </div>
 
-                    <div class="everyday-law-blog-title">Co-maker ng 'di nagbayad sa utang, tama ba na ikaw ang singilin? </div>
+                    <div class="everyday-law-blog-title pb-4">Co-maker ng 'di nagbayad sa utang, tama ba na ikaw ang singilin? </div>
 
                     <div class="everyday-law-blog-content">
                         Nakapirma ka na ba sa loan agreement bilang co-maker? <br>
