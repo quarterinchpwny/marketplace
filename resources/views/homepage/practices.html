@@ -3,22 +3,22 @@
 <head>
    
     <style>
-
-
-
-		.intro_page{
-
-		height: 100px;
-		text-align: center;
-        padding-top: 0%;
-        color: #fff;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        font-size: 20px;
-        line-height: 20px;
-        
+        .intro_holder{
+		height: 180px;
+        line-height: 0;
 		}
-        .eservices_content {
-            background-color: #d08197a6;
+
+        .intro_text
+        {
+            text-align: center;
+            color: #733657;
+            font-size: 48px;
+            line-height: 20px;
+        }
+        .practices_content {
+            width: 1934px;
+            height: 1285px;
+            background: rgba(213, 64, 106, 0.12);
             }
 
         p {
@@ -31,6 +31,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
+            padding-top: 40px;
             
         }
 
@@ -42,6 +43,7 @@
             box-sizing: border-box;
             overflow: hidden;
             text-align: center;
+            width: 25%;
         }
 
         .container .box .content
@@ -84,29 +86,53 @@
            
         }
 
-        #apply
+        #serv_button
         {
             display: inline-block;
             width: 250px;
             height: 250px;
 		    padding: center;
-            background: #B5375B;
+            background: #B8537B;
             border-radius: 50%;
-            color: #fff      
+            color: #fff;
+            box-shadow: 0px 2px 4px 10px rgba(219, 203, 214, 0.74);  
         }
-        .container .box:hover .content #apply
+
+        
+        .container .box:hover .content #serv_button
         {
-            box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
-            background: #fff;
+            background: #B5375B;
         }
+
 
         #title 
         {
             text-align: center;
             color: #fff;
-            font-size: 25px;
+            font-size: 36px;
             font-family:monospace;
-            padding: center;
+            text-align: center;
+            color: #733657;
+        }
+
+        .button_holder
+        {
+            text-align: center;
+        }
+
+        #see_button
+        {
+            display: inline-block;
+            padding: 20px;
+		    width: 260px;
+            background: #B5375B;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 25px;
+            font-weight: 500;
+            margin-top: 45px;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         }
     </style>
 
@@ -114,42 +140,38 @@
 
 <body>
 
-   
-
-<div class = "eservices_content">
-    <br>
-    <div class = intro_page>
-    <h1>
-        ____________
-    </h1>
-    <h2 class="intro_text">
-       PRACTICE AREAS
-    </h2>
-
+<div class = "practices_content">
+ 
+    <div class = intro_holder>
+        <div><br></div>
+        <div class = "intro_text">
+            <h1>____</h1>
+            <h1 class="intro_text">PRACTICE AREAS</h1>
+        </div>
     </div>
     <br>
     <br>
     <div class = "container">
         <div class = "box">
             <div class = "content">
-                    <a id=apply href = ""><img src="assist.png"></a>
+                    <a id=serv_button href = ""><img src="serv1.png"></a>
             </div>   
             <a id = title>Personal & Family <br> Law</a>  
         </div> 
        
         <div class = "box">
             <div class = "content">
-                    <a id=apply href = ""><img src="works.png"></a>
+                    <a id=serv_button href = ""><img src="serv2.png"></a>
             </div>   
             <a id = title>Labor Law</a>  
         </div> 	<div class = "box">
             <div class = "content">
-                    <a id=apply href = ""><img src="assist.png"></a>
+                    <a id=serv_button href = ""><img src="serv3.png"></a>
             </div>  
             <a id = title>Civil Law</a>
         </div> 	<div class = "box">
             <div class = "content">
-                    <a id=apply href = ""><img src="assist.png"></a>
+                    <a id=serv_button href = ""><img src="serv4.png"></a>
             </div> 
             <a id = title>Immigration Law</a>    
         </div> 
@@ -159,30 +181,32 @@
     <div class = "container">
         <div class = "box">
             <div class = "content">
-                    <a id=apply href = ""><img src="assist.png"></a>
+                    <a id=serv_button href = ""><img src="serv5.png"></a>
             </div>   
             <a id = title>Criminal Law</a>  
         </div> 
        
         <div class = "box">
             <div class = "content">
-                    <a id=apply href = ""><img src="works.png"></a>
+                    <a id=serv_button href = ""><img src="serv6.png"></a>
             </div>   
             <a id = title>Commercial Law</a>  
         </div> 	<div class = "box">
             <div class = "content">
-                    <a id=apply href = ""><img src="assist.png"></a>
+                    <a id=serv_button href = ""><img src="serv7.png"></a>
             </div>  
             <a id = title>Taxation Law</a>
         </div> 	<div class = "box">
             <div class = "content">
-                    <a id=apply href = ""><img src="assist.png"></a>
+                    <a id=serv_button href = ""><img src="serv8.png"></a>
             </div> 
             <a id = title>Special Services</a>    
         </div> 
     </div>
     <br>
     <br>
+    <div class="button_holder">
+        <a id="see_button" href = "">SEE MORE</a> </div>
     <br>
 </div>
 
