@@ -14,7 +14,4 @@
   @include('layouts.references')
 </div>
 
-@include('feminine-layouts.feminine-content')
-@include('feminine-layouts.feminine-footer')
-
 @endsection

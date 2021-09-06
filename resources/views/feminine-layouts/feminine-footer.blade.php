@@ -86,7 +86,7 @@
                 font-size: 14px;
                 font-weight: 700;
                 font-style: italic;
-                line-height: 0.3cm;
+                line-height: 0.5cm;
             }
 
             .footer-others-bold-italic {
