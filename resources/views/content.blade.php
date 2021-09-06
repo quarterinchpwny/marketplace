@@ -321,7 +321,7 @@
           <div class="input-group">
                  <input type="email" class="form-control" placeholder="Ex. lawfirm.lexmeet.com">
                  <span class="input-group-btn">
-                 <p class="btn " >.lexmeet.com</p>
+                 <p class="btn" >.lexmeet.com</p>
                  </span>
                   </div>
           </div>
@@ -360,7 +360,42 @@
 
 <div class="p-3 pb-md-4 mx-auto text-center">
     <h2 class="display-5 fw-normal">Step 3 - Select your Website Template.</h1>
-
+      <div class="album py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4" >
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top"style="height: 34rem; width: 100%; display: block;" src=" " data-holder-rendered="true">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                      <a type="button" class="w-100 btn btn-lg btn-orange" href="#step2">Select</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top"style="height: 34rem; width: 100%; display: block;" src=" " data-holder-rendered="true">                
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                      <a type="button" class="w-100 btn btn-lg btn-orange" href="#step2">Select</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top"style="height: 34rem; width: 100%; display: block;" src=" " data-holder-rendered="true">                
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                      <a type="button" class="w-100 btn btn-lg btn-orange" href="#step2">Select</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
   </div>
 </div>
 @endsection
