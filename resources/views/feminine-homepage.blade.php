@@ -18,6 +18,7 @@
         <!-- Title -->
         <title>Law Updates</title>
 
+        <!-- CSS -->
         <style>
             html {
                 height: 100%;
@@ -38,6 +39,7 @@
             - 733657 (dark purple)
             */
 
+            /* Law Updates and Everyday Law */
             .blog-section {
                 font-family: 'Raleway', sans-serif;
                 font-size: 24px;
@@ -91,17 +93,17 @@
                 font-weight: 700;
                 font-size: 24px;
 
-                bottom: 2rem;
+                bottom: 4rem;
                 margin-top: auto;
             }
-
         </style>
     </head>
 
     <body>
-        <div class="blog-section row">
-            <div class="law-updates col-xl-6 pb-3 container-fluid">
-                <div class="card-body px-5">
+        <div class="blog-section row m-0">
+            <!-- Law Updates -->
+            <div class="law-updates col-lg-6 pb-5 position-relative">
+                <div class="card-body px-5 py-5">
                     <hr class="header-line-left border-1 mx-auto">
                     <div class="law-updates-header card-title text-center mt-4">LAW UPDATES</div>
 
@@ -111,7 +113,7 @@
 
                     <div class="law-updates-blog-title pb-4">Can your text message or e-mail message be used as evidence in court? </div>
 
-                    <div class="law-updates-blog-content">
+                    <div class="law-updates-blog-content mb-5">
                         Before the advent of computer age, we have been familiar with the use of documentary evidence in court such as contracts, agreements, letters and other writings. <br>
                         <br>
                         These writings printed in papers or paper-based documents are popularly known then as our documentary evidence. <br>
@@ -121,13 +123,14 @@
                     </div>
 
                     <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-                        <button class="btn-law-updates" type="button">LEARN MORE</button>
+                        <button class="btn-law-updates position-absolute" type="button">LEARN MORE</button>
                     </div>
                 </div>
             </div>
 
-            <div class="everyday-law col-xl-6 pb-5 container-fluid">
-                <div class="card-body px-5">
+            <!-- Everyday Law -->
+            <div class="everyday-law col-lg-6 pb-5 position-relative">
+                <div class="card-body px-5 py-5">
                     <hr class="header-line-right border-1 mx-auto">
                     <div class="everyday-law-header card-title text-center mt-4">EVERYDAY LAW</div>
 
@@ -137,7 +140,7 @@
 
                     <div class="everyday-law-blog-title pb-4">Co-maker ng 'di nagbayad sa utang, tama ba na ikaw ang singilin? </div>
 
-                    <div class="everyday-law-blog-content">
+                    <div class="everyday-law-blog-content mb-5">
                         Nakapirma ka na ba sa loan agreement bilang co-maker? <br>
                         <br>
                         Ano ang panganib kung ikaw ay pipirma bilang co-maker sa isang loan? <br>
@@ -145,12 +148,14 @@
                     </div>
 
                     <div class="d-grid gap-2 d-md-flex justify-content-md-center align-items-end">
-                        <button class="btn-everyday-law" type="button">LEARN MORE</button>
+                        <button class="btn-everyday-law position-absolute" type="button">LEARN MORE</button>
                     </div>
                 </div>
             </div>
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+        @include('layouts.feminine-footer')
     </body>
 </html>

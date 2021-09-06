@@ -18,6 +18,7 @@
         <!-- Title -->
         <title>Law Updates</title>
 
+        <!-- CSS -->
         <style>
             html {
                 height: 100%;
@@ -38,6 +39,7 @@
             - 733657 (dark purple)
             */
 
+            /* Law Updates and Everyday Law */
             .blog-section {
                 font-family: 'Raleway', sans-serif;
                 font-size: 24px;
@@ -94,7 +96,6 @@
                 bottom: 4rem;
                 margin-top: auto;
             }
-
         </style>
     </head>
 
