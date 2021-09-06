@@ -129,7 +129,7 @@
         <div class="flex justify-center bs-dirtywhite-bg">
             <div class="container-fluid">
                 <h2 class="os-title">Our Services</h2>
-                <hr style="width: 188px; margin-bottom: 40px;">
+                <hr style="width: 188px; margin-bottom: 35px;">
                 <div class="row">
                     <div class="col">
                         <div class="card">
@@ -180,7 +180,7 @@
         <div class="container-fluid">
             <div class="row">
             <h2>Law Practice Areas</h2>
-            <hr style="width: 188px;">
+            <hr style="width: 188px; margin-left: 15px;">
             </div>
         
             <div class="row" id="areas_pics">
@@ -251,7 +251,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <h2>Law Updates</h2>
-                    <hr style="width: 188px;">
+                    <hr style="width: 188px; margin-left: 15px;">
                 </div>
                 <div class="row" style="padding-left: 10px;">
                     <div class="col-7" >
@@ -272,42 +272,46 @@
                     </div>
 
                     <div class="col-2 justify-content-center" style="padding-right: 0px;">
-                        <img src="{{ URL::to('/') }}/NeutralHome_Graphics/law_updates_banner.png" alt="">
+                        <img src="{{ URL::to('/') }}/NeutralHome_Graphics/law_updates_banner.png" alt="Law Updates">
                     </div>
                 </div>
             </div>
         </section>
 
     <section id="everyday-law">
-            <div class="container-fluid">
-                <div class="row">
-                    <h2>Everyday Law </h2>
-                    <hr style="width: 188px; margin-left: 40px">
+        <div class="container-fluid">
+            <div class="row">
+                <h2>Everyday Law </h2>
+                <hr style="width: 188px; margin-left: 15px;">
+            </div>
+            <div class="row justify-content-center" style="padding: 30px 0 0 10px;">
+
+                <div class="col-2 justify-content-end" style="padding-right: 0px;">
+                    <img src="{{ URL::to('/') }}/NeutralHome_Graphics/law_video.png" alt="Everyday Law">
                 </div>
-                <div class="row" style="padding-left: 10px;">
 
-                    <div class="col-2 justify-content-center" style="padding-right: 0px;">
-                        <img src="{{ URL::to('/') }}/NeutralHome_Graphics/law_video.png" alt="">
+                <div class="col-5">
+                </div>
+
+                <div class="col-5 " >
+                    <div id="updates-heading">
+                        <div>
+                            <p id="title1">"Co-maker ng di nagbayad sa utang,</p>
+                        </div>
+                        
+                        <p id="title2">Tama ba na <br>ikaw ang singilin?"</p>
+                        
                     </div>
-
-                    <div class="col-1">
+                    <div id="updates-content">
+                        <p id="everyday_content">Nakapirma ka na ba sa loan agreement bilang co-maker?</p>
+                        <p id="everyday_content">Ano ang panganib kung ikaw ay pipirma bilang co-maker sa isang loan?</p>
                     </div>
-
-                    <div class="col-7" >
-                        <div id="updates-heading">
-                            <p>Can your text message or e-mail message be used as evidence in court?</p>
-                        </div>
-                        <div id="updates-content">
-                            <p>Before the advent of computer age, we have been familiar with the use of documentary evidence in court such as contracts, agreements, letters and other writings.</p>
-                            <p>These writings printed in papers or paper-based documents are popularly known then as our documentary evidence.</p>
-                            <p>At that time, text message or e-mail message, as it was not yet widely used and known in the Philippines, are not considered as documentary evidence by our courts of law. </p>
-                        </div>
-                        <div style="padding-top:30px">
-                            <a class="btn" href="#" role="button" id="areas_seemore" >SEE MORE</a>
-                        </div>
+                    <div style="padding-top:30px">
+                        <a class="btn" href="#" role="button" id="everyday_seemore">SEE MORE</a>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 </body>
 </html>
