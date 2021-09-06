@@ -40,7 +40,7 @@
 
             .blog-section {
                 font-family: 'Raleway', sans-serif;
-                font-size: 24px;
+                font-size: 24vh;
                 font-weight: 500;
                 color: black;
                 line-height: 0.7cm;
