@@ -40,7 +40,7 @@
 
             .blog-section {
                 font-family: 'Raleway', sans-serif;
-                font-size: 18px;
+                font-size: 24px;
                 font-weight: 500;
                 color: black;
                 line-height: 0.7cm;
@@ -48,12 +48,12 @@
 
             .header-line-left {
                 border: 1.5px solid white;
-                width: 50px;
+                width: 100px;
             }
 
             .header-line-right {
                 border: 1.5px solid #733657;
-                width: 50px;
+                width: 100px;
             }
 
             .law-updates {
@@ -70,8 +70,8 @@
             }
 
             .law-updates-header, .everyday-law-header {
-                font-family: 'Libre Baskerville', serif;
-                font-size: 24px;
+                font-family: 'Raleway', serif;
+                font-size: 40px;
                 font-weight: 700;
             }
 
@@ -85,12 +85,16 @@
 
             .btn-law-updates, .btn-everyday-law {
                 background-color: #B5375B;
+                border: 1px solid #B5375B;
                 border-radius: 10px;
-                width: 200px;
+                width: 300px;
                 height: 50px;
 
                 color: white;
+                font-weight: 700;
+                font-size: 24px;
 
+                bottom: 2rem;
                 margin-top: auto;
             }
 
@@ -102,13 +106,13 @@
             <div class="law-updates col-lg-6 pb-3">
                 <div class="card-body px-5">
                     <hr class="header-line-left border-1 mx-auto">
-                    <div class="law-updates-header card-title text-center">LAW UPDATES</div>
+                    <div class="law-updates-header card-title text-center mt-4">LAW UPDATES</div>
 
-                    <div class="law-updates-picture py-3 text-center container-fluid">
+                    <div class="law-updates-picture text-center container-fluid py-5">
                         <img src="{{ URL::to('/') }}/feminine-image/law-update.jpeg" class="img-law-updates img-fluid rounded mx-auto d-block" alt="Featured Law Update">
                     </div>
 
-                    <div class="law-updates-blog-title py-4">Can your text message or e-mail message be used as evidence in court? </div>
+                    <div class="law-updates-blog-title">Can your text message or e-mail message be used as evidence in court? </div>
 
                     <div class="law-updates-blog-content">
                         Before the advent of computer age, we have been familiar with the use of documentary evidence in court such as contracts, agreements, letters and other writings. <br>
@@ -120,7 +124,7 @@
                     </div>
 
                     <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-                        <button class="btn-law-updates btn" type="button">LEARN MORE</button>
+                        <button class="btn-law-updates" type="button">LEARN MORE</button>
                     </div>
                 </div>
             </div>
@@ -128,13 +132,13 @@
             <div class="everyday-law col-lg-6 pb-5 position-relative">
                 <div class="card-body px-5">
                     <hr class="header-line-right border-1 mx-auto">
-                    <div class="everyday-law-header card-title text-center">EVERYDAY LAW</div>
+                    <div class="everyday-law-header card-title text-center mt-4">EVERYDAY LAW</div>
 
-                    <div class="everyday-law-picture py-3 text-center container-fluid">
+                    <div class="everyday-law-picture text-center container-fluid py-5">
                         <img src="{{ URL::to('/') }}/feminine-image/everyday-law-sample-pic.jpg" class="img-everyday-law img-fluid rounded mx-auto d-block" alt="Featured Everyday Law">
                     </div>
 
-                    <div class="everyday-law-blog-title py-4">Co-maker ng 'di nagbayad sa utang, tama ba na ikaw ang singilin? </div>
+                    <div class="everyday-law-blog-title">Co-maker ng 'di nagbayad sa utang, tama ba na ikaw ang singilin? </div>
 
                     <div class="everyday-law-blog-content">
                         Nakapirma ka na ba sa loan agreement bilang co-maker? <br>
@@ -143,8 +147,8 @@
                         <br>
                     </div>
 
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-                        <button class="btn-everyday-law btn position-absolute bottom-0" type="button">LEARN MORE</button>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-center align-items-end">
+                        <button class="btn-everyday-law" type="button">LEARN MORE</button>
                     </div>
                 </div>
             </div>
