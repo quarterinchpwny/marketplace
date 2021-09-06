@@ -54,13 +54,84 @@
         </div>
     </nav>
 
+    <!-- log-in section -->
+    <section id="login" >
+            <div class="container-fluid ">
+                <div class="row justify-content-center align-items-center ">
+                    <div class="col-md-5 col-lg-9 d-none d-md-block padding-0">
+                        <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="{{ URL::to('/') }}/NeutralHome_Graphics/banner.png" class="d-block w-100" alt="banner picture" width="1289px" height="825px">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <div id="headline">Lorem, ipsum dolor sit amet </div>
+                                    <div id="subheadline">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui modi soluta dolorem tempore fugiat molestiae!</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div id ="login_panel" class="col-lg-3 padding-0" style="height: 825px;" >
+                        <div class="p-5 text-dark">
+                            <div class="co-md-5 text-center" >
+                                <div>
+                                    <img class="img-fluid" src="{{ URL::to('/') }}/NeutralHome_Graphics/RLOLogo.png" alt="logo" width="76px"> 
+                                </div>
+                            
+                                <div id="login_title"><p class = "p-welcome">Welcome to Rizal Law Office</p></div>
+                              
+                                <div class="input-group mb-3">
+                                    <input id="login_field" type="text" class="form-control d-bl" placeholder="Email" aria-label="Email"> <br>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <input id="login_field" type="text" class="form-control" placeholder="Password" aria-label="Password">
+                                </div>
+                                <div id="login_remember" class="form-check justify-content-start text-start">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Remember Me
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <a id="login_button" href="#services" class="btn btn-primary btn-md" >LOG IN</a>
+                                </div>
+                                
+                                <div>
+                                    <a id="login_forgot" href="#" class="text-decoration-none">Forgot Password</a>
+                                </div>
+                               
+                                <div>
+                                    <a id="login_social" href="#services" class="btn btn-primary btn-md" style="padding-left: 30px;"> <img src="{{ URL::to('/') }}/NeutralHome_Graphics/fb_icon.png" alt="" style="padding-left: 15px; padding-right: 5px;" width="47px">LOGIN WITH FACEBOOK</a>
+                                    <a id="login_social" href="#services" class="btn btn-primary btn-md" style="padding-left: 30px;"> <img src="{{ URL::to('/') }}/NeutralHome_Graphics/google_icon.png" alt="" style="padding-left: 15px; padding-right: 5px;" width="47px">LOGIN WITH GOOGLE</a>
+                                </div>
+
+                                <div id="hr">
+                                <p><hr class="hr-login"></p>
+                                </div>
+                                
+                                <div>
+                                    <p id="login_notice" >Don't have an account yet?</p>
+                                    <a id="login_create" href="#" class="text-decoration-none">Create an Account</a>
+                                </div>
+                                
+                            </div>
+                            <div id="powered">
+                                Powered by <img src="{{ URL::to('/') }}/NeutralHome_Graphics/LM_logo.png" alt="" >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     <section id="ourservices">
         <div class="flex justify-center bs-dirtywhite-bg">
-            <div class="container">
-                <h3 class="os-title">Our Services</h3>
-                <hr>
+            <div class="container-fluid">
+                <h2 class="os-title">Our Services</h2>
+                <hr style="width: 188px; margin-bottom: 40px;">
                 <div class="row">
-                    <div class="col-sm-3">
+                    <div class="col">
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title">ASSIST</h5>
@@ -70,7 +141,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col">
                     <div class="card">
                             <div class="card-body">
                                <h5 class="card-title">CONSULT</h5>
@@ -80,7 +151,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col">
                     <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title">WORKS</h5>
@@ -90,7 +161,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3"> 
+                    <div class="col"> 
                     <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title">DOCS</h5>
@@ -105,11 +176,82 @@
         </div>
     </section>
 
+    <section id="law-practice">
+        <div class="container-fluid">
+            <div class="row">
+            <h2>Law Practice Areas</h2>
+            <hr style="width: 188px;">
+            </div>
+        
+            <div class="row" id="areas_pics">
+            <div class="col-3">
+                <div class="zoom"><img src="{{ URL::to('/') }}/NeutralHome_Graphics/perosnal.png" alt=""></div>
+            </div>
+            <div class="col-3">
+                <div class="zoom"><img src="{{ URL::to('/') }}/NeutralHome_Graphics/civil.png" alt=""></div>
+            </div>
+            <div class="col-3">
+                <div class="zoom"><img src="{{ URL::to('/') }}/NeutralHome_Graphics/commercial.png" alt=""></div>
+            </div>
+            <div class="col-3">
+                <div class="zoom"><img src="{{ URL::to('/') }}/NeutralHome_Graphics/labor.png" alt=""></div>
+            </div>
+            </div>
+        
+        <div class="row" id="areas_labels">
+            <div class="col-3">
+                <p>Personal and Family Law</p>
+            </div>
+            <div class="col-3">
+                <p>Civil Law</p>
+            </div>
+            <div class="col-3">
+                <p>Commercial Law</p>
+            </div>
+            <div class="col-3">
+                <p>Labor Law</p>
+            </div>
+            </div>
+
+        <div class="row" id="areas_pics">
+            <div class="col-3">
+                <div class="zoom"><img src="{{ URL::to('/') }}/NeutralHome_Graphics/immigration.png" alt=""></div>
+            </div>
+            <div class="col-3">
+                <div class="zoom"><img src="{{ URL::to('/') }}/NeutralHome_Graphics/criminal.png" alt=""></div>
+            </div>
+            <div class="col-3">
+                <div class="zoom"><img src="{{ URL::to('/') }}/NeutralHome_Graphics/taxation.png" alt=""></div>
+            </div>
+            <div class="col-3">
+                <div class="zoom"><img src="{{ URL::to('/') }}/NeutralHome_Graphics/special_services.png" alt=""></div>
+            </div>
+        </div>
+        <div class="row" id="areas_labels">
+            <div class="col-3">
+                <p>Immigration Law</p>
+            </div>
+            <div class="col-3">
+                <p>Criminal Law</p>
+            </div>
+            <div class="col-3">
+                <p>Taxation Law</p>
+            </div>
+            <div class="col-3">
+                <p>Special Services Law</p>
+            </div>
+            </div>
+        </div>
+        <div class="row justify-content-center" id="areas_buttons">
+            <a class="btn" href="#" role="button" id="areas_seemore">SEE MORE</a>
+        </div>
+    </section>
+
     <section id="everyday-law">
             <div class="container-fluid">
                 <div class="row">
                     <h2>Everyday Law </h2>
-                    <hr style="width: 188px;">
+                    <hr style="width: 188px; margin-left: 40px">
                 </div>
                 <div class="row" style="padding-left: 10px;">
 
