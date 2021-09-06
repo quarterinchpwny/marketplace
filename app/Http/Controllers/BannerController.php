@@ -8,7 +8,7 @@ class BannerController extends Controller
 {
     public function index(){
 
-        return view('banner');
+        return view('banner-area');
 
     }
 }
