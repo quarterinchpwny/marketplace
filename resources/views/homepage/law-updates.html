@@ -19,9 +19,14 @@
         <title>Law Updates</title>
 
         <style>
-            * {
-                font-family: 'Libre Baskerville', serif;
-                font-family: 'Raleway', sans-serif;
+            html {
+                height: 100%;
+            }
+
+            body {
+                min-height: 100%;
+                display: flex;
+                flex-direction: column;
             }
 
             /*
@@ -34,10 +39,21 @@
             */
 
             .blog-section {
-                font-size: 24px;
+                font-family: 'Raleway', sans-serif;
+                font-size: 18px;
                 font-weight: 500;
                 color: black;
                 line-height: 0.7cm;
+            }
+
+            .header-line-left {
+                border: 1.5px solid white;
+                width: 50px;
+            }
+
+            .header-line-right {
+                border: 1.5px solid #733657;
+                width: 50px;
             }
 
             .law-updates {
@@ -54,25 +70,40 @@
             }
 
             .law-updates-header, .everyday-law-header {
+                font-family: 'Libre Baskerville', serif;
+                font-size: 24px;
                 font-weight: 700;
             }
 
             .law-updates-blog-title, .everyday-law-blog-title {
+                font-size: 24px;
                 font-weight: 700;
             }
+
+            .btn-law-updates, .btn-everyday-law {
+                background-color: #B5375B;
+                border-radius: 10px;
+                width: 200px;
+                height: 50px;
+
+                color: white;
+
+                margin-top: auto;
+            }
+
         </style>
     </head>
 
     <body>
         <div class="blog-section row">
-            <div class="law-updates col-lg-6">
-                <div class="card-body">
-                    <hr>
+            <div class="law-updates col-lg-6 pb-3">
+                <div class="card-body px-5">
+                    <hr class="header-line-left border-1 mx-auto">
                     <div class="law-updates-header card-title text-center">LAW UPDATES</div>
 
-                    <div class="law-updates-picture">pix here</div>
+                    <div class="law-updates-picture py-3 text-center">pix here</div>
 
-                    <div class="law-updates-blog-title">Can your text message or e-mail message be used as evidence in court? </div>
+                    <div class="law-updates-blog-title py-4">Can your text message or e-mail message be used as evidence in court? </div>
 
                     <div class="law-updates-blog-content">
                         Before the advent of computer age, we have been familiar with the use of documentary evidence in court such as contracts, agreements, letters and other writings. <br>
@@ -84,18 +115,19 @@
                     </div>
 
                     <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-                        <button class="btn btn-primary" type="button">LEARN MORE</button>
+                        <button class="btn-law-updates btn" type="button">LEARN MORE</button>
                     </div>
                 </div>
             </div>
 
-            <div class="everyday-law col-lg-6">
-                <div class="card-body">
+            <div class="everyday-law col-lg-6 pb-5 position-relative">
+                <div class="card-body px-5">
+                    <hr class="header-line-right border-1 mx-auto">
                     <div class="everyday-law-header card-title text-center">EVERYDAY LAW</div>
 
-                    <div class="everyday-law-picture">pix here</div>
+                    <div class="everyday-law-picture py-3 text-center">pix here</div>
 
-                    <div class="everyday-law-blog-title">Co-maker ng 'di nagbayad sa utang, tama ba na ikaw ang singilin? </div>
+                    <div class="everyday-law-blog-title py-4">Co-maker ng 'di nagbayad sa utang, tama ba na ikaw ang singilin? </div>
 
                     <div class="everyday-law-blog-content">
                         Nakapirma ka na ba sa loan agreement bilang co-maker? <br>
@@ -105,7 +137,7 @@
                     </div>
 
                     <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-                        <button class="btn btn-primary" type="button">LEARN MORE</button>
+                        <button class="btn-everyday-law btn position-absolute bottom-0" type="button">LEARN MORE</button>
                     </div>
                 </div>
             </div>
