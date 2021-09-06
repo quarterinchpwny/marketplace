@@ -37,6 +37,7 @@ Route::middleware(['auth'])->group(function () {
   });
 });
 
+// New
 Route::get('/feminine', [App\Http\Controllers\FeminineHomepageController::class, 'index'])->name('feminine');
 
 // Carl Note
