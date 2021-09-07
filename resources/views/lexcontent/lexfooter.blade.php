@@ -1,9 +1,4 @@
-@extends('main.NeutralHome')
-
-@section('content')
-<!-- footer -->
-             <!-- footer -->
-             <section id="footer">
+<section id="footer">
         <div class="container-fluid .padding-0">
             <div class="row" id="footer_top" >
                 <div class="col-6" id="footer_logo">
@@ -59,4 +54,3 @@
             </div>    
         </div>
     </section>
-@endsection

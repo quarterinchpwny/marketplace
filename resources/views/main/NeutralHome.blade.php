@@ -53,7 +53,11 @@
             </div>
         </div>
     </nav>
-    
-    @yield('login')
+    @include('lexcontent.lexlogin')
+    @include('lexcontent.lexourservices')
+    @include('lexcontent.lexpractice')
+    @include('lexcontent.lexlawupdates')
+    @include('lexcontent.lexeverydaylaw')
+    @include('lexcontent.lexfooter')
 </body>
 </html>
