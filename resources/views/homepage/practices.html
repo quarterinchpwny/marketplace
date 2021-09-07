@@ -1,6 +1,12 @@
 <html>
 
 <head>
+
+    <!-- Font Style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
    
     <style>
         .intro_holder{
@@ -13,8 +19,17 @@
             text-align: center;
             color: #733657;
             font-size: 48px;
-            line-height: 20px;
+            line-height: 10px;
+            font-family: 'Libre Baskerville', serif;
+            padding-top: 25px;
         }
+
+        .intro-line {
+                border: 1.5px solid #733657;
+                width: 300px;
+            }
+
+
         .practices_content {
             width: 1934px;
             height: 1285px;
@@ -31,7 +46,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            padding-top: 40px;
+            padding-top: 10px;
             
         }
 
@@ -110,30 +125,40 @@
             text-align: center;
             color: #fff;
             font-size: 36px;
-            font-family:monospace;
             text-align: center;
+            font-family: 'Raleway', sans-serif;
             color: #733657;
         }
 
         .button_holder
         {
             text-align: center;
+            padding-top: 50px;
         }
 
         #see_button
         {
             display: inline-block;
             padding: 20px;
-		    width: 260px;
+		    width: 200px;
+            height: 50px;
             background: #B5375B;
             border-radius: 10px;
             text-decoration: none;
+            padding-top: 10px;
+        }
+
+        #button_text
+        {
             color: #fff;
             font-size: 25px;
             font-weight: 500;
-            margin-top: 45px;
+            padding-top: 0 30px;
             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            font-family: 'Raleway', sans-serif;
         }
+
+
     </style>
 
 </head>
@@ -143,9 +168,9 @@
 <div class = "practices_content">
  
     <div class = intro_holder>
-        <div><br></div>
+        <div><br><br></div>
         <div class = "intro_text">
-            <h1>____</h1>
+            <hr class="intro-line border-1 mx-auto">
             <h1 class="intro_text">PRACTICE AREAS</h1>
         </div>
     </div>
@@ -205,8 +230,10 @@
     </div>
     <br>
     <br>
-    <div class="button_holder">
-        <a id="see_button" href = "">SEE MORE</a> </div>
+    <div class="button_holder text-align: cente">
+        <a id="see_button"href = "">
+        <h1 id = "button_text">SEE MORE</h1>
+        </a> </div>
     <br>
 </div>
 

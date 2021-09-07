@@ -1,6 +1,12 @@
 <html>
 
 <head>
+
+    <!-- Font Style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
    
     <style>
 
@@ -51,8 +57,8 @@
         .container .box 
         {
             position: relative;
-            width: 439px;
-            height: 829px;
+            width: 460px;
+            height: 830px;
             background: #ffedf2ee;
             box-shadow: 0 5px 15px rgba(0,0,0,.1);
             border-radius: 10px;
@@ -93,35 +99,51 @@
            
             height: 225px;
 		    padding: center;
-            margin-top: 10%;
+            margin-top: 100px;
         }
 
         .captionholder
         {
-            height: 250px;
+            height: 120px;
         }
 
         #caption
         {
-            font-size: 30px;
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 33px;
+            line-height: 39px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin-top: 55px;
+
             color: #733657;
-            padding-top: 100px;
         }
 
         #button
         {
             display: inline-block;
 		    width: 370px;
-            height: 120px;
+            height: 128px;
             background: #B5375B;
             border-radius: 10px;
             text-decoration: none;
-            color: #fff;
-            font-size: 42.26px;
-            text-align: center;
-            margin-top: 100px;
-            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            margin-top: 90px;
+        }
 
+        #button_text
+        {
+            text-decoration: none;
+            color: #fff;
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 42.26px;
+            text-align: center;
+            margin-top: 20px;
         }
         .container .box:hover .content #button
         {
@@ -134,6 +156,10 @@
             height: 70px;
             background-color: #B5375B;
             margin-top: 80px;
+
+            background: #B5375B;
+            box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+            transform: matrix(1, 0, 0, -1, 0, 0);
         }
     </style>
 
@@ -160,9 +186,9 @@
             <div class = "captionholder">
                 <h3 id="caption"> FREE Legal <br> Assessment</h3>
             </div>
-            
-			
-			<a id=button href = "">Ask <br> Lawyers</a>
+            <a id=button href = "">
+                <h1 id ="button_text">Ask <br> Lawyers</h1>
+            </a>
 		</div>     
 	</div> 
 	<div class = "box">
@@ -172,7 +198,9 @@
             <div class = "captionholder">
                 <h3 id="caption"> Paid Legal <br> Consultation</h3>
             </div>
-				<a id=button href = "">Submit Legal <br> Problems</a>
+                <a id=button href = "">
+                    <h1 id ="button_text">Submit Legal <br> Problems</h1>
+                </a>
 		</div>     
 	</div> 
 	<div class = "box">
@@ -182,7 +210,9 @@
             <div class = "captionholder">
                 <h3 id="caption"> FREE Legal Fee <br> Crowdsourcing and <br> Paid Legal Works <br> Escrow Delivery</h3>
             </div>
-				<a id=button href = "">Request <br> Proposal</a>
+            <a id=button href = "">
+                <h1 id = "button_text">Request<br>Proposal</h1>
+            </a>
 		</div>     
 	</div> 
 	<div class = "box">
@@ -192,7 +222,9 @@
             <div class = "captionholder">
                 <h3 id="caption">Create Your Own Legal<br>Documents From<br>Hundreds of<br>Templates</h3>
             </div>
-			<a id=button href = "">Create Legal <br> Document</a>
+			<a id=button href = "">
+                <h1 id ="button_text">Create Legal <br> Document</h1>
+            </a>
 		</div>     
 	</div> 
 </div>
