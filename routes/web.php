@@ -33,6 +33,13 @@ Route::middleware(['auth'])->group(function () {
   });
 });
 
+//CMS Route
+
+Route::get('cms', [App\Http\Controllers\cmscontroller::class, 'index'])->name('cms');
+
+
+
+
 
 // Carl Note
 // if route changes not work try to run "php artisan optimize"
