@@ -1,7 +1,7 @@
 @extends('main.NeutralHome')
 
 @section('content')
-<section id="law-practice">
+    <section id="law-practice">
         <div class="container-fluid">
             <div class="row">
             <h2>Law Practice Areas</h2>

@@ -53,7 +53,7 @@
             </div>
         </div>
     </nav>
-
-    @yield('content')
+    
+    @yield('login')
 </body>
 </html>
