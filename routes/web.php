@@ -13,11 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/feminine-homepage', [App\Http\Controllers\FeminineHomepageController::class, 'index'])->name('feminine-homepage');
 
-Route::get('/navigation', [App\Http\Controllers\NavController::class, 'index'])->name('navigation');
-
-Route::get('/banner-area', [App\Http\Controllers\BannerController::class, 'index'])->name('banner-area');
 
 // Public Routes
 Route::get('/', [App\Http\Controllers\AppController::class, 'index'])->name('home');
@@ -41,6 +37,12 @@ Route::middleware(['auth'])->group(function () {
 
 // New
 Route::get('/feminine', [App\Http\Controllers\FeminineHomepageController::class, 'index'])->name('feminine');
+
+Route::get('/feminine-homepage', [App\Http\Controllers\FeminineHomepageController::class, 'index'])->name('feminine-homepage');
+
+Route::get('/navigation', [App\Http\Controllers\NavController::class, 'index'])->name('navigation');
+
+Route::get('/banner-area', [App\Http\Controllers\BannerController::class, 'index'])->name('banner-area');
 
 // Carl Note
 // if route changes not work try to run "php artisan optimize"
