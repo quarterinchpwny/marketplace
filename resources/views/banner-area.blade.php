@@ -104,7 +104,7 @@
             #login_remember{
                 color: #641F43;
                 font-size: 17px;
-                padding-left: 90px;
+                padding-left: 60px;
                 padding-bottom: 30px;
                 font-weight: 400;
             }
@@ -177,6 +177,147 @@
                 position: absolute;
                 top: 0px;
                 padding: 70px 30px 60px 1220px;
+                z-index: 22;
+            }
+
+            /* Signup Form CSS  */
+
+            #signup_panel{
+                background-color: #FAF8F5;
+                height: 759px;
+            }
+
+            #signup_title{
+                color: rgb(100, 31, 67);
+                font-size: 48px;
+                font-family: 'Raleway';
+                font-weight: bold;
+                text-align: center;
+                padding-top: 30px;
+            }
+            #signup_field{
+                width: 200px;
+                background: #FFFFFF;
+                border: solid 1px #641F43;
+                box-sizing: border-box;
+                border-radius: 10px;
+                font-size: 15px;
+                font-weight:400;
+                color: #641F43;
+            }
+
+            #signup_form{
+                background-color: rgb(255, 226, 234);
+                opacity: 1;
+                height: 750px; 
+                width: 600px;
+                padding: 20px;
+            }
+
+            #signup_button{
+                width: 300px;
+                height: 50px;
+                background: #B5375B;
+                border-radius: 10px;
+                border: solid 1px #B5375B;
+                font-weight: 700;
+                font-size: 24px;    
+            }
+
+            #signup_button:hover{
+                color: #641F43;
+                background: white;
+            }
+
+
+            #signup_remember{
+                color: #641F43;
+                font-size: 17px;
+                padding-left: 130px;
+                padding-bottom: 30px;
+                font-weight: 400;
+            }
+
+            #signup_social{
+                
+                width: 245px;
+                height: 50px;
+                background: #FFFFFF;
+                border-radius: 10px;
+                border: solid 1px #641F43;
+                font-weight: 700;
+                padding-top: 10px;
+                text-align: right;
+                color: #641F43;
+                font-size: 18px;
+
+            }
+
+            #signup_notice{
+                font-size: 20px;
+                font-weight: 300;
+                color: #641F43;
+                padding: 5px;
+                font-weight: 500;
+            }
+
+            #signup_login_up{
+                margin-top:0;
+                font-size: 20px;
+                font-weight: 700;
+                padding: 5px;
+                color: #B5375B;
+            }
+
+            #sign-up-container{
+                position: absolute;
+                top: 0px;
+                padding: 70px 30px 60px 1220px;
+                z-index: 21;
+	            opacity: 0;
+            }
+
+            /* Animation Swapping of Login and Signup*/
+
+            #toregister:target ~ #wrapper #sign-up-container,
+            #tologin:target ~ #wrapper #login-container{
+            z-index: 22;
+            animation-name: fadeInLeft;
+            animation-delay: .1s;
+            }
+
+            .animate{
+                animation-duration: 0.5s;
+                animation-timing-function: ease;
+                animation-fill-mode: both;
+            }
+            @keyframes fadeInLeft {
+                0% {
+                    opacity: 0;
+                    transform: translateX(-20px);
+                }
+                
+                100% {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+            }
+            
+            #toregister:target ~ #wrapper #login-container,
+            #tologin:target ~ #wrapper #sign-up-container{
+                animation-name: fadeOutLeftBig;
+            }
+
+            @keyframes fadeOutLeft {
+                0% {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+                
+                100% {
+                    opacity: 0;
+                    transform: translateX(-20px);
+                }
             }
 
         </style>
@@ -184,11 +325,10 @@
     </head>
 
     <body>
+
         <!-- Banner / Header -->
         <div class="banner-area">
-            <section id="login"> 
-                <div class="container-fluid">
-                <div id="header-container" class="">
+                    <div id="header-container" class="">
                         <div class="header-area">
                             <h1>Lorem, ipsum dolor sit amet </h1>
                             <p>Aliquam nibh massa, fringilla a malesuada ut, sagittis ut sem. Quisque metus mauris, tristique nec lectus a, vehicula cursus elit.</p>
@@ -200,6 +340,8 @@
 	                        <a class="hiddenanchor" id="tologin"></a>
 
                         <div id="wrapper">
+
+                                <!-- Login Form -->
                             <div id="login-container" class="animate form">
                                 <div id="login_form" class="col-lg-5 padding-1">
         
@@ -255,10 +397,63 @@
                                     
                                 </div>
                             </div>
-                        </div>               
-                </div>
-            </section>
-            
+
+                                        <!-- Sign up Form -->
+                                <div id="sign-up-container" class="animate form">
+                                    <div id="signup_form" class="col-lg-5 padding-1">
+                                    
+                                            <div class="co-md-5 text-center" >
+                                            
+                                                <div id="signup_title"><p>Create Your Account</p></div>
+                                    
+                                                <br>
+                                                <div>
+                                                    <a id="signup_social" href="#" class="btn btn-primary btn-md" style="padding-left: 5px;"> <img src="images/google.png" alt="" style="padding-left: 10px; padding-right: 5px;" width="55px">Login with Google</a>
+                                                    <a id="signup_social" href="#" class="btn btn-primary btn-md" style="padding-left: 5px;"> <img src="images/facebook.png" alt="" style="padding-left: 10px; padding-right: 5px;" width="47px">Login with Facebook</a>
+                                                </div>
+                                    
+                                                <div class="break-line"> 
+                                                    <p>___________________________________ or ____________________________________</p>
+                                                </div>
+                                    
+                                                <div class="input-group mb-3">
+                                                    <input id="signup_field" type="text" class="form-control d-bl" placeholder="Email" aria-label="Email"> <br>
+                                                </div>
+                                    
+                                                <div class="input-group mb-3">
+                                                    <input id="signup_field" type="text" class="form-control" placeholder="Password" aria-label="Password">
+                                                </div>
+                                    
+                                                <div class="input-group mb-3">
+                                                    <input id="signup_field" type="text" class="form-control" placeholder="Retype Password" aria-label="Retype Password">
+                                                </div>
+                                    
+                                                <div id="login_remember" class="form-check justify-content-start text-start">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                                    <label class="form-check-label" for="flexCheckChecked">
+                                                        Remember Me
+                                                    </label>
+                                                </div>
+                                    
+                                                <div>
+                                                    <a id="signup_button" href="#services" class="btn btn-primary btn-md" >Sign up</a>
+                                                </div>
+                                                
+                                                <div>
+                                                    <p id="signup_notice" >Already have an account? <a id="signup_login_up" href="#tologin" class="text-decoration-none">Log in</a></p>
+                                                </div>
+                                                
+                                            </div>
+                                    
+                                            <div id="powered">
+                                                Powered by <img src="images/power1.png" alt="" width="100px" >
+                                            </div>
+                                    
+                                        
+                                    </div>
+                                </div>
+
+                        </div>
                      
         </div>
 
