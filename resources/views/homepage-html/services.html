@@ -1,32 +1,32 @@
 <html>
 
 <head>
+
+    <!-- Font Style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
    
     <style>
 
-
-    
-
-       	 #eservices_button {
-           	 
-            background-color: #b5375b;
-           	 }
-
-		.intro_page{
+		.intro_holder{
 		background-color: #b5375b;
-		height: 100px;
-		text-align: center;
-        padding-top: 0%;
-        color: #fff;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        font-size: 20px;
-        line-height: 15px;
-        
+		height: 160px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 		}
-       
 
-            .eservices_content {
-            
+        .intro_text
+        {
+            text-align: center;
+            color: #fff;
+            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+            font-size: 48px;
+            line-height: 20px;
+        }
+            .services_content {
+            width: 1934px;
+            height: 1285px;
             background-image: url("https://media.istockphoto.com/photos/judge-gavel-with-justice-lawyers-business-woman-in-suit-or-lawyer-on-picture-id1130829509?k=20&m=1130829509&s=612x612&w=0&h=9VMWql4leRnpb53RSt9fW7-V999aUp9PnvVReSj1RBg=");
             background-blend-mode:overlay ;
             background-size: cover;
@@ -36,8 +36,8 @@
             text-align: center;
             
             }
-            .eservices_content {
-            background-color: #d08197a6;
+            .services_content {
+            background-color: #d08197b7;
             }
 
         p {
@@ -50,18 +50,18 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
+            padding-top: 60px;
             
         }
 
         .container .box 
         {
             position: relative;
-            width: 350px;
-            height: 600px;
-            padding: AUTO;
-            background: #ddc0c7bd;
+            width: 460px;
+            height: 830px;
+            background: #ffedf2ee;
             box-shadow: 0 5px 15px rgba(0,0,0,.1);
-            border-radius: 4px;
+            border-radius: 10px;
             margin: 0 auto;
             box-sizing: border-box;
             overflow: hidden;
@@ -76,15 +76,9 @@
             z-index: 1;
 	        padding: 30 0;
             transition: 0.5s;
-            margin-top: 50px;
+            margin-top: 20px;
 
         }
-
-        .container .box:hover .content
-        {
-            color: #ffffff;
-        }
-
 
         .container .box .content h3
         {
@@ -103,34 +97,70 @@
         .container .box .content img
         {
            
-            height: 200px;
+            height: 225px;
 		    padding: center;
-            margin-top: 10%;
+            margin-top: 100px;
         }
 
-        #apply
+        .captionholder
+        {
+            height: 120px;
+        }
+
+        #caption
+        {
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 33px;
+            line-height: 39px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin-top: 55px;
+
+            color: #733657;
+        }
+
+        #button
         {
             display: inline-block;
-            padding: 20px;
-		    width: 260px;
+		    width: 370px;
+            height: 128px;
             background: #B5375B;
-            border-radius: 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            margin-top: 90px;
+        }
+
+        #button_text
+        {
             text-decoration: none;
             color: #fff;
-            font-size: 20px;
-            font-weight: 500;
-            margin-top: 50%;
-            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            box-shadow: -1px 5px 4px 3px #332c2e63;
-          
-
-
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 42.26px;
+            text-align: center;
+            margin-top: 20px;
         }
-        .container .box:hover .content #apply
+        .container .box:hover .content #button
         {
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
         }
 
+
+        .last_holder
+        {
+            height: 70px;
+            background-color: #B5375B;
+            margin-top: 80px;
+
+            background: #B5375B;
+            box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+            transform: matrix(1, 0, 0, -1, 0, 0);
+        }
     </style>
 
 </head>
@@ -139,16 +169,12 @@
 
    
 
-<div class = "eservices_content">
-    <br>
-    <div class = intro_page>
-    <h1>
-        ____________
-    </h1>
-    <h2 class="intro_text">
-       OUR SERVICES
-    </h2>
-
+<div class = "services_content">
+    <div class = "intro_holder">
+        <div class = "intro_text">
+            <h1>____</h1>
+            <h1 class="intro_text">OUR SERVICES</h1>
+        </div>
     </div>
     <br>
     <br>
@@ -157,35 +183,54 @@
 		<div class = "icon"></div>
 		<div class = "content">
 			<h3> <img src="assist.png"> </h3>
-			
-				<a id=apply href = "">Ask <br> Lawyers</a>
+            <div class = "captionholder">
+                <h3 id="caption"> FREE Legal <br> Assessment</h3>
+            </div>
+            <a id=button href = "">
+                <h1 id ="button_text">Ask <br> Lawyers</h1>
+            </a>
 		</div>     
 	</div> 
 	<div class = "box">
 		<div class = "icon"></div>
 		<div class = "content">
 			<h3> <img src="consult.png"> </h3>
-				<a id=apply href = "">Submit Legal <br> Problems</a>
+            <div class = "captionholder">
+                <h3 id="caption"> Paid Legal <br> Consultation</h3>
+            </div>
+                <a id=button href = "">
+                    <h1 id ="button_text">Submit Legal <br> Problems</h1>
+                </a>
 		</div>     
 	</div> 
 	<div class = "box">
 		<div class = "icon"></div>
 		<div class = "content">
 			<h3> <img src="works.png"> </h3>
-				<a id=apply href = "">Request <br> Proposal</a>
+            <div class = "captionholder">
+                <h3 id="caption"> FREE Legal Fee <br> Crowdsourcing and <br> Paid Legal Works <br> Escrow Delivery</h3>
+            </div>
+            <a id=button href = "">
+                <h1 id = "button_text">Request<br>Proposal</h1>
+            </a>
 		</div>     
 	</div> 
 	<div class = "box">
 		<div class = "icon"></div>
 		<div class = "content">
 			<h3> <img src="docs.png"> </h3>
-				<a id=apply href = "">Create Legal <br> Document</a>
+            <div class = "captionholder">
+                <h3 id="caption">Create Your Own Legal<br>Documents From<br>Hundreds of<br>Templates</h3>
+            </div>
+			<a id=button href = "">
+                <h1 id ="button_text">Create Legal <br> Document</h1>
+            </a>
 		</div>     
 	</div> 
 </div>
     <br>
     <br>
-    <br>
+    <div class = "last_holder"></div>
 </div>
 
 </body>
