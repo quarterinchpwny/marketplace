@@ -31,6 +31,7 @@
                 width: 100%;
                 height: 100px;
                 z-index: 1;
+                padding-left: 40px;
             }
 
             .logo{
@@ -73,8 +74,8 @@
         <!-- Navigation Bar -->
         <nav class="navbar">
             <div>
-                <img class="img-fluid" src="images/Logo2.png" alt="logo2" width="70px"> 
-                <img class="img-fluid" src="images/Logo1.png" alt="logo1" width="320px">  
+                <img class="img-fluid" src="images/Logo2.png" alt="logo2" width="60px"> 
+                <img class="img-fluid" src="images/Logo1.png" alt="logo1" width="290px">  
             </div>
             <div class="navbar-links">
                 <ul>

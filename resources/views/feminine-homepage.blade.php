@@ -1,8 +1,10 @@
-{{-- @extends('layouts.sidebar') --}}
-@section('content')
-
 <div class="container">
-    @include('layouts.feminine-footer')
+    @if (session('success'))
+      <div class="alert alert-success" role="alert">
+        {{ session('success') }}
+      </div>
+    @endif
 </div>
 
-@endsection
+@include('feminine-layouts.feminine-blogsection')
+@include('feminine-layouts.feminine-footer')
