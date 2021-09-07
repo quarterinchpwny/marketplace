@@ -12,23 +12,20 @@
   <link rel="dns-prefetch" href="//fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">
-  <!-- Styles -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;400&family=Poppins:wght@200;600&family=Roboto&display=swap" rel="stylesheet">
 
+  <!-- Styles -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
   <!-- Header and Navbar -->
   <div class="container-fluid" id="topContent">
-        <img src="/images/headerLogo.svg" alt="Rizal Logo" id="headerLogo">
+        <img src="/images/rizalLogo.png" alt="Rizal Logo" id="headerLogo">
     </div>
-<<<<<<< HEAD
 
-=======
   
->>>>>>> 99b4f55c7af67519263dfc3e62731c8598aa4fd2
   <div id="app">
      @include('layouts.nav', ['from' => 'app'])
         @yield('content')
@@ -41,10 +38,6 @@
             @yield('EverydayLaw')
             @yield('Footer')
       </main>
-<<<<<<< HEAD
-
-=======
  
->>>>>>> 99b4f55c7af67519263dfc3e62731c8598aa4fd2
 </body>
 </html>

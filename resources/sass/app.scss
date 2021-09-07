@@ -8,16 +8,16 @@
 
 //mixins
 @mixin button-font {
-    font-family: Helvetica;
+    font-family: 'Poppins', sans-serif;
     font-size: 18px;
     color: white;
   }
 @mixin header-blue{
     background-color: $all-blue;
-    height: 250px;
+    height: 300px;
 }
 @mixin header-styling{
-    font-family: 'Archivo', sans-serif;;
+    font-family: 'Archivo', sans-serif;
     font-size: 30px;
     color: white;
     padding-top: 30px;
@@ -26,8 +26,8 @@
     left: 530px;
 }
 @mixin frame-canvas{
-    height: 320px;
-    background-color: #FA8072;
+    height: 500px;
+    background-color: white;
 }
 //themes
 $theme-colors: (
@@ -73,6 +73,7 @@ $buttons-darkblue: #1E3B87;
 }
 #buttonBlue{
     @include button-font();
+    font-family: 'Archivo', sans-serif;
     background-color: $buttons-darkblue;
     align-items: center;
     border: none;
@@ -88,6 +89,15 @@ $buttons-darkblue: #1E3B87;
     border-radius: 6px;
     width: 260px; height: 55px;
 }
+a{
+    text-decoration: none;
+    font-family: 'Archivo', sans-serif;
+    color: #1F3C88;
+}
+input::placeholder {
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+  }
 .secondRow{
     padding-top: 5px;
     padding-bottom: 20;
@@ -110,7 +120,7 @@ $buttons-darkblue: #1E3B87;
 }
 #frameBlue{
     @include frame-canvas();
-    background-color: #E63E6D;
+    background-color: $all-blue;
     position: relative;
     bottom:300px;
 }
@@ -133,19 +143,57 @@ $buttons-darkblue: #1E3B87;
     border-radius: 13px;
 }
 .card{
-    width: 250px; height: 800;
     border-radius: 13px;
+    background-color: $all-cards;
+    border: none;
+    outline: none;
+    align-items: center;
 }
-<<<<<<< HEAD
-=======
 #logoFooter{
     position: relative;
     right: 100px;
 }
 #areasHolder{
     position: relative;
+    top: 70px;
     z-index: 5;
-    padding: 0px 40px 0px 40px
 }
 
->>>>>>> 99b4f55c7af67519263dfc3e62731c8598aa4fd2
+#textStyle{
+    font-family: 'Roboto', sans-serif;
+    color: #080E5A;
+    font-weight: bold;
+}
+
+.btn{
+    font-family:'Archivo', sans-serif; 
+    background-color: $buttons-darkblue;
+    border: none;
+    outline: none;
+}
+
+.areasChoices {
+    width: 100%;
+    height: 17vw;
+    object-fit: cover;
+} 
+
+.areasButton{
+    background-color: rgb(206, 221, 239, 0.5);
+    color: $all-blue;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: bold;
+}
+
+#everydayLawVid{
+    position: relative;
+    bottom: 180px;
+}
+
+.navFont{
+    font-size: 18px;
+}
+
+.ced{
+    background-color: #203D88;
+}
