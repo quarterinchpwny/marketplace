@@ -15,7 +15,12 @@
             @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Raleway:wght@500;700&display=swap');
             @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Raleway:wght@700&display=swap');
             
-            .banner-area{
+            /* Header-Area CSS */
+            .row{
+                margin:0 !important;
+            }
+
+            #banner-area{
                 background-image: url(images/banner-header-image.jpeg);
                 background-size: cover;
                 background-position: center center;
@@ -23,38 +28,38 @@
                 width: 100%;
                 border-style: solid;
                 border-width: 5px;
-                border-color: rgb(208, 129, 152);
+                border-color: #D08198;
                 border-left: 0;
                 border-right: 0;
-                position: relative;
             }
 
-            .header-area{
-                background-color: rgb(255, 226, 234);
+            #header-area{
+                background-color: #FFE2EA;
                 opacity: 0.8;
-                width: 1031px;
+                width: 90%;
                 height: 220px;
                 padding: 20px;
+                text-overflow: ellipsis;
+                overflow: hidden;
             }
 
-            .header-area h1{
+            #header-area h1{
                 font-family: 'Libre Baskerville';
                 font-size: 64px;
                 text-shadow: 2px 2px 5px grey;
-                color: rgb(100, 31, 67);
+                color: #733657;
                 padding-bottom: 10px;
             }
 
-            .header-area p{
+            #header-area p{
                 font-family: 'Raleway';
                 font-size: 25px;
             }
 
             #header-container{
-                position: absolute;
-                top: 0px;
-                padding: 470px 0px 0px 0px;
+                padding-top: 470px;
             }
+
 
             /* Login Form CSS  */
 
@@ -328,13 +333,13 @@
     <body>
 
         <!-- Banner / Header -->
-        <div class="banner-area">
-                    <div id="header-container" class="">
-                        <div class="header-area">
-                            <h1>Lorem, ipsum dolor sit amet </h1>
-                            <p>Aliquam nibh massa, fringilla a malesuada ut, sagittis ut sem. Quisque metus mauris, tristique nec lectus a, vehicula cursus elit.</p>
-                        </div>
+        <div id="banner-area" class="row">
+                <div id="header-container" class="col-sm-6 col-md-9 col-lg-8">
+                    <div id="header-area" class="">
+                        <h1>Lorem, ipsum dolor sit amet </h1>
+                        <p>Aliquam nibh massa, fringilla a malesuada ut, sagittis ut sem. Quisque metus mauris, tristique nec lectus a, vehicula cursus elit.</p>
                     </div>
+                </div>
 
                             <!-- Hidden Anchor -->
                     	    <a class="hiddenanchor" id="toregister"></a>
