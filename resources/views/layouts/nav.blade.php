@@ -13,41 +13,31 @@
                 </li>
             @endif
 
-            @if (Route::has('login'))
-                <li class="nav-item" style="padding-right: 10px">
-                    <a class="nav-link" href="{{ route('login') }}">{{ __('Our Services') }}</a>
-                </li>
-            @endif
 
-            @if (Route::has('login'))
                 <li class="nav-item" style="padding-right: 10px">
-                    <a class="nav-link" href="{{ route('login') }}">{{ __('Law Update') }}</a>
+                    <a class="nav-link" href="#">{{ __('Our Services') }}</a>
                 </li>
-            @endif
 
-            @if (Route::has('register'))
                 <li class="nav-item" style="padding-right: 10px">
-                    <a class="nav-link" href="{{ route('register') }}">{{ __('Law Practices') }}</a>
+                    <a class="nav-link" href="#">{{ __('Law Update') }}</a>
                 </li>
-            @endif
 
-            @if (Route::has('register'))
-                <li class="nav-item" style="padding-right: 10px">
-                    <a class="nav-link" href="{{ route('register') }}">{{ __('Everyday Law') }}</a>
-                </li>
-            @endif
 
-            @if (Route::has('register'))
                 <li class="nav-item" style="padding-right: 10px">
-                    <a class="nav-link" href="{{ route('register') }}">{{ __('Blog') }}</a>
+                    <a class="nav-link" href="#">{{ __('Law Practices') }}</a>
                 </li>
-            @endif
 
-            @if (Route::has('register'))
                 <li class="nav-item" style="padding-right: 10px">
-                    <a class="nav-link" href="{{ route('register') }}">{{ __('Profile') }}</a>
+                    <a class="nav-link" href="#">{{ __('Everyday Law') }}</a>
                 </li>
-            @endif
+
+                <li class="nav-item" style="padding-right: 10px">
+                    <a class="nav-link" href="#">{{ __('Blog') }}</a>
+                </li>
+
+                <li class="nav-item" style="padding-right: 10px">
+                    <a class="nav-link" href="#">{{ __('Profile') }}</a>
+                </li>
         @else
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('dashboard') }}">{{ __('Dashboard') }}</a>

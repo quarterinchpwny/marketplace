@@ -22,10 +22,11 @@
 <body>
   <!-- Header and Navbar -->
   <div class="container-fluid" id="topContent">
-        <img src="/images/rizalLogo.png" alt="Rizal Logo" id="headerLogo">
+      <a href="/Masculine">
+        <img src="/images/rizalLogo.png" alt="Rizal Logo" id="headerLogo"></a>
     </div>
 
-  
+
   <div id="app">
      @include('layouts.nav', ['from' => 'app'])
         @yield('content')
@@ -38,6 +39,6 @@
             @yield('EverydayLaw')
             @yield('Footer')
       </main>
- 
+
 </body>
 </html>
