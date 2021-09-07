@@ -57,7 +57,7 @@
             }
 
             #header-container{
-                padding-top: 470px;
+                padding-top: 500px;
             }
 
 
@@ -182,7 +182,7 @@
             #login-container{
                 position: absolute;
                 top: 0px;
-                padding: 70px 30px 60px 1220px;
+                padding: 160px 30px 60px 1220px;
                 z-index: 22;
             }
 
@@ -278,7 +278,7 @@
             #sign-up-container{
                 position: absolute;
                 top: 0px;
-                padding: 70px 30px 60px 1220px;
+                padding: 160px 30px 60px 1220px;
                 z-index: 21;
 	            opacity: 0;
             }
