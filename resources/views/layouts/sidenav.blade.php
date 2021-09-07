@@ -6,7 +6,7 @@
     <title>Navigation Bar</title>
   </head>
   <body>
-	
+	<div class="wrapper">
 		<div class="side-bar">
 			<div class="forLogo"> 
 				<img src="{{ URL::to('/') }}/cms-graphics/logo1.png" alt="Rizal Law Office">
@@ -31,19 +31,23 @@
 				<img src="{{ URL::to('/') }}/cms-graphics/Powered.png" alt="Powered by LexMeet">
 			</div>
 		</div>
-		<section>
-		HELLO
-		</section>
 		
+		<div class="main">
+			<div class="header"> <div class="text"><h2>Section </h2></div>
+			</div>
+			<div class="info">
+				<div> Lorem ipsum </div>
+				
+			</div>
+		</div>
+	</div>
 		
-		
-	
-
 	<style>
 		*{
 			margin:0;
 			padding:0;
 			list-style:none;
+			box- string: border-box;
 			text-decoration:none;
 		}
 		.foot img{
@@ -54,9 +58,14 @@
 			padding-top:25px;
 			
 		}
+		
+		.wrapper{
+			display: flex;
+			position:relative;
+		}
+		
 		.side-bar{
 			position: fixed;
-			left:0;
 			width:280px;
 			height:100%;
 			background:#F5F5F5;
@@ -74,27 +83,51 @@
 			padding-top:20px;
 		}
 
-		.side-bar ul a{
-			display:block;
-			width:100%;
+		.side-bar ul li{
+			border-bottom:1px solid #FF7F4D;
 			line-height: 45px;
+		}
+		
+		.side-bar ul li a{
+			display:block;
 			font-size:20px;
 			padding-left:30px;
 			box-sizing: border-box;
-			border-bottom:1px solid #FF7F4D;
 			transition: .4s;
 			background: #F5F5F5;
 			color: black;
 		}
-		.side-bar ul :hover{
-			background-color:#FF7F4D;
-			padding-left:10px;
+
+		.side-bar ul li:hover a{
+			background:#FF7F4D;
 			color:white;
 		}
-		section{
-			background:#FF7F4D;
-			height:657px;
+		
+		.main{
+			width:100%;
+			margin-left:280px;
+			height: 100%;
+			position:fixed;
 		}
+		
+		.main .header{
+			height:80px;
+			background: #FFFF;
+			border-bottom: 1px solid #FF7F4D;
+		}
+		
+		.main .header .text{
+			color: #5E1B89;
+			padding:25px;
+			font-size: 20px;
+		}
+		
+		.main .info{
+			background-image: url("/cms-graphics/mainbg.png") ;
+			background-size: cover;
+			height:580px;
+		}
+		
 	</style>   
   </body>
 </html>
