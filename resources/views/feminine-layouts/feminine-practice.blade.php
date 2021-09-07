@@ -229,6 +229,7 @@
         </div> 
     </div>
     <br>
+    <br>
     <div class="button_holder text-align: cente">
         <a id="see_button"href = "">
         <h1 id = "button_text">SEE MORE</h1>
