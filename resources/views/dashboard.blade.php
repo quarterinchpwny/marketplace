@@ -14,6 +14,10 @@
   @include('layouts.references')
 </div>
 
+@include('feminine-layouts.feminine-navigationbar')
+@include('feminine-layouts.feminine-bannerheader')
+@include('feminine-layouts.feminine-services')
+@include('feminine-layouts.feminine-practices')
 @include('feminine-layouts.feminine-blogsection')
 @include('feminine-layouts.feminine-footer')
 
