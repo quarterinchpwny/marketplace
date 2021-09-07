@@ -21,27 +21,27 @@
             <p>Remember me</p>
         </div>
         <div class="col-sm-4">
-              <a href="url">Forgot Password?</a>
+              <a href="url"><strong>Forgot Password?</strong></a>
         </div>
     </div>
     </div>
     <div class="thirdRow">
     <div class="row align-items-center">   
     <div class="col-sm-7">
-         <a href="url">Don't have an account yet? Sign Up.</a>
+         <a href="url">Don't have an account yet? <strong>Sign Up.</strong></a>
         </div>
     </div>
     </div>
     <div class="lastRow">
     <div class="row align-items-center">  
         <div class="col-sm-4">
-                    <button type="button" id="buttonBlue2">Sign in with Facebook</button>
+                    <button type="button" id="buttonBlue2"><img src="/images/facebookLogo.svg" alt="facebook logo" height=25px width=25px>&nbsp Sign in with Facebook</button>
         </div>
         <div class="col-sm-4">
-                    <button type="button" id="buttonBlue2">Sign in with Google</button>
+                    <button type="button" id="buttonBlue2"><img src="/images/googleLogo.svg" alt="google logo" height=25px width=25px>&nbsp Sign in with Google</button>
         </div>
         <div class="col-sm-4">
-                    <button type="button" id="buttonBlue2">Sign in with ios</button>
+                    <button type="button" id="buttonBlue2"><img src="/images/appleLogo.svg" alt="apple logo" height=25px width=25px>&nbsp Sign in with ios</button>
         </div>
     </div>
     </div>
@@ -53,34 +53,48 @@
 <div class="container" style="background-color:rgb(206, 221, 239, 0)" id="areasHolder">
 <div class="row">
       <div class="col-3">
-        <div class="card text-center"> 
-          <img src="/images/ASSIST.svg" class="card-img-top" width="200" height="200">
-          <h2>ASSIST</h2>
-          <p>Free legal assesment</p>
+        <div class="card text-center mb-4 p-4"> 
+          <img src="/images/assistIcon.png"  width="100" height="100">
+          <p></p>
+          <h2 id="textStyle"> <strong>ASSIST </strong></h2>
+          <p></p>
+          <p id="textStyle">Free legal assesment</p>
+          <p></p>
+          <p></p>
+          <p></p>
           <a href="#" class="btn btn-primary text-light">Ask Lawyers</a> 
         </div>
       </div>
       <div class="col-3">
-        <div class="card text-center"> 
-          <img src="/images/CONSULT.svg" class="card-img-top" width="200" height="200">
-          <h2>CONSULT</h2>
-          <p>Paid legal consultation</p>
+        <div class="card text-center mb-4 p-4"> 
+          <img src="/images/consultIcon.png"  width="100" height="100">
+          <p></p>
+          <h2 id="textStyle"><strong>CONSULT</strong></h2>
+          <p></p>
+          <p id="textStyle">Paid legal consultation</p>
+          <p></p>
+          <p></p>
+          <p></p>
           <a href="#" class="btn btn-primary text-light">Submit Legal Problem</a> 
         </div>
       </div>
       <div class="col-3">
-        <div class="card text-center"> 
-          <img src="/images/WORKS.svg" class="card-img-top" width="200" height="200">
-          <h2>WORKS</h2>
-          <p>Free legal fee crowdsourcing and paid legal works escrow delivery</p>
+        <div class="card text-center mb-4 p-4"> 
+          <img src="/images/worksIcon.png"  width="100" height="100">
+          <p></p>
+          <h2 id="textStyle"><strong>WORKS</strong></h2>
+          <p></p>
+          <p id="textStyle">Free legal fee crowdsourcing and paid legal works <br> escrow delivery</p>
           <a href="#" class="btn btn-primary text-light">Request Proposal</a> 
         </div>
       </div>
       <div class="col-3">
-        <div class="card text-center"> 
-          <img src="/images/Docs.svg" class="card-img-top" width="200" height="200">
-          <h2>DOCS</h2>
-          <p>Create your own legal documents from hundreds of templates</p>
+        <div class="card text-center mb-4 p-4"> 
+          <img src="/images/docsIcon.png" width="100" height="100">
+          <p></p>
+         <h2 id="textStyle"><strong>DOCS</strong></h2>
+          <p></p>
+          <p id="textStyle">Create your own legal documents from hundreds <br>of templates</p>
           <a href="#" class="btn btn-primary text-light">Create Legal Document</a> 
         </div>
       </div>
@@ -91,68 +105,60 @@
 @endsection
 @section('PracticeAreas')
 <!-- Practice Areas -->
-<<<<<<< HEAD
-<div class="container-fluid" id="white-rect"><p id="headerStyleBlue">PRACTICE AREAS</p></div>
-<div class="container-fluid" id="frameBlue">
-<div class="card"> 
-        <img src="/images/Family.jpg" class="card-img-top">
-        <a href="#" class="btn btn-primary">Personal & Family Law</a> 
-=======
 
 <div class="container-fluid" id="white-rect"><p id="headerStyleBlue">PRACTICE AREAS</p>
 <div class="container" style="background-color:rgb(206, 221, 239, 0)" id="areasHolder">
 <div class="row">
-      <div class="col-3">
-        <div class="card"> 
-          <img src="/images/Family.jpg" class="card-img-top">
-          <a href="#" class="btn btn-primary text-light">Personal & Family Law</a> 
+      <div class="col-3  px-3">
+        <div class="family_card card"> 
+          <img src="/images/Family.jpg" class="areasChoices">
+          <a href="#" class="areasButton btn btn-primary ">Personal & Family Law</a> 
         </div>
       </div>
       <div class="col-3">
         <div class="card"> 
-          <img src="/images/Civil.jpg" class="card-img-top">
-          <a href="#" class="btn btn-primary text-light">Civil Law</a> 
+          <img src="/images/Civil.jpg" class="areasChoices">
+          <a href="#" class="areasButton btn btn-primary ">Civil Law</a> 
         </div>
       </div>
       <div class="col-3">
         <div class="card"> 
-          <img src="/images/Commercial.jpg" class="card-img-top">
-          <a href="#" class="btn btn-primary text-light">Commercial Law</a> 
+          <img src="/images/Commercial.jpg" class="areasChoices">
+          <a href="#" class="areasButton btn btn-primary ">Commercial Law</a> 
         </div>
       </div>
       <div class="col-3">
         <div class="card"> 
-          <img src="/images/Labor.jpg" class="card-img-top">
-          <a href="#" class="btn btn-primary text-light">Labor Law</a> 
+          <img src="/images/Labor.jpg" class="areasChoices">
+          <a href="#" class="areasButton btn btn-primary ">Labor Law</a> 
         </div>
       </div>
 </div>
-<div class="row">
+<div class="row py-5">
       <div class="col-3">
         <div class="card"> 
-          <img src="/images/Immigration.jpg" class="card-img-top">
-          <a href="#" class="btn btn-primary text-light">Immigration Law</a> 
+          <img src="/images/Immigration.jpg" class="areasChoices">
+          <a href="#" class="areasButton btn btn-primary ">Immigration Law</a> 
         </div>
       </div>
       <div class="col-3">
         <div class="card"> 
-          <img src="/images/Criminal.jpg" class="card-img-top">
-          <a href="#" class="btn btn-primary text-light">Criminal Law</a> 
+          <img src="/images/Criminal.jpg" class="areasChoices">
+          <a href="#" class="areasButton btn btn-primary ">Criminal Law</a> 
         </div>
       </div>
       <div class="col-3">
         <div class="card"> 
-          <img src="/images/Taxation.jpg" class="card-img-top">
-          <a href="#" class="btn btn-primary text-light">Taxation Law</a> 
+          <img src="/images/Taxation.jpg" class="areasChoices">
+          <a href="#" class="areasButton btn btn-primary ">Taxation Law</a> 
         </div>
       </div>
       <div class="col-3">
         <div class="card"> 
-          <img src="/images/Special.jpg" class="card-img-top">
-          <a href="#" class="btn btn-primary text-light">Special Services</a> 
+          <img src="/images/Special.jpg" class="areasChoices">
+          <a href="#" class="areasButton btn btn-primary">Special Services</a> 
         </div>
       </div>
->>>>>>> 99b4f55c7af67519263dfc3e62731c8598aa4fd2
 </div>
 </div>
 </div>
@@ -182,15 +188,22 @@ At that time, text message or e-mail message, as it was not yet widely used and 
 <!-- Everyday Law -->
 <div class="container-fluid" id="blue-rect"><p id="headerStyleWhite">EVERYDAY LAW</p></div>
 <div class="container-fluid" id="frameWhite">
-<div class="card-body">
-    
-        <h5 class="card-title">Co-maker ng ‘di nagbayad sa utang, tama ba na ikaw ang singilin?</h5>
-        <p class="card-text">Nakapirma ka na ba sa loan agreement bilang co-maker? <br>
+  <div class="row">
+  <div class="col-6">
+    <div class="card-body">
+        
+            <h5 class="card-title">Co-maker ng ‘di nagbayad sa utang, tama ba na ikaw ang singilin?</h5>
+            <p class="card-text">Nakapirma ka na ba sa loan agreement bilang co-maker? <br>
 
-        Ano ang panganib kung ikaw ay pipirma bilang co-maker sa isang loan?
-        </p>
-        <a href="#" class="btn btn-primary text-light">Learn more</a>
-</div>
+            Ano ang panganib kung ikaw ay pipirma bilang co-maker sa isang loan?
+            </p>
+            <a href="#" class="btn btn-primary text-light">Learn more</a>
+    </div>
+  </div>
+  <div class="col-6">
+          <img src="/images/eLaw.png"  alt="video" id="everydayLawVid">
+  </div>
+  </div>
 </div>
 @endsection
 @section('Footer')
