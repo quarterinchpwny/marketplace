@@ -69,6 +69,7 @@
                 font-family: 'Raleway';
                 font-weight: bold;
                 text-align: center;
+                padding-top: 30px;
             }
             #login_field{
                 width: 200px;
