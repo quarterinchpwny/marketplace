@@ -18,7 +18,6 @@
         <!-- Title -->
         <title>Law Updates</title>
 
-        <!-- CSS -->
         <style>
             html {
                 height: 100%;
@@ -35,11 +34,11 @@
             - FFFFFF (white)
             - F1DBE8 (very light purple)
             - B8537B (light purple)
+            - D08198 (light pink)
             - B5375B (pink)
             - 733657 (dark purple)
             */
 
-            /* Law Updates and Everyday Law */
             .blog-section {
                 font-family: 'Raleway', sans-serif;
                 font-size: 24px;
@@ -95,6 +94,11 @@
 
                 bottom: 4rem;
                 margin-top: auto;
+            }
+
+            /**/
+            .blog-blank {
+                background-color: #D08198;
             }
         </style>
     </head>
@@ -152,6 +156,9 @@
                     </div>
                 </div>
             </div>
+
+            <!---->
+            <div class="blog-blank p-4"></div>
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
