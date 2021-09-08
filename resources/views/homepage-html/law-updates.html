@@ -172,7 +172,7 @@
                 </div>
             </div>
 
-            <!---->
+            <!-- Blank Space -->
             <div class="blog-blank p-4"></div>
         </div>
 
