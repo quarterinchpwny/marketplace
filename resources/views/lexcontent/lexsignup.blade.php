@@ -7,7 +7,8 @@
                     <button type=button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    
+                <form method="POST" action=" {{ route('add.user.post') }}">
+                    @csrf    
                     <label for="modal-username" class="form-label"> Username:</label>
                     <input type="text" class="form-control" id="modal-email" placeholder="Username">
                     
@@ -28,7 +29,7 @@
                     
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-primary">Create an Account</button>
+                    <button class="btn btn-primary" ">Create an Account</button>
                 </div>
             </div>
         </div>
