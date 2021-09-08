@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('signUp')
+<div alt="redg" class="container-fluid bgpb">
 <div class="SignUp">
 <img src="/images/bgLandingPage.png" class="landingBackground" alt="bgHomeImage" width="1350" height="720">
 <div class="container" id="lblue-signup">
@@ -51,6 +52,7 @@
         </div>
     </div>
     </div>
+</div>
 </div>
 </div>
 @endsection
@@ -170,15 +172,15 @@
 </div>
 </div>
 </div>
-<div class="container-fluid" id="frameBlueBig">
+<div class="container-fluid" id="frameWhiteBig">
 </div>
 
 @endsection
 @section('LawUpdates')
 <!-- Law Updates -->
-<div class="container-fluid" id="white-rect"><p id="headerStyleBlue">LAW UPDATES</p></div>
+<div class="container-fluid" id="blue-rect"><p id="headerStyleWhite">LAW UPDATES</p></div>
 
-<div class="container-fluid" id="frameBlue">
+<div class="container-fluid" id="frameWhite">
 
     <div class="container" style="background-color:rgb(206, 221, 239, 0)" id="areasHolder">
       <div class="card-body cardBody">
@@ -199,21 +201,21 @@ At that time, text message or e-mail message, as it was not yet widely used and 
 @endsection
 @section('EverydayLaw')
 <!-- Everyday Law -->
-<div class="container-fluid" id="blue-rect"><p id="headerStyleWhite">EVERYDAY LAW</p></div>
+<div class="container-fluid" id="white-rect"><p id="headerStyleBlue">EVERYDAY LAW</p></div>
 <div class="container-fluid" id="frameWhite">
 
 <div class="container" style="background-color:rgb(206, 221, 239, 0)" id="areasHolder">
   <div class="row">
       <div class="col-6">
-        <div class="card-body cardBody">
+        <div class="card-body cardBody evrcard">
 
-            <h5 class="card-title cardTitle">Co-maker ng ‘di nagbayad sa utang,
+            <h5 class="card-title cardTitle evrcardfont">Co-maker ng ‘di nagbayad sa utang,
                 <br>tama ba na ikaw ang singilin?</h5>
-            <p class="card-text cardText">Nakapirma ka na ba sa loan agreement bilang co-maker? <br>
+            <p class="card-text cardText evrcardfont">Nakapirma ka na ba sa loan agreement bilang co-maker? <br>
 
             Ano ang panganib kung ikaw ay pipirma bilang co-maker sa isang loan?
             </p>
-            <a href="#" class="btn btn-primary text-light">Learn more</a>
+            <a href="#" class="btn btn-primary evrbtn">Learn more</a>
         </div>
       </div>
       <div class="col-6">
@@ -260,7 +262,7 @@ At that time, text message or e-mail message, as it was not yet widely used and 
           </p>
         </div>
         <!-- Grid column -->
-       
+
         <!-- Grid column -->
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 ms-4">
           <!-- Links -->
@@ -300,7 +302,7 @@ At that time, text message or e-mail message, as it was not yet widely used and 
         </div>
         <!-- Grid column -->
       </div>
-     
+
       <!-- Grid row -->
     </div>
   </section>
@@ -310,7 +312,7 @@ At that time, text message or e-mail message, as it was not yet widely used and 
         <p class="text-left p-4 poweredBy">Powered by <img src="/images/lexmeetLogo.png"  alt="lexlogo" height="13" width="85"></p>
 
   <div class="text-right p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-    <ul> 
+    <ul>
     <a href="" id="linksLegal">Terms of Use</a>
     <a href="" id="linksLegal">Privacy Policy</a>
     <a href="" id="linksLegal">Informed Consent of Service Performed</a>

@@ -11297,7 +11297,7 @@ textarea.form-control-lg {
 #white-rect {
   background-color: #1F3C88;
   height: 300px;
-  background-color: white;
+  background-color: #CEDDEF;
   position: relative;
   bottom: 300px;
 }
@@ -11509,8 +11509,8 @@ input::placeholder {
 
 .buttonWhite {
   border-radius: 8px;
-  background-color: white;
-  color: #1F3C88;
+  background-color: #1F3C88;
+  color: white;
   font-family: "Archivo", sans-serif;
   font-size: 20px;
   font-weight: bold;
@@ -11556,9 +11556,22 @@ body {
   background-color: #ffffff;
 }
 
-#frameBlueBig {
+#frameWhiteBig {
   height: 550px;
-  background-color: #1F3C88;
+  background-color: white;
   position: relative;
   bottom: 300px;
+}
+
+.evrcard {
+  background-color: #1f3c88;
+}
+
+.evrcardfont {
+  color: #CEDDEF;
+}
+
+.evrbtn {
+  background-color: #CEDDEF;
+  color: #1f3c88;
 }

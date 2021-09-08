@@ -60,7 +60,7 @@ $buttons-darkblue: #1E3B87;
 }
 #white-rect{
     @include header-blue();
-    background-color:white;
+    background-color:#CEDDEF;
     position: relative;
     bottom: 300px;
 }
@@ -223,8 +223,8 @@ input::placeholder {
 }
 .buttonWhite{
     border-radius: 8px;
-    background-color: white;
-    color: $all-blue;
+    background-color: #1F3C88;
+    color: white;
     font-family:'Archivo', sans-serif;
     font-size: 20px;
     font-weight: bold;
@@ -256,7 +256,7 @@ hr.style1{
 	border-top: 1px solid #8c8b8b;
     position: relative;
     top:100px;
-   
+
 }
 .contentsFooter{
     position: relative;
@@ -265,10 +265,25 @@ hr.style1{
 body{//for testing
     background-color: #ffffff;
 }
-#frameBlueBig{
+
+#frameWhiteBig{
     height: 550px;
-    background-color: $all-blue;
+    background-color: white;
     position: relative;
     bottom:300px;
 }
 
+
+.evrcard{
+background-color: #1f3c88;
+
+}
+
+.evrcardfont{
+    color:#CEDDEF;
+}
+
+.evrbtn{
+    background-color: #CEDDEF;
+    color: #1f3c88;
+}
