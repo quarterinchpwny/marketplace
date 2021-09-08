@@ -36,7 +36,10 @@ Route::middleware(['auth'])->group(function () {
 //CMS Route
 
 Route::get('cms', [App\Http\Controllers\cmscontroller::class, 'index'])->name('cms');
-
+Route::get('addBanner', [App\Http\Controllers\cmscontroller::class, 'addBanner'])->name('addBanner');
+Route::get('cmsRegistration', [App\Http\Controllers\cmscontroller::class, 'registration'])->name('cmsRegistration');
+Route::get('cmsPrivacyPolicy', [App\Http\Controllers\cmscontroller::class, 'privacyPolicy'])->name('cmsPrivacyPolicy');
+Route::get('cmsLawyersBlog', [App\Http\Controllers\cmscontroller::class, 'lawyersBlog'])->name('cmsLawyersBlog');
 
 
 

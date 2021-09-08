@@ -1,9 +1,9 @@
 @extends('layouts.cmsnavigation')
 @section('content')
 <div class="row">
-          <div class="col-sm-3">
-            <button type="button" class="d-flex btn btn-primary text-white">Preview</button>
-          </div>
+        <div class="col-sm-3">
+            <button type="button" class="d-flex btn btn-primary text-white" style= "background-color:#9D71BC" >Preview</button>
+        </div>
         </div>
         <div class="row2 container-fluid"  style="height: 570px; background-color:#F8FFFE; ">
           <nav class="nav nav-tabs" id="nav-tab" role="tablist">
@@ -16,7 +16,7 @@
               <div class="row">
                 <div class="col-10"></div>
                 <div class="col-2">
-                  <button type="button" class="btn btn-primary text-white">Add New Banner</button>
+                <a href="{{url ('/addBanner') }}"><button type="button" class="btn btn-primary text-white">Add New Banner</button></a>
                 </div>
               </div>
               <div class="row row4">

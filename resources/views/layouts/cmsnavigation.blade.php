@@ -28,37 +28,37 @@
       <div id="line" style="background-color: #F4512C;"></div>
       <ul class="nav  flex-column mb-auto">
         <li class="nav-item">
-          <a href="#" class="nav-link active" >Homepage</a>
+          <a href="{{url ('/cms') }}" class="nav-link active" >Homepage</a>
         </li> 
         <li class="nav-item">
-          <a href="#" class="nav-link">Services</a>
+          <a href="{{url ('/cmsServices') }}" class="nav-link">Services</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Registration Section</a>
+          <a href="{{url ('/cmsRegistration') }}" class="nav-link">Registration Section</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Lawyer's Blog Section</a>
+          <a href="{{url ('/cmsLawyersBlog') }}" class="nav-link">Lawyer's Blog Section</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Law Update Section</a>
+          <a href="{{url ('/cmsLawUpdate') }}" class="nav-link">Law Update Section</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Everyday Law</a>
+          <a href="{{url ('/cmsEverydayLaw') }}" class="nav-link">Everyday Law</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Lawyer's Profile</a>
+          <a href="{{url ('/cmsLawyersProfile') }}" class="nav-link">Lawyer's Profile</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Law Firm Practice</a>
+          <a href="{{url ('/cmsLawFirmPractice') }}" class="nav-link">Law Firm Practice</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Contact Us Page</a>
+          <a href="{{url ('/cmsContactUs') }}" class="nav-link">Contact Us Page</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Privacy Policy</a>
+          <a href="{{url ('/cmsPrivacyPolicy') }}" class="nav-link">Privacy Policy</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Domain Settings</a>
+          <a href="{{url ('/cmsDomainSettings') }}" class="nav-link">Domain Settings</a>
         </li>
       </ul>
       <div class="sidenav-logo">
