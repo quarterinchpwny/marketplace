@@ -19,7 +19,12 @@
     <div class="secondRow">
     <div class="row align-items-center">
         <div class="col-sm-6">
-            <p>Remember me</p>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Remember me
+            </label>
+        </div>
         </div>
         <div class="col-sm-4">
               <a href="url"><strong>Forgot Password?</strong></a>
@@ -57,35 +62,33 @@
       <div class="col-3">
         <div class="card text-center mb-4 p-4">
           <img src="/images/assistIcon.png"  width="100" height="100">
-          <p></p>
+          <br>
           <h2 id="textStyle"> <strong>ASSIST </strong></h2>
-          <p></p>
+          <br>
           <p id="textStyle">Free legal assesment</p>
-          <p></p>
-          <p></p>
-          <p></p>
+          <br>
+          <br>
           <a href="#" class="btn btn-primary text-light">Ask Lawyers</a>
         </div>
       </div>
       <div class="col-3">
         <div class="card text-center mb-4 p-4">
           <img src="/images/consultIcon.png"  width="100" height="100">
-          <p></p>
+          <br>
           <h2 id="textStyle"><strong>CONSULT</strong></h2>
-          <p></p>
+          <br>
           <p id="textStyle">Paid legal consultation</p>
-          <p></p>
-          <p></p>
-          <p></p>
+          <br>
+          <br>
           <a href="#" class="btn btn-primary text-light">Submit Legal Problem</a>
         </div>
       </div>
       <div class="col-3">
         <div class="card text-center mb-4 p-4">
           <img src="/images/worksIcon.png"  width="100" height="100">
-          <p></p>
+          <br>
           <h2 id="textStyle"><strong>WORKS</strong></h2>
-          <p></p>
+          <br>
           <p id="textStyle">Free legal fee crowdsourcing and paid legal works <br> escrow delivery</p>
           <a href="#" class="btn btn-primary text-light">Request Proposal</a>
         </div>
@@ -93,9 +96,9 @@
       <div class="col-3">
         <div class="card text-center mb-4 p-4">
           <img src="/images/docsIcon.png" width="100" height="100">
-          <p></p>
+          <br>
          <h2 id="textStyle"><strong>DOCS</strong></h2>
-          <p></p>
+         <br>
           <p id="textStyle">Create your own legal documents from hundreds <br>of templates</p>
           <a href="#" class="btn btn-primary text-light">Create Legal Document</a>
         </div>
@@ -103,7 +106,7 @@
 </div>
 </div>
 </div>
-<div class="container-fluid" id="frameWhite"></div>
+<div class="container-fluid servicesFrame" id="frameWhite"></div>
 @endsection
 @section('PracticeAreas')
 <!-- Practice Areas -->
@@ -162,10 +165,12 @@
           <a href="#" class="areasButton btn btn-primary">Special Services</a>
         </div>
       </div>
+      <div class="row py-3"></div>
+      <a href="#" class="btn btn-primary mx-auto buttonWhite">See more</a>
 </div>
 </div>
 </div>
-<div class="container-fluid" id="frameBlue">
+<div class="container-fluid" id="frameBlueBig">
 </div>
 
 @endsection
@@ -176,12 +181,14 @@
 <div class="container-fluid" id="frameBlue">
 
     <div class="container" style="background-color:rgb(206, 221, 239, 0)" id="areasHolder">
-      <div class="card-body">
-        <h5 class="card-title">Can your text message or e-mail message be used as evidence in court?</h5>
-        <p class="card-text">Before the advent of computer age, we have been familiar with the use of documentary evidence in court such as contracts, agreements, letters and other writings.
-
+      <div class="card-body cardBody">
+        <h5 class="card-title cardTitle">Can your text message or e-mail message be used as evidence in court?</h5>
+        <p class="card-text cardText">Before the advent of computer age, we have been familiar with the use of documentary evidence in court such as contracts, agreements, letters and other writings.
+        <br>
+        <br>
 These writings printed in papers or paper-based documents are popularly known then as our documentary evidence.
-
+        <br>
+        <br>
 At that time, text message or e-mail message, as it was not yet widely used and known in the Philippines, are not considered as documentary evidence by our courts of law.</p>
         <a href="#" class="btn btn-primary text-light">Learn more</a>
       </div>
@@ -198,11 +205,11 @@ At that time, text message or e-mail message, as it was not yet widely used and 
 <div class="container" style="background-color:rgb(206, 221, 239, 0)" id="areasHolder">
   <div class="row">
       <div class="col-6">
-        <div class="card-body">
+        <div class="card-body cardBody">
 
-            <h5 class="card-title">Co-maker ng ‘di nagbayad sa utang,
+            <h5 class="card-title cardTitle">Co-maker ng ‘di nagbayad sa utang,
                 <br>tama ba na ikaw ang singilin?</h5>
-            <p class="card-text">Nakapirma ka na ba sa loan agreement bilang co-maker? <br>
+            <p class="card-text cardText">Nakapirma ka na ba sa loan agreement bilang co-maker? <br>
 
             Ano ang panganib kung ikaw ay pipirma bilang co-maker sa isang loan?
             </p>
@@ -219,39 +226,13 @@ At that time, text message or e-mail message, as it was not yet widely used and 
 @section('Footer')
 <!-- Footer -->
 
-<footer class="text-center text-lg-start text-light pt-5" style="background-color: #092059;">
-  <!-- Section: Social media -->
-
-    <!-- Right -->
-    <div>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-google"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-    <!-- Right -->
-  </section>
-  <!-- Section: Social media -->
+<footer class="text-center text-lg-start text-light pt-0" style="background-color: #092059;">
 
   <!-- Section: Links  -->
   <section class="">
-    <div class="container text-center text-md-start mt-5">
+    <div class="container text-center text-md-start mt-2">
       <!-- Grid row -->
-      <div class="row mt-3">
+      <div class="row mt-3 contentsFooter">
         <!-- Grid column -->
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <!-- Content -->
@@ -266,27 +247,27 @@ At that time, text message or e-mail message, as it was not yet widely used and 
         <!-- Grid column -->
 
         <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4 ms-3">
           <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
+          <h6 class="text-uppercase fw-bold mb-4" id="footerHeading">
             Visit
           </h6>
-          <p class="text-left">
-            Unit 608, 6th floor,
+          <p class="text-left" id="footerInfo">
+            Unit 608, 6th floor,<br>
             AIC Burgundy Empire Tower
             ADB Avenue corner Garnet Road
             Ortigas Center, Pasig City
           </p>
         </div>
         <!-- Grid column -->
-
+       
         <!-- Grid column -->
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 ms-4">
           <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
+          <h6 class="text-uppercase fw-bold mb-4 " id="footerHeading">
             Contact
           </h6>
-          <p class="text-left">
+          <p class="text-left" id="footerInfo" >
             (02) 84511594
             contact@rizallawoffice.com
           </p>
@@ -294,43 +275,48 @@ At that time, text message or e-mail message, as it was not yet widely used and 
         <!-- Grid column -->
 
         <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+        <div class="col-md-5 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 ms-5">
           <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
+          <h6 class="text-uppercase fw-bold mb-4" id="footerHeading">
             Socials
           </h6>
           <div>
-            <a href="#" class="me-4 text-reset">
+            <a href="#" class="me-3 text-reset">
                 <img src="/images/fbLogo.svg" alt="facebook logo" height=25px width=25px>
             </a>
-            <a href="" class="me-4 text-reset">
+            <a href="" class="me-3 text-reset">
                 <img src="/images/linkedInLogo.svg" alt="LinkedIn logo" height=25px width=25px>
             </a>
-            <a href="" class="me-4 text-reset">
+            <a href="" class="me-3 text-reset">
                 <img src="/images/ytLogo.svg" alt="YouTube logo" height=25px width=25px>
             </a>
-            <a href="" class="me-4 text-reset">
+            <a href="" class="me-3 text-reset">
                 <img src="/images/igLogo.svg" alt="Instagram logo" height=25px width=25px>
             </a>
-            <a href="" class="me-4 text-reset">
+            <a href="" class="me-3 text-reset">
                 <img src="/images/twtLogo.svg" alt="Twitter logo" height=25px width=25px>
             </a>
           </div>
         </div>
         <!-- Grid column -->
       </div>
+     
       <!-- Grid row -->
     </div>
   </section>
   <!-- Section: Links  -->
-
+  <hr class="style1">
   <!-- Copyright -->
-  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-    <ul><a href="">Terms of Use</a>
-    <a href="">Privacy Policy</a>
-    <a href="">Informed Consent of Service Performed</a>
-    <a href="">Disclaimer</a></ul>
+        <p class="text-left p-4 poweredBy">Powered by <img src="/images/lexmeetLogo.png"  alt="lexlogo" height="13" width="85"></p>
+
+  <div class="text-right p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    <ul> 
+    <a href="" id="linksLegal">Terms of Use</a>
+    <a href="" id="linksLegal">Privacy Policy</a>
+    <a href="" id="linksLegal">Informed Consent of Service Performed</a>
+    <a href="" id="linksLegal">Disclaimer</a></ul>
   </div>
+
   <!-- Copyright -->
 </footer>
 <!-- Footer -->
