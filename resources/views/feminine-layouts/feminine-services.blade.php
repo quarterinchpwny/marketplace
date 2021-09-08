@@ -170,7 +170,6 @@
     <div class = "services_intro_holder">
         <br>
         <div class = "services_intro_text">
-            <br>
         <hr class="services_intro-line border-1 mx-auto">
             <h1 class="services_intro_text">OUR SERVICES</h1>
         </div>
