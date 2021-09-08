@@ -147,7 +147,7 @@
     <div class = intro_holder>
         <div><br><br></div>
         <div class = "intro_text">
-            <br><br>
+            <br><br><br>
             <hr class="intro-line border-1 mx-auto">
             <h1 class="intro_text">PRACTICE AREAS</h1>
         </div>
