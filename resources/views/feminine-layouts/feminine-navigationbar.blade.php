@@ -31,11 +31,11 @@
                 width: 100%;
                 height: 100px;
                 z-index: 1;
-                padding-left: 40px;
+                padding-left: 30px;
             }
 
             .logo{
-                font-size: 50px;
+                font-size: 36px;
                 margin: 5px;
                 color: rgb(181, 55, 91);
                 font-family: "Raleway";

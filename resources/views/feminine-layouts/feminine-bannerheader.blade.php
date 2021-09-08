@@ -33,6 +33,7 @@
                 border-left: 0;
                 border-right: 0;
                 position: relative;
+                padding: 0;
             }
 
             #header-area{
@@ -101,8 +102,8 @@
             }
 
             #login_button:hover{
-                color: #641F43;
-                background: white;
+                background: #733657;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);  
             }
 
             .input-group{
@@ -236,8 +237,8 @@
             }
 
             #signup_button:hover{
-                color: #641F43;
-                background: white;
+                background: #733657;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
             }
 
 
@@ -339,7 +340,7 @@
     <body>
 
         <!-- Banner / Header -->
-        <div id="banner-area" class="row">
+        <div id="banner-area" class="row container-fluid">
                 <div id="header-container" class="col-sm-6 col-md-9 col-lg-8">
                     <div id="header-area" class="">
                         <h1>Lorem, ipsum dolor sit amet </h1>
@@ -351,7 +352,7 @@
                     	    <a class="hiddenanchor" id="toregister"></a>
 	                        <a class="hiddenanchor" id="tologin"></a>
 
-                        <div id="wrapper">
+                        <div id="wrapper" class="">
 
                                 <!-- Login Form -->
                             <div id="login-container" class="animate form">
@@ -375,11 +376,11 @@
                                                 <p>___________________________________ or ____________________________________</p>
                                             </div>
         
-                                            <div class="input-group mb-3">
-                                                <input id="login_field" type="text" class="form-control d-bl" placeholder="Email" aria-label="Email"> <br>
+                                            <div class="input-group">
+                                                <input id="login_field" type="text" class="form-control" placeholder="Email" aria-label="Email"> <br>
                                             </div>
         
-                                            <div class="input-group mb-3">
+                                            <div class="input-group">
                                                 <input id="login_field" type="text" class="form-control" placeholder="Password" aria-label="Password">
                                             </div>
         
