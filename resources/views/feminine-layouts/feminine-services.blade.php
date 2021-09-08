@@ -51,7 +51,7 @@
         .services_container 
         {
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: auto;
             justify-content: space-between;
             padding-top: 60px;
             
@@ -60,8 +60,8 @@
         .services_container .serv_box 
         {
             position: relative;
-            width: 23%;
-            height: 800px;
+            width: 24%;
+            height: 750px;
             background: #ffedf2ee;
             box-shadow: 0 5px 15px rgba(0,0,0,.1);
             border-radius: 10px;
@@ -94,9 +94,9 @@
         .services_container .serv_box .serv_content img
         {
            
-            height: 225px;
+            height: 30%;
 		    padding: center;
-            margin-top: 100px;
+            margin-top: 5%;
         }
 
         .serv_captionholder
@@ -109,12 +109,12 @@
             font-family: Raleway;
             font-style: normal;
             font-weight: 600;
-            font-size: 33px;
+            font-size: 25px;
             line-height: 39px;
             display: flex;
             align-items: center;
             text-align: center;
-            margin-top: 55px;
+            margin-top: 60px;
 
             color: #733657;
         }
