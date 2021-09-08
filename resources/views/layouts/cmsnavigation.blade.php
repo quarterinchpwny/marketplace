@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMS</title>
+    <link href="{{ URL::asset('css/style.css'); }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+     <!-- jQuery CDN - Slim version (=without AJAX) -->
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <!-- Popper.JS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+     <!-- Bootstrap JS -->
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <div id="viewport">
+ 
+    <!-- Sidebar --> 
+    <div class="flex-column flex-shrink-0 p-3 sidebar-nav offcanvas offcanvas-start" style=" background-color: #F8FFFE;" >
+      <div id="line" style="background-color: #F4512C;"></div>
+      <ul class="nav  flex-column mb-auto">
+        <li class="nav-item">
+          <a href="#" class="nav-link active" >Homepage</a>
+        </li> 
+        <li class="nav-item">
+          <a href="#" class="nav-link">Services</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Registration Section</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Lawyer's Blog Section</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Law Update Section</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Everyday Law</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Lawyer's Profile</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Law Firm Practice</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Contact Us Page</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Privacy Policy</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Domain Settings</a>
+        </li>
+      </ul>
+      <div class="sidenav-logo">
+        Powered by <img src="{{ URL::to('/') }}/cms-graphics/lexmeet logo.png" alt="Powered by LexMeet" width="100" height="14"> 
+      </div>
+    </div>
+     <!--Top Navigation--> 
+     <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #F8FFFE;">
+      <div class="container-fluid">
+        <a class="align-items-center mb-3 mb-md-0 me-md-auto sidebar-logo" href="#"><img src="{{ URL::to('/') }}/cms-graphics/logo1.png" alt="Rizal Law Office" width="190" height="35"></a>
+       
+        <ul class="nav navbar-nav ml-end">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle ms-2" href="#" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+              </svg>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+      <!--Main content-->
+      <div class="page-content-wrapper">
+        <div class="container-fluid content">
+            @yield('content')
+        </div>
+      </div>
+</body>
+</html>
