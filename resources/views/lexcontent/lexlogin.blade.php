@@ -49,7 +49,7 @@
                         </div>
                         <div>
                             <p id="login_notice" >Don't have an account yet?</p>
-                            <a id="login_create" href="#" class="text-decoration-none">Create an Account</a>
+                            <a id="login_create" href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#signup">Create an Account</a>
                         </div>
                     </div>
                     <div id="powered">
