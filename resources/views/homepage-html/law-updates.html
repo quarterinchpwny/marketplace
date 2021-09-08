@@ -110,7 +110,7 @@
     </head>
 
     <body>
-        <div class="blog-section row m-0">
+        <div class="blog-section row m-0 position-relative">
             <!-- Contact Us -->
             <div class="blog-contact-us py-4 text-center flex-row">
                 <div class="blog-contact-content">
