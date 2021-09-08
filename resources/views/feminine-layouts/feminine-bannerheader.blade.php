@@ -16,6 +16,7 @@
             @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Raleway:wght@700&display=swap');
             
             /* Header-Area CSS */
+            
             .row{
                 margin:0 !important;
             }
@@ -36,8 +37,8 @@
             #header-area{
                 background-color: #FFE2EA;
                 opacity: 0.8;
-                width: 90%;
-                height: 220px;
+                width: 80%;
+                height: 210px;
                 padding: 20px;
                 text-overflow: ellipsis;
                 overflow: hidden;
@@ -45,7 +46,7 @@
 
             #header-area h1{
                 font-family: 'Libre Baskerville';
-                font-size: 64px;
+                font-size: 55px;
                 text-shadow: 2px 2px 5px grey;
                 color: #733657;
                 padding-bottom: 10px;
@@ -53,11 +54,13 @@
 
             #header-area p{
                 font-family: 'Raleway';
-                font-size: 25px;
+                font-size: 24px;
+                color: #641F43;
             }
 
             #header-container{
                 padding-top: 500px;
+                z-index: 23;
             }
 
 
@@ -65,7 +68,7 @@
 
             #login_panel{
                 background-color: #FAF8F5;
-                height: 759px;
+                height: 750px;
             }
 
             #login_title{
@@ -115,11 +118,11 @@
                 font-weight: 400;
             }
             .form-check-input{
-            background-color: #FAF8F5;
-            border: solid 1px #7C9CAB;
+            background-color: #641F43;
+            border: solid 1px #641F43;
             }
             .form-check-input:checked{
-            border: solid 1px #B5375B;
+            border: solid 1px #641F43;
             background-color: #B5375B;
             }
             #login_forgot{
@@ -166,11 +169,11 @@
             }
 
             #login_form{
-                background-color: rgb(255, 226, 234);
+                background-color: #FFE2EA;
                 opacity: 0.8;
                 height: 750px; 
                 width: 600px;
-                padding: 20px;
+                padding: 10px;
             }
 
             .break-line p{
@@ -181,9 +184,15 @@
 
             #login-container{
                 position: absolute;
-                top: 231px;
+<<<<<<< HEAD
+                top: 0px;
+                padding-top: 10%;
+                padding-left: 62%;
+=======
+                top: 40px;
                 padding: 160px 350px 60px 1220px;
                 padding-left: 65%;
+>>>>>>> f0095d8c6d26a4844890ef805e0eeb1a2333812a
                 z-index: 22;
             }
 
@@ -214,7 +223,7 @@
             }
 
             #signup_form{
-                background-color: rgb(255, 226, 234);
+                background-color: #FFE2EA;
                 opacity: 1;
                 height: 750px; 
                 width: 600px;
@@ -279,7 +288,8 @@
             #sign-up-container{
                 position: absolute;
                 top: 0px;
-                padding: 160px 30px 60px 1220px;
+                padding-top: 10%;
+                padding-left: 62%;
                 z-index: 21;
 	            opacity: 0;
             }
@@ -350,7 +360,7 @@
 
                                 <!-- Login Form -->
                             <div id="login-container" class="animate form">
-                                <div id="login_form" class="col-lg-5 padding-1">
+                                <div id="login_form" class="">
         
                                         <div class="co-md-5 text-center" >
                                         
@@ -463,6 +473,7 @@
                         </div>
                      
         </div>
+
 
         <!-- Option 1: Bootstrap Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
