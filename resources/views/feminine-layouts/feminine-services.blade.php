@@ -10,42 +10,45 @@
    
     <style>
 
-		.intro_holder{
+		.services_intro_holder{
 		background-color: #b5375b;
 		height: 160px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 		}
 
-        .intro_text
+        .services_intro-line 
+        {
+                border: 1.5px solid #fff;
+                width: 300px;
+        }
+        .services_intro_text
         {
             text-align: center;
             color: #fff;
             text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
             font-size: 48px;
-            line-height: 20px;
+            font-family: 'Libre Baskerville', serif;
         }
-            .services_content {
-            width: 1934px;
-            height: 1285px;
-            background-image: url("https://media.istockphoto.com/photos/judge-gavel-with-justice-lawyers-business-woman-in-suit-or-lawyer-on-picture-id1130829509?k=20&m=1130829509&s=612x612&w=0&h=9VMWql4leRnpb53RSt9fW7-V999aUp9PnvVReSj1RBg=");
-            background-blend-mode:overlay ;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-position: center;
-            text-align: center;
+
+       
+
+        .services_content 
+        {
+        width: 100%;
+        height: 1150px;
+        background-image: url("https://media.istockphoto.com/photos/judge-gavel-with-justice-lawyers-business-woman-in-suit-or-lawyer-on-picture-id1130829509?k=20&m=1130829509&s=612x612&w=0&h=9VMWql4leRnpb53RSt9fW7-V999aUp9PnvVReSj1RBg=");
+        background-blend-mode:overlay ;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        text-align: center;
             
-            }
+        }
             .services_content {
             background-color: #d08197b7;
             }
 
-        p {
-            margin: 0px;
-            padding: 0px;
-        }
-
-        .container 
+        .services_container 
         {
             display: flex;
             flex-wrap: wrap;
@@ -54,11 +57,11 @@
             
         }
 
-        .container .box 
+        .services_container .serv_box 
         {
             position: relative;
-            width: 460px;
-            height: 830px;
+            width: 23%;
+            height: 800px;
             background: #ffedf2ee;
             box-shadow: 0 5px 15px rgba(0,0,0,.1);
             border-radius: 10px;
@@ -70,7 +73,7 @@
 
   
 
-        .container .box .content
+        .services_container .serv_box .serv_content
         {
             position: relative;
             z-index: 1;
@@ -80,21 +83,15 @@
 
         }
 
-        .container .box .content h3
+        .services_container .serv_box .serv_content h3
         {
             font-size: 20px;
             margin: 0px 0px;
             padding: 0;
             justify-content: center;
         }
-
-        .container .box .content p
-        {
-            margin: 0;
-            padding: 0;
-        }
-
-        .container .box .content img
+        
+        .services_container .serv_box .serv_content img
         {
            
             height: 225px;
@@ -102,12 +99,12 @@
             margin-top: 100px;
         }
 
-        .captionholder
+        .serv_captionholder
         {
             height: 120px;
         }
 
-        #caption
+        #serv_caption
         {
             font-family: Raleway;
             font-style: normal;
@@ -122,10 +119,10 @@
             color: #733657;
         }
 
-        #button
+        #serv_button
         {
             display: inline-block;
-		    width: 370px;
+		    width: 90%;
             height: 128px;
             background: #B5375B;
             border-radius: 10px;
@@ -133,7 +130,7 @@
             margin-top: 90px;
         }
 
-        #button_text
+        #serv_button_text
         {
             text-decoration: none;
             color: #fff;
@@ -145,7 +142,7 @@
             text-align: center;
             margin-top: 20px;
         }
-        .container .box:hover .content #button
+        .services_container .serv_box:hover .serv_content #serv_button
         {
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
         }
@@ -155,7 +152,7 @@
         {
             height: 70px;
             background-color: #B5375B;
-            margin-top: 80px;
+            margin-bottom; 0px;
 
             background: #B5375B;
             box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
@@ -170,60 +167,61 @@
    
 
 <div class = "services_content">
-    <div class = "intro_holder">
-        <div class = "intro_text">
-            <h1>____</h1>
-            <h1 class="intro_text">OUR SERVICES</h1>
+    <div class = "services_intro_holder">
+        <br>
+        <div class = "services_intro_text">
+        <hr class="services_intro-line border-1 mx-auto">
+            <h1 class="services_intro_text">OUR SERVICES</h1>
         </div>
     </div>
     <br>
     <br>
-    <div class = "container">
-	<div class = "box">
+    <div class = "services_container">
+	<div class = "serv_box">
 		<div class = "icon"></div>
-		<div class = "content">
-			<h3> <img src="assist.png"> </h3>
-            <div class = "captionholder">
-                <h3 id="caption"> FREE Legal <br> Assessment</h3>
+		<div class = "serv_content">
+			<h3> <img src="images/assist.png"> </h3>
+            <div class = "serv_captionholder">
+                <h3 id="serv_caption"> FREE Legal <br> Assessment</h3>
             </div>
-            <a id=button href = "">
-                <h1 id ="button_text">Ask <br> Lawyers</h1>
+            <a id=serv_button href = "">
+                <h1 id ="serv_button_text">Ask <br> Lawyers</h1>
             </a>
 		</div>     
 	</div> 
-	<div class = "box">
+	<div class = "serv_box">
 		<div class = "icon"></div>
-		<div class = "content">
-			<h3> <img src="consult.png"> </h3>
-            <div class = "captionholder">
-                <h3 id="caption"> Paid Legal <br> Consultation</h3>
+		<div class = "serv_content">
+			<h3> <img src="images/consult.png"> </h3>
+            <div class = "serv_captionholder">
+                <h3 id="serv_caption"> Paid Legal <br> Consultation</h3>
             </div>
-                <a id=button href = "">
-                    <h1 id ="button_text">Submit Legal <br> Problems</h1>
+                <a id=serv_button href = "">
+                    <h1 id ="serv_button_text">Submit Legal <br> Problems</h1>
                 </a>
 		</div>     
 	</div> 
-	<div class = "box">
+	<div class = "serv_box">
 		<div class = "icon"></div>
-		<div class = "content">
-			<h3> <img src="works.png"> </h3>
-            <div class = "captionholder">
-                <h3 id="caption"> FREE Legal Fee <br> Crowdsourcing and <br> Paid Legal Works <br> Escrow Delivery</h3>
+		<div class = "serv_content">
+			<h3> <img src="images/works.png"> </h3>
+            <div class = "serv_captionholder">
+                <h3 id="serv_caption"> FREE Legal Fee <br> Crowdsourcing and <br> Paid Legal Works <br> Escrow Delivery</h3>
             </div>
-            <a id=button href = "">
-                <h1 id = "button_text">Request<br>Proposal</h1>
+            <a id="serv_button" href = "">
+                <h1 id = "serv_button_text">Request<br>Proposal</h1>
             </a>
 		</div>     
 	</div> 
-	<div class = "box">
+	<div class = "serv_box">
 		<div class = "icon"></div>
-		<div class = "content">
-			<h3> <img src="docs.png"> </h3>
-            <div class = "captionholder">
-                <h3 id="caption">Create Your Own Legal<br>Documents From<br>Hundreds of<br>Templates</h3>
+		<div class = "serv_content">
+			<h3> <img src="images/docs.png"> </h3>
+            <div class = "serv_captionholder">
+                <h3 id="serv_caption">Create Your Own Legal<br>Documents From<br>Hundreds of<br>Templates</h3>
             </div>
-			<a id=button href = "">
-                <h1 id ="button_text">Create Legal <br> Document</h1>
+			<a id="serv_button" href = "">
+                <h1 id ="serv_button_text">Create Legal <br> Document</h1>
             </a>
 		</div>     
 	</div> 
