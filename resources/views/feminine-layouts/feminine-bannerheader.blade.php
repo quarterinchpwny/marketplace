@@ -184,15 +184,9 @@
 
             #login-container{
                 position: absolute;
-<<<<<<< HEAD
                 top: 0px;
                 padding-top: 10%;
                 padding-left: 62%;
-=======
-                top: 40px;
-                padding: 160px 350px 60px 1220px;
-                padding-left: 65%;
->>>>>>> f0095d8c6d26a4844890ef805e0eeb1a2333812a
                 z-index: 22;
             }
 
