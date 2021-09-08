@@ -32,6 +32,7 @@
                 border-color: #D08198;
                 border-left: 0;
                 border-right: 0;
+                position: relative;
             }
 
             #header-area{
@@ -118,7 +119,7 @@
                 font-weight: 400;
             }
             .form-check-input{
-            background-color: #641F43;
+            background-color: #FFFFFF;
             border: solid 1px #641F43;
             }
             .form-check-input:checked{
@@ -185,7 +186,7 @@
             #login-container{
                 position: absolute;
                 top: 0px;
-                padding-top: 10%;
+                padding-top: 3%;
                 padding-left: 62%;
                 z-index: 22;
             }
@@ -282,7 +283,7 @@
             #sign-up-container{
                 position: absolute;
                 top: 0px;
-                padding-top: 10%;
+                padding-top: 3%;
                 padding-left: 62%;
                 z-index: 21;
 	            opacity: 0;

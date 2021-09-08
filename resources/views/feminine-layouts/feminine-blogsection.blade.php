@@ -110,16 +110,16 @@
     </head>
 
     <body>
-        <div class="blog-section row m-0">
+        <div class="blog-section row m-0 position-relative">
             <!-- Contact Us -->
-            <div class="blog-contact-us position-relative p-4 text-center flex-row">
-                <p class="blog-contact-content">
+            <div class="blog-contact-us py-4 text-center flex-row">
+                <div class="blog-contact-content">
                     Got a legal question? Get in touch with us! &nbsp
 
                     <span class="justify-content-md-center float">
                         <button class="btn-contact-us" type="button">Contact Us</button>
                     </span>
-                </p>
+                </div>
             </div>
 
             <!-- Law Updates -->
