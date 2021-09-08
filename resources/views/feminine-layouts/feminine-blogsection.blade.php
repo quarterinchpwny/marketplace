@@ -47,6 +47,12 @@
                 line-height: 0.7cm;
             }
 
+            /* Contact Us */
+            .blog-contact-us {
+                background-color: #D08198;
+                color: black;
+            }
+
             .header-line-left {
                 border: 1.5px solid white;
                 width: 100px;
@@ -81,7 +87,7 @@
                 font-weight: 700;
             }
 
-            .btn-law-updates, .btn-everyday-law {
+            .btn-contact-us, .btn-law-updates, .btn-everyday-law {
                 background-color: #B5375B;
                 border: 1px solid #B5375B;
                 border-radius: 10px;
@@ -96,7 +102,7 @@
                 margin-top: auto;
             }
 
-            /**/
+            /* Blank Space */
             .blog-blank {
                 background-color: #D08198;
             }
@@ -105,6 +111,15 @@
 
     <body>
         <div class="blog-section row m-0">
+            <!-- Contact Us -->
+            <div class="blog-contact-us position-relative p-4 text-center flex-row">
+                <p class="blog-contact-content"> Got a legal question? Get in touch with us! </p>
+
+                <span class="justify-content-md-center">
+                    <button class="btn-contact-us" type="button">Contact Us</button>
+                </span>
+            </div>
+
             <!-- Law Updates -->
             <div class="law-updates col-lg-6 pb-5 position-relative">
                 <div class="card-body px-5 py-5">
