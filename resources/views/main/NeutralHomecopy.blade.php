@@ -16,7 +16,7 @@
     <title>LexHome</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-md sticky-top navbar-custom navbar-dark p-9">
+    <nav class="navbar navbar-expand-md sticky-top navbar-custom navbar-light ">
         <div class="container-fluid">
             <a href="#login" class="navbar-brand">
                 <img class="nav-logo" src="{{ URL::asset('NeutralHome_Graphics/Rizal_Law_Office_Logo.png')}}" alt="logo" height="45">
@@ -25,9 +25,10 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="#main-nav" aria-expanded="false" aria-label="Toggle Navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
+            
             <!-- Navigation links -->
             <div class="collapse navbar-collapse justify-content-end" id="main-nav">
-                <ul class="nav justify-content-start nav-font">
+                <ul class="navbar-nav">
                     <li class="nav-item px-2">
                     <a class="nav-link active" href="#home">Home</a>
                     </li>
@@ -54,24 +55,57 @@
         </div>
     </nav>
 
+
+
+
+
+
+    <!-- modal -->
+    <div class="modal fade" id="signup" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>Register to Rizal Law Office</h4>
+                    <button type=button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <label for="modal-firstname" class="form-label"> First Name:</label>
+                    <input type="text" class="form-control" id="modal-email" placeholder="Type your first name here">
+                    
+                    <label for="modal-lastname" class="form-label"> Last Name:</label>
+                    <input type="text" class="form-control" id="modal-email" placeholder="Type your last name here">
+                    
+                    <label for="modal-email" class="form-label"> Email Address:</label>
+                    <input type="text" class="form-control" id="modal-email" placeholder="e.g. stabol@gmail.com">
+                    
+                    <label for="modal-password" class="form-label"> Password:</label>
+                    <input type="password" class="form-control" id="modal-email" placeholder="">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary">Create an Account</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
     <!-- log-in section -->
     <section id="login" >
-            <div class="container-fluid ">
+            <div class="container-fluid">
                 <div class="row justify-content-center align-items-center ">
-                    <div class="col-md-5 col-lg-9 d-none d-md-block padding-0">
-                        <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <img src="{{ URL::to('/') }}/NeutralHome_Graphics/banner.png" class="d-block w-100" alt="banner picture" width="1289px" height="825px">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <div id="headline">Lorem, ipsum dolor sit amet </div>
-                                    <div id="subheadline">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui modi soluta dolorem tempore fugiat molestiae!</div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                    <div class="col-md-5 col-lg-8 padding-0">
+                        <img src="{{ URL::to('/') }}/NeutralHome_Graphics/banner.png" class="d-block w-100" alt="banner picture" max-width="1289px" max-height="825px">
                     </div>
-                    <div id ="login_panel" class="col-lg-3 padding-0" style="height: 825px;" >
+                    <div id ="login_panel" class="col-lg-4 padding-0" style="height: 825px;" >
                         <div class="p-5 text-dark">
                             <div class="co-md-5 text-center" >
                                 <div>
@@ -112,7 +146,7 @@
                                 
                                 <div>
                                     <p id="login_notice" >Don't have an account yet?</p>
-                                    <a id="login_create" href="#" class="text-decoration-none">Create an Account</a>
+                                    <a id="login_create" href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#signup">Create an Account</a>
                                 </div>
                                 
                             </div>
@@ -124,11 +158,10 @@
                 </div>
             </div>
         </section>
-
     <section id="ourservices">
         <div class="flex justify-center bs-dirtywhite-bg">
             <div class="container-fluid">
-                <h2 class="os-title">Our Services</h2>
+                <h1 class="display-3">Our Services</h1>
                 <hr style="width: 188px; margin-bottom: 30px;">
                 <div class="row">
                     <div class="col">
@@ -179,7 +212,7 @@
     <section id="law-practice">
         <div class="container-fluid">
             <div class="row">
-            <h2>Law Practice Areas</h2>
+            <h1 class="display-3">Law Practice Areas</h1>
             <hr style="width: 188px; margin-left: 15px;">
             </div>
         
@@ -250,7 +283,7 @@
     <section id="law-updates">
             <div class="container-fluid">
                 <div class="row">
-                    <h2>Law Updates</h2>
+                    <h1 class="display-3">Law Updates</h1>
                     <hr style="width: 188px; margin-left: 15px;">
                 </div>
                 <div class="row" style="padding-left: 10px;">
@@ -281,7 +314,7 @@
     <section id="everyday-law">
         <div class="container-fluid">
             <div class="row">
-                <h2>Everyday Law </h2>
+                <h1 class="display-3">Everyday Law </h1>
                 <hr style="width: 188px; margin-left: 15px;">
             </div>
             <div class="row justify-content-center" style="padding: 30px 0 0 10px;">
@@ -372,5 +405,6 @@
             </div>    
         </div>
     </section>
+    
 </body>
 </html>

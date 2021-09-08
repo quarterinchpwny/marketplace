@@ -59,5 +59,6 @@
     @include('lexcontent.lexlawupdates')
     @include('lexcontent.lexeverydaylaw')
     @include('lexcontent.lexfooter')
+    @include('lexcontent.lexsignup')
 </body>
 </html>
