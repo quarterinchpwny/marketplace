@@ -103,7 +103,18 @@
             <div class="container-fluid">
                 <div class="row justify-content-center align-items-center ">
                     <div class="col-md-5 col-lg-8 padding-0">
-                        <img src="{{ URL::to('/') }}/NeutralHome_Graphics/banner.png" class="d-block w-100" alt="banner picture" max-width="1289px" max-height="825px">
+                        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                <img src="{{ URL::to('/') }}/NeutralHome_Graphics/banner.png" class="d-block w-100" alt="banner picture" max-width="1289px" max-height="825px">
+                                    <div class="carousel-caption">
+                                        <h1 class="display-3 text-start">Rizal Law Office</p>
+                                        <h1 class="display-6 text-start">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            
                     </div>
                     <div id ="login_panel" class="col-lg-4 padding-0" style="height: 825px;" >
                         <div class="p-5 text-dark">
@@ -112,7 +123,13 @@
                                     <img class="img-fluid" src="{{ URL::to('/') }}/NeutralHome_Graphics/RLOLogo.png" alt="logo" width="76px"> 
                                 </div>
                             
-                                <div id="login_title"><p class = "p-welcome">Welcome to Rizal Law Office</p></div>
+                                <div class="d-none d-sm-block">
+                                    <h1 class="display-6" >Welcome to Rizal Law Office</h1>
+                                </div>
+
+                                <div class="d-block d-sm-none">
+                                    <p class="h4">Welcome to Rizal Law Office</p>
+                                </div>
                               
                                 <div class="input-group mb-3">
                                     <input id="login_field" type="text" class="form-control d-bl" placeholder="Email" aria-label="Email"> <br>
@@ -161,7 +178,7 @@
     <section id="ourservices">
         <div class="flex justify-center bs-dirtywhite-bg">
             <div class="container-fluid">
-                <h1 class="display-3">Our Services</h1>
+                <h1 class="display-2">Our Services</h1>
                 <hr style="width: 188px; margin-bottom: 30px;">
                 <div class="row">
                     <div class="col">
@@ -212,7 +229,7 @@
     <section id="law-practice">
         <div class="container-fluid">
             <div class="row">
-            <h1 class="display-3">Law Practice Areas</h1>
+            <h1 class="display-2">Law Practice Areas</h1>
             <hr style="width: 188px; margin-left: 15px;">
             </div>
         
@@ -283,7 +300,7 @@
     <section id="law-updates">
             <div class="container-fluid">
                 <div class="row">
-                    <h1 class="display-3">Law Updates</h1>
+                    <h1 class="display-2">Law Updates</h1>
                     <hr style="width: 188px; margin-left: 15px;">
                 </div>
                 <div class="row" style="padding-left: 10px;">
@@ -314,7 +331,7 @@
     <section id="everyday-law">
         <div class="container-fluid">
             <div class="row">
-                <h1 class="display-3">Everyday Law </h1>
+                <h1 class="display-2">Everyday Law </h1>
                 <hr style="width: 188px; margin-left: 15px;">
             </div>
             <div class="row justify-content-center" style="padding: 30px 0 0 10px;">
