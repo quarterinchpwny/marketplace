@@ -11575,3 +11575,11 @@ body {
   background-color: #CEDDEF;
   color: #1f3c88;
 }
+
+#bg {
+  height: 720px;
+  background-image: url("/images/bgLandingPage.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}

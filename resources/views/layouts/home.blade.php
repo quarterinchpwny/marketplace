@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('signUp')
-<div alt="redg" class="container-fluid bgpb">
 <div class="SignUp">
-<img src="/images/bgLandingPage.png" class="landingBackground" alt="bgHomeImage" width="1350" height="720">
+<div class="container-fluid" id="bg">
+</div>
 <div class="container" id="lblue-signup">
     <!-- Sign up -->
     <div class="row align-items-center">
@@ -52,7 +52,6 @@
         </div>
     </div>
     </div>
-</div>
 </div>
 </div>
 @endsection
