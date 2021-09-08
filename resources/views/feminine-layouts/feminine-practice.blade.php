@@ -32,7 +32,7 @@
 
         .practices_content {
             width: 100%;
-            height: 1285px;
+            height: 1350px;
             background: rgba(213, 64, 106, 0.12);
             }
 
@@ -40,7 +40,7 @@
         .container 
         {
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: auto;
             justify-content: space-between;
             padding-top: 10px;
 
@@ -55,7 +55,7 @@
             overflow: hidden;
             text-align: center;
             width: 300px;
-            height: 380px;
+            height: 450px;
             padding-top: 15px;
        
             
@@ -71,11 +71,11 @@
            
         }
 
-        #button
+        .box #button
         {
             display: inline-block;
-            width: 250px;
-            height: 250px;
+            width: 90%;
+            height: 60%;
 		    padding: center;
             background: #B8537B;
             border-radius: 50%;
@@ -104,7 +104,7 @@
         .button_holder
         {
             text-align: center;
-            padding-top: 50px;
+            padding-top: 20px;
         }
 
         #see_button
@@ -147,7 +147,7 @@
     <div class = intro_holder>
         <div><br><br></div>
         <div class = "intro_text">
-            <br>
+            <br><br>
             <hr class="intro-line border-1 mx-auto">
             <h1 class="intro_text">PRACTICE AREAS</h1>
         </div>
@@ -208,12 +208,12 @@
             <a id = title>Special Services</a>    
         </div> 
     </div>
-    <br>
-    <br>
     <div class="button_holder text-align: center">
         <a id="see_button"href = "">
         <h1 id = "button_text">SEE MORE</h1>
         </a> </div>
+    <br>
+    <br>
     <br>
 </div>
 
