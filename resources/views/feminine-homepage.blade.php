@@ -10,5 +10,5 @@
 @include('feminine-layouts.bannerheader')
 @include('feminine-layouts.services')
 @include('feminine-layouts.practices')
-@include('feminine-layouts.blogsection')
+@include('feminine-layouts.law-updates')
 @include('feminine-layouts.footer')
