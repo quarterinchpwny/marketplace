@@ -22,17 +22,24 @@
                 box-sizing: border-box;
             }
 
+            html, body{
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                overflow-x: hidden;
+            }
+
             nav{
                 background: #FFFF;
                 height: 100px;
                 width: 100%;
-                z-index: 24;
             }
             label.logo{
                 color: white;
                 font-size: 35px;
                 line-height: 80px;
-                padding: 0 40px;
+                padding: 0 100px;
                 font-weight: bold;
             }
 
@@ -44,51 +51,74 @@
                 display: inline-block;
                 line-height: 80px;
                 margin: 0 5px;
-                padding-top: 20px;
             }
             nav ul li a{
                 color: #641F43;
                 font-family: "Raleway";
-                font-weight: bolder;
+                font-weight: 900;
                 letter-spacing: 2px;
                 padding: 7px 13px;
                 border-radius: 3px;
                 text-decoration: none;
-
             }
             a.active,a:hover{
                 background:  #FFE2EA;
                 transition: .5s;
                 color:#B5375B;
             }
-
-            nav ul li a:hover{
-                color: #B5375B;
-            }
             .checkbtn{
                 font-size: 40px;
                 color: #641F43;
                 float: right;
-                line-height: 100px;
+                line-height: 80px;
                 margin-right: 40px;
-                margin-top: 25px;
                 cursor: pointer;
                 display: none;
             }
             #check{
                 display: none;
             }
-            @media (max-width: 952px){
+            @media (max-width: 965px){
                 label.logo{
-                    font-size: 30px;
-                    padding-left: 50px;
+                    font-size: 1px;
+                    padding-left: 5px;
                 }
                 nav ul li a{
-                    font-size: 16px;
-                    color: #641F43;
+                    font-size: 10px;
                 }
             }
-            @media (max-width: 858px){
+
+            @media (max-width: 1024px){
+                label.logo{
+                    font-size: 10px;
+                    padding-left: 5px;
+                }
+                nav ul li a{
+                    font-size: 10px;
+                }
+            }
+
+            @media (max-width: 1385px){
+                label.logo{
+                    font-size: 5px;
+                    padding-left: 5px;
+                }
+                nav ul li a{
+                    font-size: 14px;
+                }
+            }
+
+            @media (max-width: 1152px){
+                label.logo{
+                    font-size: 10px;
+                    padding-left: 5px;
+                }
+                nav ul li a{
+                    font-size: 12px;
+                }
+            }
+
+            @media (max-width: 852px){
                 .checkbtn{
                     display: block;
                 }
@@ -101,6 +131,7 @@
                     left: -100%;
                     text-align: center;
                     transition: all .5s;
+                    z-index: 1;
                 }
                 nav ul li{
                     display: block;
@@ -117,6 +148,7 @@
                 #check:checked ~ ul{
                     left: 0;
                 }
+
             }
         </style>
 
