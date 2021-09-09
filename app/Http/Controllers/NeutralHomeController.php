@@ -6,7 +6,7 @@
     class NeutralHomeController extends Controller
     {
         public function index(){
-            return view('main.NeutralHomeCopy');
+            return view('main.NeutralHomecopy');
         }
     }
 
