@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CMS</title>
-    <link href="{{ URL::asset('css/style.css'); }}" rel="stylesheet">
+    <link href="{{ URL::asset('cms-css/cmsstyle.css'); }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
@@ -62,13 +62,13 @@
         </li>
       </ul>
       <div class="sidenav-logo">
-        Powered by <img src="{{ URL::to('/') }}/cms-graphics/lexmeet logo.png" alt="Powered by LexMeet" width="100" height="14"> 
+        <img src="{{ URL::to('/') }}/cms-graphics/Powered.png" alt="Powered by LexMeet" width="200px"> 
       </div>
     </div>
      <!--Top Navigation--> 
      <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #F8FFFE;">
       <div class="container-fluid">
-        <a class="align-items-center mb-3 mb-md-0 me-md-auto sidebar-logo" href="#"><img src="{{ URL::to('/') }}/cms-graphics/logo1.png" alt="Rizal Law Office" width="190" height="35"></a>
+        <a class="align-items-center mb-3 mb-md-0 me-md-auto sidebar-logo" href="#"><img src="{{ URL::to('/') }}/cms-graphics/logo1.png" alt="Rizal Law Office" width="200px"></a>
        
         <ul class="nav navbar-nav ml-end">
           <li class="nav-item dropdown">
@@ -96,5 +96,11 @@
             @yield('content')
         </div>
       </div>
+
+      <script>
+        $('.sidebar-nav ul li').click(function(){
+          $(this).addClass("active").siblings().removeClass("active");
+        });
+      </script>
 </body>
 </html>
