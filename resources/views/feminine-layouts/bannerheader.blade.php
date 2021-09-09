@@ -22,7 +22,7 @@
           .banner-image{
                 position: relative;
                 height: 900px;
-                background: url(image/banner-header-image.jpeg) no-repeat center;
+                background: url(images/banner-header-image.jpeg) no-repeat center;
                 background-size: cover;
                 border-style: solid;
                 border-width: 5px;
