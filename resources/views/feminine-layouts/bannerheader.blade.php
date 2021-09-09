@@ -14,42 +14,39 @@
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Raleway:wght@500;700&display=swap');
             @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Raleway:wght@700&display=swap');
-            
-            /* Header-Area CSS */
-            
-            .row{
-                margin:0 !important;
-            }
-
-            #banner-area{
-                background-image: url(images/banner-header-image.jpeg);
-                background-size: cover;
-                background-position: center center;
+                  
+        .row{
+             margin:0 !important;
+        }
+          /* Banner-Header CSS */
+          .banner-image{
+                position: relative;
                 height: 900px;
-                width: 100%;
+                background: url(images/banner-header-image.jpeg) no-repeat center;
+                background-size: cover;
                 border-style: solid;
                 border-width: 5px;
                 border-color: #D08198;
                 border-left: 0;
                 border-right: 0;
-                position: relative;
-                padding: 0;
             }
 
+            #container{
+                position: absolute;
+            }
+
+            /* Header-Area CSS */
             #header-area{
+                margin-top: 500px;
                 background-color: #FFE2EA;
-                opacity: 0.8;
-                width: 100%;
-                height: 210px;
                 padding: 20px;
             }
 
             #header-area h1{
                 font-family: 'Libre Baskerville';
-                font-size: 55px;
+                font-size: 50px;
                 text-shadow: 2px 2px 5px grey;
                 color: #733657;
-                padding-bottom: 10px;
             }
 
             #header-area p{
@@ -58,21 +55,10 @@
                 color: #641F43;
             }
 
-            #header-container{
-                padding-top: 500px;
-                z-index: 23;
-            }
-
-
-            /* Login Form CSS  */
-
-            #login_panel{
-                background-color: #FAF8F5;
-                height: 750px;
-            }
+            /* Log-in/Sign-up CSS */
 
             #login_title{
-                color: rgb(100, 31, 67);
+                color: #641F43;
                 font-size: 48px;
                 font-family: 'Raleway';
                 font-weight: bold;
@@ -80,7 +66,7 @@
                 padding-top: 30px;
             }
             #login_field{
-                width: 200px;
+                width: 500px;
                 background: #FFFFFF;
                 border: solid 1px #641F43;
                 box-sizing: border-box;
@@ -88,6 +74,7 @@
                 font-size: 15px;
                 font-weight:400;
                 color: #641F43;
+                padding: 10px;
             }
             #login_button{
                 width: 300px;
@@ -113,9 +100,10 @@
             #login_remember{
                 color: #641F43;
                 font-size: 17px;
-                padding-left: 60px;
+                padding-left: 50px;
                 padding-bottom: 30px;
                 font-weight: 400;
+                padding-top: 10px;
             }
             .form-check-input{
             background-color: #FFFFFF;
@@ -132,7 +120,6 @@
                 padding-left: 200px;
             }
             #login_social{
-                
                 width: 245px;
                 height: 50px;
                 background: #FFFFFF;
@@ -171,165 +158,12 @@
             #login_form{
                 background-color: #FFE2EA;
                 opacity: 0.8;
-                height: 750px; 
-                width: 600px;
+                height: 710px; 
+                width: 550px;
                 padding: 10px;
+                margin-top: 50px;
             }
 
-            .break-line p{
-                color: rgb(100, 31, 67);
-                font-weight: bolder;
-                text-shadow: 2px 2px 5px violet;
-            }
-
-            #login-container{
-                position: absolute;
-                top: 0px;
-                padding-top: 3%;
-                padding-left: 62%;
-                z-index: 22;
-            }
-
-            /* Signup Form CSS  */
-
-            #signup_panel{
-                background-color: #FAF8F5;
-                height: 759px;
-            }
-
-            #signup_title{
-                color: rgb(100, 31, 67);
-                font-size: 48px;
-                font-family: 'Raleway';
-                font-weight: bold;
-                text-align: center;
-                padding-top: 30px;
-            }
-            #signup_field{
-                width: 200px;
-                background: #FFFFFF;
-                border: solid 1px #641F43;
-                box-sizing: border-box;
-                border-radius: 10px;
-                font-size: 15px;
-                font-weight:400;
-                color: #641F43;
-            }
-
-            #signup_form{
-                background-color: #FFE2EA;
-                opacity: 1;
-                height: 750px; 
-                width: 600px;
-                padding: 20px;
-            }
-
-            #signup_button{
-                width: 300px;
-                height: 50px;
-                background: #B5375B;
-                border-radius: 10px;
-                border: solid 1px #B5375B;
-                font-weight: 700;
-                font-size: 24px;    
-            }
-
-            #signup_button:hover{
-                background: #733657;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
-            }
-
-
-            #signup_remember{
-                color: #641F43;
-                font-size: 17px;
-                padding-left: 130px;
-                padding-bottom: 30px;
-                font-weight: 400;
-            }
-
-            #signup_social{
-                
-                width: 245px;
-                height: 50px;
-                background: #FFFFFF;
-                border-radius: 10px;
-                border: solid 1px #641F43;
-                font-weight: 700;
-                padding-top: 10px;
-                text-align: right;
-                color: #641F43;
-                font-size: 18px;
-
-            }
-
-            #signup_notice{
-                font-size: 20px;
-                font-weight: 300;
-                color: #641F43;
-                padding: 5px;
-                font-weight: 500;
-            }
-
-            #signup_login_up{
-                margin-top:0;
-                font-size: 20px;
-                font-weight: 700;
-                padding: 5px;
-                color: #B5375B;
-            }
-
-            #sign-up-container{
-                position: absolute;
-                top: 0px;
-                padding-top: 3%;
-                padding-left: 62%;
-                z-index: 21;
-	            opacity: 0;
-            }
-
-            /* Animation Swapping of Login and Signup*/
-
-            #toregister:target ~ #wrapper #sign-up-container,
-            #tologin:target ~ #wrapper #login-container{
-            z-index: 22;
-            animation-name: fadeInLeft;
-            animation-delay: .1s;
-            }
-
-            .animate{
-                animation-duration: 0.5s;
-                animation-timing-function: ease;
-                animation-fill-mode: both;
-            }
-            @keyframes fadeInLeft {
-                0% {
-                    opacity: 0;
-                    transform: translateX(-20px);
-                }
-                
-                100% {
-                    opacity: 1;
-                    transform: translateX(0);
-                }
-            }
-            
-            #toregister:target ~ #wrapper #login-container,
-            #tologin:target ~ #wrapper #sign-up-container{
-                animation-name: fadeOutLeftBig;
-            }
-
-            @keyframes fadeOutLeft {
-                0% {
-                    opacity: 1;
-                    transform: translateX(0);
-                }
-                
-                100% {
-                    opacity: 0;
-                    transform: translateX(-20px);
-                }
-            }
 
         </style>
 
@@ -337,135 +171,72 @@
 
     <body>
 
-        <!-- Banner / Header -->
-        <div id="banner-area" class="row container-fluid">
-                <div id="header-container" class="col-sm-6 col-md-9 col-lg-8">
-                    <div id="header-area" class="">
-                        <h1>Lorem, ipsum dolor sit amet </h1>
-                        <p>Aliquam nibh massa, fringilla a malesuada ut, sagittis ut sem. Quisque metus mauris, tristique nec lectus a, vehicula cursus elit.</p>
-                    </div>
+           <!-- Banner / Header -->
+        <div class="banner-image">
+            <div id="container" class="row">
+                <div id="header-area" class="col-lg-7">
+                    <h1>Lorem, ipsum dolor sit amet </h1>
+                    <p>Aliquam nibh massa, fringilla a malesuada ut, sagittis ut sem. Quisque metus mauris, tristique nec lectus a, vehicula cursus elit.</p>
                 </div>
 
-                            <!-- Hidden Anchor -->
-                    	    <a class="hiddenanchor" id="toregister"></a>
-	                        <a class="hiddenanchor" id="tologin"></a>
+                <div class="col-lg-1"></div>
 
-                        <div id="wrapper" class="">
+                <div id="form-area" class="col-lg-4">
 
-                                <!-- Login Form -->
-                            <div id="login-container" class="animate form">
-                                <div id="login_form" class="">
-        
-                                        <div class="co-md-5 text-center" >
-                                        
-                                            <div id="login_title"><p>Welcome to</p></div>
-        
-                                            <div>
-                                                <img class="img-fluid" src="images/Logo2.png" alt="logo2" width="70px"> 
-                                                <img class="img-fluid" src="images/Logo1.png" alt="logo1" width="320px">  
-                                            </div>
-                                            <br>
-                                            <div>
-                                                <a id="login_social" href="#" class="btn btn-primary btn-md" style="padding-left: 5px;"> <img src="images/google.png" alt="" style="padding-left: 10px; padding-right: 5px;" width="55px">Login with Google</a>
-                                                <a id="login_social" href="#" class="btn btn-primary btn-md" style="padding-left: 5px;"> <img src="images/facebook.png" alt="" style="padding-left: 10px; padding-right: 5px;" width="47px">Login with Facebook</a>
-                                            </div>
-        
-                                            <div class="break-line"> 
-                                                <p>___________________________________ or ____________________________________</p>
-                                            </div>
-        
-                                            <div class="input-group">
-                                                <input id="login_field" type="text" class="form-control" placeholder="Email" aria-label="Email"> <br>
-                                            </div>
-        
-                                            <div class="input-group">
-                                                <input id="login_field" type="text" class="form-control" placeholder="Password" aria-label="Password">
-                                            </div>
-        
-                                            <div id="login_remember" class="form-check justify-content-start text-start">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                                                <label class="form-check-label" for="flexCheckChecked">
-                                                    Remember Me
-                                                    <a id="login_forgot" href="#" class="text-decoration-none">Forgot Password</a>
-                                                </label>
-                                            </div>
-        
-                                            <div>
-                                                <a id="login_button" href="#services" class="btn btn-primary btn-md" >Log in</a>
-                                            </div>
-                                            
-                                            <div>
-                                                <p id="login_notice" >Don't have an account yet? <a id="login_sign_up" href="#toregister" class="text-decoration-none">Sign up</a></p>
-                                            </div>
-                                            
-                                        </div>
-        
-                                        <div id="powered">
-                                            Powered by <img src="images/power1.png" alt="" width="100px" >
-                                        </div>
-        
-                                    
-                                    
-                                </div>
+                    <!-- Login Form -->
+                    <div id="login-container" class="animate form">
+                        <div id="login_form" class="text-center">
+                                
+                            <div id="login_title"><p>Welcome to</p></div>
+
+                            <div>
+                                <img class="img-fluid" src="images/Logo2.png" alt="logo2" width="70px"> 
+                                <img class="img-fluid" src="images/Logo1.png" alt="logo1" width="320px">  
+                            </div>
+                            <br>
+                            <div>
+                                <a id="login_social" href="#" class="btn btn-primary btn-md" style="padding-left: 5px;"> <img src="images/google.png" alt="" style="padding-left: 10px; padding-right: 5px;" width="55px">Login with Google</a>
+                                <a id="login_social" href="#" class="btn btn-primary btn-md" style="padding-left: 5px;"> <img src="images/facebook.png" alt="" style="padding-left: 10px; padding-right: 5px;" width="47px">Login with Facebook</a>
                             </div>
 
-                                        <!-- Sign up Form -->
-                                <div id="sign-up-container" class="animate form">
-                                    <div id="signup_form" class="col-lg-5 padding-1">
-                                    
-                                            <div class="co-md-5 text-center" >
-                                            
-                                                <div id="signup_title"><p>Create Your Account</p></div>
-                                    
-                                                <br>
-                                                <div>
-                                                    <a id="signup_social" href="#" class="btn btn-primary btn-md" style="padding-left: 5px;"> <img src="images/google.png" alt="" style="padding-left: 10px; padding-right: 5px;" width="55px">Login with Google</a>
-                                                    <a id="signup_social" href="#" class="btn btn-primary btn-md" style="padding-left: 5px;"> <img src="images/facebook.png" alt="" style="padding-left: 10px; padding-right: 5px;" width="47px">Login with Facebook</a>
-                                                </div>
-                                    
-                                                <div class="break-line"> 
-                                                    <p>___________________________________ or ____________________________________</p>
-                                                </div>
-                                    
-                                                <div class="input-group mb-3">
-                                                    <input id="signup_field" type="text" class="form-control d-bl" placeholder="Email" aria-label="Email"> <br>
-                                                </div>
-                                    
-                                                <div class="input-group mb-3">
-                                                    <input id="signup_field" type="text" class="form-control" placeholder="Password" aria-label="Password">
-                                                </div>
-                                    
-                                                <div class="input-group mb-3">
-                                                    <input id="signup_field" type="text" class="form-control" placeholder="Retype Password" aria-label="Retype Password">
-                                                </div>
-                                    
-                                                <div id="login_remember" class="form-check justify-content-start text-start">
-                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                                                    <label class="form-check-label" for="flexCheckChecked">
-                                                        Remember Me
-                                                    </label>
-                                                </div>
-                                    
-                                                <div>
-                                                    <a id="signup_button" href="#services" class="btn btn-primary btn-md" >Sign up</a>
-                                                </div>
-                                                
-                                                <div>
-                                                    <p id="signup_notice" >Already have an account? <a id="signup_login_up" href="#tologin" class="text-decoration-none">Log in</a></p>
-                                                </div>
-                                                
-                                            </div>
-                                    
-                                            <div id="powered">
-                                                Powered by <img src="images/power1.png" alt="" width="100px" >
-                                            </div>
-                                    
-                                        
-                                    </div>
+                            <div class="break-line"> 
+                                <p>___________________________________ or ____________________________________</p>
+                            </div>
+
+                            <div class="input-group">
+                                <input id="login_field" type="text" class="" placeholder="Email" aria-label="Email"> <br>
+                            </div>
+
+                            <div class="input-group">
+                                <input id="login_field" type="text" class="" placeholder="Password" aria-label="Password">
+                            </div>
+
+                                <div id="login_remember" class="form-check justify-content-start text-start">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Remember Me
+                                        <a id="login_forgot" href="#" class="text-decoration-none">Forgot Password</a>
+                                    </label>
                                 </div>
 
+                                <div>
+                                    <a id="login_button" href="#services" class="btn btn-primary btn-md" >Log in</a>
+                                </div>
+                                    
+                                <div>
+                                    <p id="login_notice" >Don't have an account yet? <a id="login_sign_up" href="#toregister" class="text-decoration-none">Sign up</a></p>
+                                </div>   
+
+                                <div id="powered">
+                                    Powered by <img src="images/power1.png" alt="" width="100px" >
+                                </div>
+                            
                         </div>
-                     
+                    </div>
+
+                </div>
+
+            </div>
         </div>
 
 
