@@ -22,24 +22,17 @@
                 box-sizing: border-box;
             }
 
-            html, body{
-                width: 100%;
-                height: 100%;
-                margin: 0;
-                padding: 0;
-                overflow-x: hidden;
-            }
-
             nav{
                 background: #FFFF;
                 height: 100px;
                 width: 100%;
+                z-index: 24;
             }
             label.logo{
                 color: white;
                 font-size: 35px;
                 line-height: 80px;
-                padding: 0 100px;
+                padding: 0 50px;
                 font-weight: bold;
             }
 
@@ -71,7 +64,7 @@
                 color: #641F43;
                 float: right;
                 line-height: 80px;
-                margin-right: 40px;
+                margin-right: 50px;
                 cursor: pointer;
                 display: none;
             }
@@ -81,7 +74,7 @@
             @media (max-width: 965px){
                 label.logo{
                     font-size: 1px;
-                    padding-left: 5px;
+                    padding-left: 10px;
                 }
                 nav ul li a{
                     font-size: 10px;
@@ -91,7 +84,7 @@
             @media (max-width: 1024px){
                 label.logo{
                     font-size: 10px;
-                    padding-left: 5px;
+                    padding-left: 20px;
                 }
                 nav ul li a{
                     font-size: 10px;
@@ -101,7 +94,7 @@
             @media (max-width: 1385px){
                 label.logo{
                     font-size: 5px;
-                    padding-left: 5px;
+                    padding-left: 20px;
                 }
                 nav ul li a{
                     font-size: 14px;
@@ -111,7 +104,7 @@
             @media (max-width: 1152px){
                 label.logo{
                     font-size: 10px;
-                    padding-left: 5px;
+                    padding-left: 20px;
                 }
                 nav ul li a{
                     font-size: 12px;
@@ -136,7 +129,7 @@
                 nav ul li{
                     display: block;
                     margin: 50px 0;
-                    line-height: 30px;
+                    line-height: 0px;
                 }
                 nav ul li a{
                     font-size: 20px;
