@@ -114,9 +114,10 @@
                                     <a id="login_social" href="#services" class="btn btn-primary btn-md" style="padding-left: 30px;"> <img src="{{ URL::to('/') }}/NeutralHome_Graphics/google_icon.png" alt="" style="padding-left: 15px; padding-right: 5px;" width="47px">LOGIN WITH GOOGLE</a>
                                 </div>
 
-                                <div id="hr">
+                                <br>
+                                <!-- <div id="hr">
                                 <p><hr class="hr-login"></p>
-                                </div>
+                                </div> -->
                                 
                                 <div>
                                     <p id="login_notice" >Don't have an account yet?</p>
@@ -238,7 +239,7 @@
         <div class="container-xxl">
             <div class="row align-items-center justify-content-center">
                 <div class="col-8 col-lg-6 col-xl-3">
-                    <div class="zoom"><img src="{{ URL::to('/') }}/NeutralHome_Graphics/perosnal.png" alt=""></div>
+                    <div class="zoom"><img src="{{ URL::to('/') }}/NeutralHome_Graphics/personal.png" alt=""></div>
                 </div>
                 <div class="col-8 col-lg-6 col-xl-3">
                     <div class="zoom"><img src="{{ URL::to('/') }}/NeutralHome_Graphics/civil.png" alt=""></div>
@@ -253,7 +254,7 @@
         
             <div class="row" id="areas_labels">
                 <div class="col-3 d-none d-sm-block">
-                    <p class="h4">Personal and Family Law</h1>
+                    <p class="h4">Personal and<br>Family Law</h1>
                 </div>
                 <div class="col-3 d-none d-sm-block">
                     <p class="h4">Civil Law</h1>
@@ -298,7 +299,7 @@
         </div>
 
         <div class="row align-items-center justify-content-center py-5" id="areas_buttons">
-            <a class="btn" href="#" role="button" id="areas_seemore">SEE MORE</a>
+            <a class="btn" href="#law-practice" role="button" id="areas_seemore">SEE MORE</a>
         </div>
     </section>
 
@@ -338,7 +339,7 @@
         <div class="container-fluid">
             <div class="row">
                 <h1 class="display-2">Everyday Law </h1>
-                <hr style="width: 188px; margin-left: 15px;">
+                <hr class="d-none d-lg-block" style="width: 188px; margin-bottom: 30px;">
             </div>
             <div class="row justify-content-center" style="padding: 30px 0 0 10px;">
 
