@@ -6,14 +6,14 @@
 </div>
 <div class="container" id="lblue-signup">
     <!-- Sign up -->
-    <div class="row align-items-center">
-        <div class="col-sm-4">
-                <input class="form-control form-control-lg" type="text" placeholder="E-mail Address" >
+    <div class="row">
+        <div class="col-md-4 mb-3">
+                <input class="form-control form-control-lg emailtf" type="text" placeholder="E-mail Address" >
         </div>
-        <div class="col-sm-4">
-                <input class="form-control form-control-lg" type="text" placeholder="Password" >
+        <div class="col-md-4 mb-3">
+                <input class="form-control form-control-lg passtf" type="text" placeholder="Password" >
         </div>
-        <div class="col-sm-4">
+        <div class="col-md-4 mb-3">
                 <button type="button" id="buttonBlue">Log in</button>
         </div>
     </div>

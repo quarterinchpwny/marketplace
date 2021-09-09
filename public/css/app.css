@@ -11583,3 +11583,37 @@ body {
   background-repeat: no-repeat;
   background-position: 50%;
 }
+
+@media screen and (max-width: 900px) {
+  #everydayLawVid {
+    display: none;
+  }
+
+  .lawUpdatesImage {
+    display: none;
+  }
+
+  .card-body {
+    width: 450px;
+  }
+
+  .emailtf {
+    width: 260px;
+  }
+
+  .passtf {
+    width: 260px;
+  }
+
+  .buttonsSign {
+    align-items: left;
+  }
+}
+@media screen and (max-width: 400px) {
+  #buttonBlue2 {
+    position: relative;
+    bottom: 270px;
+    left: 250px;
+    width: 200px;
+  }
+}
