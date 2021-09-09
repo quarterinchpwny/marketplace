@@ -42,5 +42,6 @@ Route::get('/navigation', [App\Http\Controllers\NavController::class, 'index'])-
 
 Route::get('/banner-area', [App\Http\Controllers\BannerController::class, 'index'])->name('banner-area');
 
+Route::get('/sampe', [App\Http\Controllers\SampleController::class, 'index'])->name('sample');
 // Carl Note
 // if route changes not work try to run "php artisan optimize"
