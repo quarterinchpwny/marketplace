@@ -323,7 +323,7 @@
                 <div class="row" style="padding-left: 10px;">
                     <div class="col-7" >
                         <div id="updates-heading">
-                            <p>Can your text message or e-mail message be used as evidence in court?</p>
+                            <h3>Can your text message or e-mail message be used as evidence in court?</p>
                         </div>
                         <div id="updates-content">
                             <p>Before the advent of computer age, we have been familiar with the use of documentary evidence in court such as contracts, agreements, letters and other writings.</p>

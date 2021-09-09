@@ -17,10 +17,10 @@ use Illuminate\Http\Request;
 //Route::get('/content', [App\Http\Controllers\AppController::class, 'index'])->name('content');
 
 Route::get('/NeutralHome', [App\Http\Controllers\NeutralHomeController::class, 'index'])->name('NeutralHome');
-Route::group(['prefix' => 'NeutralHome'], function () {
-  Route::get('/NeutralHome/SignUp', [App\Http\Controllers\SignUpController::class, 'add'])->name('add.user');
-  Route::post('/NeutralHome/SignUp/Post', [App\Http\Controllers\SignUpController::class, 'store'])->name('add.user.post');
-});
+// Route::group(['prefix' => 'NeutralHome'], function () {
+//   Route::get('/NeutralHome/SignUp', [App\Http\Controllers\SignUpController::class, 'add'])->name('add.user');
+//   Route::post('/NeutralHome/SignUp/Post', [App\Http\Controllers\SignUpController::class, 'store'])->name('add.user.post');
+// });
 
 
 // Route::middleware(['guest'])->group(function () {
