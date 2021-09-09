@@ -10,20 +10,79 @@
     <link href="{{ URL::asset('css/test.css'); }}" rel="stylesheet">
 
     <title>LexMeet</title>
-        
+          
+  <script>
+    var checkBoxLogo = document.getElementById("logo");
+    var checkBoxTemplate = document.getElementById("template");
+    var checkBoxCW = document.getElementById("cw");
+    var checkBoxSP = document.getElementById("sp");
+    var checkBox1 = document.getElementById("1");
+    var checkBox2 = document.getElementById("2");
+    var l,t,cw,sp,cb1,cb2 = 0;
+
+
+  function onAddWebsite(){
+    
+   
+    window.location.href = "step5";
+
+    if (checkBoxLogo.checked == true){
+        localStorage.setItem("l", "1");
+
+    } 
+    if (checkBoxTemplate.checked == true){
+        localStorage.setItem("t", "1");
+    } 
+    if (checkBoxCW.checked == true){
+        localStorage.setItem("cw", "1");
+    } 
+    if (checkBoxSP.checked == true){
+        localStorage.setItem("sp", "1");
+    } 
+    if (checkBox1.checked == true){
+        localStorage.setItem("cb1", "1");
+    } 
+    if (checkBox2.checked == true){
+        localStorage.setItem("cb2", "1");
+    } 
+
+
+    }
+  var data = 1;
+  function dec(x){
+    tableEl.addEventListener("click", onDeleteRow);
+    data=parseInt(document.getElementById("box".concat(x)).value);
+
+    data=data-1;
+    document.getElementById("box".concat(x)).value=data;
+    data=parseInt(document.getElementById("val".concat(x)).innerText);
+    document.getElementById("val".concat(x)).innerText=data-5000;
+  }
+
+
+  function inc(x){
+    data=parseInt(document.getElementById("box".concat(x)).value);
+    data=data+1;
+    
+    document.getElementById("box".concat(x)).value=data;
+    document.getElementById("val".concat(x)).innerText=data*5000;
+  }
+
+ 
+
+  
+
+ 
+ 
+</script>
 
 </head>
 <body>
   
-    @yield('main')
-    @yield('step1')
-    @yield('step2')
-    @yield('step3')
-    @yield('step4')
-    @yield('step5')
-    @yield('step6')
-    @yield('step7')
-    @yield('step8')
+    
+   
 
+
+  
 </body>
 </html>

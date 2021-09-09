@@ -17,13 +17,12 @@
   
   </div>
 </header>
-@endsection
-@section('step1')
+
 
 
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
   <symbol id="check" viewBox="0 0 16 16">
-    <
+    
     <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
   </symbol>
 </svg>
@@ -281,12 +280,9 @@
   
 
 </main>
-
 </div>
 
-@endsection
 
-@section('step2')
 <div class="container " style="padding-top: 2.4rem;padding-bottom: 2.4rem;" id="step2">
   <div class="tracking-progress-bar text-center">
     <div class="tracking-progress-bar__item tracking-progress-bar__item--first tracking-progress-bar__item--active">1</div>
@@ -325,16 +321,16 @@
                  </span>
                   </div>
           </div>
+          <a type="button" class="w-25 btn btn-lg btn-primary" href="#step3">Next</a>
+
         </div>
         </div>
         </div>
         </section>
   </div>
 </div>
-@endsection
 
-@section('step3')
-<div class="container " style="padding-top: 2.4rem;padding-bottom: 2.4rem;">
+<div class="container " style="padding-top: 2.4rem;padding-bottom: 2.4rem;" id="step3">
   <div class="tracking-progress-bar text-center">
     <div class="tracking-progress-bar__item tracking-progress-bar__item--first tracking-progress-bar__item--active">1</div>
   
@@ -365,7 +361,7 @@
           <div class="row">
             <div class="col-md-4" >
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top p-3"style="height: 34rem; width: 100%; display: block;" src="/images/no2.png " data-holder-rendered="true">
+                <img class="card-img-top p-3"style="height: 34rem; display: block;" src="/images/no2.png " data-holder-rendered="true">
                 <div class="card-body">
                   <div class="d-flex justify-content-between align-items-center">
                       <a type="button" class="w-100 btn btn-lg btn-orange" href="#step2">Select</a>
@@ -398,9 +394,7 @@
       </div>
   </div>
 </div>
-@endsection
 
-@section('step4')
 <div class="container align-center" style="padding-top: 2.4rem;padding-bottom: 2.4rem;height:65rem " id="step4">
   <div class="tracking-progress-bar text-center">
     <div class="tracking-progress-bar__item tracking-progress-bar__item--first tracking-progress-bar__item--active">1</div>
@@ -489,10 +483,7 @@
 
 </div>
 </form>
-@endsection
 
-
-@section('step5')
 <div class="container " style="padding-top: 2.4rem;padding-bottom: 2.4rem;" id="step5">
   <div class="tracking-progress-bar text-center">
     <div class="tracking-progress-bar__item tracking-progress-bar__item--first tracking-progress-bar__item--active">1</div>
@@ -562,16 +553,16 @@
     if (checkBoxLogo.checked == true){
       tbodyEl.innerHTML += `
         <tr>
-            <td>Logo</td>
-            <td>5000</td>
+            <td><h4>Logo</h4></td>
+            <td><h4>5000</h4></td>
             <td>
             <div class="input-group">
-            <button onclick="dec(1)" class = "btn btn-number btn-danger">-</button>
-            <input type="text" id="box1"  value ="1" class="form-control" style="width:20%">
-            <button onclick="inc(1)" class = "btn btn-number btn-success">+</button>
+            <button onclick="dec(1)" class = "btn btn-number btn-orange">-</button>
+            <input type="text" id="box1"  value ="1" class="form-control text-center" style="width:20%">
+            <button onclick="inc(1)" class = "btn btn-number btn-orange">+</button>
             </div>
             </td>
-            <td><h2 id = "val1">5000</h2></td>
+            <td><h4 id = "val1">5000</h4></td>
             <td><button class="deleteBtn btn-primary btn">Delete</button></td>
         </tr>
     `;
@@ -580,16 +571,16 @@
     if (checkBoxTemplate.checked == true){
       tbodyEl.innerHTML += `
         <tr>
-            <td>Template</td>
-            <td>5000</td>
+            <td><h4>Template</h4></td>
+            <td><h4>5000</h4></td>
             <td>
             <div class="input-group">
-            <button onclick="dec(2)" class = "btn btn-number btn-danger">-</button>
-            <input type="text" id="box2"  value ="1" class="form-control" style="width:20%">
-            <button onclick="inc(2)" class = "btn btn-number btn-success">+</button>
+            <button onclick="dec(2)" class = "btn btn-number btn-orange">-</button>
+            <input type="text" id="box2"  value ="1" class="form-control text-center" style="width:20%">
+            <button onclick="inc(2)" class = "btn btn-number btn-orange">+</button>
             </div>
             </td>
-            <td><h2 id = "val2">5000</h2></td>
+            <td><h4 id = "val2">5000</h4></td>
             <td><button class="deleteBtn btn-primary btn">Delete</button></td>
         </tr>
     `;
@@ -597,16 +588,16 @@
     if (checkBoxCW.checked == true){
       tbodyEl.innerHTML += `
         <tr>
-            <td>Content Writing</td>
-            <td>5000</td>
+            <td><h4>Content Writing</h4></td>
+            <td><h4>5000</h4></td>
             <td>
             <div class="input-group">
-            <button onclick="dec(3)" class = "btn btn-number btn-danger">-</button>
-            <input type="text" id="box3"  value ="1" class="form-control" style="width:20%">
-            <button onclick="inc(3)" class = "btn btn-number btn-success">+</button>
+            <button onclick="dec(3)" class = "btn btn-number btn-orange">-</button>
+            <input type="text" id="box3"  value ="1" class="form-control text-center" style="width:20%">
+            <button onclick="inc(3)" class = "btn btn-number btn-orange">+</button>
             </div>
             </td>
-            <td><h2 id = "val3">5000</h2></td>
+            <td><h4 id = "val3">5000</h4></td>
             <td><button class="deleteBtn btn-primary btn">Delete</button></td>
         </tr>
     `;
@@ -614,16 +605,16 @@
     if (checkBoxSP.checked == true){
       tbodyEl.innerHTML += `
         <tr>
-            <td>Stock Photos</td>
-            <td>5000</td>
+            <td><h4>Stock Photos</h4></td>
+            <td><h4>5000</h4></td>
             <td>
             <div class="input-group">
-            <button onclick="dec(4)" class = "btn btn-number btn-danger">-</button>
-            <input type="text" id="box4"  value ="1" class="form-control" style="width:20%">
-            <button onclick="inc(4)" class = "btn btn-number btn-success">+</button>
+            <button onclick="dec(4)" class = "btn btn-number btn-orange">-</button>
+            <input type="text" id="box4"  value ="1" class="form-control text-center" style="width:20%">
+            <button onclick="inc(4)" class = "btn btn-number btn-orange">+</button>
             </div>
             </td>
-            <td><h2 id = "val4">5000</h2></td>
+            <td><h4 id = "val4">5000</h4></td>
             <td><button class="deleteBtn btn-primary btn">Delete</button></td>
         </tr>
     `;
@@ -631,16 +622,16 @@
     if (checkBox1.checked == true){
       tbodyEl.innerHTML += `
         <tr>
-            <td>Test1</td>
-            <td>5000</td>
+            <td><h4>Test1</h4></td>
+            <td><h4>5000</h4></td>
             <td>
             <div class="input-group">
-            <button onclick="dec(5)" class = "btn btn-number btn-danger">-</button>
-            <input type="text" id="box5"  value ="1" class="form-control" style="width:20%">
-            <button onclick="inc(5)" class = "btn btn-number btn-success">+</button>
+            <button onclick="dec(5)" class = "btn btn-number btn-orange">-</button>
+            <input type="text" id="box5"  value ="1" class="form-control text-center" style="width:20%">
+            <button onclick="inc(5)" class = "btn btn-number btn-orange">+</button>
             </div>
             </td>
-            <td><h2 id = "val5">5000</h2></td>
+            <td><h4 id = "val5">5000</h4></td>
             <td><button class="deleteBtn btn-primary btn">Delete</button></td>
         </tr>
     `;
@@ -648,16 +639,16 @@
     if (checkBox2.checked == true){
       tbodyEl.innerHTML += `
         <tr>
-            <td>test2</td>
-            <td>5000</td>
+            <td><h4>test2</h4></td>
+            <td><h4>5000</h4></td>
             <td>
             <div class="input-group">
-            <button onclick="dec(6)" class = "btn btn-number btn-danger">-</button>
-            <input type="text" id="box6"  value ="1" class="form-control" style="width:20%">
-            <button onclick="inc(6)" class = "btn btn-number btn-success">+</button>
+            <button onclick="dec(6)" class = "btn btn-number btn-orange">-</button>
+            <input type="text" id="box6"  value ="1" class="form-control text-center" style="width:20%">
+            <button onclick="inc(6)" class = "btn btn-number btn-orange">+</button>
             </div>
             </td>
-            <td><h2 id = "val6">5000</h2></td>
+            <td><h4 id = "val6">5000</h4></td>
             <td><button class="deleteBtn btn-primary btn">Delete</button></td>
         </tr>
     `;
@@ -699,10 +690,10 @@
  
   tableEl.addEventListener("click", onDeleteRow);
 </script>
-@endsection
 
 
-@section('step6')
+
+
 <div class="container " style="padding-top: 2.4rem;padding-bottom: 10rem;" id="step6">
   <div class="tracking-progress-bar text-center">
     <div class="tracking-progress-bar__item tracking-progress-bar__item--first tracking-progress-bar__item--active">1</div>
@@ -821,8 +812,7 @@
       </div>
   </div>
 </div>
-@endsection
-@section('step7')
+
 <div class="container " style="padding-top: 2.4rem;padding-bottom: 2.4rem;" id="step7">
   <div class="tracking-progress-bar text-center">
     <div class="tracking-progress-bar__item tracking-progress-bar__item--first tracking-progress-bar__item--active">1</div>
@@ -852,13 +842,11 @@
     
   </div>
 </div>
-@endsection
 
-@section('step8')
+
+
 
 <header class = "masthead">
-
-
 
 <div class="p-3 pb-md-4 mx-auto text-center">
     <h1 class="display-5 fw-normal">Step 8 - Subscription Confirmed.</h1>
