@@ -44,7 +44,6 @@
                 border-top: 5px solid #B5375B;
 
                 font-family: 'Raleway', sans-serif;
-                font-size: 17px;
                 font-weight: 300;
                 color: white;
                 line-height: 0.5cm;
@@ -83,10 +82,9 @@
             /* column 4 */
             .footer-follow-us-icons, .footer-others-bold-italic {
                 text-decoration: none;
-                font-size: 14px;
                 font-weight: 700;
                 font-style: italic;
-                line-height: 0.5cm;
+                line-height: 0.3cm;
             }
 
             .footer-others-bold-italic {
@@ -103,14 +101,14 @@
                 <div class="footer-brand col-lg-3">
                     <div class="card-body">
                         <div class="footer-brand-group">
-                            <img class="footer-brand-logo" src="{{ URL::to('/') }}/feminine-logo/Rizal_Law_Office_Logo V2 White.png" alt="Rizal Law Office Brand Logo"> <br>
-                            <img class="footer-brand-name" src="{{ URL::to('/') }}/feminine-logo/Rizal_Law_Office_Logo V1 White.png" alt="Rizal Law Office Brand Name"> <br>
+                            <img class="footer-brand-logo" src="{{ URL::to('/') }}/images/Rizal_Law_Office_Logo V2 White.png" alt="Rizal Law Office Brand Logo"> <br>
+                            <img class="footer-brand-name" src="{{ URL::to('/') }}/images/Rizal_Law_Office_Logo V1 White.png" alt="Rizal Law Office Brand Name"> <br>
                         </div>
 
                         <span class="footer-brand-tagline"></span> Lorem ipsum dolor sit amet. <br>
 
                         <div class="footer-powered-by mt-4">
-                            Powered by <img class="footer-brand-lexmeet" src="{{ URL::to('/') }}/feminine-logo/LexMeet Logo V5 White.png" alt="LexMeet Brand"> <br>
+                            Powered by <img class="footer-brand-lexmeet" src="{{ URL::to('/') }}/images/LexMeet Logo V5 White.png" alt="LexMeet Brand"> <br>
                         </div>
                     </div>
                 </div>
