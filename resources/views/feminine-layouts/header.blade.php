@@ -19,19 +19,78 @@
         <title>Header</title>
 
         <!-- CSS -->
-        <style></style>
+        <style>
+            html {
+                height: 100%;
+            }
+
+            body {
+                min-height: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+
+            /*
+            Color Palette
+            - FFFFFF (white)
+            - F1DBE8 (very light purple)
+            - B8537B (light purple)
+            - D08198 (light pink)
+            - B5375B (pink)
+            - 733657 (dark purple)
+            */
+
+            header {
+                background-color: lightblue
+
+            }
+
+            .header-logo {
+                background-color: lightgreen;
+                max-width: 30%;
+            }
+
+            ul {
+                color: #733657;
+
+                min-width: 25%;
+            }
+
+            .header-list {
+                color: #733657;
+                font-weight: 700;
+
+            }
+        </style>
     </head>
 
     <body>
         <header>
-            <div class="header-main-con container">
-                <nav class="navbar navbar-expand-xl navbar-light">
+            <nav class="navbar navbar-expand-sm p-3">
+                <div class="container-fluid">
                     <!-- Brand -->
                     <a href="#" class="navbar-brand">
-                        <img class="header-logo" src="{{ URL::to('/') }}/images/Rizal_Law_Office_Logo.png" alt="Rizal Law Office Brand">
+                        <img class="header-logo" src="/public/images/Rizal_Law_Office_Logo Pink.png" alt="Rizal Law Office Brand">
                     </a>
-                </nav>
-            </div>
+
+                    <!-- Navigation Bar -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="toggleMobileMenu">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"> <a href="#" class="header-list nav-link active">Home</a> </li>
+                            <li class="nav-item"> <a href="#" class="header-list nav-link">Our Services</a> </li>
+                            <li class="nav-item"> <a href="#" class="header-list nav-link">Law Practices</a> </li>
+                            <li class="nav-item"> <a href="#" class="header-list nav-link">Law Update</a> </li>
+                            <li class="nav-item"> <a href="#" class="header-list nav-link">Everyday Law</a> </li>
+                            <li class="nav-item"> <a href="#" class="header-list nav-link">Blog</a> </li>
+                            <li class="nav-item"> <a href="#" class="header-list nav-link">Profile</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </header>
 
         <div class="sample-con container-fluid h3">

@@ -19,19 +19,75 @@
         <title>Header</title>
 
         <!-- CSS -->
-        <style></style>
+        <style>
+            html {
+                height: 100%;
+            }
+
+            body {
+                min-height: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+
+            /*
+            Color Palette
+            - FFFFFF (white)
+            - F1DBE8 (very light purple)
+            - B8537B (light purple)
+            - D08198 (light pink)
+            - B5375B (pink)
+            - 733657 (dark purple)
+            */
+
+            .header-main-con {
+                background-color: white;
+                border-bottom: 5px solid #B5375B;
+
+                font-family: 'Raleway', sans-serif;
+                font-weight: 700;
+                color: white;
+                line-height: 0.5cm;
+            }
+
+            .header-menu {
+                background-color: #733657;
+            }
+
+            .header-logo {
+                background-color: lightgreen;
+                max-width: 30%;
+            }
+
+            .header-list {
+                color: #733657;
+                font-weight: 700;
+            }
+        </style>
     </head>
 
     <body>
-        <header>
-            <div class="header-main-con container">
-                <nav class="navbar navbar-expand-xl navbar-light">
-                    <!-- Brand -->
-                    <a href="#" class="navbar-brand">
-                        <img class="header-logo" src="{{ URL::to('/') }}/images/Rizal_Law_Office_Logo" alt="Rizal Law Office Brand">
-                    </a>
-                </nav>
-            </div>
+        <header class="header-main-con">
+            <nav class="navbar navbar-expand-lg p-3">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="header-menu navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="header-ul navbar-nav ms-auto text-center">
+                            <a class="header-list nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="header-list nav-link" href="#">Our Services</a>
+                            <a class="header-list nav-link" href="#">Law Practices</a>
+                            <a class="header-list nav-link" href="#">Law Update</a>
+                            <a class="header-list nav-link" href="#">Everyday Law</a>
+                            <a class="header-list nav-link" href="#">Blog</a>
+                            <a class="header-list nav-link" href="#">Profile</a>
+                        </div>
+                    </div>
+                </div>
+              </nav>
         </header>
 
         <div class="sample-con container-fluid h3">
