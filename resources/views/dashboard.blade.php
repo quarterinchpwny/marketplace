@@ -14,11 +14,11 @@
   @include('layouts.references')
 </div>
 
-@include('feminine-layouts.feminine-navigationbar')
-@include('feminine-layouts.feminine-bannerheader')
-@include('feminine-layouts.feminine-services')
-@include('feminine-layouts.feminine-practice')
-@include('feminine-layouts.feminine-blogsection')
-@include('feminine-layouts.feminine-footer')
+@include('feminine-layouts.navigationbar')
+@include('feminine-layouts.bannerheader')
+@include('feminine-layouts.services')
+@include('feminine-layouts.practice')
+@include('feminine-layouts.blogsection')
+@include('feminine-layouts.footer')
 
 @endsection
