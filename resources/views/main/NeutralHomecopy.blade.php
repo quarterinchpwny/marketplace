@@ -55,11 +55,27 @@
         </div>
     </nav>
 
+
+    <section>
+    <div class="flexbox-container">
+            <div class="flexbox-item flexbox-item-1">
+                BANNER 
+            </div>
+            <div class="flexbox-item flexbox-item-2">
+                LOGIN
+            </div>
+    </div>
+    </section>
+
+
+
+
+
     <!-- log-in section -->
     <section id="login" >
             <div class="container-fluid">
                 <div class="row justify-content-center align-items-center ">
-                    <div class="col-md-5 col-lg-8 padding-0">
+                    <div class="col-sm-6 padding-0">
                         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
@@ -71,13 +87,12 @@
                                 </div>
                             </div>
                         </div>
-                            
                     </div>
-                    <div id ="login_panel" class="col-lg-4 padding-0" style="height: 825px;" >
+                    <div id ="login_panel" class="col-sm-6 padding-0" >
                         <div class="p-5 text-dark">
-                            <div class="co-md-5 text-center" >
+                            <div class="col-sm-6 text-center" >
                                 <div>
-                                    <img class="img-fluid" src="{{ URL::to('/') }}/NeutralHome_Graphics/RLOLogo.png" alt="logo" width="76px"> 
+                                    <img class="img-fluid" src="{{ URL::to('/') }}/NeutralHome_Graphics/RLOLogo.png" alt="logo" max-height="20px"> 
                                 </div>
                             
                                 <div class="d-none d-sm-block">
@@ -371,7 +386,6 @@
         </div>
     </section>
 
-        <!-- footer -->
              <!-- footer -->
              <section id="footer">
         <div class="container-fluid .padding-0">
@@ -428,7 +442,7 @@
                 </div>
             </div>    
         </div>
-    </section>
+    </section> 
     
 </body>
 </html>
