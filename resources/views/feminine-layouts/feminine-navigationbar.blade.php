@@ -61,6 +61,10 @@
                 transition: .5s;
                 color:#B5375B;
             }
+
+            nav ul li a:hover{
+                color: #B5375B;
+            }
             .checkbtn{
                 font-size: 40px;
                 color: #641F43;
@@ -81,6 +85,7 @@
                 }
                 nav ul li a{
                     font-size: 16px;
+                    color: #641F43;
                 }
             }
             @media (max-width: 858px){
