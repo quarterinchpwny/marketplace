@@ -39,11 +39,9 @@
             #header-area{
                 background-color: #FFE2EA;
                 opacity: 0.8;
-                width: 80%;
+                width: 100%;
                 height: 210px;
                 padding: 20px;
-                text-overflow: ellipsis;
-                overflow: hidden;
             }
 
             #header-area h1{
