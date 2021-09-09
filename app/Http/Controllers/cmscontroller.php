@@ -9,9 +9,10 @@ class cmscontroller extends Controller
     public function index(){
         return view('cms');
     }
-    public function addBanner(){
-        return view('addBanner');
-    }
+        public function addBanner(){
+            return view('addBanner');
+        }
+
     public function registration(){
         return view('cmsRegistration');
     }
@@ -21,4 +22,7 @@ class cmscontroller extends Controller
     public function lawyersBlog(){
         return view('cmsLawyersBlog');
     }
+        public function addPost(){
+            return view('addNewPost');
+        }
 }

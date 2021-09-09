@@ -5,8 +5,8 @@
             <button type="button" class="d-flex btn btn-primary text-white">Preview</button>
             </div>
             <div class="col-sm-2">
-                <button type="button" class="d-flex btn btn-primary text-white">Add Post</button>
-            </div>
+            <a href="{{url ('/addNewPost') }}"><button type="button" class="d-flex btn btn-primary text-white">Add Post</button></a>
+          </div>
         </div>
         <div class="row2 container-fluid"  style="height: 580px; background-color:#F8FFFE; ">
            
