@@ -109,7 +109,7 @@
                                 <img src="{{ URL::to('/') }}/NeutralHome_Graphics/banner.png" class="d-block w-100" alt="banner picture" max-width="1289px" max-height="825px">
                                     <div class="carousel-caption">
                                         <h1 class="display-3 text-start">Rizal Law Office</p>
-                                        <h1 class="display-6 text-start">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+                                        <h1 class="display-5 text-start">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
                                     </div>
                                 </div>
                             </div>
@@ -175,49 +175,64 @@
                 </div>
             </div>
         </section>
+
+
+
+
+
+
+
+
     <section id="ourservices">
         <div class="flex justify-center bs-dirtywhite-bg">
             <div class="container-fluid">
-                <h1 class="display-2">Our Services</h1>
-                <hr style="width: 188px; margin-bottom: 30px;">
-                <div class="row">
-                    <div class="col">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">ASSIST</h5>
-                                <img class="rounded mx-auto d-block img-logo " src="{{ URL::asset('NeutralHome_Graphics/02_Product_Assist_ver_3.png')}}" alt="Assist" height="110">
-                                <p class="p1">FREE Legal Assessment</p>
-                                <a href="#" class="btn btn-primary">Ask Lawyers</a>
+                <h1 class="display-2 d-none d-lg-block">Our Services</h1>
+                <hr class="d-none d-lg-block" style="width: 188px; margin-bottom: 30px;">
+                <h1 class="display-1 d-block d-lg-none">Our Services</h1>
+
+
+                <div class="container-xxl padding-0">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-8 col-lg-6 col-xl-3">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title display-6 py-3">ASSIST</h5>
+                                    <img class="rounded mx-auto d-block img-logo " src="{{ URL::asset('NeutralHome_Graphics/02_Product_Assist_ver_3.png')}}" alt="Assist" height="110">
+                                    <p>FREE Legal Assessment</p><br>
+                                    <a href="#" class="btn btn-primary btn-lg">Ask Lawyers</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
-                    <div class="card">
-                            <div class="card-body">
-                               <h5 class="card-title">CONSULT</h5>
-                               <img class="rounded mx-auto d-block img-logo" src="{{ URL::asset('NeutralHome_Graphics/01_Product_Consult_ver_3.png')}}" alt="Consult" height="110">
-                               <p class="p1">PAID Legal Consultation</p>
-                               <a href="#" class="btn btn-primary">Submit Legal Problem</a>
+                        <div class="col-8 col-lg-6 col-xl-3">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title display-6 py-3">CONSULT</h5>
+                                    <img class="rounded mx-auto d-block img-logo " src="{{ URL::asset('NeutralHome_Graphics/01_Product_Consult_ver_3.png')}}" alt="Assist" height="110">
+                                    <p>PAID Legal Consultation</p><br>
+                                    <a href="#" class="btn btn-primary btn-lg">Submit Legal Problem</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
-                    <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">WORKS</h5>
-                                <img class="rounded mx-auto d-block img-logo" src="{{ URL::asset('NeutralHome_Graphics/03_Product_Works_ver_3.png')}}" alt="Works" height="110">
-                                <p class="p2">FREE Legal Fee Crowdsourcing and PAID Legal Works Escrow Delivery</p>
-                                <a href="#" class="btn btn-primary">Request Proposal</a>
+                        <div class="col-8 col-lg-6 col-xl-3">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title display-6 py-3">WORKS</h5>
+                                    <img class="rounded mx-auto d-block img-logo " src="{{ URL::asset('NeutralHome_Graphics/02_Product_Assist_ver_3.png')}}" alt="Assist" height="110">
+                                    <p>FREE Legal Fee Crowdsourcing and PAID Legal Works Escrow Delivery</p>
+                                    <a href="#" class="btn btn-primary btn-lg">Request Proposal</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col"> 
-                    <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">DOCS</h5>
-                                <img class="rounded mx-auto d-block img-logo" src="{{ URL::asset('NeutralHome_Graphics/04_Product_Docs_ver_3.png')}}" alt="Docs" height="110">
-                                <p class="p2">CREATE your own LEGAL DOCUMENTS from hundreds of templates</p>
-                                <a href="#" class="btn btn-primary">Create Legal Document</a>
+                        <div class="col-8 col-lg-6 col-xl-3">
+                            <div class="card ">
+                                <div class="card-body text-center">
+                                    <h1 class="card-title display-6 py-3">DOCS</h1>
+                                    <img class="rounded mx-auto d-block img-logo " src="{{ URL::asset('NeutralHome_Graphics/04_Product_Docs_ver_3.png')}}" alt="Assist" height="110">
+                                    <p>CREATE your own LEGAL DOCUMENTS from hundreds of templates</p>
+
+                                    <a href="#" class="btn btn-primary btn-lg">Create Legal Document</a>
+                                    
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -229,8 +244,9 @@
     <section id="law-practice">
         <div class="container-fluid">
             <div class="row">
-            <h1 class="display-2">Law Practice Areas</h1>
-            <hr style="width: 188px; margin-left: 15px;">
+            <h1 class="display-2 d-none d-sm-block">Law Practice Areas</h1>
+            <h1 class="display-1 d-block d-sm-none">Law Practice Areas</h1>
+            <hr class="d-none d-sm-block" style="width: 188px; margin-bottom: 30px;">
             </div>
         
             <div class="row" id="areas_pics">
@@ -300,8 +316,9 @@
     <section id="law-updates">
             <div class="container-fluid">
                 <div class="row">
-                    <h1 class="display-2">Law Updates</h1>
-                    <hr style="width: 188px; margin-left: 15px;">
+                    <h1 class="display-2 d-none d-sm-block">Law Updates</h1>
+                    <h1 class="display-1 d-block d-sm-none">Law Updates</h1>
+                    <hr class="d-none d-sm-block" style="width: 188px; margin-bottom: 30px;">
                 </div>
                 <div class="row" style="padding-left: 10px;">
                     <div class="col-7" >
