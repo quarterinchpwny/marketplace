@@ -365,7 +365,7 @@
           <div class="row">
             <div class="col-md-4" >
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top"style="height: 34rem; width: 100%; display: block;" src=" " data-holder-rendered="true">
+                <img class="card-img-top p-3"style="height: 34rem; width: 100%; display: block;" src="/images/no2.png " data-holder-rendered="true">
                 <div class="card-body">
                   <div class="d-flex justify-content-between align-items-center">
                       <a type="button" class="w-100 btn btn-lg btn-orange" href="#step2">Select</a>
@@ -375,7 +375,7 @@
             </div>
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top"style="height: 34rem; width: 100%; display: block;" src=" " data-holder-rendered="true">                
+                <img class="card-img-top p-3"style="height: 34rem; width: 100%; display: block;" src="/images/no2.png" data-holder-rendered="true">                
                 <div class="card-body">
                   <div class="d-flex justify-content-between align-items-center">
                       <a type="button" class="w-100 btn btn-lg btn-orange" href="#step2">Select</a>
@@ -385,7 +385,7 @@
             </div>
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top"style="height: 34rem; width: 100%; display: block;" src=" " data-holder-rendered="true">                
+                <img class="card-img-top p-3"style="height: 34rem; width: 100%; display: block;" src=" /images/no2.png" data-holder-rendered="true">                
                 <div class="card-body">
                   <div class="d-flex justify-content-between align-items-center">
                       <a type="button" class="w-100 btn btn-lg btn-orange" href="#step4">Select</a>
@@ -424,7 +424,7 @@
     <div class="tracking-progress-bar__item">8</div>
   </div>
 
-
+<form class="qq">
 <div class="p-3 pb-md-4 mx-auto text-center">
     <h2 class="display-5 fw-normal">Step 4 - Customize Your Website.</h1>
       <div class="container align-center" style="padding-top: 3rem;padding-bottom: 2.4rem; width:70%">
@@ -440,43 +440,43 @@
           </thead>
           <tbody>
             <tr>
-              <td class ="text-end"><input class="form-check-input" type="checkbox"value=""id="flexCheckDefault"/></td>
+              <td class ="text-end"><input class="form-check-input" type="checkbox"value=""id="logo"/></td>
               <td> Logo</td>
               <td>5000</td>
-              <td><a type="button" class="w-50 btn  btn-orange">Add</a></td>
+              <td><label  class="w-50 btn  btn-orange" for="logo">Add</label></td>
             </tr>
             <tr class = "bg-light">
-              <td class ="text-end"><input class="form-check-input" type="checkbox"value=""id="flexCheckDefault"/></td>
+              <td class ="text-end"><input class="form-check-input" type="checkbox"value=""id="template"/></td>
               <td>Custom Template</td>
               <td>5000</td>
-              <td><a type="button" class="w-50 btn  btn-orange">Add</a></td>
+              <td><label  class="w-50 btn  btn-orange" for="template">Add</label></td>
             </tr>
           
   
           
             <tr>
-              <td class ="text-end"><input class="form-check-input" type="checkbox"value=""id="flexCheckDefault"/></td>
+              <td class ="text-end"><input class="form-check-input" type="checkbox"value=""id="cw"/></td>
               <td>Copy Writing</td>
               <td>5000</td>
-              <td><a type="button" class="w-50 btn  btn-orange">Add</a></td>
+              <td><label  class="w-50 btn  btn-orange" for="cw">Add</label></td>
             </tr>
             <tr class = "bg-light">
-              <td class ="text-end"><input class="form-check-input" type="checkbox"value=""id="flexCheckDefault"/></td>
+              <td class ="text-end"><input class="form-check-input" type="checkbox"value=""id="sp"/></td>
               <td>Stock Photos</td>
               <td>5000</td>
-              <td><a type="button" class="w-50 btn  btn-orange">Add</a></td>
+              <td><label  class="w-50 btn  btn-orange" for="sp">Add</label></td>
             </tr>
             <tr>
-              <td class ="text-end"><input class="form-check-input" type="checkbox"value=""id="flexCheckDefault"/></td>
-              <td> Logo</td>
+              <td class ="text-end"><input class="form-check-input" type="checkbox"value=""id="1"/></td>
+              <td>TEST1</td>
               <td>5000</td>
-              <td><a type="button" class="w-50 btn  btn-orange">Add</a></td>
+              <td><label  class="w-50 btn  btn-orange" for="1">Add</label></td>
             </tr>
             <tr class = "bg-light">
-              <td class ="text-end"><input class="form-check-input" type="checkbox"value=""id="flexCheckDefault"/></td>
-              <td> Logo</td>
+              <td class ="text-end"><input class="form-check-input" type="checkbox"value=""id="2"/></td>
+              <td>TEST 2</td>
               <td>5000</td>
-              <td><a type="button" class="w-50 btn  btn-orange">Add</a></td>
+              <td><label  class="w-50 btn  btn-orange" for="2">Add</label></td>
             </tr>
           </tbody>
           
@@ -484,10 +484,11 @@
         
   </div>
 </div>
-<a type="button" class="w-25 btn btn-lg btn-primary" href="#step5">Next</a>
+<button type="button" class="w-25 btn btn-lg btn-primary" id="next">Next</button>
 </div>
 
 </div>
+</form>
 @endsection
 
 
@@ -520,18 +521,18 @@
     <h2 class="display-5 fw-normal">Step 5 - Check Your Order</h1>
       <div class="container align-center" style="padding-top: 3rem;padding-bottom: 2.4rem; width:70%">
         <div class="table-responsive">
-          <table class="table ">
+          <table class="table " id="tables">
             <thead>
               <tr>
             
-                <th style="width: 5%;">Product</th>
-                <th style="width: 10%;">Price</th>
-                <th style="width: 10%;">Quantity</th>
-                <th style="width: 10%;">Total Amount</th>
-                <th style="width: 10%;">Action</th>
+                <th style="width: 20%;">Product</th>
+                <th style="width: 20%;">Price</th>
+                <th style="width: 20%;">Quantity</th>
+                <th style="width: 20%;">Total Amount</th>
+                <th style="width: 20%;">Action</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody id="tbv">
      
 
             </tbody>
@@ -542,6 +543,162 @@
   </div>
   </div>
 </div>
+
+<script>
+    var checkBoxLogo = document.getElementById("logo");
+    var checkBoxTemplate = document.getElementById("template");
+    var checkBoxCW = document.getElementById("cw");
+    var checkBoxSP = document.getElementById("sp");
+    var checkBox1 = document.getElementById("1");
+    var checkBox2 = document.getElementById("2");
+    
+  const formEl = document.querySelector(".qq");
+  const tbodyEl = document.getElementById("tbv");
+  const tableEl = document.getElementById("tables");
+  function onAddWebsite(e){
+    e.preventDefault();
+    window.location.href = "#step5";
+
+    if (checkBoxLogo.checked == true){
+      tbodyEl.innerHTML += `
+        <tr>
+            <td>Logo</td>
+            <td>5000</td>
+            <td>
+            <div class="input-group">
+            <button onclick="dec(1)" class = "btn btn-number btn-danger">-</button>
+            <input type="text" id="box1"  value ="1" class="form-control" style="width:20%">
+            <button onclick="inc(1)" class = "btn btn-number btn-success">+</button>
+            </div>
+            </td>
+            <td><h2 id = "val1">5000</h2></td>
+            <td><button class="deleteBtn btn-primary btn">Delete</button></td>
+        </tr>
+    `;
+   
+    } 
+    if (checkBoxTemplate.checked == true){
+      tbodyEl.innerHTML += `
+        <tr>
+            <td>Template</td>
+            <td>5000</td>
+            <td>
+            <div class="input-group">
+            <button onclick="dec(2)" class = "btn btn-number btn-danger">-</button>
+            <input type="text" id="box2"  value ="1" class="form-control" style="width:20%">
+            <button onclick="inc(2)" class = "btn btn-number btn-success">+</button>
+            </div>
+            </td>
+            <td><h2 id = "val2">5000</h2></td>
+            <td><button class="deleteBtn btn-primary btn">Delete</button></td>
+        </tr>
+    `;
+    } 
+    if (checkBoxCW.checked == true){
+      tbodyEl.innerHTML += `
+        <tr>
+            <td>Content Writing</td>
+            <td>5000</td>
+            <td>
+            <div class="input-group">
+            <button onclick="dec(3)" class = "btn btn-number btn-danger">-</button>
+            <input type="text" id="box3"  value ="1" class="form-control" style="width:20%">
+            <button onclick="inc(3)" class = "btn btn-number btn-success">+</button>
+            </div>
+            </td>
+            <td><h2 id = "val3">5000</h2></td>
+            <td><button class="deleteBtn btn-primary btn">Delete</button></td>
+        </tr>
+    `;
+    } 
+    if (checkBoxSP.checked == true){
+      tbodyEl.innerHTML += `
+        <tr>
+            <td>Stock Photos</td>
+            <td>5000</td>
+            <td>
+            <div class="input-group">
+            <button onclick="dec(4)" class = "btn btn-number btn-danger">-</button>
+            <input type="text" id="box4"  value ="1" class="form-control" style="width:20%">
+            <button onclick="inc(4)" class = "btn btn-number btn-success">+</button>
+            </div>
+            </td>
+            <td><h2 id = "val4">5000</h2></td>
+            <td><button class="deleteBtn btn-primary btn">Delete</button></td>
+        </tr>
+    `;
+    } 
+    if (checkBox1.checked == true){
+      tbodyEl.innerHTML += `
+        <tr>
+            <td>Test1</td>
+            <td>5000</td>
+            <td>
+            <div class="input-group">
+            <button onclick="dec(5)" class = "btn btn-number btn-danger">-</button>
+            <input type="text" id="box5"  value ="1" class="form-control" style="width:20%">
+            <button onclick="inc(5)" class = "btn btn-number btn-success">+</button>
+            </div>
+            </td>
+            <td><h2 id = "val5">5000</h2></td>
+            <td><button class="deleteBtn btn-primary btn">Delete</button></td>
+        </tr>
+    `;
+    } 
+    if (checkBox2.checked == true){
+      tbodyEl.innerHTML += `
+        <tr>
+            <td>test2</td>
+            <td>5000</td>
+            <td>
+            <div class="input-group">
+            <button onclick="dec(6)" class = "btn btn-number btn-danger">-</button>
+            <input type="text" id="box6"  value ="1" class="form-control" style="width:20%">
+            <button onclick="inc(6)" class = "btn btn-number btn-success">+</button>
+            </div>
+            </td>
+            <td><h2 id = "val6">5000</h2></td>
+            <td><button class="deleteBtn btn-primary btn">Delete</button></td>
+        </tr>
+    `;
+    } 
+
+
+  }
+  var data = 1;
+  function dec(x){
+    data=parseInt(document.getElementById("box".concat(x)).value);
+
+    data=data-1;
+    document.getElementById("box".concat(x)).value=data;
+    data=parseInt(document.getElementById("val".concat(x)).innerText);
+    document.getElementById("val".concat(x)).innerText=data-5000;
+  }
+
+
+  function inc(x){
+    data=parseInt(document.getElementById("box".concat(x)).value);
+    data=data+1;
+    
+    document.getElementById("box".concat(x)).value=data;
+    document.getElementById("val".concat(x)).innerText=data*5000;
+  }
+
+ 
+
+  function onDeleteRow(e) {
+    if (!e.target.classList.contains("deleteBtn")) {
+      return;
+    }
+
+    const btn = e.target;
+    btn.closest("tr").remove();
+  }
+  document.getElementById("next").addEventListener("click",onAddWebsite);
+
+ 
+  tableEl.addEventListener("click", onDeleteRow);
+</script>
 @endsection
 
 
@@ -609,8 +766,8 @@
               dahe py lypoma dul. Filedavele rifa delo, litifulali mesab moec fulup murodel fadeca daluba, ry ladim licilat.
               </div>
               <div class="form-check">
-                <input class="" type="checkbox"value=""/>
-                <label class="form-check-label" for="">
+                <input class="" type="checkbox"value="" id = "terms"/>
+                <label class="form-check-label" for="terms">
                  I Accept the Terms and Condition.
                 </label>
               </div>
@@ -700,27 +857,7 @@
 @section('step8')
 
 <header class = "masthead">
-  <div class="tracking-progress-bar text-center">
-    <div class="tracking-progress-bar__item tracking-progress-bar__item--first tracking-progress-bar__item--active">1</div>
-  
-    <span class="tracking-progress-bar__item__bar tracking-progress-bar__item--active"></span>
-    <div class="tracking-progress-bar__item tracking-progress-bar__item--active">2</div>
-  
-    <span class="tracking-progress-bar__item__bar tracking-progress-bar__item--active"></span>
-    <div class="tracking-progress-bar__item  tracking-progress-bar__item--active">3</div>
-  
-    <span class="tracking-progress-bar__item__bar tracking-progress-bar__item--active "></span>
-    <div class="tracking-progress-bar__item  tracking-progress-bar__item--active">4</div>
-  
-    <span class="tracking-progress-bar__item__bar tracking-progress-bar__item--active"></span>
-    <div class="tracking-progress-bar__item tracking-progress-bar__item--active">5</div>
-    <span class="tracking-progress-bar__item__bar tracking-progress-bar__item--active"></span>
-    <div class="tracking-progress-bar__item tracking-progress-bar__item--active">6</div>
-    <span class="tracking-progress-bar__item__bar tracking-progress-bar__item--active"></span>
-    <div class="tracking-progress-bar__item tracking-progress-bar__item--active">7</div>
-    <span class="tracking-progress-bar__item__bar tracking-progress-bar__item--active"></span>
-    <div class="tracking-progress-bar__item tracking-progress-bar__item--active">8</div>
-  </div>
+
 
 
 <div class="p-3 pb-md-4 mx-auto text-center">
@@ -730,10 +867,10 @@
   <div class="container">
     <div class="row align-items-center justify-content-between ">
       <div class="col-lg ">
-        <div class="masthead-main">Congratulations on Your Subscription!</div>
-        <div class="masthead-subheading">Start adding contents on your website to start e-Lawyering</div>
-        <div class="masthead-heading"> LEXWEB WEBSITE BUILDER</div>
-        <a class="w-100 btn btn-lg btn-primary" href="#step1">START HERE</a>
+        <div class="main">Congratulations on Your Subscription!</div>
+        <div class="subheading">Start adding contents on your website to start e-Lawyering</div>
+        <div class="heading"> LEXWEB WEBSITE BUILDER</div>
+        <a class="w-100 btn btn-lg btn-primary" href="#step1">EDIT</a>
       </div>
      
       <div class="col">
