@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('signUp')
-<div class="SignUp">
 <div class="container-fluid" id="bg">
 </div>
 <div class="container" id="lblue-signup">
@@ -53,7 +52,7 @@
     </div>
     </div>
 </div>
-</div>
+
 @endsection
 @section('Services')
 <!-- Our Services -->
@@ -90,7 +89,7 @@
           <br>
           <h2 id="textStyle"><strong>WORKS</strong></h2>
           <br>
-          <p id="textStyle">Free legal fee crowdsourcing and paid legal works <br> escrow delivery</p>
+          <p id="textStyle">Free legal fee crowdsourcing<br> and paid legal works <br> escrow delivery</p>
           <a href="#" class="btn btn-primary text-light">Request Proposal</a>
         </div>
       </div>
@@ -111,68 +110,68 @@
 @endsection
 @section('PracticeAreas')
 <!-- Practice Areas -->
-
-<div class="container-fluid" id="white-rect">
-    <p id="headerStyleBlue">PRACTICE AREAS</p>
-<div class="container" style="background-color:rgb(206, 221, 239, 0)" id="areasHolder">
-<div class="row">
-      <div class="col-3  px-3">
-        <div class="family_card card">
-          <img src="/images/Family.jpg" class="areasChoices">
-          <a href="#" class="areasButton btn btn-primary ">Personal & Family Law</a>
+    <div class="container-fluid" id="white-rect">
+            <p id="headerStyleBlue">PRACTICE AREAS</p>
+        <div class="container" style="background-color:rgb(206, 221, 239, 0)" id="areasHolder">
+                <div class="row">
+                    <div class="col-3  px-3">
+                        <div class="family_card card">
+                        <img src="/images/Family.jpg" class="areasChoices">
+                        <a href="#" class="areasButton btn btn-primary ">Personal & Family Law</a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                        <img src="/images/Civil.jpg" class="areasChoices">
+                        <a href="#" class="areasButton btn btn-primary ">Civil Law</a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                        <img src="/images/Commercial.jpg" class="areasChoices">
+                        <a href="#" class="areasButton btn btn-primary ">Commercial Law</a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                        <img src="/images/Labor.jpg" class="areasChoices">
+                        <a href="#" class="areasButton btn btn-primary ">Labor Law</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row py-5">
+                    <div class="col-3">
+                        <div class="card">
+                        <img src="/images/Immigration.jpg" class="areasChoices">
+                        <a href="#" class="areasButton btn btn-primary ">Immigration Law</a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                        <img src="/images/Criminal.jpg" class="areasChoices">
+                        <a href="#" class="areasButton btn btn-primary ">Criminal Law</a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                        <img src="/images/Taxation.jpg" class="areasChoices">
+                        <a href="#" class="areasButton btn btn-primary ">Taxation Law</a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                        <img src="/images/Special.jpg" class="areasChoices">
+                        <a href="#" class="areasButton btn btn-primary">Special Services</a>
+                        </div>
+                    </div>
+                </div>
+            <div class="row py-3">
+                <a href="#" class="btn btn-primary mx-auto buttonWhite">See more</a>
+            </div>
         </div>
-      </div>
-      <div class="col-3">
-        <div class="card">
-          <img src="/images/Civil.jpg" class="areasChoices">
-          <a href="#" class="areasButton btn btn-primary ">Civil Law</a>
-        </div>
-      </div>
-      <div class="col-3">
-        <div class="card">
-          <img src="/images/Commercial.jpg" class="areasChoices">
-          <a href="#" class="areasButton btn btn-primary ">Commercial Law</a>
-        </div>
-      </div>
-      <div class="col-3">
-        <div class="card">
-          <img src="/images/Labor.jpg" class="areasChoices">
-          <a href="#" class="areasButton btn btn-primary ">Labor Law</a>
-        </div>
-      </div>
-</div>
-<div class="row py-5">
-      <div class="col-3">
-        <div class="card">
-          <img src="/images/Immigration.jpg" class="areasChoices">
-          <a href="#" class="areasButton btn btn-primary ">Immigration Law</a>
-        </div>
-      </div>
-      <div class="col-3">
-        <div class="card">
-          <img src="/images/Criminal.jpg" class="areasChoices">
-          <a href="#" class="areasButton btn btn-primary ">Criminal Law</a>
-        </div>
-      </div>
-      <div class="col-3">
-        <div class="card">
-          <img src="/images/Taxation.jpg" class="areasChoices">
-          <a href="#" class="areasButton btn btn-primary ">Taxation Law</a>
-        </div>
-      </div>
-      <div class="col-3">
-        <div class="card">
-          <img src="/images/Special.jpg" class="areasChoices">
-          <a href="#" class="areasButton btn btn-primary">Special Services</a>
-        </div>
-      </div>
-      <div class="row py-3"></div>
-      <a href="#" class="btn btn-primary mx-auto buttonWhite">See more</a>
-</div>
-</div>
-</div>
-<div class="container-fluid" id="frameWhiteBig">
-</div>
+    </div>
+    <div class="container-fluid" id="frameWhiteBig">
+    </div>
 
 @endsection
 @section('LawUpdates')
