@@ -45,7 +45,7 @@
                     <a class="nav-link" href="#law-practice">Law Practice</a>
                     </li>
                     <li class="nav-item px-2">
-                    <a class="nav-link" href="#EverydayLaw">Everyday Law</a>
+                    <a class="nav-link" href="#everyday-law">Everyday Law</a>
                     </li>
                     <li class="nav-item px-2">
                     <a class="nav-link" href="#Blog">Blog</a>
@@ -54,49 +54,6 @@
             </div>
         </div>
     </nav>
-
-
-
-
-
-
-    <!-- modal -->
-    <div class="modal fade" id="signup" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4>Register to Rizal Law Office</h4>
-                    <button type=button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <label for="modal-firstname" class="form-label"> First Name:</label>
-                    <input type="text" class="form-control" id="modal-email" placeholder="Type your first name here">
-                    
-                    <label for="modal-lastname" class="form-label"> Last Name:</label>
-                    <input type="text" class="form-control" id="modal-email" placeholder="Type your last name here">
-                    
-                    <label for="modal-email" class="form-label"> Email Address:</label>
-                    <input type="text" class="form-control" id="modal-email" placeholder="e.g. stabol@gmail.com">
-                    
-                    <label for="modal-password" class="form-label"> Password:</label>
-                    <input type="password" class="form-control" id="modal-email" placeholder="">
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-primary">Create an Account</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
 
     <!-- log-in section -->
     <section id="login" >
@@ -174,31 +131,62 @@
                     </div>
                 </div>
             </div>
+
+        <!--sign-up modal -->
+        <div class="modal fade" id="signup" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4>Register to Rizal Law Office</h4>
+                        <button type=button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <form method="POST" action=" {{ route('add.user.post') }}">
+                        @csrf    
+                        <label for="modal-username" class="form-label"> Username:</label>
+                        <input type="text" class="form-control" id="modal-email" placeholder="Username">
+                        
+                        <label for="modal-password" class="form-label"> Password:</label>
+                        <input type="password" class="form-control" id="modal-email" placeholder="Password">
+                        
+                        <label for="modal-firstname" class="form-label"> First Name:</label>
+                        <input type="text" class="form-control" id="modal-email" placeholder="First Name">
+                        
+                        <label for="modal-lastname" class="form-label"> Last Name:</label>
+                        <input type="text" class="form-control" id="modal-email" placeholder="Last Name">
+                        
+                        <label for="modal-email" class="form-label"> Email Address:</label>
+                        <input type="text" class="form-control" id="modal-email" placeholder="e.g. stabol@gmail.com">
+                        
+                        <label for="modal-contact" class="form-label"> Contact Number:</label>
+                        <input type="text" class="form-control" id="modal-email" placeholder="e.g. 09123456789">
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" >Create an Account</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         </section>
-
-
-
-
-
-
 
 
     <section id="ourservices">
         <div class="flex justify-center bs-dirtywhite-bg">
             <div class="container-fluid">
+
                 <h1 class="display-2 d-none d-lg-block">Our Services</h1>
                 <hr class="d-none d-lg-block" style="width: 188px; margin-bottom: 30px;">
                 <h1 class="display-1 d-block d-lg-none">Our Services</h1>
 
-
-                <div class="container-xxl padding-0">
-                    <div class="row align-items-center justify-content-center">
+                <div class="container-xxl">
+                    <div class="row align-items-center justify-content-center ">
                         <div class="col-8 col-lg-6 col-xl-3">
                             <div class="card">
                                 <div class="card-body text-center">
                                     <h5 class="card-title display-6 py-3">ASSIST</h5>
-                                    <img class="rounded mx-auto d-block img-logo " src="{{ URL::asset('NeutralHome_Graphics/02_Product_Assist_ver_3.png')}}" alt="Assist" height="110">
-                                    <p>FREE Legal Assessment</p><br>
+                                    <img class="rounded mx-auto d-block img-logo " src="{{ URL::asset('NeutralHome_Graphics/02_Product_Assist_ver_3.png')}}" alt="Assist" height="100">
+                                    <br><p>FREE Legal Assessment</p><br>
                                     <a href="#" class="btn btn-primary btn-lg">Ask Lawyers</a>
                                 </div>
                             </div>
@@ -207,8 +195,8 @@
                             <div class="card">
                                 <div class="card-body text-center">
                                     <h5 class="card-title display-6 py-3">CONSULT</h5>
-                                    <img class="rounded mx-auto d-block img-logo " src="{{ URL::asset('NeutralHome_Graphics/01_Product_Consult_ver_3.png')}}" alt="Assist" height="110">
-                                    <p>PAID Legal Consultation</p><br>
+                                    <img class="rounded mx-auto d-block img-logo " src="{{ URL::asset('NeutralHome_Graphics/01_Product_Consult_ver_3.png')}}" alt="Assist" height="100">
+                                    <br><p>PAID Legal Consultation</p><br>
                                     <a href="#" class="btn btn-primary btn-lg">Submit Legal Problem</a>
                                 </div>
                             </div>
@@ -217,8 +205,8 @@
                             <div class="card">
                                 <div class="card-body text-center">
                                     <h5 class="card-title display-6 py-3">WORKS</h5>
-                                    <img class="rounded mx-auto d-block img-logo " src="{{ URL::asset('NeutralHome_Graphics/02_Product_Assist_ver_3.png')}}" alt="Assist" height="110">
-                                    <p>FREE Legal Fee Crowdsourcing and PAID Legal Works Escrow Delivery</p>
+                                    <img class="rounded mx-auto d-block img-logo " src="{{ URL::asset('NeutralHome_Graphics/02_Product_Assist_ver_3.png')}}" alt="Assist" height="100">
+                                    <p>FREE Legal Fee Crowdsourcing and PAID Legal Works Escrow Delivery</p><br>
                                     <a href="#" class="btn btn-primary btn-lg">Request Proposal</a>
                                 </div>
                             </div>
@@ -227,11 +215,9 @@
                             <div class="card ">
                                 <div class="card-body text-center">
                                     <h1 class="card-title display-6 py-3">DOCS</h1>
-                                    <img class="rounded mx-auto d-block img-logo " src="{{ URL::asset('NeutralHome_Graphics/04_Product_Docs_ver_3.png')}}" alt="Assist" height="110">
+                                    <img class="rounded mx-auto d-block img-logo " src="{{ URL::asset('NeutralHome_Graphics/04_Product_Docs_ver_3.png')}}" alt="Assist" height="100">
                                     <p>CREATE your own LEGAL DOCUMENTS from hundreds of templates</p>
-
                                     <a href="#" class="btn btn-primary btn-lg">Create Legal Document</a>
-                                    
                                 </div>
                             </div>
                         </div>
@@ -240,75 +226,78 @@
             </div>
         </div>
     </section>
-
+    
+    <!-- law practice -->
     <section id="law-practice">
         <div class="container-fluid">
-            <div class="row">
+
             <h1 class="display-2 d-none d-sm-block">Law Practice Areas</h1>
             <h1 class="display-1 d-block d-sm-none">Law Practice Areas</h1>
             <hr class="d-none d-sm-block" style="width: 188px; margin-bottom: 30px;">
+
+        <div class="container-xxl">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-8 col-lg-6 col-xl-3">
+                    <div class="zoom"><img src="{{ URL::to('/') }}/NeutralHome_Graphics/perosnal.png" alt=""></div>
+                </div>
+                <div class="col-8 col-lg-6 col-xl-3">
+                    <div class="zoom"><img src="{{ URL::to('/') }}/NeutralHome_Graphics/civil.png" alt=""></div>
+                </div>
+                <div class="col-8 col-lg-6 col-xl-3">
+                    <div class="zoom"><img src="{{ URL::to('/') }}/NeutralHome_Graphics/commercial.png" alt=""></div>
+                </div>
+                <div class="col-8 col-lg-6 col-xl-3">
+                    <div class="zoom"><img src="{{ URL::to('/') }}/NeutralHome_Graphics/labor.png" alt=""></div>
+                </div>
             </div>
         
-            <div class="row" id="areas_pics">
-            <div class="col-3">
-                <div class="zoom"><img src="{{ URL::to('/') }}/NeutralHome_Graphics/perosnal.png" alt=""></div>
-            </div>
-            <div class="col-3">
-                <div class="zoom"><img src="{{ URL::to('/') }}/NeutralHome_Graphics/civil.png" alt=""></div>
-            </div>
-            <div class="col-3">
-                <div class="zoom"><img src="{{ URL::to('/') }}/NeutralHome_Graphics/commercial.png" alt=""></div>
-            </div>
-            <div class="col-3">
-                <div class="zoom"><img src="{{ URL::to('/') }}/NeutralHome_Graphics/labor.png" alt=""></div>
-            </div>
-            </div>
-        
-        <div class="row" id="areas_labels">
-            <div class="col-3">
-                <p>Personal and Family Law</p>
-            </div>
-            <div class="col-3">
-                <p>Civil Law</p>
-            </div>
-            <div class="col-3">
-                <p>Commercial Law</p>
-            </div>
-            <div class="col-3">
-                <p>Labor Law</p>
-            </div>
+            <div class="row" id="areas_labels">
+                <div class="col-3 d-none d-sm-block">
+                    <p class="h4">Personal and Family Law</h1>
+                </div>
+                <div class="col-3 d-none d-sm-block">
+                    <p class="h4">Civil Law</h1>
+                </div>
+                <div class="col-3 d-none d-sm-block">
+                    <p class="h4">Commercial Law</h1>
+                </div>
+                <div class="col-3 d-none d-sm-block">
+                    <p class="h4">Labor Law</h1>
+                </div>
             </div>
 
-        <div class="row" id="areas_pics">
-            <div class="col-3">
-                <div class="zoom"><img src="{{ URL::to('/') }}/NeutralHome_Graphics/immigration.png" alt=""></div>
+            <div class="row align-items-center justify-content-center ">
+                <div class="col-8 col-lg-6 col-xl-3">
+                    <div class="zoom"><img src="{{ URL::to('/') }}/NeutralHome_Graphics/immigration.png" alt=""></div>
+                </div>
+                <div class="col-8 col-lg-6 col-xl-3">
+                    <div class="zoom"><img src="{{ URL::to('/') }}/NeutralHome_Graphics/criminal.png" alt=""></div>
+                </div>
+                <div class="col-8 col-lg-6 col-xl-3">
+                    <div class="zoom"><img src="{{ URL::to('/') }}/NeutralHome_Graphics/taxation.png" alt=""></div>
+                </div>
+                <div class="col-8 col-lg-6 col-xl-3">
+                    <div class="zoom"><img src="{{ URL::to('/') }}/NeutralHome_Graphics/special_services.png" alt=""></div>
+                </div>
             </div>
-            <div class="col-3">
-                <div class="zoom"><img src="{{ URL::to('/') }}/NeutralHome_Graphics/criminal.png" alt=""></div>
-            </div>
-            <div class="col-3">
-                <div class="zoom"><img src="{{ URL::to('/') }}/NeutralHome_Graphics/taxation.png" alt=""></div>
-            </div>
-            <div class="col-3">
-                <div class="zoom"><img src="{{ URL::to('/') }}/NeutralHome_Graphics/special_services.png" alt=""></div>
+
+            <div class="row " id="areas_labels">
+                <div class="col-3 d-none d-sm-block">
+                    <p class="h4">Immigration Law</h1>
+                </div>
+                <div class="col-3 d-none d-sm-block">
+                    <p class="h4">Criminal Law</h1>
+                </div>
+                <div class="col-3 d-none d-sm-block">
+                    <p class="h4">Taxation Law</h1>
+                </div>
+                <div class="col-3 d-none d-sm-block">
+                    <p class="h4">Special Services Law</h1>
+                </div>
             </div>
         </div>
-        <div class="row" id="areas_labels">
-            <div class="col-3">
-                <p>Immigration Law</p>
-            </div>
-            <div class="col-3">
-                <p>Criminal Law</p>
-            </div>
-            <div class="col-3">
-                <p>Taxation Law</p>
-            </div>
-            <div class="col-3">
-                <p>Special Services Law</p>
-            </div>
-            </div>
-        </div>
-        <div class="row justify-content-center" id="areas_buttons">
+
+        <div class="row align-items-center justify-content-center py-5" id="areas_buttons">
             <a class="btn" href="#" role="button" id="areas_seemore">SEE MORE</a>
         </div>
     </section>
