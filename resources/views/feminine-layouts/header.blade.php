@@ -28,7 +28,7 @@
                 <nav class="navbar navbar-expand-xl navbar-light">
                     <!-- Brand -->
                     <a href="#" class="navbar-brand">
-                        <img class="header-logo" src="{{ URL::to('/') }}/images/Rizal_Law_Office_Logo" alt="Rizal Law Office Brand">
+                        <img class="header-logo" src="{{ URL::to('/') }}/images/Rizal_Law_Office_Logo.png" alt="Rizal Law Office Brand">
                     </a>
                 </nav>
             </div>
