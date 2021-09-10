@@ -307,6 +307,7 @@ At that time, text message or e-mail message, as it was not yet widely used and 
   <!-- Section: Links  -->
   <hr class="style1">
   <!-- Copyright -->
+  <div class="container text-center text-md-start mt-2">
         <p class="text-left p-4 poweredBy">Powered by <img src="/images/lexmeetLogo.png"  alt="lexlogo" height="13" width="85"></p>
 
   <div class="text-right p-4" style="background-color: rgba(0, 0, 0, 0.05);">
@@ -316,7 +317,7 @@ At that time, text message or e-mail message, as it was not yet widely used and 
     <a href="" id="linksLegal">Informed Consent of Service Performed</a>
     <a href="" id="linksLegal">Disclaimer</a></ul>
   </div>
-
+  </div>
   <!-- Copyright -->
 </footer>
 <!-- Footer -->
