@@ -113,9 +113,17 @@ body {
 
 
 /* For other pages.. di pa maayos*/
+
+/*Privacy Policy*/
 .policyheader{
   padding: 15px;
 }
+.addnewbtn{
+  margin-left: 75px;
+}
+
+
+
 .texteditor{
   border-right: 2px solid #FF7F4D !important;
 }
@@ -133,4 +141,4 @@ body {
   max-height: 500px;
 }
 
-
+/* Contact Us */

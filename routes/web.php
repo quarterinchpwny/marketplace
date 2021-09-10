@@ -41,7 +41,7 @@ Route::get('cmsRegistration', [App\Http\Controllers\cmscontroller::class, 'regis
 Route::get('cmsPrivacyPolicy', [App\Http\Controllers\cmscontroller::class, 'privacyPolicy'])->name('cmsPrivacyPolicy');
 Route::get('cmsLawyersBlog', [App\Http\Controllers\cmscontroller::class, 'lawyersBlog'])->name('cmsLawyersBlog');
 Route::get('addNewPost', [App\Http\Controllers\cmscontroller::class, 'addPost'])->name('addNewPost');
-
+Route::get('cmsContactUs', [App\Http\Controllers\cmscontroller::class, 'contactUs'])->name('cmsContactUs');
 
 
 

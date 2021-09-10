@@ -25,4 +25,7 @@ class cmscontroller extends Controller
         public function addPost(){
             return view('addNewPost');
         }
+    public function contactUs(){
+        return view('cmsContactUs');
+    }
 }
