@@ -16,7 +16,7 @@ use Illuminate\Http\Request;
 // Public Routes
 //Route::get('/content', [App\Http\Controllers\AppController::class, 'index'])->name('content');
 
-Route::get('/NeutralHome', [App\Http\Controllers\NeutralHomeController::class, 'index'])->name('NeutralHome');
+Route::get('/NeutralHome', [App\Http\Controllers\NeutralHomeController::class, 'index'])->name('NeutralHomecopy');
 // Route::group(['prefix' => 'NeutralHome'], function () {
 //   Route::get('/NeutralHome/SignUp', [App\Http\Controllers\SignUpController::class, 'add'])->name('add.user');
 //   Route::post('/NeutralHome/SignUp/Post', [App\Http\Controllers\SignUpController::class, 'store'])->name('add.user.post');
