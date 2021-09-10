@@ -40,61 +40,73 @@
             - 733657 (dark purple)
             */
 
-            header {
-                background-color: lightblue
+            .header-main-con {
+                background-color: white;
+                border-bottom: 5px solid #B5375B;
 
+                font-family: 'Raleway', sans-serif;
+                font-weight: 700;
+                color: white;
+                line-height: 0.5cm;
+            }
+
+            .header-menu {
+                background-color: transparent;
+                color: #733657;
             }
 
             .header-logo {
-                background-color: lightgreen;
-                max-width: 30%;
+                background-color: transparent;
             }
 
-            ul {
-                color: #733657;
-
-                min-width: 25%;
+            .header-name {
+                color: #B5375B;
+                font-weight: 800;
             }
 
             .header-list {
+                background-color: white;
                 color: #733657;
                 font-weight: 700;
-
             }
         </style>
     </head>
 
     <body>
-        <header>
-            <nav class="navbar navbar-expand-sm p-3">
+        <header class="header-main-con">
+            <nav class="navbar sticky-top navbar-expand-lg p-3">
                 <div class="container-fluid">
-                    <!-- Brand -->
-                    <a href="#" class="navbar-brand">
-                        <img class="header-logo" src="/public/images/Rizal_Law_Office_Logo Pink.png" alt="Rizal Law Office Brand">
-                    </a>
 
-                    <!-- Navigation Bar -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- Brand -->
+                    <div class="header-brand w-25 p-0 m-0">
+                        <a class="navbar-brand d-flex align-items-center" href="#">
+                            <img class="header-logo w-100 d-none d-lg-block" src="{{ URL::to('/') }}/images/Rizal_Law_Office_Logo Pink.png" alt="Rizal Law Office Brand">
+                            <span class="header-name d-lg-none">Rizal Law Office</span>
+                        </a>
+                    </div>
+
+                    <!-- Navigation -->
+                    <button class="header-menu navbar-toggler navbar-light bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
-                    <div class="collapse navbar-collapse" id="toggleMobileMenu">
-                        <ul class="navbar-nav">
-                            <li class="nav-item"> <a href="#" class="header-list nav-link active">Home</a> </li>
-                            <li class="nav-item"> <a href="#" class="header-list nav-link">Our Services</a> </li>
-                            <li class="nav-item"> <a href="#" class="header-list nav-link">Law Practices</a> </li>
-                            <li class="nav-item"> <a href="#" class="header-list nav-link">Law Update</a> </li>
-                            <li class="nav-item"> <a href="#" class="header-list nav-link">Everyday Law</a> </li>
-                            <li class="nav-item"> <a href="#" class="header-list nav-link">Blog</a> </li>
-                            <li class="nav-item"> <a href="#" class="header-list nav-link">Profile</a> </li>
-                        </ul>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="header-ul navbar-nav ms-auto text-start">
+                            <a class="header-list nav-link pe-3 active" aria-current="page" href="#">Home</a>
+                            <a class="header-list nav-link pe-3" href="#">Our Services</a>
+                            <a class="header-list nav-link pe-3" href="#">Law Practices</a>
+                            <a class="header-list nav-link pe-3" href="#">Law Update</a>
+                            <a class="header-list nav-link pe-3" href="#">Everyday Law</a>
+                            <a class="header-list nav-link pe-3" href="#">Blog</a>
+                            <a class="header-list nav-link" href="#">Profile</a>
+                        </div>
                     </div>
                 </div>
-            </nav>
+              </nav>
         </header>
 
         <div class="sample-con container-fluid h3">
-            hello world!
+            hello world! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque praesentium perspiciatis nobis! Fugit nobis beatae voluptatum quisquam laudantium nemo delectus similique ea quia, perferendis deserunt. Tempora consequuntur amet cupiditate ab. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita laborum, culpa accusantium velit odio corrupti numquam beatae cumque, rem eveniet molestias? Suscipit odio iure facere itaque atque nihil aliquid excepturi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim velit ex consequuntur eveniet itaque distinctio at voluptas dolorem! Vero excepturi sunt veritatis animi tenetur distinctio rem esse maxime, ipsam facere.
         </div>
 
         <!-- Option 1: Bootstrap Bundle with Popper -->
