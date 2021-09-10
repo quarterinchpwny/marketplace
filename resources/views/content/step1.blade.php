@@ -105,7 +105,10 @@
                   </tbody>
                   
                 </table>
-                <button type="button" class="w-100 btn btn-lg btn-orange">Select</button>
+               
+                  <a class="w-100 btn btn-lg btn-orange" href="{{route('step2', ['plan' => 'basic'])}}">Select</a>
+               
+                
               </div>
           </div>
         </div>
@@ -176,7 +179,7 @@
                     </tr>
                   </tbody>
                 </table>
-                <button type="button" class="w-100 btn btn-lg btn-primary">Select</button>
+                <a type="button" class="w-100 btn btn-lg btn-primary" href="{{route('step2', ['plan' => 'Unlimited'])}}">Select</a>
               </div>
           </div>
         </div>
@@ -247,7 +250,7 @@
                     </tr>
                   </tbody>
                 </table>
-                <a type="button" class="w-100 btn btn-lg btn-orange" href="{{url('step2')}}">Select</a>
+                <a type="button" class="w-100 btn btn-lg btn-orange" href="{{route('step2', ['plan' => 'Pro'])}}">Select</a>
               </div>
           </div>
         </div>
@@ -256,7 +259,7 @@
       
     </div>
   
-    
+  
   
   </main>
-  </div>
+  </div>  

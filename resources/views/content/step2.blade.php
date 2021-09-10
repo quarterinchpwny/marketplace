@@ -1,5 +1,9 @@
 @extends('layouts.layout')
-<div class="container " style="padding-top: 2.4rem;padding-bottom: 2.4rem;" id="step2">
+
+
+
+
+<div class="container " style="padding-top: 2.4rem;" id="step2">
     <div class="tracking-progress-bar text-center">
       <div class="tracking-progress-bar__item tracking-progress-bar__item--first tracking-progress-bar__item--active">1</div>
     
@@ -29,19 +33,25 @@
           <div class="row">
           <div class="col-sm-12">
             <div class="content">
-              <h2 class="q">Create a New Domain</h2>
+            <h2 class="q p-3">Create a New Domain</h2>
             <div class="input-group">
-                   <input type="email" class="form-control" placeholder="Ex. lawfirm.lexmeet.com">
-                   <span class="input-group-btn">
-                   <p class="btn" >.lexmeet.com</p>
+                
+                   <input  class="form-control" placeholder="Ex. lawfirm.lexmeet.com" id="name" name="name">
+                   <span class="input-group-btn ">
+                   <p class="btn btn-lg" >.lexmeet.com</p>
                    </span>
                     </div>
+                    
             </div>
-            <a type="button" class="w-25 btn btn-lg btn-primary" href="step3">Next</a>
+            <a class = "w-25 btn btn-lg btn-orange  href="{{route('step1', \Request::all())}}"> < Return </a>
+
+            <a type="button" class="w-25 btn btn-lg btn-primary " href="{{route('step3', ['url' => 'a'] + \Request::all())}}">Next ></a>
   
           </div>
           </div>
           </div>
           </section>
     </div>
+    
   </div>
+  

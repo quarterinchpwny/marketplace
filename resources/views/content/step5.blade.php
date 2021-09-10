@@ -28,9 +28,9 @@
       <h2 class="display-5 fw-normal">Step 5 - Check Your Order</h1>
         <div class="container align-center" style="padding-top: 3rem;padding-bottom: 2.4rem; width:70%">
           <div class="table-responsive">
-            <table class="table " id="tables">
+            <table class="table text-center" id="tables">
               <thead>
-                <tr>
+                <tr >
               
                   <th style="width: 20%;">Product</th>
                   <th style="width: 20%;">Price</th>
@@ -47,7 +47,8 @@
             
       </div>
     </div>
-    <a type="button" class="w-25 btn btn-lg btn-primary" href="step6">Next</a>
+    <a class = "w-25 btn btn-lg btn-orange" href="{{route('step4', \Request::all())}}"> < Return </a>
+    <a type="button" class="w-25 btn btn-lg btn-primary" href="{{route('step6', \Request::all())}}">Next ></a>
     </div>
   </div>
   <script>
@@ -64,8 +65,8 @@
 if (parseInt(localStorage.getItem("l"))>=1){
 tbodyEl.innerHTML += `
 <tr>
-<td><h4>Logo</h4></td>
-<td><h4>5000</h4></td>
+<td><p>Logo</p></td>
+<td><p>5000</p></td>
 <td>
 <div class="input-group">
 <button onclick="dec(1)" class = "btn btn-number btn-orange">-</button>
@@ -73,7 +74,7 @@ tbodyEl.innerHTML += `
 <button onclick="inc(1)" class = "btn btn-number btn-orange">+</button>
 </div>
 </td>
-<td><h4 id = "val1">5000</h4></td>
+<td><p id = "val1">5000</p></td>
 <td><button class="deleteBtn btn-primary btn">Delete</button></td>
 </tr>
 `;
@@ -82,8 +83,8 @@ tbodyEl.innerHTML += `
 if (parseInt(localStorage.getItem("t"))>=1){
 tbodyEl.innerHTML += `
 <tr>
-<td><h4>Template</h4></td>
-<td><h4>5000</h4></td>
+<td><p>Template</p></td>
+<td><p>5000</p></td>
 <td>
 <div class="input-group">
 <button onclick="dec(2)" class = "btn btn-number btn-orange">-</button>
@@ -91,7 +92,7 @@ tbodyEl.innerHTML += `
 <button onclick="inc(2)" class = "btn btn-number btn-orange">+</button>
 </div>
 </td>
-<td><h4 id = "val2">5000</h4></td>
+<td><p id = "val2">5000</p></td>
 <td><button class="deleteBtn btn-primary btn">Delete</button></td>
 </tr>
 `;
@@ -99,8 +100,8 @@ tbodyEl.innerHTML += `
 if (parseInt(localStorage.getItem("cw"))>=1){
 tbodyEl.innerHTML += `
 <tr>
-<td><h4>Content Writing</h4></td>
-<td><h4>5000</h4></td>
+<td><p>Content Writing</p></td>
+<td><p>5000</p></td>
 <td>
 <div class="input-group">
 <button onclick="dec(3)" class = "btn btn-number btn-orange">-</button>
@@ -108,7 +109,7 @@ tbodyEl.innerHTML += `
 <button onclick="inc(3)" class = "btn btn-number btn-orange">+</button>
 </div>
 </td>
-<td><h4 id = "val3">5000</h4></td>
+<td><p id = "val3">5000</p></td>
 <td><button class="deleteBtn btn-primary btn">Delete</button></td>
 </tr>
 `;
@@ -116,8 +117,8 @@ tbodyEl.innerHTML += `
 if (parseInt(localStorage.getItem("sp"))>=1){
 tbodyEl.innerHTML += `
 <tr>
-<td><h4>Stock Photos</h4></td>
-<td><h4>5000</h4></td>
+<td><p>Stock Photos</p></td>
+<td><p>5000</p></td>
 <td>
 <div class="input-group">
 <button onclick="dec(4)" class = "btn btn-number btn-orange">-</button>
@@ -125,7 +126,7 @@ tbodyEl.innerHTML += `
 <button onclick="inc(4)" class = "btn btn-number btn-orange">+</button>
 </div>
 </td>
-<td><h4 id = "val4">5000</h4></td>
+<td><p id = "val4">5000</p></td>
 <td><button class="deleteBtn btn-primary btn">Delete</button></td>
 </tr>
 `;
@@ -133,8 +134,8 @@ tbodyEl.innerHTML += `
 if (parseInt(localStorage.getItem("cb1"))>=1){
 tbodyEl.innerHTML += `
 <tr>
-<td><h4>Test1</h4></td>
-<td><h4>5000</h4></td>
+<td><p>Test1</p></td>
+<td><p>5000</p></td>
 <td>
 <div class="input-group">
 <button onclick="dec(5)" class = "btn btn-number btn-orange">-</button>
@@ -142,7 +143,7 @@ tbodyEl.innerHTML += `
 <button onclick="inc(5)" class = "btn btn-number btn-orange">+</button>
 </div>
 </td>
-<td><h4 id = "val5">5000</h4></td>
+<td><p id = "val5">5000</p></td>
 <td><button class="deleteBtn btn-primary btn">Delete</button></td>
 </tr>
 `;
@@ -150,8 +151,8 @@ tbodyEl.innerHTML += `
 if (parseInt(localStorage.getItem("cb2"))>=1){
 tbodyEl.innerHTML += `
 <tr>
-<td><h4>test2</h4></td>
-<td><h4>5000</h4></td>
+<td><p>test2</p></td>
+<td><p>5000</p></td>
 <td>
 <div class="input-group">
 <button onclick="dec(6)" class = "btn btn-number btn-orange">-</button>
@@ -159,7 +160,7 @@ tbodyEl.innerHTML += `
 <button onclick="inc(6)" class = "btn btn-number btn-orange">+</button>
 </div>
 </td>
-<td><h4 id = "val6">5000</h4></td>
+<td><p id = "val6">5000</p></td>
 <td><button class="deleteBtn btn-primary btn">Delete</button></td>
 </tr>
 `;

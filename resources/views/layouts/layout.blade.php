@@ -24,7 +24,6 @@
   function onAddWebsite(){
     
    
-    window.location.href = "step5";
 
     if (checkBoxLogo.checked == true){
         localStorage.setItem("l", "1");

@@ -16,8 +16,9 @@ use Illuminate\Support\Facades\Route;
 // Public Routes
 Route::get('/', [App\Http\Controllers\AppController::class, 'index'])->name('home');
 
+
 Route::get('content', [App\Http\Controllers\ContentController::class, 'index'])->name('content');
-Route::get('/step1', [App\Http\Controllers\ContentController::class, 'step1'])->name('step1');
+Route::get('step1', [App\Http\Controllers\ContentController::class, 'step1'])->name('step1');
 Route::get('step2', [App\Http\Controllers\ContentController::class, 'step2'])->name('step2');
 Route::get('step3', [App\Http\Controllers\ContentController::class, 'step3'])->name('step3');
 Route::get('step4', [App\Http\Controllers\ContentController::class, 'step4'])->name('step4');

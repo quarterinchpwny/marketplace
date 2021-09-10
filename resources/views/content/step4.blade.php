@@ -29,9 +29,9 @@
       <h2 class="display-5 fw-normal">Step 4 - Customize Your Website.</h1>
         <div class="container align-center" style="padding-top: 3rem;padding-bottom: 2.4rem; width:70%">
         <div class="table-responsive">
-          <table class="table ">
+          <table class="table text-center">
             <thead>
-              <tr>
+              <tr >
                 <th style="width: 1%;"></th>
                 <th style="width: 5%;">Product</th>
                 <th style="width: 10%;">Price</th>
@@ -84,7 +84,8 @@
           
     </div>
   </div>
-  <button type="button" class="w-25 btn btn-lg btn-primary" id="next" onClick="onAddWebsite()">Accept</button>
+  <a class = "w-25 btn btn-lg btn-orange" href="{{route('step3', \Request::all())}}"> < Return </a>
+  <a type="button" class="w-25 btn btn-lg btn-primary" id="next" onClick="onAddWebsite()" href="{{route('step5', \Request::all() )}}">Accept</a>
  
   </div>
   
