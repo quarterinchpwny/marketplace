@@ -18,6 +18,7 @@
         <!-- Title -->
         <title>Law Updates</title>
 
+        <!-- CSS -->
         <style>
             html {
                 height: 100%;
