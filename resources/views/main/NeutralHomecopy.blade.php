@@ -29,25 +29,25 @@
             <!-- Navigation links -->
             <div class="collapse navbar-collapse justify-content-end" id="main-nav">
                 <ul class="navbar-nav">
-                    <li class="nav-item px-2">
+                    <li class="nav-item ">
                     <a class="nav-link active" href="#home">Home</a>
                     </li>
-                    <li class="nav-item px-2">
+                    <li class="nav-item">
                     <a class="nav-link" href="#profile">Profile</a>
                     </li>
-                    <li class="nav-item px-2">
+                    <li class="nav-item">
                     <a class="nav-link" href="#services">Our Services</a>
                     </li>
-                    <li class="nav-item px-2">
+                    <li class="nav-item">
                     <a class="nav-link" href="#law-updates">Law Updates</a>
                     </li>
-                    <li class="nav-item px-2">
+                    <li class="nav-item">
                     <a class="nav-link" href="#law-practice">Law Practice</a>
                     </li>
-                    <li class="nav-item px-2">
+                    <li class="nav-item">
                     <a class="nav-link" href="#everyday-law">Everyday Law</a>
                     </li>
-                    <li class="nav-item px-2">
+                    <li class="nav-item">
                     <a class="nav-link" href="#blog">Blog</a>
                     </li>
                 </ul>
