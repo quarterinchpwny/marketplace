@@ -41,14 +41,12 @@
 
             .blog-section {
                 font-family: 'Raleway', sans-serif;
-                font-size: 24px;
                 font-weight: 500;
                 color: black;
                 line-height: 0.7cm;
             }
 
-            /* Contact Us */
-            .blog-contact-us {
+            .blog-contact-us, .blog-blank {
                 background-color: #D08198;
                 color: black;
             }
@@ -65,25 +63,21 @@
 
             .law-updates {
                 background-color: #733657;
-
                 color: white;
-                font-weight: 300;
             }
 
             .everyday-law {
                 background-color: #F1DBE8;
-
                 color: #733657;
             }
 
             .law-updates-header, .everyday-law-header {
-                font-family: 'Raleway', serif;
-                font-size: 40px;
+                font-family: 'Libre Baskerville', serif;
                 font-weight: 700;
             }
 
             .law-updates-blog-title, .everyday-law-blog-title {
-                font-size: 24px;
+                font-family: 'Raleway', serif;
                 font-weight: 700;
             }
 
@@ -91,20 +85,12 @@
                 background-color: #B5375B;
                 border: 1px solid #B5375B;
                 border-radius: 10px;
-                width: 300px;
-                height: 50px;
 
                 color: white;
                 font-weight: 700;
-                font-size: 24px;
 
                 bottom: 4rem;
                 margin-top: auto;
-            }
-
-            /* Blank Space */
-            .blog-blank {
-                background-color: #D08198;
             }
         </style>
     </head>
@@ -112,12 +98,12 @@
     <body>
         <div class="blog-section row m-0 position-relative">
             <!-- Contact Us -->
-            <div class="blog-contact-us py-4 text-center flex-row">
-                <div class="blog-contact-content">
-                    Got a legal question? Get in touch with us! &nbsp
+            <div class="blog-contact-us text-center flex-row">
+                <div class="blog-contact-content py-4">
+                    <span class="h5">Got a legal question? Get in touch with us! &nbsp</span>
 
                     <span class="justify-content-md-center float">
-                        <button class="btn-contact-us" type="button">Contact Us</button>
+                        <button class="btn-contact-us py-1 px-4 rounded-3" type="button">Contact Us</button>
                     </span>
                 </div>
             </div>
@@ -126,15 +112,15 @@
             <div class="law-updates col-lg-6 pb-5 position-relative">
                 <div class="card-body px-5 py-5">
                     <hr class="header-line-left border-1 mx-auto">
-                    <div class="law-updates-header card-title text-center mt-4">LAW UPDATES</div>
+                    <div class="law-updates-header card-title text-center h2 mt-4">LAW UPDATES</div>
 
                     <div class="law-updates-picture text-center container-fluid py-5">
-                        <img src="{{ URL::to('/') }}/feminine-image/law-update.jpeg" class="img-law-updates img-fluid rounded mx-auto d-block" alt="Featured Law Update">
+                        <img src="{{ URL::to('/') }}/images/law-update.jpeg" class="img-law-updates img-fluid rounded mx-auto d-block" alt="Featured Law Update">
                     </div>
 
-                    <div class="law-updates-blog-title pb-4">Can your text message or e-mail message be used as evidence in court? </div>
+                    <div class="law-updates-blog-title h4 pb-4">Can your text message or e-mail message be used as evidence in court? </div>
 
-                    <div class="law-updates-blog-content mb-5">
+                    <div class="law-updates-blog-content mb-4">
                         Before the advent of computer age, we have been familiar with the use of documentary evidence in court such as contracts, agreements, letters and other writings. <br>
                         <br>
                         These writings printed in papers or paper-based documents are popularly known then as our documentary evidence. <br>
@@ -143,8 +129,8 @@
                         <br>
                     </div>
 
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-                        <button class="btn-law-updates position-absolute" type="button">LEARN MORE</button>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-center align-items-end">
+                        <button class="btn-law-updates position-absolute py-1 px-4 rounded-3" type="button">LEARN MORE</button>
                     </div>
                 </div>
             </div>
@@ -153,13 +139,13 @@
             <div class="everyday-law col-lg-6 pb-5 position-relative">
                 <div class="card-body px-5 py-5">
                     <hr class="header-line-right border-1 mx-auto">
-                    <div class="everyday-law-header card-title text-center mt-4">EVERYDAY LAW</div>
+                    <div class="everyday-law-header card-title text-center h2 mt-4">EVERYDAY LAW</div>
 
                     <div class="everyday-law-picture text-center container-fluid py-5">
-                        <img src="{{ URL::to('/') }}/feminine-image/everyday-law-sample-pic.jpg" class="img-everyday-law img-fluid rounded mx-auto d-block" alt="Featured Everyday Law">
+                        <img src="{{ URL::to('/') }}/images/everyday-law-sample-pic.jpg" class="img-everyday-law img-fluid rounded mx-auto d-block" alt="Featured Everyday Law">
                     </div>
 
-                    <div class="everyday-law-blog-title pb-4">Co-maker ng 'di nagbayad sa utang, tama ba na ikaw ang singilin? </div>
+                    <div class="everyday-law-blog-title h4 pb-4">Co-maker ng 'di nagbayad sa utang, tama ba na ikaw ang singilin? </div>
 
                     <div class="everyday-law-blog-content mb-5">
                         Nakapirma ka na ba sa loan agreement bilang co-maker? <br>
@@ -169,7 +155,7 @@
                     </div>
 
                     <div class="d-grid gap-2 d-md-flex justify-content-md-center align-items-end">
-                        <button class="btn-everyday-law position-absolute" type="button">LEARN MORE</button>
+                        <button class="btn-everyday-law position-absolute py-1 px-4 rounded-3" type="button">LEARN MORE</button>
                     </div>
                 </div>
             </div>

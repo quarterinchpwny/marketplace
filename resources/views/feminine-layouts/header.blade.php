@@ -64,7 +64,7 @@
                 font-weight: 800;
             }
 
-            .header-list {
+            .header-ul, .header-lst {
                 background-color: white;
                 color: #733657;
                 font-weight: 700;
@@ -91,23 +91,19 @@
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="header-ul navbar-nav ms-auto text-start">
-                            <a class="header-list nav-link pe-3 active" aria-current="page" href="#">Home</a>
-                            <a class="header-list nav-link pe-3" href="#">Our Services</a>
-                            <a class="header-list nav-link pe-3" href="#">Law Practices</a>
-                            <a class="header-list nav-link pe-3" href="#">Law Update</a>
-                            <a class="header-list nav-link pe-3" href="#">Everyday Law</a>
-                            <a class="header-list nav-link pe-3" href="#">Blog</a>
-                            <a class="header-list nav-link" href="#">Profile</a>
+                        <div class="header header navbar-nav ms-auto text-start">
+                            <a class="header-lst nav-link pe-3 active" aria-current="page" href="#">Home</a>
+                            <a class="header-lst nav-link pe-3" href="#">Our Services</a>
+                            <a class="header-lst nav-link pe-3" href="#">Law Practices</a>
+                            <a class="header-lst nav-link pe-3" href="#">Law Update</a>
+                            <a class="header-lst nav-link pe-3" href="#">Everyday Law</a>
+                            <a class="header-lst nav-link pe-3" href="#">Blog</a>
+                            <a class="header-lst nav-link" href="#">Profile</a>
                         </div>
                     </div>
                 </div>
-              </nav>
+            </nav>
         </header>
-
-        <div class="sample-con container-fluid h3">
-            hello world! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque praesentium perspiciatis nobis! Fugit nobis beatae voluptatum quisquam laudantium nemo delectus similique ea quia, perferendis deserunt. Tempora consequuntur amet cupiditate ab. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita laborum, culpa accusantium velit odio corrupti numquam beatae cumque, rem eveniet molestias? Suscipit odio iure facere itaque atque nihil aliquid excepturi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim velit ex consequuntur eveniet itaque distinctio at voluptas dolorem! Vero excepturi sunt veritatis animi tenetur distinctio rem esse maxime, ipsam facere.
-        </div>
 
         <!-- Option 1: Bootstrap Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

@@ -53,7 +53,6 @@
 
             .footer-brand, .footer-visit-us, .footer-contact-us, .footer-follow-us {
                 background-color: transparent;
-                min-width: 18rem;
             }
 
             .footer-visit-us-title, .footer-contact-us-title, .footer-follow-us-title {
@@ -84,7 +83,6 @@
                 text-decoration: none;
                 font-weight: 700;
                 font-style: italic;
-                line-height: 0.3cm;
             }
 
             .footer-others-bold-italic {
@@ -95,7 +93,7 @@
 
     <body>
 
-        <footer class="footer-main-con container-fluid p-5">
+        <footer class="footer-main-con container-fluid p-3">
             <div class="row justify-content-center">
 
                 <div class="footer-brand col-lg-3">
@@ -117,10 +115,12 @@
                     <div class="card-body">
                         <div class="footer-visit-us-title card-title pb-xxl-3">Visit Us</div> <br>
 
-                        Unit 608, 6th floor <br>
-                        AIC Burgundy Empire Tower <br>
-                        ADB Avenue Corner, Garnet Road <br>
-                        Ortigas Center, Pasig City <br>
+                        <p class="small">
+                            Unit 608, 6th floor <br>
+                            AIC Burgundy Empire Tower <br>
+                            ADB Avenue Corner, Garnet Road <br>
+                            Ortigas Center, Pasig City <br>
+                        </p>
                     </div>
                 </div>
 
@@ -128,8 +128,10 @@
                     <div class="card-body">
                         <div class="footer-contact-us-title card-title pb-xxl-3">Contact Us</div> <br>
 
-                        <span class="footer-contact-us-bold">Tel. No:</span> (02) 8-451-1594 <br>
-                        <span class="footer-contact-us-bold">E-mail:</span> contact@rizallawoffice.com <br>
+                        <p class="small">
+                            <span class="footer-contact-us-bold">Tel. No:</span> (02) 8-451-1594 <br>
+                            <span class="footer-contact-us-bold">E-mail:</span> contact@rizallawoffice.com <br>
+                        </p>
                     </div>
                 </div>
 
@@ -171,11 +173,13 @@
 
                         <br>
 
+                        <p class="small"></p>
+
                         <div class="footer-others pt-xxl-3">
-                            <a href="#" class="footer-others-bold-italic">Terms of Use</a> <br>
-                            <a href="#" class="footer-others-bold-italic">Privacy Policy</a> <br>
-                            <a href="#" class="footer-others-bold-italic">Disclaimer</a> <br>
-                            <a href="#" class="footer-others-bold-italic">Informed Consent of Service Performed</a>
+                            <a href="#" class="footer-others-bold-italic small">Terms of Use</a> <br>
+                            <a href="#" class="footer-others-bold-italic small">Privacy Policy</a> <br>
+                            <a href="#" class="footer-others-bold-italic small">Disclaimer</a> <br>
+                            <a href="#" class="footer-others-bold-italic small">Informed Consent of Service Performed</a>
                         </div>
                     </div>
                 </div>
