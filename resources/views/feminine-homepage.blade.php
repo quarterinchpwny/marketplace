@@ -8,5 +8,5 @@
 
 @include('feminine-layouts.bannerheader')
 @include('feminine-layouts.services')
-@include('feminine-layouts.practices')
+@include('feminine-layouts.practice-areas')
 @include('feminine-layouts.law-updates')
