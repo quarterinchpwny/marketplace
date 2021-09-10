@@ -55,11 +55,27 @@
         </div>
     </nav>
 
+
+    <section>
+    <div class="flexbox-container">
+            <div class="flexbox-item flexbox-item-1">
+                BANNER 
+            </div>
+            <div class="flexbox-item flexbox-item-2">
+                LOGIN
+            </div>
+    </div>
+    </section>
+
+
+
+
+
     <!-- log-in section -->
     <section id="login" >
             <div class="container-fluid">
                 <div class="row justify-content-center align-items-center ">
-                    <div class="col-md-5 col-lg-8 padding-0">
+                    <div class="col-sm-6 padding-0">
                         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
@@ -71,13 +87,12 @@
                                 </div>
                             </div>
                         </div>
-                            
                     </div>
-                    <div id ="login_panel" class="col-lg-4 padding-0" style="height: 825px;" >
+                    <div id ="login_panel" class="col-sm-6 padding-0" >
                         <div class="p-5 text-dark">
-                            <div class="co-md-5 text-center" >
+                            <div class="col-sm-6 text-center" >
                                 <div>
-                                    <img class="img-fluid" src="{{ URL::to('/') }}/NeutralHome_Graphics/RLOLogo.png" alt="logo" width="76px"> 
+                                    <img class="img-fluid" src="{{ URL::to('/') }}/NeutralHome_Graphics/RLOLogo.png" alt="logo" max-height="20px"> 
                                 </div>
                             
                                 <div class="d-none d-sm-block">
@@ -114,9 +129,10 @@
                                     <a id="login_social" href="#services" class="btn btn-primary btn-md" style="padding-left: 30px;"> <img src="{{ URL::to('/') }}/NeutralHome_Graphics/google_icon.png" alt="" style="padding-left: 15px; padding-right: 5px;" width="47px">LOGIN WITH GOOGLE</a>
                                 </div>
 
-                                <div id="hr">
+                                <br>
+                                <!-- <div id="hr">
                                 <p><hr class="hr-login"></p>
-                                </div>
+                                </div> -->
                                 
                                 <div>
                                     <p id="login_notice" >Don't have an account yet?</p>
@@ -239,7 +255,7 @@
         <div class="container-xxl">
             <div class="row align-items-center justify-content-center">
                 <div class="col-8 col-lg-6 col-xl-3">
-                    <div class="zoom"><img src="{{ URL::to('/') }}/NeutralHome_Graphics/perosnal.png" alt=""></div>
+                    <div class="zoom"><img src="{{ URL::to('/') }}/NeutralHome_Graphics/personal.png" alt=""></div>
                 </div>
                 <div class="col-8 col-lg-6 col-xl-3">
                     <div class="zoom"><img src="{{ URL::to('/') }}/NeutralHome_Graphics/civil.png" alt=""></div>
@@ -254,7 +270,7 @@
         
             <div class="row" id="areas_labels">
                 <div class="col-3 d-none d-sm-block">
-                    <p class="h4">Personal and Family Law</h1>
+                    <p class="h4">Personal and<br>Family Law</h1>
                 </div>
                 <div class="col-3 d-none d-sm-block">
                     <p class="h4">Civil Law</h1>
@@ -299,7 +315,7 @@
         </div>
 
         <div class="row align-items-center justify-content-center py-5" id="areas_buttons">
-            <a class="btn" href="#" role="button" id="areas_seemore">SEE MORE</a>
+            <a class="btn" href="#law-practice" role="button" id="areas_seemore">SEE MORE</a>
         </div>
     </section>
 
@@ -339,7 +355,7 @@
         <div class="container-fluid">
             <div class="row">
                 <h1 class="display-2">Everyday Law </h1>
-                <hr style="width: 188px; margin-left: 15px;">
+                <hr class="d-none d-lg-block" style="width: 188px; margin-bottom: 30px;">
             </div>
             <div class="row justify-content-center" style="padding: 30px 0 0 10px;">
 
@@ -371,7 +387,6 @@
         </div>
     </section>
 
-        <!-- footer -->
              <!-- footer -->
              <section id="footer">
         <div class="container-fluid .padding-0">
@@ -428,7 +443,7 @@
                 </div>
             </div>    
         </div>
-    </section>
+    </section> 
     
 </body>
 </html>
