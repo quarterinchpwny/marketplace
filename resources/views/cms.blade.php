@@ -143,7 +143,7 @@
              
             </div>
             <div class="tab-pane fade" id="nav-practice" role="tabpanel" aria-labelledby="nav-practice-tab">
-              <div class="row row3" >
+              <div class="row" >
                 <div class="col-10">
                   <h5>Select Practice Areas</h5>
                 </div>

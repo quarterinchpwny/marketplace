@@ -23,6 +23,66 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        return view('dashboard');
+        return view('cms');
+    }
+
+    public function services()
+    {
+        return view('cmsServices');
+    }
+
+    public function addBanner()
+    {
+        return view('addBanner');
+    }
+
+    public function registration()
+    {
+        return view('cmsRegistration');
+    }
+
+    public function lawyersBlog()
+    {
+        return view('cmsLawyersBlog');
+    }
+
+    public function lawUpdates()
+    {
+        return view('cmsLawUpdate');
+    }
+
+    public function lawyersProfile()
+    {
+        return view('cmsLawyersProfile');
+    }
+
+    public function everyDayLaw()
+    {
+        return view('cmsEverydayLaw');
+    }
+
+    public function lawFirmPractice()
+    {
+        return view('cmsLawFirmPractice');
+    }
+
+    public function privacyPolicy()
+    {
+        return view('cmsPrivacyPolicy');
+    }
+
+    public function addPost()
+    {
+        return view('addNewPost');
+    }
+
+    public function contactUs()
+    {
+        return view('cmsContactUs');
+    }
+
+    public function domainSettings()
+    {
+        return view('cmsDomainSettings');
     }
 }
