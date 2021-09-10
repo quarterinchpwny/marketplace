@@ -31,19 +31,22 @@ Route::middleware(['auth'])->group(function () {
       Route::get('/', [App\Http\Controllers\AccountController::class, 'index'])->name('account');
       Route::post('update', [App\Http\Controllers\AccountController::class, 'updateAccount'])->name('account.update'); 
   });
+
+  Route::get('cms', [App\Http\Controllers\DashboardController::class, 'index'])->name('cms');
+  Route::get('cmsServices', [App\Http\Controllers\DashboardController::class, 'services'])->name('cmsServices');
+  Route::get('cmsLawUpdate', [App\Http\Controllers\DashboardController::class, 'lawUpdates'])->name('cmsLawUpdate');
+  Route::get('cmsLawyersProfile', [App\Http\Controllers\DashboardController::class, 'lawyersProfile'])->name('cmsLawyersProfile');
+  Route::get('cmsEverydayLaw', [App\Http\Controllers\DashboardController::class, 'everyDayLaw'])->name('cmsEverydayLaw');
+  Route::get('cmsLawFirmPractice', [App\Http\Controllers\DashboardController::class, 'lawFirmPractice'])->name('cmsLawFirmPractice');
+  Route::get('addBanner', [App\Http\Controllers\DashboardController::class, 'addBanner'])->name('addBanner');
+  Route::get('cmsRegistration', [App\Http\Controllers\DashboardController::class, 'registration'])->name('cmsRegistration');
+  Route::get('cmsPrivacyPolicy', [App\Http\Controllers\DashboardController::class, 'privacyPolicy'])->name('cmsPrivacyPolicy');
+  Route::get('cmsLawyersBlog', [App\Http\Controllers\DashboardController::class, 'lawyersBlog'])->name('cmsLawyersBlog');
+  Route::get('addNewPost', [App\Http\Controllers\DashboardController::class, 'addPost'])->name('addNewPost');
+  Route::get('cmsContactUs', [App\Http\Controllers\DashboardController::class, 'contactUs'])->name('cmsContactUs');
+  Route::get('cmsDomainSettings', [App\Http\Controllers\DashboardController::class, 'domainSettings'])->name('cmsDomainSettings');
+
 });
-
-//CMS Route
-
-Route::get('cms', [App\Http\Controllers\cmscontroller::class, 'index'])->name('cms');
-  Route::get('addBanner', [App\Http\Controllers\cmscontroller::class, 'addBanner'])->name('addBanner');
-Route::get('cmsRegistration', [App\Http\Controllers\cmscontroller::class, 'registration'])->name('cmsRegistration');
-Route::get('cmsPrivacyPolicy', [App\Http\Controllers\cmscontroller::class, 'privacyPolicy'])->name('cmsPrivacyPolicy');
-Route::get('cmsLawyersBlog', [App\Http\Controllers\cmscontroller::class, 'lawyersBlog'])->name('cmsLawyersBlog');
-Route::get('addNewPost', [App\Http\Controllers\cmscontroller::class, 'addPost'])->name('addNewPost');
-
-
-
 
 // Carl Note
 // if route changes not work try to run "php artisan optimize"
