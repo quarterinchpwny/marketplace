@@ -19,7 +19,7 @@
     <nav class="navbar navbar-expand-md sticky-top navbar-custom navbar-light ">
         <div class="container-fluid">
             <a href="#login" class="navbar-brand">
-                <img class="nav-logo" src="{{ URL::asset('NeutralHome_Graphics/Rizal_Law_Office_Logo.png')}}" alt="logo" height="45">
+                <img class="nav-logo display-2 d-none d-lg-block justify-content-start" src="{{ URL::asset('NeutralHome_Graphics/Rizal_Law_Office_Logo.png')}}" alt="logo" height="59">
             </a>
             <!-- toggle for mobile -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="#main-nav" aria-expanded="false" aria-label="Toggle Navigation">
@@ -48,27 +48,12 @@
                     <a class="nav-link" href="#everyday-law">Everyday Law</a>
                     </li>
                     <li class="nav-item px-2">
-                    <a class="nav-link" href="#Blog">Blog</a>
+                    <a class="nav-link" href="#blog">Blog</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-
-
-    <section>
-    <div class="flexbox-container">
-            <div class="flexbox-item flexbox-item-1">
-                BANNER 
-            </div>
-            <div class="flexbox-item flexbox-item-2">
-                LOGIN
-            </div>
-    </div>
-    </section>
-
-
-
 
 
     <!-- log-in section -->
@@ -390,9 +375,8 @@
              <section id="footer">
         <div class="container-fluid .padding-0">
             <div class="row" id="footer_top" >
-                <div class="col-6" id="footer_logo">
                     <div>
-                        <img src="{{ URL::to('/') }}/NeutralHome_Graphics/Rizal_Law_Office_Logo.png" alt="footer logo" height="90px" style="margin-top: 90px;">
+                        <img src="{{ URL::to('/') }}/NeutralHome_Graphics/Rizal_Law_Office_Logo.png" alt="footer logo" height="90px" >
                     </div>
                     <div id="footer-subhead">
                         <p><i>Lorem ipsum dolor</i></p>
