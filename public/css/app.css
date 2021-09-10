@@ -11308,7 +11308,7 @@ textarea.form-control-lg {
   background-color: rgba(206, 221, 239, 0.8);
   padding: 40px 40px 30px 40px;
   height: 300px;
-  width: 1000px;
+  width: 100%;
 }
 
 #buttonBlue {
@@ -11366,7 +11366,6 @@ input::placeholder {
 .thirdRow {
   padding-top: 13px;
   position: relative;
-  left: 250px;
   font-size: 23px;
 }
 
@@ -11445,7 +11444,8 @@ input::placeholder {
 #areasHolder {
   position: relative;
   top: 70px;
-  z-index: 5;
+  z-index: 1;
+  display: block;
 }
 
 #textStyle {
@@ -11463,7 +11463,7 @@ input::placeholder {
 
 .areasChoices {
   width: 100%;
-  height: 17vw;
+  height: 175px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -11478,7 +11478,6 @@ input::placeholder {
 #everydayLawVid {
   position: absolute;
   bottom: 170px;
-  left: 90px;
 }
 
 .navFont {
@@ -11556,11 +11555,14 @@ body {
   background-color: #ffffff;
 }
 
+* {
+  outline: 1px solid red;
+}
+
 #frameWhiteBig {
   height: 550px;
   background-color: white;
   position: relative;
-  bottom: 300px;
 }
 
 .evrcard {
@@ -11584,10 +11586,10 @@ body {
   background-position: 50%;
 }
 
-<<<<<<< HEAD
 #sect {
-  height: 720px;
-=======
+  height: 1000px;
+}
+
 @media screen and (max-width: 900px) {
   #everydayLawVid {
     display: none;
@@ -11620,5 +11622,4 @@ body {
     left: 250px;
     width: 200px;
   }
->>>>>>> 57ad8b5971cd5ec0c9337a1e4c8894f1f599d2a2
 }

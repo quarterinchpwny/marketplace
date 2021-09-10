@@ -31,13 +31,13 @@
         </div>
     </div>
     </div>
-    <div class="thirdRow">
-    <div class="row align-items-center">
-    <div class="col-sm-7">
-         <a href="url">Don't have an account yet? <strong>Sign Up.</strong></a>
+
+    <div class="row justify-content-center">
+    <div class="col-sm-5">
+         <a href="url"><p class="thirdRow">Don't have an account yet? <strong>Sign Up.</strong></p></a>
         </div>
     </div>
-    </div>
+
     <div class="lastRow">
     <div class="row align-items-center">
         <div class="col-sm-4">
@@ -106,7 +106,7 @@
 </div>
 </div>
 </div>
-<div class="container-fluid servicesFrame" id="frameWhite"></div>
+<div class="container-fluid" id="frameWhite"></div>
 @endsection
 @section('PracticeAreas')
 <!-- Practice Areas -->
@@ -114,8 +114,8 @@
             <p id="headerStyleBlue">PRACTICE AREAS</p>
         <div class="container" style="background-color:rgb(206, 221, 239, 0)" id="areasHolder">
                 <div class="row">
-                    <div class="col-3  px-3">
-                        <div class="family_card card">
+                    <div class="col-3">
+                        <div class="card">
                         <img src="/images/Family.jpg" class="areasChoices">
                         <a href="#" class="areasButton btn btn-primary ">Personal & Family Law</a>
                         </div>
@@ -165,7 +165,7 @@
                         </div>
                     </div>
                 </div>
-            <div class="row py-3">
+            <div class="row justify-content-center">
                 <a href="#" class="btn btn-primary mx-auto buttonWhite">See more</a>
             </div>
         </div>
@@ -193,39 +193,53 @@ At that time, text message or e-mail message, as it was not yet widely used and 
         <a href="#" class="btn btn-primary text-light">Learn more</a>
       </div>
 
-      <img src="/images/laptop-lawupdates.jpg" class="lawUpdatesImage" alt="LapUpdatesPic" width="550" height="300">
+      <img src="/images/laptop-lawupdates.jpg" class="lawUpdatesImage" alt="LawUpdatesPic" width="550" height="300">
 </div>
 </div>
 @endsection
 @section('EverydayLaw')
 <!-- Everyday Law -->
-<div class="container-fluid" id="white-rect"><p id="headerStyleBlue">EVERYDAY LAW</p></div>
+<div class="container-fluid" id="white-rect"><p id="headerStyleBlue">LAW UPDATES</p></div>
+
 <div class="container-fluid" id="frameWhite">
 
-<div class="container" style="background-color:rgb(206, 221, 239, 0)" id="areasHolder">
-  <div class="row">
-      <div class="col-6">
+    <div class="container" style="background-color:rgb(206, 221, 239, 0)" id="areasHolder">
+    <div class="row">
+            <div class="col-6">
+            <div class="card-body cardBody evrcard">
+                <h5 class="card-title cardTitle evrcardfont">Co-maker ng ‘di nagbayad sa utang,
+                    <br>tama ba na ikaw ang singilin?</h5>
+                <p class="card-text cardText evrcardfont">Nakapirma ka na ba sa loan agreement bilang co-maker? <br>
+
+                    Ano ang panganib kung ikaw ay pipirma bilang co-maker sa isang loan?
+                    </p>
+                    <a href="#" class="btn btn-primary evrbtn">Learn more</a>
+            </div>
+            </div>
+            <div class="col-6">
+            <img src="/images/eLaw.png" id="everydayLawVid" width="550" height="300">
+            </div>
+    </div>
+    </div>
+{{-- <div class="container-fluid" id="white-rect"><p id="headerStyleBlue">EVERYDAY LAW</p></div>
+<div class="container-fluid" id="frameWhite">
         <div class="card-body cardBody evrcard">
 
-            <h5 class="card-title cardTitle evrcardfont">Co-maker ng ‘di nagbayad sa utang,
-                <br>tama ba na ikaw ang singilin?</h5>
-            <p class="card-text cardText evrcardfont">Nakapirma ka na ba sa loan agreement bilang co-maker? <br>
+                 <h5 class="card-title cardTitle evrcardfont">Co-maker ng ‘di nagbayad sa utang,
+                     <br>tama ba na ikaw ang singilin?</h5>
+                  <p class="card-text cardText evrcardfont">Nakapirma ka na ba sa loan agreement bilang co-maker? <br>
 
-            Ano ang panganib kung ikaw ay pipirma bilang co-maker sa isang loan?
-            </p>
-            <a href="#" class="btn btn-primary evrbtn">Learn more</a>
-        </div>
-      </div>
-      <div class="col-6">
-          <img src="/images/eLaw.png"  alt="video" id="everydayLawVid">
-        </div>
-        </div>
-    </div>
+                     Ano ang panganib kung ikaw ay pipirma bilang co-maker sa isang loan?
+                     </p>
+                 <a href="#" class="btn btn-primary evrbtn">Learn more</a>
+            </div>
+            <img src="/images/eLaw.png" alt="video">
 </div>
 @endsection
-@section('Footer')
+@section('Footer') --}}
 <!-- Footer -->
 
+<
 <footer class="text-center text-lg-start text-light pt-0" style="background-color: #092059;">
 
   <!-- Section: Links  -->
