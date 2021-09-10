@@ -31,20 +31,6 @@ Route::middleware(['auth'])->group(function () {
       Route::get('/', [App\Http\Controllers\AccountController::class, 'index'])->name('account');
       Route::post('update', [App\Http\Controllers\AccountController::class, 'updateAccount'])->name('account.update'); 
   });
-<<<<<<< HEAD
-});
-
-//CMS Route
-
-Route::get('cms', [App\Http\Controllers\cmscontroller::class, 'index'])->name('cms');
-  Route::get('addBanner', [App\Http\Controllers\cmscontroller::class, 'addBanner'])->name('addBanner');
-Route::get('cmsRegistration', [App\Http\Controllers\cmscontroller::class, 'registration'])->name('cmsRegistration');
-Route::get('cmsPrivacyPolicy', [App\Http\Controllers\cmscontroller::class, 'privacyPolicy'])->name('cmsPrivacyPolicy');
-Route::get('cmsLawyersBlog', [App\Http\Controllers\cmscontroller::class, 'lawyersBlog'])->name('cmsLawyersBlog');
-Route::get('addNewPost', [App\Http\Controllers\cmscontroller::class, 'addPost'])->name('addNewPost');
-Route::get('cmsContactUs', [App\Http\Controllers\cmscontroller::class, 'contactUs'])->name('cmsContactUs');
-=======
->>>>>>> fa9476e0a12cc61e3a2f162783419f080b7a8568
 
   Route::get('cms', [App\Http\Controllers\DashboardController::class, 'index'])->name('cms');
   Route::get('cmsServices', [App\Http\Controllers\DashboardController::class, 'services'])->name('cmsServices');
