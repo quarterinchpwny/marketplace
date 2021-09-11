@@ -64,10 +64,12 @@
                 font-weight: 800;
             }
 
-            .header-ul, .header-lst {
+            .header-lst {
+                text-decoration: none;
+
                 background-color: white;
-                color: #733657;
-                font-weight: 700;
+                color: #733657 !important;
+                font-weight: 700 !important;
             }
         </style>
     </head>
@@ -91,7 +93,7 @@
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="header header navbar-nav ms-auto text-start">
+                        <div class="navbar-nav ms-auto text-start text-decoration-none">
                             <a class="header-lst nav-link pe-3 active" aria-current="page" href="#">Home</a>
                             <a class="header-lst nav-link pe-3" href="#">Our Services</a>
                             <a class="header-lst nav-link pe-3" href="#">Law Practices</a>

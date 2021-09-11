@@ -65,9 +65,11 @@
             }
 
             .header-lst {
+                text-decoration: none;
+
                 background-color: white;
-                color: #733657;
-                font-weight: 700;
+                color: #733657 !important;
+                font-weight: 700 !important;
             }
         </style>
     </head>
@@ -80,7 +82,7 @@
                     <!-- Brand -->
                     <div class="header-brand w-25 p-0 m-0">
                         <a class="navbar-brand d-flex align-items-center" href="#">
-                            <img class="header-logo w-100 d-none d-lg-block" src="/public/images/Rizal_Law_Office_Logo Pink.png" alt="Rizal Law Office Brand">
+                            <img class="header-logo w-100 d-none d-lg-block" src="{{ URL::to('/') }}/images/Rizal_Law_Office_Logo Pink.png" alt="Rizal Law Office Brand">
                             <span class="header-name d-lg-none">Rizal Law Office</span>
                         </a>
                     </div>
@@ -91,7 +93,7 @@
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="header header navbar-nav ms-auto text-start">
+                        <div class="navbar-nav ms-auto text-start text-decoration-none">
                             <a class="header-lst nav-link pe-3 active" aria-current="page" href="#">Home</a>
                             <a class="header-lst nav-link pe-3" href="#">Our Services</a>
                             <a class="header-lst nav-link pe-3" href="#">Law Practices</a>

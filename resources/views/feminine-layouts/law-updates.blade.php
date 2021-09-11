@@ -42,7 +42,7 @@
 
             .blog-section {
                 font-family: 'Raleway', sans-serif;
-                font-weight: 500;
+                font-weight: 500 !important;
                 color: black;
                 line-height: 0.7cm;
             }
@@ -74,12 +74,12 @@
 
             .law-updates-header, .everyday-law-header {
                 font-family: 'Libre Baskerville', serif;
-                font-weight: 700;
+                font-weight: 700 !important;
             }
 
             .law-updates-blog-title, .everyday-law-blog-title {
                 font-family: 'Raleway', serif;
-                font-weight: 700;
+                font-weight: 700 !important;
             }
 
             .btn-contact-us, .btn-law-updates, .btn-everyday-law {

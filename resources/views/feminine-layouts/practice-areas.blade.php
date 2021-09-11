@@ -52,12 +52,12 @@
             .practice-header {
                 color: #733657;
                 font-family: 'Libre Baskerville', serif;
-                font-weight: 700;
+                font-weight: 700 !important;
             }
 
             .practice-card {
-                background-color: transparent;
-                border: 2px solid transparent;
+                background-color: transparent !important;
+                border: 2px solid transparent !important;
             }
 
             .icons-con {
@@ -73,7 +73,7 @@
                 text-decoration: none;
 
                 font-family: 'Raleway', serif;
-                font-weight: 700;
+                font-weight: 700 !important;
                 color: #733657;
             }
 
@@ -86,6 +86,7 @@
                 color: white;
                 font-weight: 700;
 
+                bottom: 4rem;
                 margin-top: auto;
             }
         </style>
@@ -175,13 +176,13 @@
                         <img src="{{ URL::to('/') }}/images/serv8.png" class="card-img-top" alt="Special Services">
                     </a>
 
-                    <div class="card-body align-content-center text-center pb-3">
+                    <div class="card-body align-content-center text-center pb-5">
                         <a href="#" class="label-con card-text text-center h5">Special Services</a>
                     </div>
                 </div>
             </div>
 
-            <div class="d-grid gap-2 d-md-flex justify-content-md-center align-items-end">
+            <div class="d-grid gap-2 d-md-flex justify-content-md-center col-6 pb-3 mx-auto">
                 <button class="btn-practice py-1 px-4 rounded-3" type="button">SEE MORE</button>
             </div>
         </div>

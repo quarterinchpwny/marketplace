@@ -6,7 +6,9 @@
     @endif
 </div>
 
+@include('feminine-layouts.navigationbar')
 @include('feminine-layouts.bannerheader')
 @include('feminine-layouts.services')
 @include('feminine-layouts.practice-areas')
 @include('feminine-layouts.law-updates')
+@include('feminine-layouts.footer')
