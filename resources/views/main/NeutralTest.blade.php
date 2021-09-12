@@ -17,6 +17,6 @@
 </head>
 <body>
 
-    @include('lexcontent.responsivefooter')
+    @include('lexcontent.responsivelawupdates')
 </body>
 </html>
