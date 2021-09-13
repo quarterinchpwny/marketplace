@@ -52,7 +52,7 @@
             .practice-header {
                 color: #733657;
                 font-family: 'Libre Baskerville', serif;
-                font-weight: 700 !important;
+                font-weight: 700;
             }
 
             .practice-card {
@@ -73,7 +73,7 @@
                 text-decoration: none;
 
                 font-family: 'Raleway', serif;
-                font-weight: 700 !important;
+                font-weight: 700;
                 color: #733657;
             }
 
@@ -90,7 +90,6 @@
                 color: white;
                 font-weight: 700;
 
-                bottom: 4rem;
                 margin-top: auto;
             }
         </style>
@@ -106,7 +105,7 @@
                 <!-- First Half -->
                 <div class="practice-card card align-items-center col-lg-3 col-md-6">
                     <a href="#" class="icons-con rounded-circle p-4">
-                        <img src="{{ URL::to('/') }}/images/serv1.png" class="card-img-top" alt="Personal & Family Law">
+                        <img  src="{{ URL::to('/') }}/images/serv1.png" class="card-img-top" alt="Personal & Family Law">
                     </a>
 
                     <div class=""></div>
@@ -182,7 +181,11 @@
                         <img src="{{ URL::to('/') }}/images/serv8.png" class="card-img-top" alt="Special Services">
                     </a>
 
+<<<<<<< HEAD
                     <div class="card-body align-content-center text-center pt-4 pb-4">
+=======
+                    <div class="card-body align-content-center text-center pb-3">
+>>>>>>> d952c9c318b0bae999fc3a9b297cd6ae7a0f6052
                         <a href="#" class="label-con card-text text-center h5">Special Services</a>
                     </div>
                 </div>

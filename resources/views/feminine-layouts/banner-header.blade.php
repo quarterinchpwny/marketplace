@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-        
+<html>
+    <head>     
+        <!-- Stylesheet -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
         <title>Law Office - Homepage</title>    
 
@@ -39,20 +32,28 @@
                 display: block;
             }
 
+            .row{
+                width: 100%;
+                display: flex;
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+
             .banner-image{
-                height: 750px;
+                height: 800px;
                 background: url(images/banner-header-image.jpeg) no-repeat center;
                 background-size: cover;
                 border-style: solid;
                 border-width: 5px;
-                border-color: #D08198;
+                border-color: #B5375B;
                 border-left: 0;
                 border-right: 0;
+                border-top: 0;
             }
 
             [class*="col-"] {
                 float: left;
-                padding: 15px;
+                padding: 0px;
             }
 
             /* Header CSS */
@@ -63,6 +64,7 @@
                 height: 200px;
                 padding: 20px;
                 box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+                width: 100%;
             }
 
             #header-area h1{
@@ -76,8 +78,11 @@
                 font-family: 'Raleway';
                 font-size: 24px;
                 color: #641F43;
+                padding-right: 15px;
             }
 
+            #login_container{
+            }
 
             .aside {
                 background-color: #FFE2EA;
@@ -488,10 +493,6 @@
 
     <body>
 
-        <div class="header">
-            <h1>NAV BAR</h1>
-        </div>    
-        
         <div class="banner-image">
             <div class="row">
 
@@ -509,8 +510,8 @@
                         <div id="login_title"><p>Welcome to</p></div>
 
                         <div>
-                            <img class="img-fluid" src="images/Logo2.png" alt="logo2"> 
-                            <img class="img-fluid" src="images/Logo1.png" alt="logo1">  
+                            <img class="img-fluid" src="images/Logo2.png" alt="logo2" width="50px"> 
+                            <img class="img-fluid" src="images/Logo1.png" alt="logo1" width="250px">  
                         </div>
 
                         <br>
