@@ -4978,6 +4978,11 @@ menu_btn.addEventListener("click", function () {
   sidebar.classList.toggle("active-nav");
   container.classList.toggle("active-cont");
 });
+var buttonStart = document.querySelector('#buttonStart');
+var modalBg = document.querySelector('.modal-bg');
+buttonStart.addEventListener('click', function () {
+  modalBg.classList.add('bg-active');
+});
 
 /***/ }),
 

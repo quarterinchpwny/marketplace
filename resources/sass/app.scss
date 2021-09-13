@@ -65,12 +65,19 @@ $buttons-darkblue: #1E3B87;
     bottom: 300px;
 }
 #lblue-signup{
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
-    bottom:300px;
+    bottom:300px;//300
     background-color: rgb(206, 221, 239, 0.8);
     padding: 40px 40px 30px 40px;
+    width: 100%;
+    min-width: 200px;
     height: 300px;
-    width: 1000px;
+}
+.buttonsSignin{
+    display: flex;
+    width: 100%;
 }
 #buttonBlue{
     @include button-font();
@@ -80,6 +87,8 @@ $buttons-darkblue: #1E3B87;
     border: none;
     border-radius: 6px;
     width: 260px; height: 55px;
+    display: block;
+    width: 100%;
 }
 #buttonBlue2{
     @include button-font();
@@ -89,6 +98,19 @@ $buttons-darkblue: #1E3B87;
     border: none;
     border-radius: 6px;
     width: 260px; height: 55px;
+    display: block;
+    width: 100%;
+}
+#buttonStart{
+    @include button-font();
+    font-family: 'Archivo', sans-serif;
+    background-color: #91ABEC;
+    align-items: center;
+    border: none;
+    border-radius: 6px;
+    width: 260px; height: 55px;
+    display: block;
+    width: 100%;
 }
 a{
     text-decoration: none;
@@ -99,19 +121,7 @@ input::placeholder {
     color: rgb(0, 0, 0);
     font-family: 'Poppins', sans-serif;
   }
-.secondRow{
-    padding-top: 5px;
-    padding-bottom: 20;
-}
-.thirdRow{
-    padding-top: 13px;
-    position: relative;
-    left: 250px;
-    font-size: 23px;
-}
-.lastRow{
-    padding-top: 13px;
-}
+
 #headerStyleBlue{
     @include header-styling();
     color: $all-blue;
@@ -132,19 +142,50 @@ input::placeholder {
     background-color: white;
     position: relative;
     bottom:300px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+#frameWhiteServices{
+    @include frame-canvas();
+    background-color: white;
+    position: relative;
+    bottom:300px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+#servicesRow{
+    position: relative;
+    bottom: 200px;
+}
+.practicesRow{
+    position: relative;
+    bottom: 200px;
+}
+.areasHolderServices{
+    position: relative;
+    bottom: 200px;
 }
 .card-body{
+    display: inline-block;
     background-color: $all-cards;
     font-family: 'Archivo', sans-serif;
-    width: 600px; height: 500;
+    min-height: 500px;
+    min-width: 0;
     position: relative;
-    right: 50px; bottom:100px;
+    left: 0px; bottom:200px;
     border-radius: 13px;
+    padding: 35px 35px 35px 35px;
+    word-break: break-word;
 }
+
 .lawUpdatesImage{
-    position: absolute;
-    left: 640px; bottom: 380px;
+    display: block;
+    width: 100%;
+    height: auto;
     border-radius: 13px;
+    position: relative;
+    bottom:200px;
 }
 .card{
     border-radius: 13px;
@@ -158,9 +199,12 @@ input::placeholder {
     right: 100px;
 }
 #areasHolder{
+    padding-left: 40px;
+    //display: flex;
+    width: 100%;
     position: relative;
     top: 70px;
-    z-index: 5;
+    z-index: 1;
 }
 
 #textStyle{
@@ -190,8 +234,11 @@ input::placeholder {
 }
 
 #everydayLawVid{
-    position: absolute;
-    bottom: 170px; left: 90px;
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    bottom: 200px;
 }
 
 .navFont{
@@ -204,7 +251,7 @@ input::placeholder {
 }
 
 .SignUp{
-
+    height: 1020px;
 }
 
 .cardTitle{
@@ -218,10 +265,7 @@ input::placeholder {
     font-family:'Archivo', sans-serif;
     font-size: 16px;
 }
-.cardBody{
-    padding: 35px 35px 35px 35px;
-    bottom: 250px;
-}
+
 .buttonWhite{
     border-radius: 8px;
     background-color: #1F3C88;
@@ -265,11 +309,14 @@ hr.style1{
 }
 body{//for testing
     background-color: #ffffff;
+    height: 100%;
+    width: 100%;
+    
 }
 
 #frameWhiteBig{
     height: 550px;
-    background-color: white;
+    background-color: #ffffff;
     position: relative;
     bottom:300px;
 }
@@ -277,7 +324,7 @@ body{//for testing
 
 .evrcard{
 background-color: #1f3c88;
-
+min-height: 300px;
 }
 
 .evrcardfont{
@@ -295,35 +342,158 @@ background-color: #1f3c88;
     background-size:cover;
     background-repeat: no-repeat;
     background-position: 50%;
-
-}
-
-@media screen and (max-width: 900px) {
-    #everydayLawVid{
-       display: none;
-    }
-    .lawUpdatesImage{
-        display: none;
-    }
-    .card-body{
-        width: 450px;
-    }
-    .emailtf{
-        width:260px;
-    }
-    .passtf{
-        width:260px;
-    }
-    .buttonsSign{
-        align-items: left;
-    }
     
 }
-@media screen and (max-width: 400px) {
-#buttonBlue2{
+#mainHeader{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 100px;
+    
+}
+#secondaryHeader{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.modal-bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top:0;
+    left:0;
+    background-color: rgb(0, 0, 0,0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s opacity 0,5s;
+}
+.bg-active{
+    visibility: visible;
+    opacity: 1;
+}
+.modal{
+    @media screen and (min-width: 768px ){height: 500px; width: 50%;}
+    @media screen and (max-width: 768px ){height: 500px; width: 50%;}
     position: relative;
-    bottom: 270px;
-    left: 250px;
-    width: 200px;
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px 20px 20px 20px;
+    border-radius: 10px;
 }
+
+#buttonModalLog{
+    display: block;
+    @include button-font();
+    font-size: 15px;
+    background-color: $buttons-darkblue;
+    align-items: center;
+    border: none;
+    border-radius: 6px;
+    width: 260px; height: 55px;
+    display: block;
+    width: 100%;
 }
+#buttonModal{
+    display: block;
+    @include button-font();
+    font-size: 15px;
+    background-color: $buttons-darkblue;
+    align-items: center;
+    border: none;
+    border-radius: 6px;
+    width: 260px; height: 30px;
+    display: block;
+    width: 100%;
+}
+
+$iphone5s: 320px;
+$iphonex: 375px;
+$ipad: 768px;
+$pixel2: 411px;
+
+$tablets: 900px;
+$phones: 600px;
+
+
+
+@media screen and (max-width: $tablets )and (min-width: $phones) {
+    #frameWhite{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: auto;
+    }
+    .lawUpdatesImage{
+        padding-top: 50px;
+    }
+    #everydayLawVid{
+        padding-top: 50px;
+    }
+}
+@media screen and (max-width: $phones) {
+    #headerLogo{
+        height: auto;
+        width: 200px;
+    }
+    #topContent{
+        height: 50px;
+        padding: 5px 5px 5px 5px;
+    }
+    #mainHeader{
+        padding-top: 20px;
+        font-size: 8vw;
+    }
+    #secondaryHeader{
+        font-size: 4vw;
+    }
+   
+    #frameWhite{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: auto;
+    }
+    #frameWhiteServices{
+        @include frame-canvas();
+        background-color: white;
+        position: relative;
+        bottom:300px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        height: auto;
+    }
+    #frameWhiteBig{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: auto;
+   }
+    #lblue-signup{
+        display: none;
+    }
+    #buttonStart{
+        position: relative;
+        bottom: 300px;
+    }
+    .lawUpdatesImage{
+        padding-top: 50px;
+    }
+    #everydayLawVid{
+        padding-top: 50px;
+    }
+   
+}
+

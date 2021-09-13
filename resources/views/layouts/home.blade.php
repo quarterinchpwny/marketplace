@@ -3,22 +3,24 @@
 @section('signUp')
 <div class="SignUp">
 <div class="container-fluid" id="bg">
+  <p id="mainHeader">Lorem ipsum dolor sit amet</p>
+  <p id="secondaryHeader">consectetur adipiscing elit, sed do eiusmod tempor </p>
 </div>
 <div class="container" id="lblue-signup">
     <!-- Sign up -->
-    <div class="row">
-        <div class="col-md-4 mb-3">
+       
+        <div class="col-md-4 mb-3 col-sm-4 col-xs-6">
                 <input class="form-control form-control-lg emailtf" type="text" placeholder="E-mail Address" >
         </div>
-        <div class="col-md-4 mb-3">
+        <div class="col-md-4 mb-3 col-sm-4 col-xs-6">
                 <input class="form-control form-control-lg passtf" type="text" placeholder="Password" >
         </div>
-        <div class="col-md-4 mb-3">
+        <div class="col-md-4 mb-3 col-sm-4 col-xs-6">
                 <button type="button" id="buttonBlue">Log in</button>
         </div>
-    </div>
-    <div class="secondRow">
-    <div class="row align-items-center">
+
+ 
+        
         <div class="col-sm-6">
         <div class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -27,20 +29,15 @@
             </label>
         </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4 forgotPass">
               <a href="url"><strong>Forgot Password?</strong></a>
         </div>
-    </div>
-    </div>
-    <div class="thirdRow">
-    <div class="row align-items-center">
-    <div class="col-sm-7">
+       
+        <div class="col-sm-7 signupButton">
          <a href="url">Don't have an account yet? <strong>Sign Up.</strong></a>
         </div>
-    </div>
-    </div>
-    <div class="lastRow">
-    <div class="row align-items-center">
+
+        <div class="buttonsSignin">
         <div class="col-sm-4">
                     <button type="button" id="buttonBlue2"><img src="/images/facebookLogo.svg" alt="facebook logo" height=25px width=25px>&nbsp Sign in with Facebook</button>
         </div>
@@ -50,17 +47,47 @@
         <div class="col-sm-4">
                     <button type="button" id="buttonBlue2"><img src="/images/appleLogo.svg" alt="apple logo" height=25px width=25px>&nbsp Sign in with ios</button>
         </div>
-    </div>
-    </div>
+        </div>
 </div>
+<div class="modal-bg">
+    <div class="modal">
+      <div class="modal-header">Hello! Icon Goes Here</div>
+        <input class="form-control form-control-md emailtf" type="text" placeholder="E-mail Address" >
+        <input class="form-control form-control-md passtf" type="text" placeholder="Password" >
+        <div class="rowModal d-flex justify-content-between">   
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Remember me
+                </label>
+            </div>   
+            <a href="url"><strong>Forgot Password?</strong></a>
+        </div>
+        <button type="button" id="buttonModalLog">Log in</button>
+        <div class="strike"><span>or</span></div>
+        <button type="button" id="buttonModal"><img src="/images/facebookLogo.svg" alt="facebook logo" height=25px width=25px>&nbsp Sign in with Facebook</button>
+        <button type="button" id="buttonModal"><img src="/images/googleLogo.svg" alt="google logo" height=25px width=25px>&nbsp Sign in with Google</button>
+        <button type="button" id="buttonModal"><img src="/images/appleLogo.svg" alt="apple logo" height=25px width=25px>&nbsp Sign in with ios</button>
+        <a href="url">Don't have an account yet? <strong>Sign Up.</strong></a>
+      </div> 
 </div>
+
+<button type="button" id="buttonStart">Get Started</button>
+
+</div>
+
+
+
 @endsection
 @section('Services')
 <!-- Our Services -->
 <div class="container-fluid" id="blue-rect"><p id="headerStyleWhite">OUR SERVICES</p>
-<div class="container" style="background-color:rgb(206, 221, 239, 0)" id="areasHolder">
-<div class="row">
-      <div class="col-3">
+
+</div>
+<div class="container-fluid servicesFrame" id="frameWhiteServices">
+
+<div class="row" id="servicesRow">
+      <div class="col-xs-2 col-s-2 col-md-3 col-lg-3">
         <div class="card text-center mb-4 p-4">
           <img src="/images/assistIcon.png"  width="100" height="100">
           <br>
@@ -72,7 +99,7 @@
           <a href="#" class="btn btn-primary text-light">Ask Lawyers</a>
         </div>
       </div>
-      <div class="col-3">
+      <div class="col-xs-2 col-s-2 col-md-3 col-lg-3">
         <div class="card text-center mb-4 p-4">
           <img src="/images/consultIcon.png"  width="100" height="100">
           <br>
@@ -84,7 +111,7 @@
           <a href="#" class="btn btn-primary text-light">Submit Legal Problem</a>
         </div>
       </div>
-      <div class="col-3">
+      <div class="col-xs-2 col-s-2 col-md-3 col-lg-3">
         <div class="card text-center mb-4 p-4">
           <img src="/images/worksIcon.png"  width="100" height="100">
           <br>
@@ -94,7 +121,7 @@
           <a href="#" class="btn btn-primary text-light">Request Proposal</a>
         </div>
       </div>
-      <div class="col-3">
+      <div class="col-xs-2 col-s-2 col-md-3 col-lg-3">
         <div class="card text-center mb-4 p-4">
           <img src="/images/docsIcon.png" width="100" height="100">
           <br>
@@ -104,63 +131,64 @@
           <a href="#" class="btn btn-primary text-light">Create Legal Document</a>
         </div>
       </div>
+
 </div>
+
 </div>
-</div>
-<div class="container-fluid servicesFrame" id="frameWhite"></div>
 @endsection
 @section('PracticeAreas')
 <!-- Practice Areas -->
 
 <div class="container-fluid" id="white-rect">
     <p id="headerStyleBlue">PRACTICE AREAS</p>
-<div class="container" style="background-color:rgb(206, 221, 239, 0)" id="areasHolder">
-<div class="row">
-      <div class="col-3  px-3">
+</div>
+<div class="container-fluid" id="frameWhiteBig">
+<div class="row practicesRow">
+      <div class="col-md-3 col-lg-3 col-xs-6  px-3">
         <div class="family_card card">
           <img src="/images/Family.jpg" class="areasChoices">
           <a href="#" class="areasButton btn btn-primary ">Personal & Family Law</a>
         </div>
       </div>
-      <div class="col-3">
+      <div class="col-md-3 col-lg-3 col-xs-6">
         <div class="card">
           <img src="/images/Civil.jpg" class="areasChoices">
           <a href="#" class="areasButton btn btn-primary ">Civil Law</a>
         </div>
       </div>
-      <div class="col-3">
+      <div class="col-md-3 col-lg-3 col-xs-6">
         <div class="card">
           <img src="/images/Commercial.jpg" class="areasChoices">
           <a href="#" class="areasButton btn btn-primary ">Commercial Law</a>
         </div>
       </div>
-      <div class="col-3">
+      <div class="col-md-3 col-lg-3 col-xs-6">
         <div class="card">
           <img src="/images/Labor.jpg" class="areasChoices">
           <a href="#" class="areasButton btn btn-primary ">Labor Law</a>
         </div>
       </div>
 </div>
-<div class="row py-5">
-      <div class="col-3">
+<div class="row py-5 practicesRow">
+      <div class="col-md-3 col-lg-3 col-xs-6">
         <div class="card">
           <img src="/images/Immigration.jpg" class="areasChoices">
           <a href="#" class="areasButton btn btn-primary ">Immigration Law</a>
         </div>
       </div>
-      <div class="col-3">
+      <div class="col-md-3 col-lg-3 col-xs-6">
         <div class="card">
           <img src="/images/Criminal.jpg" class="areasChoices">
           <a href="#" class="areasButton btn btn-primary ">Criminal Law</a>
         </div>
       </div>
-      <div class="col-3">
+      <div class="col-md-3 col-lg-3 col-xs-6">
         <div class="card">
           <img src="/images/Taxation.jpg" class="areasChoices">
           <a href="#" class="areasButton btn btn-primary ">Taxation Law</a>
         </div>
       </div>
-      <div class="col-3">
+      <div class="col-md-3 col-lg-3 col-xs-6">
         <div class="card">
           <img src="/images/Special.jpg" class="areasChoices">
           <a href="#" class="areasButton btn btn-primary">Special Services</a>
@@ -170,9 +198,6 @@
       <a href="#" class="btn btn-primary mx-auto buttonWhite">See more</a>
 </div>
 </div>
-</div>
-<div class="container-fluid" id="frameWhiteBig">
-</div>
 
 @endsection
 @section('LawUpdates')
@@ -180,9 +205,9 @@
 <div class="container-fluid" id="blue-rect"><p id="headerStyleWhite">LAW UPDATES</p></div>
 
 <div class="container-fluid" id="frameWhite">
-
-    <div class="container" style="background-color:rgb(206, 221, 239, 0)" id="areasHolder">
-      <div class="card-body cardBody">
+<div class="col-md-12 col-lg-6">
+      
+      <div class="card-body">
         <h5 class="card-title cardTitle">Can your text message or e-mail message be used as evidence in court?</h5>
         <p class="card-text cardText">Before the advent of computer age, we have been familiar with the use of documentary evidence in court such as contracts, agreements, letters and other writings.
         <br>
@@ -193,20 +218,21 @@ These writings printed in papers or paper-based documents are popularly known th
 At that time, text message or e-mail message, as it was not yet widely used and known in the Philippines, are not considered as documentary evidence by our courts of law.</p>
         <a href="#" class="btn btn-primary text-light">Learn more</a>
       </div>
+      </div>
 
-      <img src="/images/laptop-lawupdates.jpg" class="lawUpdatesImage" alt="LapUpdatesPic" width="550" height="300">
+      <div class="col-md-12 col-lg-6">
+      <img src="/images/laptop-lawupdates.jpg" class=" lawUpdatesImage" alt="LapUpdatesPic" width="550" height="300">
+      </div>
 </div>
-</div>
+
 @endsection
 @section('EverydayLaw')
 <!-- Everyday Law -->
 <div class="container-fluid" id="white-rect"><p id="headerStyleBlue">EVERYDAY LAW</p></div>
 <div class="container-fluid" id="frameWhite">
 
-<div class="container" style="background-color:rgb(206, 221, 239, 0)" id="areasHolder">
-  <div class="row">
-      <div class="col-6">
-        <div class="card-body cardBody evrcard">
+      <div class="col-md-12 col-lg-6">
+        <div class="card-body evrcard">
 
             <h5 class="card-title cardTitle evrcardfont">Co-maker ng ‘di nagbayad sa utang,
                 <br>tama ba na ikaw ang singilin?</h5>
@@ -217,25 +243,24 @@ At that time, text message or e-mail message, as it was not yet widely used and 
             <a href="#" class="btn btn-primary evrbtn">Learn more</a>
         </div>
       </div>
-      <div class="col-6">
+      <div class="col-md-12 col-lg-6">
           <img src="/images/eLaw.png"  alt="video" id="everydayLawVid">
         </div>
-        </div>
-    </div>
+   
 </div>
 @endsection
 @section('Footer')
 <!-- Footer -->
 
-<footer class="text-center text-lg-start text-light pt-0" style="background-color: #092059;">
+<footer class="text-lg-start text-light pt-0" style="background-color: #092059;">
 
   <!-- Section: Links  -->
   <section class="">
-    <div class="container text-center text-md-start mt-2">
+    <div class="container text-md-start mt-2">
       <!-- Grid row -->
       <div class="row mt-3 contentsFooter">
         <!-- Grid column -->
-        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
           <!-- Content -->
           <div class="container-fluid" >
                 <img src="/images/rizalLogo.png" alt="Rizal Logo" id="logoFooter">
@@ -263,7 +288,7 @@ At that time, text message or e-mail message, as it was not yet widely used and 
         <!-- Grid column -->
 
         <!-- Grid column -->
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 ms-4">
+        <div class="col-md-3 col-lg-2 col-xl-2 mb-4">
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4 " id="footerHeading">
             Contact
@@ -276,7 +301,7 @@ At that time, text message or e-mail message, as it was not yet widely used and 
         <!-- Grid column -->
 
         <!-- Grid column -->
-        <div class="col-md-5 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 ms-5">
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-md-0 mb-4 ms-5">
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4" id="footerHeading">
             Socials
