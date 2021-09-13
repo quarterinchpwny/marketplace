@@ -19,6 +19,12 @@
     <title>LexHome</title>
 </head>
 <body>
+<<<<<<< HEAD
+=======
+
+    @include('lexcontent.responsiveeverydaylaw')
+    @include('lexcontent.responsivelawupdates')
+>>>>>>> 2f581bf3873656c97953e7741a56cb510575011a
     @include('lexcontent.responsivenavigation')
     @include('lexcontent.responsivelogin')
     @include('lexcontent.responsiveourservices')
