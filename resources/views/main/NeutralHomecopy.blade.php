@@ -142,7 +142,7 @@
                         <button type=button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                    <form method="POST" action=" {{ route('add.user.post') }}">
+                    <form method="POST">
                         @csrf    
                         <label for="modal-username" class="form-label"> Username:</label>
                         <input type="text" class="form-control" id="modal-email" placeholder="Username">
@@ -166,6 +166,7 @@
                     <div class="modal-footer">
                         <button class="btn btn-primary" >Create an Account</button>
                     </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -303,17 +304,45 @@
         </div>
     </section>
 
-    <section id="law-updates">
-            <div class="container-fluid">
-                <div class="row">
-                    <h1 class="display-2 d-none d-sm-block">Law Updates</h1>
-                    <h1 class="display-1 d-block d-sm-none">Law Updates</h1>
-                    <hr class="d-none d-sm-block" style="width: 188px; margin-bottom: 30px;">
+    <section id="law-updates-flex">
+        <div class="flexbox-container">
+            <div class="row">
+                <div class="col-7">
+                    <div id="law-update-section">
+                        <h1 class="display-2 d-none d-sm-block"> Law Updates </h1>
+                        <h1 class="display-2 d-block d-sm-none">Law Updates</h1>
+                        <hr class="d-none d-sm-block" style="width: 15%;">
+                    </div>
+                    <div id="law-updates-content">
+                        <h2 class = "display-4" id="law-updates-heading">Can your text message or e-mail message be used as evidence in court?</h2>
+                        <p class = "display-7">Before the advent of computer age, we have been familiar with the use of documentary evidence in court such as contracts, agreements, letters and other writings.</p>
+                        <p class = "display-7">These writings printed in papers or paper-based documents are popularly known then as our documentary evidence.</p>
+                        <p class = "display-7">At that time, text message or e-mail message, as it was not yet widely used and known in the Philippines, are not considered as documentary evidence by our courts of law. </p> 
+                        <div id="law-updates-button" style="padding-top:30px">
+                            <a class="btn" href="#" role="button" id="areas_seemore" >SEE MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div id="law-updates-image">
+                        <img src="{{ URL::to('/') }}/NeutralHome_Graphics/law_updates_banner.png" alt="Law Updates" style="width: 100%; height: auto;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="law-updates">
+            <div class="flexbox-container" id="law-updates-flex">
+                <div class="flexbox-item-1">
+                    <h2 class="display-2 d-none d-sm-block">Law Updates</h2>
+                    <h2 class="display-1 d-block d-sm-none">Law Updates</h2>
+                    <hr class="d-none d-sm-block" style="width: 15%; margin-bottom: 30px;">
                 </div>
                 <div class="row" style="padding-left: 10px;">
                     <div class="col-7" >
                         <div id="updates-heading">
-                            <p>Can your text message or e-mail message be used as evidence in court?</p>
+                            <h2>Can your text message or e-mail message be used as evidence in court?</h2>
                         </div>
                         <div id="updates-content">
                             <p>Before the advent of computer age, we have been familiar with the use of documentary evidence in court such as contracts, agreements, letters and other writings.</p>
@@ -333,7 +362,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
     <section id="everyday-law">
         <div class="container-fluid">
