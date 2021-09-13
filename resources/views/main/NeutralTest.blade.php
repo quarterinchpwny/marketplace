@@ -19,9 +19,8 @@
     <title>LexHome</title>
 </head>
 <body>
-
-    @include('lexcontent.responsivelawupdates')
     @include('lexcontent.responsivenavigation')
+    @include('lexcontent.responsivelogin')
     @include('lexcontent.responsiveourservices')
     @include('lexcontent.responsivelawpractice')
     @include('lexcontent.responsivefooter')
