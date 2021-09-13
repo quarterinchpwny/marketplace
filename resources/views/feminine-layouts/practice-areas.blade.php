@@ -140,46 +140,7 @@
                     </div>
                 </div>
 
-                <!-- Second Half -->
-                <div class="practice-card card align-items-center col-lg-3 col-md-6">
-                    <a href="#" class="icons-con rounded-circle p-4">
-                        <img src="{{ URL::to('/') }}/images/serv5.png" class="card-img-top" alt="Criminal Law">
-                    </a>
-
-                    <div class="card-body align-content-center text-center pb-5">
-                        <a href="#" class="label-con card-text text-center h5">Criminal Law</a>
-                    </div>
-                </div>
-
-                <div class="practice-card card align-items-center col-lg-3 col-md-6">
-                    <a href="#" class="icons-con rounded-circle p-4">
-                        <img src="{{ URL::to('/') }}/images/serv6.png" class="card-img-top" alt="Commercial Law">
-                    </a>
-
-                    <div class="card-body align-content-center text-center pb-5">
-                        <a href="#" class="label-con card-text text-center h5">Commercial Law</a>
-                    </div>
-                </div>
-
-                <div class="practice-card card align-items-center col-lg-3 col-md-6">
-                    <a href="#" class="icons-con rounded-circle p-4">
-                        <img src="{{ URL::to('/') }}/images/serv7.png" class="card-img-top" alt="Taxation Law">
-                    </a>
-
-                    <div class="card-body align-content-center text-center pb-5">
-                        <a href="#" class="label-con card-text text-center h5">Taxation Law</a>
-                    </div>
-                </div>
-
-                <div class="practice-card card align-items-center col-lg-3 col-md-6">
-                    <a href="#" class="icons-con rounded-circle p-4">
-                        <img src="{{ URL::to('/') }}/images/serv8.png" class="card-img-top" alt="Special Services">
-                    </a>
-
-                    <div class="card-body align-content-center text-center pb-5">
-                        <a href="#" class="label-con card-text text-center h5">Special Services</a>
-                    </div>
-                </div>
+                
             </div>
 
             <div class="d-grid gap-2 d-md-flex justify-content-md-center col-6 pb-3 mx-auto">
