@@ -11509,7 +11509,7 @@ input::placeholder {
 
 .areasChoices {
   width: 100%;
-  height: 17vw;
+  height: 175px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -11605,11 +11605,14 @@ body {
   width: 100%;
 }
 
+* {
+  outline: 1px solid red;
+}
+
 #frameWhiteBig {
   height: 550px;
   background-color: #ffffff;
   position: relative;
-  bottom: 300px;
 }
 
 .evrcard {

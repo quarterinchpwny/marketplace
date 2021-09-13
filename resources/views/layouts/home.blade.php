@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('signUp')
-<div class="SignUp">
 <div class="container-fluid" id="bg">
   <p id="mainHeader">Lorem ipsum dolor sit amet</p>
   <p id="secondaryHeader">consectetur adipiscing elit, sed do eiusmod tempor </p>
@@ -117,7 +116,7 @@
           <br>
           <h2 id="textStyle"><strong>WORKS</strong></h2>
           <br>
-          <p id="textStyle">Free legal fee crowdsourcing and paid legal works <br> escrow delivery</p>
+          <p id="textStyle">Free legal fee crowdsourcing<br> and paid legal works <br> escrow delivery</p>
           <a href="#" class="btn btn-primary text-light">Request Proposal</a>
         </div>
       </div>
@@ -228,15 +227,16 @@ At that time, text message or e-mail message, as it was not yet widely used and 
 @endsection
 @section('EverydayLaw')
 <!-- Everyday Law -->
-<div class="container-fluid" id="white-rect"><p id="headerStyleBlue">EVERYDAY LAW</p></div>
+<div class="container-fluid" id="white-rect"><p id="headerStyleBlue">LAW UPDATES</p></div>
+
 <div class="container-fluid" id="frameWhite">
 
       <div class="col-md-12 col-lg-6">
         <div class="card-body evrcard">
 
-            <h5 class="card-title cardTitle evrcardfont">Co-maker ng ‘di nagbayad sa utang,
-                <br>tama ba na ikaw ang singilin?</h5>
-            <p class="card-text cardText evrcardfont">Nakapirma ka na ba sa loan agreement bilang co-maker? <br>
+                 <h5 class="card-title cardTitle evrcardfont">Co-maker ng ‘di nagbayad sa utang,
+                     <br>tama ba na ikaw ang singilin?</h5>
+                  <p class="card-text cardText evrcardfont">Nakapirma ka na ba sa loan agreement bilang co-maker? <br>
 
             Ano ang panganib kung ikaw ay pipirma bilang co-maker sa isang loan?
             </p>
@@ -249,10 +249,11 @@ At that time, text message or e-mail message, as it was not yet widely used and 
    
 </div>
 @endsection
-@section('Footer')
+@section('Footer') --}}
 <!-- Footer -->
 
-<footer class="text-lg-start text-light pt-0" style="background-color: #092059;">
+<
+<footer class="text-center text-lg-start text-light pt-0" style="background-color: #092059;">
 
   <!-- Section: Links  -->
   <section class="">
@@ -333,6 +334,7 @@ At that time, text message or e-mail message, as it was not yet widely used and 
   <!-- Section: Links  -->
   <hr class="style1">
   <!-- Copyright -->
+  <div class="container text-center text-md-start mt-2">
         <p class="text-left p-4 poweredBy">Powered by <img src="/images/lexmeetLogo.png"  alt="lexlogo" height="13" width="85"></p>
 
   <div class="text-right p-4" style="background-color: rgba(0, 0, 0, 0.05);">
@@ -342,7 +344,7 @@ At that time, text message or e-mail message, as it was not yet widely used and 
     <a href="" id="linksLegal">Informed Consent of Service Performed</a>
     <a href="" id="linksLegal">Disclaimer</a></ul>
   </div>
-
+  </div>
   <!-- Copyright -->
 </footer>
 <!-- Footer -->
