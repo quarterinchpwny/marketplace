@@ -482,7 +482,7 @@
 
                 .banner-image{
                     width: 100%;
-                    height: 650px;
+                    height: 615px;
                     object-fit: fill;
                 }
 
