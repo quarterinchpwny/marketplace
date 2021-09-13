@@ -1,5 +1,5 @@
 <section id="law-updates">
-   <div id="law-updates-section">
+   <div id="law-updates-section" >
       <div class="row" id="law-updates-header">
                <h2 class="display-2 d-none d-sm-block"> Law Updates </h2>
                <h2 class="display-1 d-block d-md-none text-center"> Law Updates </h2>
