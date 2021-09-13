@@ -21,6 +21,7 @@
 <body>
     @include('lexcontent.responsivenavigation')
     @include('lexcontent.responsiveourservices')
+    @include('lexcontent.responsivelawpractice')
     @include('lexcontent.responsivefooter')
 
 </body>

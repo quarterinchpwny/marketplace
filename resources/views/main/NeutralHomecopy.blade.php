@@ -253,7 +253,7 @@
             </div>
         
             <div class="row" id="areas_labels">
-                <div class="col-3 d-none d-sm-block">
+                <div class="col-3 d-none d-xl-block">
                     <p class="h4">Personal and<br>Family Law</h1>
                 </div>
                 <div class="col-3 d-none d-sm-block">
