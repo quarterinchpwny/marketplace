@@ -20,7 +20,6 @@
             .col-1{
                 margin: 0 !important;
                 padding: 0 !important;
-                flex: 1;
             }
 
             * {
@@ -34,7 +33,10 @@
             }
 
             .row{
+                width: 100%;
                 display: flex;
+                margin: 0 !important;
+                padding: 0 !important;
             }
 
             .banner-image{
@@ -51,7 +53,7 @@
 
             [class*="col-"] {
                 float: left;
-                padding: 15px;
+                padding: 0px;
             }
 
             /* Header CSS */
@@ -62,6 +64,7 @@
                 height: 200px;
                 padding: 20px;
                 box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+                width: 100%;
             }
 
             #header-area h1{
