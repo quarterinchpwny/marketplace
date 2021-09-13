@@ -52,12 +52,12 @@
             .practice-header {
                 color: #733657;
                 font-family: 'Libre Baskerville', serif;
-                font-weight: 700 !important;
+                font-weight: 700;
             }
 
             .practice-card {
-                background-color: transparent !important;
-                border: 2px solid transparent !important;
+                background-color: transparent;
+                border: 2px solid transparent;
             }
 
             .icons-con {
@@ -73,7 +73,7 @@
                 text-decoration: none;
 
                 font-family: 'Raleway', serif;
-                font-weight: 700 !important;
+                font-weight: 700;
                 color: #733657;
             }
 
@@ -86,7 +86,6 @@
                 color: white;
                 font-weight: 700;
 
-                bottom: 4rem;
                 margin-top: auto;
             }
         </style>
@@ -102,7 +101,7 @@
                 <!-- First Half -->
                 <div class="practice-card card align-items-center col-lg-3 col-md-6">
                     <a href="#" class="icons-con rounded-circle p-4">
-                        <img src="{{ URL::to('/') }}/images/serv1.png" class="card-img-top" alt="Personal & Family Law">
+                        <img src="/public/images/serv1.png" class="card-img-top" alt="Personal & Family Law">
                     </a>
 
                     <div class="card-body align-content-center text-center pb-5">
@@ -112,7 +111,7 @@
 
                 <div class="practice-card card align-items-center col-lg-3 col-md-6">
                     <a href="#" class="icons-con rounded-circle p-4">
-                        <img src="{{ URL::to('/') }}/images/serv2.png" class="card-img-top" alt="Labor Law">
+                        <img src="/public/images/serv2.png" class="card-img-top" alt="Labor Law">
                     </a>
 
                     <div class="card-body align-content-center text-center pb-5">
@@ -122,7 +121,7 @@
 
                 <div class="practice-card card align-items-center col-lg-3 col-md-6">
                     <a href="#" class="icons-con rounded-circle p-4">
-                        <img src="{{ URL::to('/') }}/images/serv3.png" class="card-img-top" alt="Civil Law">
+                        <img src="/public/images/serv3.png" class="card-img-top" alt="Civil Law">
                     </a>
 
                     <div class="card-body align-content-center text-center pb-5">
@@ -132,7 +131,7 @@
 
                 <div class="practice-card card align-items-center col-lg-3 col-md-6">
                     <a href="#" class="icons-con rounded-circle p-4">
-                        <img src="{{ URL::to('/') }}/images/serv4.png" class="card-img-top" alt="Immigration Law">
+                        <img src="/public/images/serv4.png" class="card-img-top" alt="Immigration Law">
                     </a>
 
                     <div class="card-body align-content-center text-center pb-5">
@@ -140,10 +139,49 @@
                     </div>
                 </div>
 
-                
+                <!-- Second Half -->
+                <div class="practice-card card align-items-center col-lg-3 col-md-6">
+                    <a href="#" class="icons-con rounded-circle p-4">
+                        <img src="/public/images/serv5.png" class="card-img-top" alt="Criminal Law">
+                    </a>
+
+                    <div class="card-body align-content-center text-center pb-5">
+                        <a href="#" class="label-con card-text text-center h5">Criminal Law</a>
+                    </div>
+                </div>
+
+                <div class="practice-card card align-items-center col-lg-3 col-md-6">
+                    <a href="#" class="icons-con rounded-circle p-4">
+                        <img src="/public/images/serv6.png" class="card-img-top" alt="Commercial Law">
+                    </a>
+
+                    <div class="card-body align-content-center text-center pb-5">
+                        <a href="#" class="label-con card-text text-center h5">Commercial Law</a>
+                    </div>
+                </div>
+
+                <div class="practice-card card align-items-center col-lg-3 col-md-6">
+                    <a href="#" class="icons-con rounded-circle p-4">
+                        <img src="/public/images/serv7.png" class="card-img-top" alt="Taxation Law">
+                    </a>
+
+                    <div class="card-body align-content-center text-center pb-5">
+                        <a href="#" class="label-con card-text text-center h5">Taxation Law</a>
+                    </div>
+                </div>
+
+                <div class="practice-card card align-items-center col-lg-3 col-md-6">
+                    <a href="#" class="icons-con rounded-circle p-4">
+                        <img src="/public/images/serv8.png" class="card-img-top" alt="Special Services">
+                    </a>
+
+                    <div class="card-body align-content-center text-center pb-3">
+                        <a href="#" class="label-con card-text text-center h5">Special Services</a>
+                    </div>
+                </div>
             </div>
 
-            <div class="d-grid gap-2 d-md-flex justify-content-md-center col-6 pb-3 mx-auto">
+            <div class="d-grid gap-2 d-md-flex justify-content-md-center align-items-end">
                 <button class="btn-practice py-1 px-4 rounded-3" type="button">SEE MORE</button>
             </div>
         </div>
