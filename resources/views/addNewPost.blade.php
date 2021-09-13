@@ -1,28 +1,25 @@
 @extends('layouts.cmsnavigation')
 @section('content')
-<div class="row  ">
-            <div class="col-sm-1 previewbutton">
-                <button type="button" class="d-flex btn btn-primary text-white">Preview</button>
-            </div>
+    <div class="row row1">
+        <div class="col-10"></div>
+        <div class="col-1">
+            <button type="button" class="btn text-white addnewbtn" style = "background-color: #9D71BC;"> Preview</button>       
         </div>
-
-        <div class="row row2 container-fluid"  style="height: 580px; background-color:#F8FFFE; margin-left: 5px; ">
-            <div class="col-xl container-fluid texteditor" style="width: 300px;">
-                <script src="https://cdn.ckeditor.com/ckeditor5/29.2.0/decoupled-document/ckeditor.js"></script>
-                <h5>Add New Post</h5>
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="title">
-                    <label for="floatingInput"> Enter title here</label>
-                </div>
-
+    </div>
+    <div class="row row2 container-fluid"  style="height: 570px; background-color:#F8FFFE; margin-left: 5px; ">
+        <div class="col-xl container-fluid texteditor" style="width: 300px;">
+            <script src="https://cdn.ckeditor.com/ckeditor5/29.2.0/decoupled-document/ckeditor.js"></script>
+            <h5>Add New Post</h5>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="title">
+                <label for="floatingInput"> Enter title here</label>
+            </div>
                 <!-- The toolbar will be rendered in this container. -->
                 <div id="toolbar-container" style="max-height: 500px;"> </div>
-
                 <!-- This container will become the editable. -->
                 <div id="editor">
-                    <p>This is the initial editor content.</p>
+                    <p>Add text here.</p>
                 </div>
-              
                 <script>
                     DecoupledEditor
                         .create( document.querySelector( '#editor' ) )
@@ -41,28 +38,19 @@
                     <div class="row row-options container-fluid ">
                         <div class="row ">
                             <h6>Publish</h6>
-
-                        </div>
-                      
+                        </div> 
                         <div class="col-sm-7">
                             <button type="button" class="btn btn-primary btn-sm">SAVE AS DRAFT</button>
                             </div>
                             <div class="col-sm-4">
                                 <button type="button" class="btn btn-primary btn-sm">PREVIEW</button>
                             </div>
-                        </div>
-                       
+                        </div>     
                     </div>
-
                     <div class="row">
     
                     </div>
-
-
-                </div>
-                
-                
+                </div>     
             </div>
-           
         </div>              
 @endsection

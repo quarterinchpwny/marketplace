@@ -2,13 +2,12 @@
 @section('content')
     <div class="row">
         <div class="col-10">
-            <h5>Contact Us Page</h5>
+            <p class="fs-5 fw-bold text-white">Contact Us</p> 
         </div>
         <div class="col-1">
-            <button type="button" class="d-flex btn btn-primary text-white addnewbtn"> Preview</button>
+          <button type="button" class="btn text-white addnewbtn" style = "background-color: #9D71BC;"> Preview</button>       
         </div>
     </div>
-
     <div class="row2 container-fluid"  style="height: 580px; background-color:#F8FFFE; ">
         <div class="accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item">

@@ -1,18 +1,17 @@
 @extends('layouts.cmsnavigation')
 @section('content')
-    <div class="row">
+    <div class="row row1">
         <div class="col-9">
-            <h5>Privacy Policy</h5>
+        <p class="fs-5 fw-bold text-white">Privacy Policy</p>
         </div>
         <div class="col-1">
-            <button type="button" class="d-flex btn btn-primary text-white addnewbtn">Preview</button>
+            <button type="button" class="d-flex btn text-white addnewbtn" style = "background-color: #9D71BC;">Preview</button>
         </div>
         <div class="col-2">
-            <a href="{{url ('/addNewPost') }}"><button type="button" class=" addnewbtn d-flex btn btn-primary text-white">Add New</button></a>
+            <a href="{{url ('/addPrivacyPolicy') }}"><button type="button" class=" addnewbtn d-flex btn text-white" style = "background-color: #9D71BC;">Add New</button></a>
         </div>
     </div>
-    
-    <div class="row2 container-fluid "  style="height: 570px; background-color:#F8FFFE; "> 
+    <div class="row2 container-fluid "  style="height: 580px; background-color:#F8FFFE; "> 
         <table class="table table-striped table-hover">
             <thead>
                 <tr>
@@ -76,7 +75,7 @@
                         </ul>
                         </div></td>
                     <td>
-                    <a href="#" class="btn btn-outline-dark btn-sm"><i class="fas fa-eye"></i> View</a>
+                        <a href="#" class="btn btn-outline-dark btn-sm"><i class="fas fa-eye"></i> View</a>
                         <a href="#" class="btn btn-outline-dark btn-sm"><i class="fas fa-pencil-alt"></i> Edit</a>
                         <a href="#" class="btn btn-outline-dark btn-sm"><i class="fas fa-trash-alt"></i> Delete</a>
                     </td>

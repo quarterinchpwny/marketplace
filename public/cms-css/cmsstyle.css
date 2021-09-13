@@ -8,6 +8,9 @@ body {
   background: linear-gradient(345deg, rgba(94,27,137,1) 0%, rgba(157,113,188,1) 31%, rgba(255,127,77,1) 74%, rgba(244,81,44,1) 99%);
 
 }
+.btn1{
+  background-color: #9D71BC;
+}
 
 #viewport {
   padding-left: 250px;
@@ -19,7 +22,7 @@ body {
 
 /* Sidebar  */
 .sidebar-nav #line{
-  height: 5px;
+  height: 6px;
   margin-top: 48px;
 }
 .sidebar-nav {
@@ -38,7 +41,7 @@ body {
 .sidebar-logo{
     width: 200px;
     height: 40px;
-    margin:10px 33px;
+    margin:10px 30px;
 
 }
 .sidebar-nav .nav{
@@ -77,11 +80,16 @@ body {
 /*Homepage Content */
 .page-content-wrapper  {
   padding: 80px 60px;
-  height: 760px;
-  
+  max-height: 763px;
+}
+.row1{
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 .row2{
-  margin: 30px auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
   border-radius: 15px;
   padding: 20px 0PX;
   width:1170px;
@@ -110,6 +118,13 @@ body {
 .row4{
   padding: 10px;
 }
+/*Lawyer's Blog Section*/
+.addpostbtn{
+  bottom: 10px;
+}
+
+
+
 
 
 /* For other pages.. di pa maayos*/

@@ -1,39 +1,44 @@
 @extends('layouts.cmsnavigation')
 @section('content')
-<div class="row row3" >
-    <div class="col-10">
-      <h5>New Banner</h5>
+  <div class="row row1">
+    <div class="col-10"></div>
+    <div class="col-1">
+      <button type="button" class="btn text-white addnewbtn" style = "background-color: #9D71BC;"> Preview</button>       
     </div>
-      <div class="col-1">
-        <button type="button" class="d-flex btn btn-primary text-white">Save</button>
-      </div>
-      <div class="col-1">
-        <button type="button" class="d-flex btn btn-primary text-white">Cancel</button>
-      </div>
   </div>
-  <div class="row row4">
-    <form action="">
-      <div class="row mb-3">
-        <label for="colFormLabel" class="col-sm-2 col-form-label">Banner Title:</label>
-        <div class="col-sm-9">
-          <input type="text" class="form-control" id="colFormLabel" placeholder="Banner Title">
+  <div class="row2 container-fluid"  style="height: 580px; background-color:#F8FFFE; ">
+    <div class="row row3" >
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <div class="col-10">
+          <h5>Add New Banner</h5>
         </div>
+        <button class="btn me-md-2 text-white" type="button" style = "background-color: #9D71BC;" >Save</button>
+        <a href="{{url ('/cms') }}" ><button class="btn text-white" type="button" style = "background-color: #9D71BC;">Cancel</button></a>
       </div>
-      <div class="row mb-3">
-        <label for="colFormLabel" class="col-sm-2 col-form-label">Banner Content:</label>
-        <div class="col-sm-9">
-          <textarea class="form-control" placeholder="Banner Content" id="formControlInput" style="height: 100px"></textarea>
+    </div>
+    <div class="row row4">
+      <form action="">
+        <div class="row mb-3">
+          <label for="colFormLabel" class="col-sm-2 col-form-label">Banner Title:</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="colFormLabel" placeholder="Banner Title">
+          </div>
         </div>
-      </div>
-      <div class="row mb-3">
-        <label for="colFormLabel" class="col-sm-2 col-form-label">Select Banner:</label>
-        <div class="col-sm-9">
-          <input class="form-control" type="file" id="formFile">
+        <div class="row mb-3">
+          <label for="colFormLabel" class="col-sm-2 col-form-label">Banner Content:</label>
+          <div class="col-sm-9">
+            <textarea class="form-control" placeholder="Banner Content" id="formControlInput" style="height: 100px"></textarea>
+          </div>
         </div>
-      </div>
-      <div class="row mb-3">
-        <label for="colFormLabel" class="col-sm-2 col-form-label">Banner Title Position:</label>
-        <div class="col-sm-9">
+        <div class="row mb-3">
+          <label for="colFormLabel" class="col-sm-2 col-form-label">Select Banner:</label>
+          <div class="col-sm-9">
+           <input class="form-control" type="file" id="formFile">
+          </div>
+        </div>
+        <div class="row mb-3">
+         <label for="colFormLabel" class="col-sm-2 col-form-label">Banner Title Position:</label>
+         <div class="col-sm-9">
           <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="radioInline" id="inlineRadioChecked" checked="">
             <label class="form-check-label" for="inlineRadioChecked">Left</label>
@@ -47,10 +52,7 @@
             <label class="form-check-label" for="inlineRadioDefault">Right</label>
           </div>
         </div>
-      </div>
-
-      
-    
-    </form>
+      </form>
+    </div>
   </div>
 @endsection

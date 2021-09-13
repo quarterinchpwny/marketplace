@@ -58,9 +58,9 @@
       </div>
     </div>
      <!--Top Navigation--> 
-     <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #F8FFFE;">
+     <nav class="navbar navbar-expand-md fixed-top" style="background-color: #F8FFFE;">
       <div class="container-fluid">
-        <a class="align-items-center mb-3 mb-md-0 me-md-auto sidebar-logo" href="#"><img src="{{ URL::to('/') }}/cms-graphics/logo1.png" alt="Rizal Law Office" width="200px"></a>
+        <a class="align-items-center mb-3 mb-md-0 me-md-auto sidebar-logo navbar-brand" href="#"><img src="{{ URL::to('/') }}/cms-graphics/logo1.png" alt="Rizal Law Office" width="200px"></a>
         <ul class="nav navbar-nav ml-end">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle ms-2 d-flex justify-content-end" href="#" role="button"
@@ -87,7 +87,7 @@
     </nav>
     <!--Main content-->
     <div class="page-content-wrapper">
-      <div class="container-fluid content">
+      <div class="container">
           @yield('content')
       </div>
     </div>

@@ -1,3 +1,5 @@
 @extends('layouts.cmsnavigation')
-@section('content')         
+@section('content')   
+
+
 @endsection
