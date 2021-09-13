@@ -49,6 +49,7 @@
 
             .blog-contact-us, .blog-blank {
                 background-color: #D08198;
+                line-height: 0.5cm
                 color: black;
             }
 
@@ -97,9 +98,9 @@
     </head>
 
     <body>
-        <div class="blog-section row m-0 position-relative">
+        <div class="blog-section row m-0 position-relative" data-bs-custom-class="beautifier">
             <!-- Contact Us -->
-            <div class="blog-contact-us text-center flex-row">
+            <div class="blog-contact-us text-center flex-row px-5">
                 <div class="blog-contact-content py-4">
                     <span class="h5">Got a legal question? Get in touch with us! &nbsp</span>
 
