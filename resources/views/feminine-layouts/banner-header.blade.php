@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-        
+<html>
+    <head>     
+        <!-- Stylesheet -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
         <title>Law Office - Homepage</title>    
 
@@ -27,6 +20,7 @@
             .col-1{
                 margin: 0 !important;
                 padding: 0 !important;
+                flex: 1;
             }
 
             * {
@@ -37,6 +31,10 @@
                 content: "";
                 clear: both;
                 display: block;
+            }
+
+            .row{
+                display: flex;
             }
 
             .banner-image{
@@ -77,8 +75,11 @@
                 font-family: 'Raleway';
                 font-size: 24px;
                 color: #641F43;
+                padding-right: 15px;
             }
 
+            #login_container{
+            }
 
             .aside {
                 background-color: #FFE2EA;
