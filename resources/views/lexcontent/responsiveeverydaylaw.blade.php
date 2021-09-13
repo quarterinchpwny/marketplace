@@ -1,9 +1,9 @@
-<section id="everyday-law ">
-   <div id="everyday-law-section" style="background-color: gray">
+<section id="everyday-law">
+   <div id="everyday-law-section" style="background-color: white">
       <div class="row" id="everyday-law-header">
-         <h2 class="display-2 d-none d-sm-block">Everyday Law</h2>
-         <h2 class="display-2 d-block d-md-none text-center">Everyday Law</h2>
-         <hr class="d-none d-sm-block" style="margin-left: 9.3%; margin-bottom: 2%; width: 15%;">
+         <h1 class="display-2 d-none d-xl-block">Everyday Law</h1>
+         <hr class="d-none d-xl-block" style="width: 188px; margin-bottom: 30px;">
+         <h1 class="display-1 d-block d-xl-none">Everyday Law</h1>
       </div>
       <div class="columns image" id="everyday-law-media">
          <img id="everyday-law-image" src="{{ URL::to('/') }}/NeutralHome_Graphics/law_video.png" alt="Law Updates">

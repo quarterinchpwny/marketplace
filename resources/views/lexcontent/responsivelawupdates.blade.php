@@ -1,9 +1,9 @@
 <section id="law-updates">
    <div id="law-updates-section" >
       <div class="row" id="law-updates-header">
-               <h2 class="display-2 d-none d-sm-block"> Law Updates </h2>
-               <h2 class="display-1 d-block d-md-none text-center"> Law Updates </h2>
-               <hr class="d-none d-sm-block" style="margin-left: 9.3%; width: 15%;">
+         <h1 class="display-2 d-none d-xl-block">Law Updates</h1>
+         <hr class="d-none d-xl-block" style="width: 188px; margin-bottom: 30px;">
+         <h1 class="display-1 d-block d-xl-none">Law Updates</h1>
       </div>
       <div class="columns content">
          <div id="law-updates-content">
@@ -11,9 +11,9 @@
             &nbsp;
             <p class = "display-7">
                Before the advent of computer age, we have been familiar with the use of documentary evidence in court such as contracts, agreements, letters and other writings.
-               &nbsp; &nbsp;
+               <br>
                These writings printed in papers or paper-based documents are popularly known then as our documentary evidence.
-               &nbsp; &nbsp;
+               <br>
                At that time, text message or e-mail message, as it was not yet widely used and known in the Philippines, are not considered as documentary evidence by our courts of law. </p>
             <div id="law-updates-button" style="padding: 5% 0 0 15%">
                <a class="btn" href="#" role="button" id="areas_seemore">SEE MORE</a>

@@ -18,7 +18,7 @@
                 <div class="p-5 text-dark">
                     <div class="co-md-5 text-center" >
                         <div>
-                            <img class="img-fluid" src="{{ URL::to('/') }}/NeutralHome_Graphics/RLOLogo.png" alt="logo" width="76px"> 
+                            <img class="img-fluid" src="{{ URL::to('/') }}/NeutralHome_Graphics/RLOLogo.png" alt="logo"> 
                         </div>
                         <div id="login_title"><p class = "p-welcome">Welcome to Rizal Law Office</p></div>
                         

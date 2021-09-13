@@ -23,7 +23,7 @@
     @include('lexcontent.responsiveourservices')
     @include('lexcontent.responsivelawpractice')
     @include('lexcontent.responsivelawupdates')
-    @include('lexcontent.responsiveeverydaylaw')
+
     @include('lexcontent.responsivefooter')
 </body>
 </html>
