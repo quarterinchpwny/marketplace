@@ -40,14 +40,15 @@
             }
 
             .banner-image{
-                height: 750px;
+                height: 800px;
                 background: url(images/banner-header-image.jpeg) no-repeat center;
                 background-size: cover;
                 border-style: solid;
                 border-width: 5px;
-                border-color: #D08198;
+                border-color: #B5375B;
                 border-left: 0;
                 border-right: 0;
+                border-top: 0;
             }
 
             [class*="col-"] {
@@ -488,10 +489,6 @@
 
     <body>
 
-        <div class="header">
-            <h1>NAV BAR</h1>
-        </div>    
-        
         <div class="banner-image">
             <div class="row">
 
@@ -509,8 +506,8 @@
                         <div id="login_title"><p>Welcome to</p></div>
 
                         <div>
-                            <img class="img-fluid" src="images/Logo2.png" alt="logo2"> 
-                            <img class="img-fluid" src="images/Logo1.png" alt="logo1">  
+                            <img class="img-fluid" src="images/Logo2.png" alt="logo2" width="50px"> 
+                            <img class="img-fluid" src="images/Logo1.png" alt="logo1" width="250px">  
                         </div>
 
                         <br>
