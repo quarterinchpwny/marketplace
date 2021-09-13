@@ -64,4 +64,7 @@
                     <p class="h4">Special Services Law</h1>
                 </div>
             </div>
+            <div class="row justify-content-center" id="areas_buttons">
+                <a class="btn" href="#" role="button" id="areas_seemore">SEE MORE</a>
+            </div>
     </section>
