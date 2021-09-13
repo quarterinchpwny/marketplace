@@ -20,10 +20,7 @@
 </head>
 <body>
 
-    @include('lexcontent.responsivelawupdates')
-    @include('lexcontent.responsivenavigation')
-    @include('lexcontent.responsiveourservices')
-    @include('lexcontent.responsivefooter')
+    @include('lexcontent.responsiveeverydaylaw')
 
 </body>
 </html>
