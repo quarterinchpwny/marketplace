@@ -7,7 +7,7 @@
 </div>
 <div class="container" id="lblue-signup">
     <!-- Sign up -->
-       
+
         <div class="col-md-4 mb-3 col-sm-4 col-xs-6">
                 <input class="form-control form-control-lg emailtf" type="text" placeholder="E-mail Address" >
         </div>
@@ -18,8 +18,8 @@
                 <button type="button" id="buttonBlue">Log in</button>
         </div>
 
- 
-        
+
+
         <div class="col-sm-6">
         <div class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -31,7 +31,7 @@
         <div class="col-sm-4 forgotPass">
               <a href="url"><strong>Forgot Password?</strong></a>
         </div>
-       
+
         <div class="col-sm-7 signupButton">
          <a href="url">Don't have an account yet? <strong>Sign Up.</strong></a>
         </div>
@@ -53,13 +53,13 @@
       <div class="modal-header">Hello! Icon Goes Here</div>
         <input class="form-control form-control-md emailtf" type="text" placeholder="E-mail Address" >
         <input class="form-control form-control-md passtf" type="text" placeholder="Password" >
-        <div class="rowModal d-flex justify-content-between">   
+        <div class="rowModal d-flex justify-content-between">
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                 <label class="form-check-label" for="flexCheckDefault">
                   Remember me
                 </label>
-            </div>   
+            </div>
             <a href="url"><strong>Forgot Password?</strong></a>
         </div>
         <button type="button" id="buttonModalLog">Log in</button>
@@ -68,7 +68,7 @@
         <button type="button" id="buttonModal"><img src="/images/googleLogo.svg" alt="google logo" height=25px width=25px>&nbsp Sign in with Google</button>
         <button type="button" id="buttonModal"><img src="/images/appleLogo.svg" alt="apple logo" height=25px width=25px>&nbsp Sign in with ios</button>
         <a href="url">Don't have an account yet? <strong>Sign Up.</strong></a>
-      </div> 
+      </div>
 </div>
 
 <button type="button" id="buttonStart">Get Started</button>
@@ -141,61 +141,65 @@
 <div class="container-fluid" id="white-rect">
     <p id="headerStyleBlue">PRACTICE AREAS</p>
 </div>
-<div class="container-fluid" id="frameWhiteBig">
-<div class="row practicesRow">
-      <div class="col-md-3 col-lg-3 col-xs-6  px-3">
-        <div class="family_card card">
-          <img src="/images/Family.jpg" class="areasChoices">
-          <a href="#" class="areasButton btn btn-primary ">Personal & Family Law</a>
-        </div>
-      </div>
-      <div class="col-md-3 col-lg-3 col-xs-6">
-        <div class="card">
-          <img src="/images/Civil.jpg" class="areasChoices">
-          <a href="#" class="areasButton btn btn-primary ">Civil Law</a>
-        </div>
-      </div>
-      <div class="col-md-3 col-lg-3 col-xs-6">
-        <div class="card">
-          <img src="/images/Commercial.jpg" class="areasChoices">
-          <a href="#" class="areasButton btn btn-primary ">Commercial Law</a>
-        </div>
-      </div>
-      <div class="col-md-3 col-lg-3 col-xs-6">
-        <div class="card">
-          <img src="/images/Labor.jpg" class="areasChoices">
-          <a href="#" class="areasButton btn btn-primary ">Labor Law</a>
-        </div>
-      </div>
-</div>
-<div class="row py-5 practicesRow">
-      <div class="col-md-3 col-lg-3 col-xs-6">
-        <div class="card">
-          <img src="/images/Immigration.jpg" class="areasChoices">
-          <a href="#" class="areasButton btn btn-primary ">Immigration Law</a>
-        </div>
-      </div>
-      <div class="col-md-3 col-lg-3 col-xs-6">
-        <div class="card">
-          <img src="/images/Criminal.jpg" class="areasChoices">
-          <a href="#" class="areasButton btn btn-primary ">Criminal Law</a>
-        </div>
-      </div>
-      <div class="col-md-3 col-lg-3 col-xs-6">
-        <div class="card">
-          <img src="/images/Taxation.jpg" class="areasChoices">
-          <a href="#" class="areasButton btn btn-primary ">Taxation Law</a>
-        </div>
-      </div>
-      <div class="col-md-3 col-lg-3 col-xs-6">
-        <div class="card">
-          <img src="/images/Special.jpg" class="areasChoices">
-          <a href="#" class="areasButton btn btn-primary">Special Services</a>
-        </div>
-      </div>
-      <div class="row py-3"></div>
-      <a href="#" class="btn btn-primary mx-auto buttonWhite">See more</a>
-</div>
+
+<div class="container servicesFrame" id="frameWhiteServices">
+                <div class="container-fluid" id="frameWhiteBig">
+                <div class="row practicesRow">
+                    <div class="col-md-3 col-lg-3 col-xs-6  px-3">
+                        <div class="family_card card">
+                        <img src="/images/Family.jpg" class="areasChoices">
+                        <a href="#" class="areasButton btn btn-primary ">Personal & Family Law</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-xs-6">
+                        <div class="card">
+                        <img src="/images/Civil.jpg" class="areasChoices">
+                        <a href="#" class="areasButton btn btn-primary ">Civil Law</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-xs-6">
+                        <div class="card">
+                        <img src="/images/Commercial.jpg" class="areasChoices">
+                        <a href="#" class="areasButton btn btn-primary ">Commercial Law</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-xs-6">
+                        <div class="card">
+                        <img src="/images/Labor.jpg" class="areasChoices">
+                        <a href="#" class="areasButton btn btn-primary ">Labor Law</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row py-5 practicesRow">
+                    <div class="col-md-3 col-lg-3 col-xs-6">
+                        <div class="card">
+                        <img src="/images/Immigration.jpg" class="areasChoices">
+                        <a href="#" class="areasButton btn btn-primary ">Immigration Law</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-xs-6">
+                        <div class="card">
+                        <img src="/images/Criminal.jpg" class="areasChoices">
+                        <a href="#" class="areasButton btn btn-primary ">Criminal Law</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-xs-6">
+                        <div class="card">
+                        <img src="/images/Taxation.jpg" class="areasChoices">
+                        <a href="#" class="areasButton btn btn-primary ">Taxation Law</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-xs-6">
+                        <div class="card">
+                        <img src="/images/Special.jpg" class="areasChoices">
+                        <a href="#" class="areasButton btn btn-primary">Special Services</a>
+                        </div>
+                    </div>
+                                <div class="row py-1 justify-content-center">
+                                    <a href="#" class="btn btn-primary mx-auto buttonWhite">See more</a>
+                                </div>
+                </div>
+                </div>
 </div>
 
 @endsection
@@ -203,35 +207,32 @@
 <!-- Law Updates -->
 <div class="container-fluid" id="blue-rect"><p id="headerStyleWhite">LAW UPDATES</p></div>
 
-<div class="container-fluid" id="frameWhite">
-<div class="col-md-12 col-lg-6">
-      
-      <div class="card-body">
-        <h5 class="card-title cardTitle">Can your text message or e-mail message be used as evidence in court?</h5>
-        <p class="card-text cardText">Before the advent of computer age, we have been familiar with the use of documentary evidence in court such as contracts, agreements, letters and other writings.
-        <br>
-        <br>
-These writings printed in papers or paper-based documents are popularly known then as our documentary evidence.
-        <br>
-        <br>
-At that time, text message or e-mail message, as it was not yet widely used and known in the Philippines, are not considered as documentary evidence by our courts of law.</p>
-        <a href="#" class="btn btn-primary text-light">Learn more</a>
-      </div>
-      </div>
+    <div class="container" id="frameWhite">
+        <div class="col-md-12 col-lg-6">
+            <div class="card-body">
+                <h5 class="card-title cardTitle">Can your text message or e-mail message be used as evidence in court?</h5>
+                <p class="card-text cardText">Before the advent of computer age, we have been familiar with the use of documentary evidence in court such as contracts, agreements, letters and other writings.
+                <br>
+                <br>These writings printed in papers or paper-based documents are popularly known then as our documentary evidence.
+                <br>
+                <br>At that time, text message or e-mail message, as it was not yet widely used and known in the Philippines, are not considered as documentary evidence by our courts of law.</p>
+                <a href="#" class="btn btn-primary text-light">Learn more</a>
+            </div>
+        </div>
 
-      <div class="col-md-12 col-lg-6">
-      <img src="/images/laptop-lawupdates.jpg" class=" lawUpdatesImage" alt="LapUpdatesPic" width="550" height="300">
-      </div>
-</div>
+        <div class="col-md-12 col-lg-6">
+            <img src="/images/laptop-lawupdates.jpg" class=" lawUpdatesImage" alt="LapUpdatesPic" width="550" height="300">
+        </div>
+    </div>
 
 @endsection
 @section('EverydayLaw')
 <!-- Everyday Law -->
 <div class="container-fluid" id="white-rect"><p id="headerStyleBlue">LAW UPDATES</p></div>
 
-<div class="container-fluid" id="frameWhite">
+<div class="container" id="frameWhite">
 
-      <div class="col-md-12 col-lg-6">
+    <div class="col-md-12 col-lg-6">
         <div class="card-body evrcard">
 
                  <h5 class="card-title cardTitle evrcardfont">Co-maker ng ‘di nagbayad sa utang,
@@ -242,14 +243,14 @@ At that time, text message or e-mail message, as it was not yet widely used and 
             </p>
             <a href="#" class="btn btn-primary evrbtn">Learn more</a>
         </div>
-      </div>
-      <div class="col-md-12 col-lg-6">
+    </div>
+
+    <div class="col-md-12 col-lg-6">
           <img src="/images/eLaw.png"  alt="video" id="everydayLawVid">
-        </div>
-   
+    </div>
 </div>
 @endsection
-@section('Footer') --}}
+@section('Footer')
 <!-- Footer -->
 
 <

@@ -11419,9 +11419,9 @@ input::placeholder {
   background-color: white;
   background-color: white;
   position: relative;
-  bottom: 300px;
   display: flex;
   flex-wrap: nowrap;
+  bottom: 300px;
 }
 
 #frameWhiteServices {
