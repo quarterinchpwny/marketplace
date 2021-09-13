@@ -77,6 +77,10 @@
                 color: #733657;
             }
 
+            .practice-card:hover {
+                -webkit-box-sh
+            }
+
             .btn-practice {
                 background-color: #B5375B;
                 border: 1px solid #B5375B;
@@ -105,7 +109,9 @@
                         <img src="{{ URL::to('/') }}/images/serv1.png" class="card-img-top" alt="Personal & Family Law">
                     </a>
 
-                    <div class="card-body align-content-center text-center pb-5">
+                    <div class=""></div>
+
+                    <div class="card-body align-content-center text-center pt-4 pb-5">
                         <a href="#" class="label-con card-text text-center h5">Personal & Family Law</a>
                     </div>
                 </div>
@@ -115,7 +121,7 @@
                         <img src="{{ URL::to('/') }}/images/serv2.png" class="card-img-top" alt="Labor Law">
                     </a>
 
-                    <div class="card-body align-content-center text-center pb-5">
+                    <div class="card-body align-content-center text-center pt-4 pb-5">
                         <a href="#" class="label-con card-text text-center h5">Labor Law</a>
                     </div>
                 </div>
@@ -125,7 +131,7 @@
                         <img src="{{ URL::to('/') }}/images/serv3.png" class="card-img-top" alt="Civil Law">
                     </a>
 
-                    <div class="card-body align-content-center text-center pb-5">
+                    <div class="card-body align-content-center text-center pt-4 pb-5">
                         <a href="#" class="label-con card-text text-center h5">Civil Law</a>
                     </div>
                 </div>
@@ -135,7 +141,7 @@
                         <img src="{{ URL::to('/') }}/images/serv4.png" class="card-img-top" alt="Immigration Law">
                     </a>
 
-                    <div class="card-body align-content-center text-center pb-5">
+                    <div class="card-body align-content-center text-center pt-4 pb-5">
                         <a href="#" class="label-con card-text text-center h5">Immigration Law</a>
                     </div>
                 </div>
@@ -146,7 +152,7 @@
                         <img src="{{ URL::to('/') }}/images/serv5.png" class="card-img-top" alt="Criminal Law">
                     </a>
 
-                    <div class="card-body align-content-center text-center pb-5">
+                    <div class="card-body align-content-center text-center pt-4 pb-4">
                         <a href="#" class="label-con card-text text-center h5">Criminal Law</a>
                     </div>
                 </div>
@@ -156,7 +162,7 @@
                         <img src="{{ URL::to('/') }}/images/serv6.png" class="card-img-top" alt="Commercial Law">
                     </a>
 
-                    <div class="card-body align-content-center text-center pb-5">
+                    <div class="card-body align-content-center text-center pt-4 pb-4">
                         <a href="#" class="label-con card-text text-center h5">Commercial Law</a>
                     </div>
                 </div>
@@ -166,7 +172,7 @@
                         <img src="{{ URL::to('/') }}/images/serv7.png" class="card-img-top" alt="Taxation Law">
                     </a>
 
-                    <div class="card-body align-content-center text-center pb-5">
+                    <div class="card-body align-content-center text-center pt-4 pb-4">
                         <a href="#" class="label-con card-text text-center h5">Taxation Law</a>
                     </div>
                 </div>
@@ -176,13 +182,13 @@
                         <img src="{{ URL::to('/') }}/images/serv8.png" class="card-img-top" alt="Special Services">
                     </a>
 
-                    <div class="card-body align-content-center text-center pb-5">
+                    <div class="card-body align-content-center text-center pt-4 pb-4">
                         <a href="#" class="label-con card-text text-center h5">Special Services</a>
                     </div>
                 </div>
             </div>
 
-            <div class="d-grid gap-2 d-md-flex justify-content-md-center col-6 pb-3 mx-auto">
+            <div class="d-grid gap-2 d-md-flex justify-content-center align-items-end pb-4">
                 <button class="btn-practice py-1 px-4 rounded-3" type="button">SEE MORE</button>
             </div>
         </div>
