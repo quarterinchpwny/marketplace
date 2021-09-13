@@ -75,6 +75,10 @@ class DashboardController extends Controller
     {
         return view('addNewPost');
     }
+    
+    public function addPostLawUpdate(){
+        return view('addNewPostLawUpdate');
+    }
 
     public function contactUs()
     {
