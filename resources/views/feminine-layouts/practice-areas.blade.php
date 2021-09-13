@@ -56,8 +56,8 @@
             }
 
             .practice-card {
-                background-color: transparent;
-                border: 2px solid transparent;
+                background-color: transparent !important;
+                border: 2px solid transparent !important;
             }
 
             .icons-con {
@@ -101,7 +101,7 @@
                 <!-- First Half -->
                 <div class="practice-card card align-items-center col-lg-3 col-md-6">
                     <a href="#" class="icons-con rounded-circle p-4">
-                        <img src="/public/images/serv1.png" class="card-img-top" alt="Personal & Family Law">
+                        <img  src="{{ URL::to('/') }}/images/serv1.png" class="card-img-top" alt="Personal & Family Law">
                     </a>
 
                     <div class="card-body align-content-center text-center pb-5">
@@ -111,7 +111,7 @@
 
                 <div class="practice-card card align-items-center col-lg-3 col-md-6">
                     <a href="#" class="icons-con rounded-circle p-4">
-                        <img src="/public/images/serv2.png" class="card-img-top" alt="Labor Law">
+                        <img src="{{ URL::to('/') }}/images/serv2.png" class="card-img-top" alt="Labor Law">
                     </a>
 
                     <div class="card-body align-content-center text-center pb-5">
@@ -121,7 +121,7 @@
 
                 <div class="practice-card card align-items-center col-lg-3 col-md-6">
                     <a href="#" class="icons-con rounded-circle p-4">
-                        <img src="/public/images/serv3.png" class="card-img-top" alt="Civil Law">
+                        <img src="{{ URL::to('/') }}/images/serv3.png" class="card-img-top" alt="Civil Law">
                     </a>
 
                     <div class="card-body align-content-center text-center pb-5">
@@ -131,7 +131,7 @@
 
                 <div class="practice-card card align-items-center col-lg-3 col-md-6">
                     <a href="#" class="icons-con rounded-circle p-4">
-                        <img src="/public/images/serv4.png" class="card-img-top" alt="Immigration Law">
+                        <img src="{{ URL::to('/') }}/images/serv4.png" class="card-img-top" alt="Immigration Law">
                     </a>
 
                     <div class="card-body align-content-center text-center pb-5">
@@ -142,7 +142,7 @@
                 <!-- Second Half -->
                 <div class="practice-card card align-items-center col-lg-3 col-md-6">
                     <a href="#" class="icons-con rounded-circle p-4">
-                        <img src="/public/images/serv5.png" class="card-img-top" alt="Criminal Law">
+                        <img src="{{ URL::to('/') }}/images/serv5.png" class="card-img-top" alt="Criminal Law">
                     </a>
 
                     <div class="card-body align-content-center text-center pb-5">
@@ -152,7 +152,7 @@
 
                 <div class="practice-card card align-items-center col-lg-3 col-md-6">
                     <a href="#" class="icons-con rounded-circle p-4">
-                        <img src="/public/images/serv6.png" class="card-img-top" alt="Commercial Law">
+                        <img src="{{ URL::to('/') }}/images/serv6.png" class="card-img-top" alt="Commercial Law">
                     </a>
 
                     <div class="card-body align-content-center text-center pb-5">
@@ -162,7 +162,7 @@
 
                 <div class="practice-card card align-items-center col-lg-3 col-md-6">
                     <a href="#" class="icons-con rounded-circle p-4">
-                        <img src="/public/images/serv7.png" class="card-img-top" alt="Taxation Law">
+                        <img src="{{ URL::to('/') }}/images/serv7.png" class="card-img-top" alt="Taxation Law">
                     </a>
 
                     <div class="card-body align-content-center text-center pb-5">
@@ -172,7 +172,7 @@
 
                 <div class="practice-card card align-items-center col-lg-3 col-md-6">
                     <a href="#" class="icons-con rounded-circle p-4">
-                        <img src="/public/images/serv8.png" class="card-img-top" alt="Special Services">
+                        <img src="{{ URL::to('/') }}/images/serv8.png" class="card-img-top" alt="Special Services">
                     </a>
 
                     <div class="card-body align-content-center text-center pb-3">
