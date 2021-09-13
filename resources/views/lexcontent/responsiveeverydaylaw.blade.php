@@ -1,8 +1,8 @@
 <section id="everyday-law">
    <div id="everyday-law-section">
       <div class="row" id="everyday-law-header">
-               <h2 class="display-2 d-none d-sm-block"> Law Updates </h2>
-               <h2 class="display-2 d-block d-md-none text-center"> Law Updates </h2>
+               <h2 class="display-2 d-none d-sm-block"> Everyday Law  </h2>
+               <h2 class="display-2 d-block d-md-none text-center"> Everyday Law </h2>
                <hr class="d-none d-sm-block" style="margin-left: 9.3%; margin-bottom: 2%; width: 15%;">
       </div>
       <div class="columns image" id="everyday-law-media">
