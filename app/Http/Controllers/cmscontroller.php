@@ -28,4 +28,7 @@ class cmscontroller extends Controller
     public function contactUs(){
         return view('cmsContactUs');
     }
+    public function addPostLawUpdate(){
+        return view('addNewPostLawUpdate');
+    }
 }
