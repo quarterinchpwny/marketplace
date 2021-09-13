@@ -1,5 +1,5 @@
-<section id="everyday-law">
-   <div id="everyday-law-section">
+<section id="everyday-law ">
+   <div id="everyday-law-section" style="background-color: white">
       <div class="row" id="everyday-law-header">
                <h2 class="display-2 d-none d-sm-block"> Everyday Law  </h2>
                <h2 class="display-2 d-block d-md-none text-center"> Everyday Law </h2>

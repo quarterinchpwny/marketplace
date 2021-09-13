@@ -30,19 +30,19 @@
                         </div>
                         <div id="login_remember" class="form-check justify-content-start text-start">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                            <label class="form-check-label" for="flexCheckChecked">
-                                Remember Me
-                            </label>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Remember Me
+                                </label>
                         </div>
                         <div>
-                            <a id="login_button" href="#services" class="btn btn-primary btn-md" >LOG IN</a>
+                            <a href="#" class="btn login_button" >LOG IN</a>
                         </div>                            
                         <div>
                             <a id="login_forgot" href="#" class="text-decoration-none">Forgot Password</a>
                         </div>                           
                         <div>
-                            <a id="login_social" href="#services" class="btn btn-primary btn-md" style="padding-left: 30px;"> <img src="{{ URL::to('/') }}/NeutralHome_Graphics/fb_icon.png" alt="" style="padding-left: 15px; padding-right: 5px;" width="47px">LOGIN WITH FACEBOOK</a>
-                            <a id="login_social" href="#services" class="btn btn-primary btn-md" style="padding-left: 30px;"> <img src="{{ URL::to('/') }}/NeutralHome_Graphics/google_icon.png" alt="" style="padding-left: 15px; padding-right: 5px;" width="47px">LOGIN WITH GOOGLE</a>
+                            <a href="#" class="btn login_button"> <img src="{{ URL::to('/') }}/NeutralHome_Graphics/fb_icon.png" alt="">LOGIN WITH FACEBOOK</a>
+                            <a href="#" class="btn login_button"> <img src="{{ URL::to('/') }}/NeutralHome_Graphics/google_icon.png" alt="">LOGIN WITH GOOGLE</a>
                         </div>
                         <div id="hr">
                             <p><hr class="hr-login"></p>
