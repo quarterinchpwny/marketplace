@@ -1,237 +1,210 @@
-<html>
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <!-- Font Style -->
-    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-   
-    <style>
+        <!-- Font Style -->
+        <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-		.services_intro_holder{
-		background-color: #b5375b;
-		height: 160px;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-		}
+        <!-- Title -->
+        <title>Header</title>
 
-        .services_intro-line 
-        {
-                border: 1.5px solid #fff;
-                width: 300px;
-        }
-        .services_intro_text
-        {
-            text-align: center;
-            color: #fff;
-            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-            font-size: 48px;
-            font-family: 'Libre Baskerville', serif;
-        }
-
-       
-
-        .services_content 
-        {
-        width: 100%;
-        height: 1150px;
-        background-image: url("https://media.istockphoto.com/photos/judge-gavel-with-justice-lawyers-business-woman-in-suit-or-lawyer-on-picture-id1130829509?k=20&m=1130829509&s=612x612&w=0&h=9VMWql4leRnpb53RSt9fW7-V999aUp9PnvVReSj1RBg=");
-        background-blend-mode:overlay ;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        text-align: center;
-            
-        }
-            .services_content {
-            background-color: #d08197b7;
+        <!-- CSS -->
+        <style>
+            html {
+                height: 100%;
             }
 
-        .services_container 
-        {
-            display: flex;
-            flex-wrap: auto;
-            justify-content: space-between;
-            padding-top: 60px;
-            
-        }
+            body {
+                min-height: 100%;
+                display: flex;
+                flex-direction: column;
+            }
 
-        .services_container .serv_box 
-        {
-            position: relative;
-            width: 24%;
-            height: 750px;
-            background: #ffedf2ee;
-            box-shadow: 0 5px 15px rgba(0,0,0,.1);
-            border-radius: 10px;
-            margin: 0 auto;
-            box-sizing: border-box;
-            overflow: hidden;
-            text-align: center;
-        }
+            /*
+            Color Palette
+            - FFFFFF (white)
+            - F1DBE8 (very light purple)
+            - B8537B (light purple)
+            - D08198 (light pink)
+            - B5375B (pink)
+            - 733657 (dark purple)
+            */
 
-  
+            .service-main-con{
+                background-image: url("https://media.istockphoto.com/photos/judge-gavel-with-justice-lawyers-business-woman-in-suit-or-lawyer-on-picture-id1130829509?k=20&m=1130829509&s=612x612&w=0&h=9VMWql4leRnpb53RSt9fW7-V999aUp9PnvVReSj1RBg=");
+                background-blend-mode:overlay ;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-color: #d08197b7;
+            }
 
-        .services_container .serv_box .serv_content
-        {
-            position: relative;
-            z-index: 1;
-	        padding: 30 0;
-            transition: 0.5s;
-            margin-top: 20px;
+            .service-header-line {
+                border: 1.5px solid #fff;
+                width: 100px;
+            }
 
-        }
+            .service-header-holder {
+                background-color: #b5375b;
+                min-height: 50px;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            }
 
-        .services_container .serv_box .serv_content h3
-        {
-            font-size: 20px;
-            margin: 0px 0px;
-            padding: 0;
-            justify-content: center;
-        }
-        
-        .services_container .serv_box .serv_content img
-        {
-           
-            height: 30%;
-		    padding: center;
-            margin-top: 5%;
-        }
+            .service-header {
+                color: #ffffff;
+                font-family: 'Libre Baskerville', serif;
+                font-weight: 700 !important;
+            }
 
-        .serv_captionholder
-        {
-            height: 120px;
-        }
+            .service-card {
+                background-color: #ffedf2ee !important;
+                border-radius: 10px solid transparent !important;
+                box-shadow: 0 5px 15px rgba(0,0,0,.1);
+            }
 
-        #serv_caption
-        {
-            font-family: Raleway;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 25px;
-            line-height: 39px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            margin-top: 60px;
+            .service-icons-con {
+                max-width: 200px;
+                max-height: 180px;
 
-            color: #733657;
-        }
+                text-decoration: none;
+            }
 
-        #serv_button
-        {
-            display: inline-block;
-		    width: 90%;
-            height: 128px;
-            background: #B5375B;
-            border-radius: 10px;
-            text-decoration: none;
-            margin-top: 90px;
-        }
+            .service-label-holder {
+                background-color: transparent;
+                height: 120px;
+            }
 
-        #serv_button_text
-        {
-            text-decoration: none;
-            color: #fff;
-            font-family: Raleway;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 36px;
-            line-height: 42.26px;
-            text-align: center;
-            margin-top: 20px;
-        }
-        .services_container .serv_box:hover .serv_content #serv_button
-        {
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
-        }
+            .service-label-con {
+                text-decoration: none;
+
+                font-family: 'Raleway', serif;
+                font-weight: 700 !important;
+                color: #733657;
+            }
+
+            .btn-service {
+                background-color: #B5375B;
+                border: 1px solid #B5375B;
+                border-radius: 10px;
+
+                font-family: 'Raleway', serif;
+                color: white;
+                font-weight: 700;
 
 
-        .last_holder
-        {
-            height: 70px;
-            background-color: #B5375B;
-            margin-bottom; 0px;
+                max-height: 120px;
+                width: 290px;
+            }
+        </style>
+    </head>
 
-            background: #B5375B;
-            box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
-            transform: matrix(1, 0, 0, -1, 0, 0);
-        }
-    </style>
+    <body>
 
-</head>
-
-<body>
-
-   
-
-<div class = "services_content">
-    <div class = "services_intro_holder">
-        <br>
-        <div class = "services_intro_text">
-        <hr class="services_intro-line border-1 mx-auto">
-            <h1 class="services_intro_text">OUR SERVICES</h1>
+        <div class="service-header-holder align-content-center pd-1">
+            <hr class="service-header-line border-1 mx-auto">
+            <div class="service-header card-title text-center h2 mt-3 pb-3"> Our Services </div>
         </div>
-    </div>
-    <br>
-    <br>
-    <div class = "services_container">
-	<div class = "serv_box">
-		<div class = "icon"></div>
-		<div class = "serv_content">
-			<h3> <img src="images/assist.png"> </h3>
-            <div class = "serv_captionholder">
-                <h3 id="serv_caption"> FREE Legal <br> Assessment</h3>
-            </div>
-            <a id=serv_button href = "">
-                <h1 id ="serv_button_text">Ask <br> Lawyers</h1>
-            </a>
-		</div>     
-	</div> 
-	<div class = "serv_box">
-		<div class = "icon"></div>
-		<div class = "serv_content">
-			<h3> <img src="images/consult.png"> </h3>
-            <div class = "serv_captionholder">
-                <h3 id="serv_caption"> Paid Legal <br> Consultation</h3>
-            </div>
-                <a id=serv_button href = "">
-                    <h1 id ="serv_button_text">Submit Legal <br> Problems</h1>
-                </a>
-		</div>     
-	</div> 
-	<div class = "serv_box">
-		<div class = "icon"></div>
-		<div class = "serv_content">
-			<h3> <img src="images/works.png"> </h3>
-            <div class = "serv_captionholder">
-                <h3 id="serv_caption"> FREE Legal Fee <br> Crowdsourcing and <br> Paid Legal Works <br> Escrow Delivery</h3>
-            </div>
-            <a id="serv_button" href = "">
-                <h1 id = "serv_button_text">Request<br>Proposal</h1>
-            </a>
-		</div>     
-	</div> 
-	<div class = "serv_box">
-		<div class = "icon"></div>
-		<div class = "serv_content">
-			<h3> <img src="images/docs.png"> </h3>
-            <div class = "serv_captionholder">
-                <h3 id="serv_caption">Create Your Own Legal<br>Documents From<br>Hundreds of<br>Templates</h3>
-            </div>
-			<a id="serv_button" href = "">
-                <h1 id ="serv_button_text">Create Legal <br> Document</h1>
-            </a>
-		</div>     
-	</div> 
-</div>
 
-    <br>
-    <br>
-    <div class = "last_holder"></div>
-</div>
+        <!-- Our Services -->
+        <div class="service-main-con position-relative service-container-fluid py-5">       
 
-</body>
+
+                <section class="p-5">
+                    <div class = "service-container">
+                        <div class = "row justify-content-center mb-3">
+
+                            <!-- Assist -->
+                            <div class = "col-md mb-4">
+                                <div class="service-card card align-items-center col-lg-25 col-md-19">
+                                   <div class = "service-icons-con mb-5 mt-5">
+                                        <img src="{{ URL::to('/') }}/images/assist.png" class="card-img-top" alt="Assist">
+                                   </div>
+
+                                   <div class = "service-label-holder mt-3 mb-4">
+                                        <p class = "service-label-con text-center h4">
+                                            FREE Legal <br> Assessment <br>
+                                        </p>
+                                    </div>
+                                    <div class="card-body align-content-center text-center pb-4 pt-6">
+                                        <button class="btn-service py-3 px-1 rounded-3 card-text text-center text-decoration-none h2" a href="#" type = "button">
+                                            Ask <br> Lawyers
+                                        </button>
+                                    </div>  
+                               </div> 
+                            </div>
+                            <!-- Consult -->
+                            <div class = "col-md mb-4">
+                                <div class="service-card card align-items-center col-lg-25 col-md-19">
+                                   <div class = "service-icons-con mb-5 mt-5">
+                                        <img src="{{ URL::to('/') }}/images/consult.png" class="card-img-top" alt="Consult">
+                                   </div>
+
+                                   <div class = "service-label-holder mt-3 mb-4">
+                                    <p class = "service-label-con text-center h4">
+                                        Paid Legal <br> Consultation 
+                                   </p>
+                                   </div>
+                                  
+                                   <div class="card-body align-content-center text-center pb-4 pt-6">
+                                        <button class="btn-service py-3 px-1 rounded-3 card-text text-center text-decoration-none h2" a href="#" type = "button">
+                                            Submit Legal <br> Problems
+                                        </button>
+                                     </div>  
+                               </div> 
+                            </div>
+                            <!-- Works -->
+                            <div class = "col-md mb-4">
+                                <div class="service-card card align-items-center col-lg-25 col-md-19">
+                                   <div class = "service-icons-con mb-5 mt-5">
+                                        <img src="{{ URL::to('/') }}/images/Works.png" class="card-img-top" alt="Works">
+                                   </div>
+
+                                   <div class = "service-label-holder mt-3 mb-4">
+                                    <p class = "service-label-con text-center h4">
+                                        FREE Legal Fee <br> Crowdsourcing and <br> Paid Legal Works <br> Escrow Delivery
+                                   </p>
+                                </div>
+                                <div class="card-body align-content-center text-center pb-4 pt-6">
+                                    <button class="btn-service py-3 px-1 rounded-3 card-text text-center text-decoration-none h2" a href="#" type = "button">
+                                        Request <br> Proposal
+                                    </button>
+                                 </div>  
+                               </div> 
+                            </div>
+                            <!-- Docs -->
+                            <div class = "col-md mb-4">
+                                <div class="service-card card align-items-center col-lg-25 col-md-19">
+                                   <div class = "service-icons-con mb-5 mt-5">
+                                        <img src="{{ URL::to('/') }}/images/docs.png" class="card-img-top" alt="Docs">
+                                   </div>
+                                   <div class = "service-label-holder mt-3 mb-4">
+                                    <p class = "service-label-con text-center h4">
+                                        Create Your Own Legal <br> Documents From <br> Hundreds of <br> Template
+                                   </p>
+                                </div>
+                                <div class="card-body align-content-center text-center pb-4 pt-6">
+                                    <button class="btn-service py-3 px-1 rounded-3 card-text text-center text-decoration-none h2" a href="#" type = "button">
+                                        Create Legal <br> Documents
+                                    </button>
+                                 </div>
+                               </div> 
+                            </div>
+                        </div>
+                    </div>
+                </section>
+        </div>
+
+        <div class="service-header-holder align-content-center pd-1">
+        </div>
+    </body>
 </html>
-

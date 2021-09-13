@@ -52,7 +52,7 @@
             .practice-header {
                 color: #733657;
                 font-family: 'Libre Baskerville', serif;
-                font-weight: 700 !important;
+                font-weight: 700;
             }
 
             .practice-card {
@@ -73,7 +73,7 @@
                 text-decoration: none;
 
                 font-family: 'Raleway', serif;
-                font-weight: 700 !important;
+                font-weight: 700;
                 color: #733657;
             }
 
@@ -86,7 +86,6 @@
                 color: white;
                 font-weight: 700;
 
-                bottom: 4rem;
                 margin-top: auto;
             }
         </style>
@@ -102,7 +101,7 @@
                 <!-- First Half -->
                 <div class="practice-card card align-items-center col-lg-3 col-md-6">
                     <a href="#" class="icons-con rounded-circle p-4">
-                        <img src="{{ URL::to('/') }}/images/serv1.png" class="card-img-top" alt="Personal & Family Law">
+                        <img  src="{{ URL::to('/') }}/images/serv1.png" class="card-img-top" alt="Personal & Family Law">
                     </a>
 
                     <div class="card-body align-content-center text-center pb-5">
@@ -176,13 +175,13 @@
                         <img src="{{ URL::to('/') }}/images/serv8.png" class="card-img-top" alt="Special Services">
                     </a>
 
-                    <div class="card-body align-content-center text-center pb-5">
+                    <div class="card-body align-content-center text-center pb-3">
                         <a href="#" class="label-con card-text text-center h5">Special Services</a>
                     </div>
                 </div>
             </div>
 
-            <div class="d-grid gap-2 d-md-flex justify-content-md-center col-6 pb-3 mx-auto">
+            <div class="d-grid gap-2 d-md-flex justify-content-md-center align-items-end">
                 <button class="btn-practice py-1 px-4 rounded-3" type="button">SEE MORE</button>
             </div>
         </div>
