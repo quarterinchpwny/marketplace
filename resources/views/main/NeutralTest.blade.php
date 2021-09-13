@@ -21,6 +21,11 @@
 <body>
 
     @include('lexcontent.responsiveeverydaylaw')
+    @include('lexcontent.responsivelawupdates')
+    @include('lexcontent.responsivenavigation')
+    @include('lexcontent.responsiveourservices')
+    @include('lexcontent.responsivelawpractice')
+    @include('lexcontent.responsivefooter')
 
 </body>
 </html>
