@@ -43,13 +43,13 @@
                 <td class ="text-end"><input class="form-check-input" type="checkbox"value=""id="logo"/></td>
                 <td> Logo</td>
                 <td>5000</td>
-                <td><label  class="w-50 btn  btn-orange" for="logo">Add</label></td>
+                <td><label  class="w-50 btn  btn-orange sm-hide" for="logo">Add</label><label class="w-50 btn  btn-orange sm-appear" for="logo">+</label></td>
               </tr>
               <tr class = "bg-light">
                 <td class ="text-end"><input class="form-check-input" type="checkbox"value=""id="template"/></td>
                 <td>Custom Template</td>
                 <td>5000</td>
-                <td><label  class="w-50 btn  btn-orange" for="template">Add</label></td>
+                <td><label  class="w-50 btn  btn-orange sm-hide" for="template">Add</label><label class="w-50 btn  btn-orange sm-appear" for="template">+</label></td>
               </tr>
             
     
@@ -58,25 +58,25 @@
                 <td class ="text-end"><input class="form-check-input" type="checkbox"value=""id="cw"/></td>
                 <td>Copy Writing</td>
                 <td>5000</td>
-                <td><label  class="w-50 btn  btn-orange" for="cw">Add</label></td>
+                <td><label  class="w-50 btn  btn-orange sm-hide" for="cw">Add</label><label class="w-50 btn  btn-orange sm-appear" for="cw">+</label></td>
               </tr>
               <tr class = "bg-light">
                 <td class ="text-end"><input class="form-check-input" type="checkbox"value=""id="sp"/></td>
                 <td>Stock Photos</td>
                 <td>5000</td>
-                <td><label  class="w-50 btn  btn-orange" for="sp">Add</label></td>
+                <td><label  class="w-50 btn  btn-orange sm-hide" for="sp">Add</label><label class="w-50 btn  btn-orange sm-appear" for="sp">+</label></td>
               </tr>
               <tr>
                 <td class ="text-end"><input class="form-check-input" type="checkbox"value=""id="1"/></td>
                 <td>TEST1</td>
                 <td>5000</td>
-                <td><label  class="w-50 btn  btn-orange" for="1">Add</label></td>
+                <td><label  class="w-50 btn  btn-orange sm-hide" for="1">Add</label><label class="w-50 btn  btn-orange sm-appear" for="1">+</label></td>
               </tr>
               <tr class = "bg-light">
                 <td class ="text-end"><input class="form-check-input" type="checkbox"value=""id="2"/></td>
                 <td>TEST 2</td>
                 <td>5000</td>
-                <td><label  class="w-50 btn  btn-orange" for="2">Add</label></td>
+                <td><label  class="w-50 btn  btn-orange sm-hide" for="2">Add</label><label class="w-50 btn  btn-orange sm-appear" for="2">+</label></td>
               </tr>
             </tbody>
             
@@ -84,8 +84,8 @@
           
     </div>
   </div>
-  <a class = "w-25 btn btn-lg btn-orange" href="{{route('step3', \Request::all())}}"> < Return </a>
-  <a type="button" class="w-25 btn btn-lg btn-primary" id="next" onClick="onAddWebsite()" href="{{route('step5', \Request::all() )}}">Accept</a>
+  <a class = "w-25 btn btn-orange" href="{{route('step3', \Request::all())}}">Back </a>
+  <a type="button" class="w-25 btn  btn-primary" id="next" onClick="onAddWebsite()" href="{{route('step5', \Request::all() )}}">Next</a>
  
   </div>
   

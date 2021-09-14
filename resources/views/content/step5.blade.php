@@ -26,7 +26,7 @@
   
   <div class="p-3 pb-md-4 mx-auto text-center">
       <h2 class="display-5 fw-normal">Step 5 - Check Your Order</h1>
-        <div class="container align-center" style="padding-top: 3rem;padding-bottom: 2.4rem; width:70%">
+        <div class="container align-center" style="padding-top: 3rem;padding-bottom: 2.4rem;">
           <div class="table-responsive">
             <table class="table text-center" id="tables">
               <thead>
@@ -47,8 +47,8 @@
             
       </div>
     </div>
-    <a class = "w-25 btn btn-lg btn-orange" href="{{route('step4', \Request::all())}}"> < Return </a>
-    <a type="button" class="w-25 btn btn-lg btn-primary" href="{{route('step6', \Request::all())}}">Next ></a>
+    <a class = "w-25 btn  btn-orange" href="{{route('step4', \Request::all())}}">Back </a>
+    <a type="button" class="w-25 btn  btn-primary" href="{{route('step6', \Request::all())}}">Next</a>
     </div>
   </div>
   <script>
@@ -70,12 +70,12 @@ tbodyEl.innerHTML += `
 <td>
 <div class="input-group">
 <button onclick="dec(1)" class = "btn btn-number btn-orange">-</button>
-<input type="text" id="box1"  value ="1" class="form-control text-center" style="width:20%">
+<input type="text" id="box1"  value ="1" class="form-control text-center">
 <button onclick="inc(1)" class = "btn btn-number btn-orange">+</button>
 </div>
 </td>
 <td><p id = "val1">5000</p></td>
-<td><button class="deleteBtn btn-primary btn">Delete</button></td>
+<td><button class="deleteBtn btn-primary btn">Delete</button> </td>
 </tr>
 `;
 
@@ -110,7 +110,7 @@ tbodyEl.innerHTML += `
 </div>
 </td>
 <td><p id = "val3">5000</p></td>
-<td><button class="deleteBtn btn-primary btn">Delete</button></td>
+<td><button class="deleteBtn btn-primary btn">Delete</button>  </td>
 </tr>
 `;
 } 

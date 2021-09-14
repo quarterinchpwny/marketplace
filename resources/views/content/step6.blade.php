@@ -113,9 +113,8 @@
             </div>
         </div>
         <div class="text-center p-3">
-          <a class = "w-25 btn btn-lg btn-orange" href="{{route('step5', \Request::all())}}"> < Return </a>
-          <a type="button" class="w-25 btn btn-lg btn-primary text-center" href="{{route('step7', \Request::all())}}">Submit ></a>
+          <a class = "w-25 btn  btn-orange" href="{{route('step5', \Request::all())}}"> Back </a>
+          <a type="button" class="w-25 btn btn-primary text-center" href="{{route('step7', \Request::all())}}">Next</a>
         </div>
     </div>
   </div>
-  <a href="{{ url()->previous() }}"> return </a>

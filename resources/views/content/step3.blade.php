@@ -36,41 +36,108 @@
               <div class="col-md-4" >
                 
                 <div class="card mb-4 box-shadow">
-                  
-                  <img class="card-img-top p-3"style="height: 34rem; display: block;" src="/images/no1.png " data-holder-rendered="true">
+                    <!---modal -->
+                    <div class="modal fade" id="feminine" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl	">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" >Feminine template</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <img class="card-img-top p-3" style="" src="/images/female_large.png " data-holder-rendered="true">
+
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  <a  href="#" data-bs-toggle="modal" data-bs-target="#feminine">
+                    <div class="overlay "><h3>[View]</h3></div>
+                  <img class="card-img-top p-3" style="height: 34rem; display: block;" src="/images/female.png " data-holder-rendered="true">
+                  </a>
                   <div class="card-body">
                     
                     <div class="d-flex justify-content-between align-items-center">
                       
-                        <a type="button" class="w-100 btn btn-lg btn-orange" href="{{route('step4', ['template' => 'fem'] + \Request::all())}}">Select</a>
+                        <a type="button" class="w-100 btn btn-orange" href="{{route('step4', ['template' => 'fem'] + \Request::all())}}">Select</a>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="card mb-4 box-shadow">
-                  <img class="card-img-top p-3"style="height: 34rem; width: 100%; display: block;" src="/images/no2.png" data-holder-rendered="true">                
+                    <!---modal -->
+                    <div class="modal fade" id="neutral" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog 	modal-xl">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Neutral template</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <img class="card-img-top p-3" style="" src="/images/neutral_large.jpg " data-holder-rendered="true">
+
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  <a  href="#" data-bs-toggle="modal" data-bs-target="#neutral">
+                    <div class="overlay "><h3>[View]</h3></div>
+                  <img class="card-img-top p-3" style="height: 34rem; display: block;" src="/images/neutral.png " data-holder-rendered="true">
+                  </a>          
                   <div class="card-body">
                     <div class="d-flex justify-content-between align-items-center">
-                        <a type="button" class="w-100 btn btn-lg btn-orange" href="{{route('step4', ['template' => 'neut'] + \Request::all())}}">Select</a>
+                        <a type="button" class="w-100 btn btn-orange" href="{{route('step4', ['template' => 'neut'] + \Request::all())}}">Select</a>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="card mb-4 box-shadow">
-                  <img class="card-img-top p-3"style="height: 34rem; width: 100%; display: block;" src=" /images/no1.png" data-holder-rendered="true">                
+                  
+                    <!---modal -->
+                    <div class="modal fade" id="masculine" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl	">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Masculine template</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <img class="card-img-top p-3" style="" src="/images/masculine_large.png " data-holder-rendered="true">
+
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  <a  href="#" data-bs-toggle="modal" data-bs-target="#masculine">
+
+                    <div class="overlay "><h3>[View]</h3></div>
+                  <img class="card-img-top p-3" style="height: 34rem; display: block;" src="/images/masculine.png " data-holder-rendered="true">
+                  </a>              
                   <div class="card-body">
                     <div class="d-flex justify-content-between align-items-center">
                         
-                        <a type="button" class="w-100 btn btn-lg btn-orange" href="{{route('step4', ['template' => 'mas'] + \Request::all())}}">Select</a>
+                        <a type="button" class="w-100 btn btn-orange" href="{{route('step4', ['template' => 'mas'] + \Request::all())}}">Select</a>
                     </div>
                     
                   </div>
                 </div>
               </div>
             </div>
-            <a class = "w-25 btn btn-lg btn-primary" href="{{route('step2', \Request::all())}}"> < Return </a>
+            <a class = "w-25 btn btn-primary" href="{{route('step2', \Request::all())}}">Back </a>
 
           </div>
         </div>

@@ -30,7 +30,7 @@
 
 
   
-  <div class="p-3 pb-md-4 mx-auto">
+  <div class=" pb-md-4 mx-auto">
 
       
         <div class="container"style="margin-top:auto">
@@ -50,8 +50,8 @@
           </div>
       </div>
       <div class="text-center p-3">
-        <a class = "w-25 btn btn-lg btn-orange" href="{{route('step6', \Request::all())}}"> < Return </a>
-        <a type="button" class="w-25 btn btn-lg btn-primary text-center" href="{{route('step8', \Request::all())}}">Next ></a>
+        <a class = "w-25 btn btn-orange" href="{{route('step6', \Request::all())}}">Back</a>
+        <a type="button" class="w-25 btn btn-primary " href="{{route('step8', \Request::all())}}">Next</a>
       </div>
   </div>
 </div>

@@ -43,9 +43,9 @@
                     </div>
                     
             </div>
-            <a class = "w-25 btn btn-lg btn-orange  href="{{route('step1', \Request::all())}}"> < Return </a>
+            <a class = "w-25 btn  btn-orange" href="{{route('step1', \Request::all())}}">Back </a>
 
-            <a type="button" class="w-25 btn btn-lg btn-primary " href="{{route('step3', ['url' => 'a'] + \Request::all())}}">Next ></a>
+            <a type="button" class="w-25 btn btn-primary " href="{{route('step3', ['url' => 'a'] + \Request::all())}}">Next</a>
   
           </div>
           </div>
