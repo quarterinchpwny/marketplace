@@ -118,7 +118,7 @@
                 <!-- First Half -->
                 <div class="practice-card card align-items-center col-lg-3 col-md-6">
                     <a href="#" class="icons-con rounded-circle p-4">
-                        <img  src="{{ URL::to('/') }}/images/serv1.png" class="card-img-top" alt="Personal & Family Law">
+                        <img  src="{{ URL::to('/') }}/images/serv1.jpeg" class="card-img-top" alt="Personal & Family Law">
                     </a>
 
                     <div class="card-body align-content-center text-center pt-4 pb-5">
@@ -128,7 +128,7 @@
 
                 <div class="practice-card card align-items-center col-lg-3 col-md-6">
                     <a href="#" class="icons-con rounded-circle p-4">
-                        <img src="{{ URL::to('/') }}/images/serv2.png" class="card-img-top" alt="Labor Law">
+                        <img src="{{ URL::to('/') }}/images/serv2.jpeg" class="card-img-top" alt="Labor Law">
                     </a>
 
                     <div class="card-body align-content-center text-center pt-4 pb-5">
@@ -138,7 +138,7 @@
 
                 <div class="practice-card card align-items-center col-lg-3 col-md-6">
                     <a href="#" class="icons-con rounded-circle p-4">
-                        <img src="{{ URL::to('/') }}/images/serv3.png" class="card-img-top" alt="Civil Law">
+                        <img src="{{ URL::to('/') }}/images/serv3.jpeg" class="card-img-top" alt="Civil Law">
                     </a>
 
                     <div class="card-body align-content-center text-center pt-4 pb-5">
@@ -148,7 +148,7 @@
 
                 <div class="practice-card card align-items-center col-lg-3 col-md-6">
                     <a href="#" class="icons-con rounded-circle p-4">
-                        <img src="{{ URL::to('/') }}/images/serv4.png" class="card-img-top" alt="Immigration Law">
+                        <img src="{{ URL::to('/') }}/images/serv4.jpeg" class="card-img-top" alt="Immigration Law">
                     </a>
 
                     <div class="card-body align-content-center text-center pt-4 pb-5">
@@ -159,7 +159,7 @@
                 <!-- Second Half -->
                 <div class="practice-card card align-items-center col-lg-3 col-md-6">
                     <a href="#" class="icons-con rounded-circle p-4">
-                        <img src="{{ URL::to('/') }}/images/serv5.png" class="card-img-top" alt="Criminal Law">
+                        <img src="{{ URL::to('/') }}/images/serv5.jpeg" class="card-img-top" alt="Criminal Law">
                     </a>
 
                     <div class="card-body align-content-center text-center pt-4 pb-4">
@@ -169,7 +169,7 @@
 
                 <div class="practice-card card align-items-center col-lg-3 col-md-6">
                     <a href="#" class="icons-con rounded-circle p-4">
-                        <img src="{{ URL::to('/') }}/images/serv6.png" class="card-img-top" alt="Commercial Law">
+                        <img src="{{ URL::to('/') }}/images/serv6.jpeg" class="card-img-top" alt="Commercial Law">
                     </a>
 
                     <div class="card-body align-content-center text-center pt-4 pb-4">
@@ -179,7 +179,7 @@
 
                 <div class="practice-card card align-items-center col-lg-3 col-md-6">
                     <a href="#" class="icons-con rounded-circle p-4">
-                        <img src="{{ URL::to('/') }}/images/serv7.png" class="card-img-top" alt="Taxation Law">
+                        <img src="{{ URL::to('/') }}/images/serv7.jpeg" class="card-img-top" alt="Taxation Law">
                     </a>
 
                     <div class="card-body align-content-center text-center pt-4 pb-4">
@@ -189,7 +189,7 @@
 
                 <div class="practice-card card align-items-center col-lg-3 col-md-6">
                     <a href="#" class="icons-con rounded-circle p-4">
-                        <img src="{{ URL::to('/') }}/images/serv8.png" class="card-img-top" alt="Special Services">
+                        <img src="{{ URL::to('/') }}/images/serv8.jpeg" class="card-img-top" alt="Special Services">
                     </a>
 
                     <div class="card-body align-content-center text-center pt-4 pb-4">
