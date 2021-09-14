@@ -62,6 +62,14 @@
                 transition: 1s;
             }
 
+            .practices-firsthalf {
+                background-color: transparent;
+            }
+
+            .practices-secondhalf {
+                background-color: transparent;
+            }
+
             .icons-con {
                 background-color: #B8537B;
 
@@ -78,8 +86,7 @@
 
             .icons-con:hover {
                 background-color: #B5375B;
-                max-width: 155px;
-                max-height: 155px;
+                box-shadow: 0px 2px 4px 10px rgba(219, 203, 214, 0.74);
             }
 
             .label-con {
@@ -104,6 +111,19 @@
                 font-weight: 700;
 
                 margin-top: auto;
+
+                -webkit-transition: all 300ms ease;
+                -moz-transition: all 300ms ease;
+                -ms-transition: all 300ms ease;
+                transition: all 300ms ease;
+            }
+
+            .btn-practice:hover {
+                background-color: #F1DBE8;
+                border: 1px solid #B5375B;
+                border-radius: 10px;
+
+                color: #B5375B;
             }
         </style>
     </head>
@@ -116,84 +136,88 @@
 
             <div class="row justify-content-center px-5 py-4">
                 <!-- First Half -->
-                <div class="practice-card card align-items-center col-lg-3 col-md-6">
-                    <a href="#" class="icons-con rounded-circle p-4">
-                        <img  src="{{ URL::to('/') }}/images/serv1.jpeg" class="card-img-top" alt="Personal & Family Law">
-                    </a>
+                <div class="practices-firsthalf ">
+                    <div class="practice-card card align-items-center col-lg-3 col-md-6">
+                        <a href="#" class="icons-con rounded-circle p-4">
+                            <img  src="{{ URL::to('/') }}/images/practices1_family.png" class="card-img-top" alt="Personal & Family Law">
+                        </a>
 
-                    <div class="card-body align-content-center text-center pt-4 pb-5">
-                        <a href="#" class="label-con card-text text-center h5">Personal & Family Law</a>
+                        <div class="card-body align-content-center text-center pt-4 pb-5">
+                            <a href="#" class="label-con card-text text-center h5">Personal & Family Law</a>
+                        </div>
                     </div>
-                </div>
 
-                <div class="practice-card card align-items-center col-lg-3 col-md-6">
-                    <a href="#" class="icons-con rounded-circle p-4">
-                        <img src="{{ URL::to('/') }}/images/serv2.jpeg" class="card-img-top" alt="Labor Law">
-                    </a>
+                    <div class="practice-card card align-items-center col-lg-3 col-md-6">
+                        <a href="#" class="icons-con rounded-circle p-4">
+                            <img src="{{ URL::to('/') }}/images/practices2_briefcase.png" class="card-img-top" alt="Labor Law">
+                        </a>
 
-                    <div class="card-body align-content-center text-center pt-4 pb-5">
-                        <a href="#" class="label-con card-text text-center h5">Labor Law</a>
+                        <div class="card-body align-content-center text-center pt-4 pb-5">
+                            <a href="#" class="label-con card-text text-center h5">Labor Law</a>
+                        </div>
                     </div>
-                </div>
 
-                <div class="practice-card card align-items-center col-lg-3 col-md-6">
-                    <a href="#" class="icons-con rounded-circle p-4">
-                        <img src="{{ URL::to('/') }}/images/serv3.jpeg" class="card-img-top" alt="Civil Law">
-                    </a>
+                    <div class="practice-card card align-items-center col-lg-3 col-md-6">
+                        <a href="#" class="icons-con rounded-circle p-4">
+                            <img src="{{ URL::to('/') }}/images/practices3_rights.png" class="card-img-top" alt="Civil Law">
+                        </a>
 
-                    <div class="card-body align-content-center text-center pt-4 pb-5">
-                        <a href="#" class="label-con card-text text-center h5">Civil Law</a>
+                        <div class="card-body align-content-center text-center pt-4 pb-5">
+                            <a href="#" class="label-con card-text text-center h5">Civil Law</a>
+                        </div>
                     </div>
-                </div>
 
-                <div class="practice-card card align-items-center col-lg-3 col-md-6">
-                    <a href="#" class="icons-con rounded-circle p-4">
-                        <img src="{{ URL::to('/') }}/images/serv4.jpeg" class="card-img-top" alt="Immigration Law">
-                    </a>
+                    <div class="practice-card card align-items-center col-lg-3 col-md-6">
+                        <a href="#" class="icons-con rounded-circle p-4">
+                            <img src="{{ URL::to('/') }}/images/practices4_passport.png" class="card-img-top" alt="Immigration Law">
+                        </a>
 
-                    <div class="card-body align-content-center text-center pt-4 pb-5">
-                        <a href="#" class="label-con card-text text-center h5">Immigration Law</a>
+                        <div class="card-body align-content-center text-center pt-4 pb-5">
+                            <a href="#" class="label-con card-text text-center h5">Immigration Law</a>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Second Half -->
-                <div class="practice-card card align-items-center col-lg-3 col-md-6">
-                    <a href="#" class="icons-con rounded-circle p-4">
-                        <img src="{{ URL::to('/') }}/images/serv5.jpeg" class="card-img-top" alt="Criminal Law">
-                    </a>
+                <div class="practices-secondhalf ">
+                    <div class="practice-card card align-items-center col-lg-3 col-md-6">
+                        <a href="#" class="icons-con rounded-circle p-4">
+                            <img src="{{ URL::to('/') }}/images/practices5_cuffs.png" class="card-img-top" alt="Criminal Law">
+                        </a>
 
-                    <div class="card-body align-content-center text-center pt-4 pb-4">
-                        <a href="#" class="label-con card-text text-center h5">Criminal Law</a>
+                        <div class="card-body align-content-center text-center pt-4 pb-4">
+                            <a href="#" class="label-con card-text text-center h5">Criminal Law</a>
+                        </div>
                     </div>
-                </div>
 
-                <div class="practice-card card align-items-center col-lg-3 col-md-6">
-                    <a href="#" class="icons-con rounded-circle p-4">
-                        <img src="{{ URL::to('/') }}/images/serv6.jpeg" class="card-img-top" alt="Commercial Law">
-                    </a>
+                    <div class="practice-card card align-items-center col-lg-3 col-md-6">
+                        <a href="#" class="icons-con rounded-circle p-4">
+                            <img src="{{ URL::to('/') }}/images/practices6_team.png" class="card-img-top" alt="Commercial Law">
+                        </a>
 
-                    <div class="card-body align-content-center text-center pt-4 pb-4">
-                        <a href="#" class="label-con card-text text-center h5">Commercial Law</a>
+                        <div class="card-body align-content-center text-center pt-4 pb-4">
+                            <a href="#" class="label-con card-text text-center h5">Commercial Law</a>
+                        </div>
                     </div>
-                </div>
 
-                <div class="practice-card card align-items-center col-lg-3 col-md-6">
-                    <a href="#" class="icons-con rounded-circle p-4">
-                        <img src="{{ URL::to('/') }}/images/serv7.jpeg" class="card-img-top" alt="Taxation Law">
-                    </a>
+                    <div class="practice-card card align-items-center col-lg-3 col-md-6">
+                        <a href="#" class="icons-con rounded-circle p-4">
+                            <img src="{{ URL::to('/') }}/images/practices7_tax.png" class="card-img-top" alt="Taxation Law">
+                        </a>
 
-                    <div class="card-body align-content-center text-center pt-4 pb-4">
-                        <a href="#" class="label-con card-text text-center h5">Taxation Law</a>
+                        <div class="card-body align-content-center text-center pt-4 pb-4">
+                            <a href="#" class="label-con card-text text-center h5">Taxation Law</a>
+                        </div>
                     </div>
-                </div>
 
-                <div class="practice-card card align-items-center col-lg-3 col-md-6">
-                    <a href="#" class="icons-con rounded-circle p-4">
-                        <img src="{{ URL::to('/') }}/images/serv8.jpeg" class="card-img-top" alt="Special Services">
-                    </a>
+                    <div class="practice-card card align-items-center col-lg-3 col-md-6">
+                        <a href="#" class="icons-con rounded-circle p-4">
+                            <img src="{{ URL::to('/') }}/images/practices8_hammer.png" class="card-img-top" alt="Special Services">
+                        </a>
 
-                    <div class="card-body align-content-center text-center pt-4 pb-4">
-                        <a href="#" class="label-con card-text text-center h5">Special Services</a>
+                        <div class="card-body align-content-center text-center pt-4 pb-4">
+                            <a href="#" class="label-con card-text text-center h5">Special Services</a>
+                        </div>
                     </div>
                 </div>
             </div>

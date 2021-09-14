@@ -93,6 +93,19 @@
 
                 bottom: 4rem;
                 margin-top: auto;
+
+                -webkit-transition: all 300ms ease;
+                -moz-transition: all 300ms ease;
+                -ms-transition: all 300ms ease;
+                transition: all 300ms ease;
+            }
+
+            .btn-contact-us:hover, .btn-law-updates:hover, .btn-everyday-law:hover {
+                background-color: #F1DBE8;
+                border: 1px solid #B5375B;
+                border-radius: 10px;
+
+                color: #B5375B;
             }
         </style>
     </head>
