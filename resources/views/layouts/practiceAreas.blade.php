@@ -56,7 +56,7 @@
                         <a href="#" class="areasButton btn btn-primary">Special Services</a>
                         </div>
                     </div>
-                                <div class="row py-1 justify-content-center">
+                                <div class="row py-3 justify-content-center">
                                     <a href="#" class="btn btn-primary mx-auto buttonWhite">See more</a>
                                 </div>
                 </div>

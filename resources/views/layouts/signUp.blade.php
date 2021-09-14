@@ -1,7 +1,20 @@
+<script >
+  function showModal(){
+    document.querySelector(".modal-bg").style.visibility = "visible";
+    document.querySelector(".modal-bg").style.opacity = 1;
+    document.querySelector("body").style.overflow = "hidden";
+  }
+  function closeModal(){
+    document.querySelector(".modal-bg").style.visibility = "hidden";
+    document.querySelector(".modal-bg").style.opacity = 0;
+  }
+</script>
+
 <div class="container-fluid" id="bg">
   <p id="mainHeader">Lorem ipsum dolor sit amet</p>
   <p id="secondaryHeader">consectetur adipiscing elit, sed do eiusmod tempor </p>
 </div>
+<button type="button" id="buttonStart" onclick="showModal()">Get Started</button>
 <div class="container" id="lblue-signup">
     <!-- Sign up -->
 
@@ -47,7 +60,9 @@
 </div>
 <div class="modal-bg">
     <div class="modal">
-      <div class="modal-header">Hello! Icon Goes Here</div>
+      <div class="modal-header">
+      <button type="button" id="modal-close" class="float-right" onclick="closeModal()"><span>X</span></button>
+      </div>
         <input class="form-control form-control-md emailtf" type="text" placeholder="E-mail Address" >
         <input class="form-control form-control-md passtf" type="text" placeholder="Password" >
         <div class="rowModal d-flex justify-content-between">

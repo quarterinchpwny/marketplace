@@ -29,7 +29,6 @@
 
   <div id="app">
      @include('layouts.nav', ['from' => 'app'])
-        @yield('content')
   </div>
   <div id="body">
       @include('layouts.signUp', ['from' => 'app'])
