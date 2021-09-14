@@ -95,6 +95,11 @@
                 font-family: 'Raleway', serif;
                 font-weight: 700 !important;
                 color: #733657;
+
+                -webkit-transition: all 300ms ease;
+                -moz-transition: all 300ms ease;
+                -ms-transition: all 300ms ease;
+                transition: all 300ms ease;
             }
 
             .label-con:hover {
@@ -102,12 +107,12 @@
             }
 
             .btn-practice {
-                background-color: #B5375B;
+                background-color: transparent;
                 border: 1px solid #B5375B;
                 border-radius: 10px;
 
                 font-family: 'Raleway', serif;
-                color: white;
+                color: #B5375B;
                 font-weight: 700;
 
                 margin-top: auto;
@@ -119,11 +124,11 @@
             }
 
             .btn-practice:hover {
-                background-color: #F1DBE8;
+                background-color: #B5375B;
                 border: 1px solid #B5375B;
                 border-radius: 10px;
 
-                color: #B5375B;
+                color: white;
             }
         </style>
     </head>
