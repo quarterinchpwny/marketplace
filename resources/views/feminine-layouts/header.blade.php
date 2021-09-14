@@ -71,12 +71,19 @@
                 color: #733657 !important;
                 font-weight: 700 !important;
             }
+
+            .header-lst:hover {
+                text-decoration: none;
+
+                color: #B5375B !important;
+                font-weight: 700 !important;
+            }
         </style>
     </head>
 
     <body>
-        <header class="header-main-con">
-            <nav class="navbar sticky-top navbar-expand-lg p-3">
+        <header class="header-main-con sticky-top">
+            <nav class="navbar navbar-expand-lg p-3">
                 <div class="container-fluid">
 
                     <!-- Brand -->
