@@ -82,11 +82,11 @@
                   </div>
               </div>
                   <div class="mb-4">
-                      <label for="username">Last Name</label>
+                      <label for="last_name">Last Name</label>
                       <div class="input-group">
   
-                          <input type="text" class="form-control" id="username" placeholder="Username" required="">
-                          <div class="invalid-feedback" style="width: 100%;"> Your username is required. </div>
+                          <input type="text" class="form-control" id="last_name" placeholder="Last Name" required="">
+                          <div class="invalid-feedback" style="width: 100%;"> Your Last Name is required. </div>
                       </div>
                   </div>
                   <div class="mb-4">
@@ -114,7 +114,10 @@
         </div>
         <div class="text-center p-3">
           <a class = "w-25 btn  btn-orange" href="{{route('step5', \Request::all())}}"> Back </a>
-          <a type="button" class="w-25 btn btn-primary text-center" href="{{route('step7', \Request::all())}}">Next</a>
+          <a type="button" class="w-25 btn btn-primary text-center" onClick ="toStore()"  href="{{route('step7', \Request::all())}}">Next</a>
         </div>
     </div>
   </div>
+<script>
+  console.log(localStorage.getItem("prod1"))
+  </script>

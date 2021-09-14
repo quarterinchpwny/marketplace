@@ -39,7 +39,7 @@
         localStorage.setItem("sp", "1");
     } 
     if (checkBox1.checked == true){
-        localStorage.setItem("cb1", "1");
+      localStorage.setItem("cb1", "1");
     } 
     if (checkBox2.checked == true){
         localStorage.setItem("cb2", "1");
@@ -49,25 +49,63 @@
     }
   var data = 1;
   function dec(x){
-    tableEl.addEventListener("click", onDeleteRow);
+   
     data=parseInt(document.getElementById("box".concat(x)).value);
-
+    if(parseInt(document.getElementById("box".concat(x)).value )>1)
+    {
     data=data-1;
     document.getElementById("box".concat(x)).value=data;
+    document.getElementById("label".concat(x)).innerText=data;
     data=parseInt(document.getElementById("val".concat(x)).innerText);
     document.getElementById("val".concat(x)).innerText=data-5000;
+
+
+    }
+    
   }
 
 
   function inc(x){
     data=parseInt(document.getElementById("box".concat(x)).value);
     data=data+1;
-    
+    document.getElementById("label".concat(x)).innerText=data;
     document.getElementById("box".concat(x)).value=data;
     document.getElementById("val".concat(x)).innerText=data*5000;
   }
 
  
+  function toStore(){
+    
+      localStorage.setItem("firstName", document.getElementById("first_name").value);
+      localStorage.setItem("lastName", document.getElementById("last_name").value);
+      localStorage.setItem("email",  document.getElementById("email").value);
+      localStorage.setItem("address",  document.getElementById("address").value);
+      localStorage.setItem("contact",  document.getElementById("contact").value);
+    }
+
+
+
+  function toCompute(){
+    
+  for(let x=1;x<=5;x++){
+     var element = document.getElementById("box".concat(x));
+    if(element!= null){
+      var value = parseInt(element.value);
+      if(value>=1){
+      localStorage.setItem("prod".concat(x), document.getElementById("prod".concat(x)).innerText);
+      localStorage.setItem("qty".concat(x), document.getElementById("box".concat(x)).value);
+      localStorage.setItem("tp".concat(x),  document.getElementById("val".concat(x)).innerText);
+
+      }
+
+    }
+    else
+      continue;
+   
+  
+  }
+  
+  }
 
   
 

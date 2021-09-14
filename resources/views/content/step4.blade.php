@@ -1,5 +1,8 @@
 @extends('layouts.layout')
+<script>
+  localStorage.clear();
 
+</script>
 
 <div class="container align-center" style="padding-top: 2.4rem;padding-bottom: 2.4rem;height:65rem " id="step4">
     <div class="tracking-progress-bar text-center">

@@ -38,7 +38,25 @@
            
             <div class="col-lg bg-light m-3 p-3 " style="height: 34rem">
               <h2 class="mb-4" style="color: #F4512C !important">Order Summary</h2>
-              
+              <div class="table-responsive">
+                <table class="table text-center" id="tables">
+                  <thead>
+                    <tr >
+                  
+                      <th style="width: 20%;">Product</th>
+                      <th style="width: 20%;">Price</th>
+                      <th style="width: 20%;">Quantity</th>
+                      <th style="width: 20%;">Total Amount</th>
+                
+                    </tr>
+                  </thead>
+                  <tbody id="tbv">
+                   
+                  </tbody>
+                  
+                </table>
+                
+          </div>
              
             </div>
            
@@ -55,3 +73,44 @@
       </div>
   </div>
 </div>
+
+<script>
+  console.log(localStorage.getItem("firstName"));
+  console.log(localStorage.getItem("lastName"));
+  console.log(localStorage.getItem("email"));
+  console.log(localStorage.getItem("address"));
+  console.log(localStorage.getItem("contact"));
+    const tbodyEl = document.getElementById("tbv");
+    const tableEl = document.getElementById("tables");
+
+    for(let x=1;x<=5;x++){
+     var element = localStorage.getItem("prod".concat(x));
+
+    if(element!= null){
+     
+        tbodyEl.innerHTML += `
+        <tr>
+        <td><p id = 'prod`+x+`'></p></td>
+        <td><p>5000</p></td>
+        <td><p id = 'qty`+x+`'></p></td>
+        <td><p id = 'val`+x+`'></p></td>
+      
+        </tr>
+        `;
+      
+        
+        document.getElementById('prod'.concat(x)).innerHTML = localStorage.getItem("prod".concat(x));
+        document.getElementById('qty'.concat(x)).innerHTML = localStorage.getItem("qty".concat(x));
+        document.getElementById('val'.concat(x)).innerHTML = localStorage.getItem("tp".concat(x));
+
+    
+
+      
+
+    }
+    else
+      continue;
+
+    }
+
+</script>
