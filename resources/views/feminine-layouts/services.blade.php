@@ -101,9 +101,8 @@
                 color: white;
                 font-weight: 700;
 
-
-                max-height: 120px;
-                width: 290px;
+                width: 250px;
+                min-width: 230px;
             }
         </style>
     </head>
@@ -124,8 +123,8 @@
                         <div class = "row justify-content-center mb-3">
 
                             <!-- Assist -->
-                            <div class = "col-md mb-4">
-                                <div class="service-card card align-items-center col-lg-25 col-md-19">
+                            <div class = "col-xl-3 col-lg-6 col-md-6 col-xs-2 mb-4">
+                                <div class="service-card card align-items-center">
                                    <div class = "service-icons-con mb-5 mt-5">
                                         <img src="{{ URL::to('/') }}/images/assist.png" class="card-img-top" alt="Assist">
                                    </div>
@@ -136,15 +135,15 @@
                                         </p>
                                     </div>
                                     <div class="card-body align-content-center text-center pb-4 pt-6">
-                                        <button class="btn-service py-3 px-1 rounded-3 card-text text-center text-decoration-none h2" a href="#" type = "button">
+                                        <button class="btn-service py-3 px-1 rounded-3 card-text text-center text-decoration-none h3" a href="#" type = "button">
                                             Ask <br> Lawyers
                                         </button>
                                     </div>  
                                </div> 
                             </div>
                             <!-- Consult -->
-                            <div class = "col-md mb-4">
-                                <div class="service-card card align-items-center col-lg-25 col-md-19">
+                            <div class = "col-xl-3 col-lg-6 col-md-6 col-xs-2 mb-4">
+                                <div class="service-card card align-items-center">
                                    <div class = "service-icons-con mb-5 mt-5">
                                         <img src="{{ URL::to('/') }}/images/consult.png" class="card-img-top" alt="Consult">
                                    </div>
@@ -156,15 +155,15 @@
                                    </div>
                                   
                                    <div class="card-body align-content-center text-center pb-4 pt-6">
-                                        <button class="btn-service py-3 px-1 rounded-3 card-text text-center text-decoration-none h2" a href="#" type = "button">
+                                        <button class="btn-service py-3 px-1 rounded-3 card-text text-center text-decoration-none h3" a href="#" type = "button">
                                             Submit Legal <br> Problems
                                         </button>
                                      </div>  
                                </div> 
                             </div>
                             <!-- Works -->
-                            <div class = "col-md mb-4">
-                                <div class="service-card card align-items-center col-lg-25 col-md-19">
+                            <div class = "col-xl-3 col-lg-6 col-md-6 col-xs-2 mb-4">
+                                <div class="service-card card align-items-center">
                                    <div class = "service-icons-con mb-5 mt-5">
                                         <img src="{{ URL::to('/') }}/images/Works.png" class="card-img-top" alt="Works">
                                    </div>
@@ -175,15 +174,15 @@
                                    </p>
                                 </div>
                                 <div class="card-body align-content-center text-center pb-4 pt-6">
-                                    <button class="btn-service py-3 px-1 rounded-3 card-text text-center text-decoration-none h2" a href="#" type = "button">
+                                    <button class="btn-service py-3 px-1 rounded-3 card-text text-center text-decoration-none h3" a href="#" type = "button">
                                         Request <br> Proposal
                                     </button>
                                  </div>  
                                </div> 
                             </div>
                             <!-- Docs -->
-                            <div class = "col-md mb-4">
-                                <div class="service-card card align-items-center col-lg-25 col-md-19">
+                            <div class = "col-xl-3 col-lg-6 col-md-6 col-xs-2 mb-4">
+                                <div class="service-card card align-items-center">
                                    <div class = "service-icons-con mb-5 mt-5">
                                         <img src="{{ URL::to('/') }}/images/docs.png" class="card-img-top" alt="Docs">
                                    </div>
@@ -193,7 +192,7 @@
                                    </p>
                                 </div>
                                 <div class="card-body align-content-center text-center pb-4 pt-6">
-                                    <button class="btn-service py-3 px-1 rounded-3 card-text text-center text-decoration-none h2" a href="#" type = "button">
+                                    <button class="btn-service py-3 px-1 rounded-3 card-text text-center text-decoration-none h3" a href="#" type = "button">
                                         Create Legal <br> Documents
                                     </button>
                                  </div>

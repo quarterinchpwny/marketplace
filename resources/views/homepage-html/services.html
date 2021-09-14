@@ -103,7 +103,7 @@
 
 
                 max-height: 120px;
-                width: 270px;
+                min-width: 240px;
             }
         </style>
     </head>
@@ -124,10 +124,10 @@
                         <div class = "row justify-content-center mb-3">
 
                             <!-- Assist -->
-                            <div class = "col-md mb-4">
-                                <div class="practice-card card align-items-center col-lg-25 col-md-19">
+                            <div class = "col-xl-3 col-lg-6 col-md-6 col-xs-2 mb-4">
+                                <div class="practice-card card align-items-center">
                                    <div class = "icons-con mb-5 mt-5">
-                                        <img src="assist.png" class="card-img-top" alt="Assist">
+                                    <img src="{{ URL::to('/') }}/images/assist.png" class="card-img-top" alt="Assist">
                                    </div>
 
                                    <div class = "label-holder mt-3 mb-4">
@@ -143,10 +143,10 @@
                                </div> 
                             </div>
                             <!-- Consult -->
-                            <div class = "col-md mb-4">
-                                <div class="practice-card card align-items-center col-lg-25 col-md-19">
+                            <div class = "col-xl-3 col-lg-6 col-md-6 col-xs-2 mb-4">
+                                <div class="practice-card card align-items-center">
                                    <div class = "icons-con mb-5 mt-5">
-                                        <img src="consult.png" class="card-img-top" alt="Consult">
+                                    <img src="{{ URL::to('/') }}/images/consult.png" class="card-img-top" alt="Consult">
                                    </div>
 
                                    <div class = "label-holder mt-3 mb-4">
@@ -162,11 +162,14 @@
                                      </div>  
                                </div> 
                             </div>
+
+                            
+
                             <!-- Works -->
-                            <div class = "col-md mb-4">
-                                <div class="practice-card card align-items-center col-lg-25 col-md-19">
+                            <div class = "col-xl-3 col-lg-6 col-md-6 col-xs-2 col-xl-3 col-lg-6 col-md-6 col-xs-2 mb-4">
+                                <div class="practice-card card align-items-center">
                                    <div class = "icons-con mb-5 mt-5">
-                                        <img src="Works.png" class="card-img-top" alt="Works">
+                                    <img src="{{ URL::to('/') }}/images/Works.png" class="card-img-top" alt="Works">
                                    </div>
 
                                    <div class = "label-holder mt-3 mb-4">
@@ -182,10 +185,10 @@
                                </div> 
                             </div>
                             <!-- Docs -->
-                            <div class = "col-md mb-4">
-                                <div class="practice-card card align-items-center col-lg-25 col-md-19">
+                            <div class = "col-xl-3 col-lg-6 col-md-6 col-xs-2 mb-4">
+                                <div class="practice-card card align-items-center">
                                    <div class = "icons-con mb-5 mt-5">
-                                        <img src="docs.png" class="card-img-top" alt="Docs">
+                                    <img src="{{ URL::to('/') }}/images/docs.png" class="card-img-top" alt="Docs">
                                    </div>
                                    <div class = "label-holder mt-3 mb-4">
                                     <p class = "label-con text-center h4">
