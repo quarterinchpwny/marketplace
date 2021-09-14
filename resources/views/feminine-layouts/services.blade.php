@@ -104,6 +104,13 @@
                 width: 250px;
                 min-width: 230px;
             }
+
+            .btn-service:hover {
+                background-color: #D08198;
+                border: 1px solid #D08198;
+
+            }
+
         </style>
     </head>
 
