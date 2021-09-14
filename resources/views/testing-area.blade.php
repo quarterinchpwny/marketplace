@@ -7,5 +7,5 @@
 </div>
 
 @include('feminine-layouts.header')
-@include('feminine-layouts.banner-header')
+@include('feminine-layouts.banner-try')
 @include('feminine-layouts.services')
