@@ -58,15 +58,28 @@
             .practice-card {
                 background-color: transparent !important;
                 border: 2px solid transparent !important;
+
+                transition: 1s;
             }
 
             .icons-con {
                 background-color: #B8537B;
-                box-shadow: 0px 2px 4px 10px rgba(219, 203, 214, 0.74);
+
                 max-width: 150px;
                 max-height: 150px;
 
                 text-decoration: none;
+
+                -webkit-transition: all 500ms ease;
+                -moz-transition: all 500ms ease;
+                -ms-transition: all 500ms ease;
+                transition: all 500ms ease;
+            }
+
+            .icons-con:hover {
+                background-color: #B5375B;
+                max-width: 155px;
+                max-height: 155px;
             }
 
             .label-con {
@@ -75,6 +88,10 @@
                 font-family: 'Raleway', serif;
                 font-weight: 700 !important;
                 color: #733657;
+            }
+
+            .label-con:hover {
+                color: #B5375B;
             }
 
             .btn-practice {
@@ -103,8 +120,6 @@
                     <a href="#" class="icons-con rounded-circle p-4">
                         <img  src="{{ URL::to('/') }}/images/serv1.png" class="card-img-top" alt="Personal & Family Law">
                     </a>
-
-                    <div class=""></div>
 
                     <div class="card-body align-content-center text-center pt-4 pb-5">
                         <a href="#" class="label-con card-text text-center h5">Personal & Family Law</a>
