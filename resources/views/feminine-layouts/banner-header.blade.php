@@ -53,6 +53,7 @@
                 height: 200px;
                 padding: 20px;
                 box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+                width: 50%;
 
             }
 
@@ -81,7 +82,7 @@
                 text-align: center;
                 font-size: 14px;
                 box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-                width: 550px;
+                width: 530px;
                 margin-top: 30px;
             }
 
@@ -124,13 +125,13 @@
             .input-group{
                 margin: 0 auto;
                 padding-top: 5px;
-                padding-left: 30px;
+                padding-left: 18px;
             }
 
             #login_remember{
                 color: #641F43;
                 font-size: 17px;
-                padding-left: 60px;
+                padding-left: 50px;
                 padding-bottom: 30px;
                 font-weight: 400;
                 padding-top: 10px;
@@ -147,7 +148,7 @@
                 font-size: 18px;
                 font-weight: 500;
                 color: #B5375B;
-                padding-left: 190px;
+                padding-left: 175px;
             }
             #login_social{
                 height: 50px;
@@ -301,6 +302,10 @@
                     width: 100%;
                 }
 
+                .col-1{
+                    display: none;
+                }
+
                 .banner-image{
                     width: 100%;
                     height: 243px;
@@ -311,11 +316,12 @@
                     margin-top: 145px;
                     height: 100%;
                     width: 100%;
-                    padding: 5px 0px 0px 20px;
+                    padding: 5px 0px 0px 15px;
                 }
 
                 #header-area h1{
                     font-size: 20px;
+                    font-weight: 900;
                  }
 
                 #header-area p{
@@ -324,7 +330,7 @@
 
                 #login_form{
                     width: 100%;
-                    margin-top: 0px;
+                    margin-top: 15px;
                 }
 
                 #login_title{
@@ -391,6 +397,10 @@
                     width: 100%;
                 }
 
+                .col-1{
+                    display: none;
+                }
+
                 .banner-image{
                     width: 100%;
                     height: 350px;
@@ -414,7 +424,7 @@
 
                 #login_form{
                     width: 100%;
-                    margin-top: 0px;
+                    margin-top: 25px;
                 }
 
                 #login_title{
@@ -501,7 +511,7 @@
                 }
 
                 #login_form{
-                    width: 340px;
+                    width: 370px;
                     margin-top: 25px;
                 }
 
@@ -578,6 +588,30 @@
             }
 
 
+            @media only screen and (min-width: 1280px){
+                
+                .banner-image{
+                    width: 100%;
+                    height: 750px;
+                    object-fit: fill;
+                }
+
+                #social_icons p {
+                    display: none;
+                }
+
+                #header-area{
+                    height: 100%;
+                    padding: 10px 0px 0px 20px;
+                }
+
+                .aside{
+                    margin-left: 15%;
+                }
+
+            }
+
+
         </style>
     </head>
 
@@ -586,7 +620,7 @@
         <div class="banner-image">
             <div class="row">
 
-                <div id="header-area" class="col-7">
+                <div id="header-area" class="col-6">
                     <h1>Lorem, ipsum dolor sit amet </h1>
                     <p>Aliquam nibh massa, fringilla a malesuada ut, sagittis ut sem. Quisque metus mauris, tristique nec lectus a, vehicula cursus elit.</p>
                 </div>
@@ -607,7 +641,7 @@
                         <br>
                         
                         <div id="social_icons">
-                            <a id="login_social" href="#" class="btn btn-primary btn-md" style="padding-left: 2px;"> <img id="iconsg" src="images/google.png" alt="" style="padding-left: 10px; padding-right: 5px;" width="55px">Login with Google</a>
+                            <a id="login_social" href="#" class="btn btn-primary btn-md" style="padding-left: 2px;"> <img id="iconsg" src="images/google.png" alt="" style="padding-left: 10px; padding-right: 5px;" width="55px">Login with Google</a> <p> </p>
                             <a id="login_social" href="#" class="btn btn-primary btn-md" style="padding-left: 2px;"> <img id="iconsf" src="images/facebook.png" alt="" style="padding-left: 10px; padding-right: 5px;" width="47px">Login with Facebook</a>
                         </div>
 
@@ -645,6 +679,7 @@
 
                     </div>
                 </div>
+
             </div>
 
              <!-- Sign Up Form -->
