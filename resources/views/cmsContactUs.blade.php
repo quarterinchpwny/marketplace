@@ -32,8 +32,7 @@
                                 <tr>
                                     <th scope="row">1</th>
                                     <td scope="col" width="70%">
-                                        Unit 608, 6th Floor, ADB Avenue Corner, 
-                                        Garnet Road Ortigas Center, Pasig City
+                                        
                                     </td>
                                     <td>
                                         <a href="#" class="btn btn-outline-dark btn-sm"><i class="fas fa-eye"></i> View</a>

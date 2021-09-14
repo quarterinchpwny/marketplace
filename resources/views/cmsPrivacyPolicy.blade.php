@@ -23,14 +23,14 @@
                             <table class="table table-hover">
                             <thead class="bg-light">
                                 <tr >
-                                <th scope="col">#</th>
+                                <th scope="col">ID</th>
                                 <th scope="col">Privacy Policy</th>
                                 <th scope="col">Action</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <th scope="row">1</th>
+                                    <th scope="row"></th>
                                     <td scope="col" width="70%">
                         
                                     </td>
@@ -45,7 +45,7 @@
                         </div>    
                         <div class="row container-fluid">
                             <div class="col-3 offset-11 ">
-                            <a href="#" class="btn btn-outline-dark btn-sm"><i class="fas fa-plus-circle"></i> Add New</a>
+                            <a href="{{url ('/addNewPrivacyPolicy') }}" class="btn btn-outline-dark btn-sm"><i class="fas fa-plus-circle"></i> Add New</a>
                             </div>
                         </div>
                         </div>   

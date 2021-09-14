@@ -70,6 +70,10 @@ class DashboardController extends Controller
     {
         return view('cmsPrivacyPolicy');
     }
+    public function addPrivacyPolicy()
+    {
+        return view('addNewPrivacyPolicy');
+    }
 
     public function addPost()
     {
