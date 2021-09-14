@@ -187,6 +187,7 @@
                 padding-bottom: 20px;
             }
 
+
             .break-line p{
                 color: rgb(100, 31, 67);
                 font-weight: bolder;
@@ -217,6 +218,12 @@
                 font-size: 15px;
                 font-weight:400;
                 color: #641F43;
+            }
+
+            #input_signup{
+                margin: 0 auto;
+                padding-top: 5px;
+                padding-left: 18px;
             }
 
             #signup_button{
@@ -282,6 +289,12 @@
                 padding: 20px;
             }
 
+            
+            .break-line-signup p{
+                color: rgb(100, 31, 67);
+                font-weight: bolder;
+                text-shadow: 2px 2px 5px #B5375B;
+            }
 
             /* For desktop: */
             .col-1 {width: 8.33%;}
@@ -297,7 +310,7 @@
             .col-11 {width: 91.66%;}
             .col-12 {width: 100%;}
 
-            @media only screen and (max-width: 768px) {
+            @media only screen and (max-width: 767px) {
                 /* For mobile phones: */
                 [class*="col-"] {
                     width: 100%;
@@ -333,9 +346,13 @@
                     margin-left: 0%;
                 }
 
+                #login-show{
+                    display: none;
+                }
+
                 #login_form{
                     width: 100%;
-                    margin-top: 15px;
+                    margin-top: 0px;
                 }
 
                 #login_title{
@@ -384,7 +401,7 @@
                 }
 
                 #powered{
-                    padding-top: 50px;
+                    padding-top: 40px;
                     font-size: 10px;
                 }
 
@@ -392,6 +409,63 @@
                     width: 200px;
                     height: 40px;
                     font-size: 16px;
+                }
+
+                /* Signup CSS Responsive */
+
+                #signup_form{
+                    width: 100%;
+                    height: 670px;
+                    margin-top: 10px;
+                    margin-bottom: 0p;
+                }
+
+                #signup_title{
+                    font-size: 22px;
+                    padding-top: 10px;
+                    padding-left: 30px;
+                }
+
+                #signup_field{
+                    font-size: 12px;
+                    padding: 10px;
+                    width: 100%;
+                }
+
+                #input_signup{
+                    padding: 2px 10px;
+                }
+
+                #signup_remember{
+                    font-size: 12px;
+                    padding-left: 35px;
+                }
+
+                #signup_social{
+                    margin-top: 0px;
+                    height: 40px;
+                    text-align: center;
+                    font-size: 12px;
+                    width: 90%;
+                    padding-top: 0px;
+                }
+
+                #signup_notice{
+                    font-size: 12px;
+                }
+
+                #signup_login_up{
+                    font-size: 12px;
+                }
+
+                #signup_button{
+                    width: 200px;
+                    height: 40px;
+                    font-size: 16px;
+                }
+                
+                .break-line-signup p{
+                    font-size: 8px;
                 }
 
             }
@@ -431,9 +505,13 @@
                     margin-left: 0%;
                 }
 
+                #login-show{
+                    display: none;
+                }
+
                 #login_form{
                     width: 100%;
-                    margin-top: 25px;
+                    margin-top: 0px;
                 }
 
                 #login_title{
@@ -448,18 +526,18 @@
                 }
 
                 .input-group{
-                    padding: 5px 10px;
-                    width: 78%;
+                    padding: 5px 90px;
+                    width: 90%;
                 }
 
                 #login_remember{
                     font-size: 16px;
-                    padding-left: 135px;
+                    padding-left: 120px;
                 }
 
                 #login_forgot{
                     font-size: 16px;
-                    padding-left: 260px;
+                    padding-left: 290px;
                 }
 
                 #login_social{
@@ -472,7 +550,7 @@
 
                 .break-line p{
                     padding: 5px;
-                    font-size: 10px;
+                    font-size: 14px;
                 }
 
                 #login_notice{
@@ -492,6 +570,63 @@
                     width: 300px;
                     height: 40px;
                     font-size: 18px;
+                }
+
+                /* Signup CSS Responsive */
+
+                 #signup_form{
+                    width: 100%;
+                    height: 670px;
+                    margin-top: 10px;
+                    margin-bottom: 0p;
+                }
+
+                #signup_title{
+                    font-size: 28px;
+                    padding-top: 10px;
+                    padding-left: 90px;
+                }
+
+                #signup_field{
+                    font-size: 14px;
+                    padding: 10px;
+                    width: 100%;
+                }
+
+                #input_signup{
+                    padding: 2px 10px;
+                }
+
+                #signup_remember{
+                    font-size: 14px;
+                    padding-left: 35px;
+                }
+
+                #signup_social{
+                    margin-top: 0px;
+                    height: 40px;
+                    text-align: center;
+                    font-size: 14px;
+                    width: 90%;
+                    padding-top: 0px;
+                }
+
+                #signup_notice{
+                    font-size: 14px;
+                }
+
+                #signup_login_up{
+                    font-size: 14px;
+                }
+
+                #signup_button{
+                    width: 200px;
+                    height: 40px;
+                    font-size: 16px;
+                }
+                
+                .break-line-signup p{
+                    font-size: 8px;
                 }
        
             }
@@ -521,6 +656,10 @@
 
                 .aside{
                     margin-left: 0%;
+                }
+
+                #login-container{
+                    display: none;
                 }
 
                 #login_form{
@@ -597,6 +736,10 @@
                     height: 30px;
                     font-size: 14px;
                 }
+
+                #social_icons p {
+                    display: none;
+                }
        
             }
 
@@ -622,11 +765,19 @@
                     margin-left: 0%;
                 }
 
+                #login-container{
+                    display: none;
+                }
+
             }
 
             @media  screen and (min-width: 1480px){
                 
                 #social_icons p {
+                    display: none;
+                }
+
+                #login-container{
                     display: none;
                 }
                 
@@ -649,7 +800,7 @@
         
                 <div class="col-1"></div>
                 
-                <div id="login-container" class="col-2 right">
+                <div id="login-show" class="col-2 right">
                     <form action="" method="post">
                         <div id="login_form" class="aside">
                             <div id="login_title"><p>Welcome to</p></div>
@@ -713,31 +864,33 @@
                         <div id="signup_title" class="modal-header">
                             <p>Create Your Account</p>
                         </div>
+
+                        <div id="social_icons">
+                                <a id="signup_social" href="#" class="btn btn-primary btn-md" style="padding-left: 5px;"> <img src="images/google.png" alt="" style="padding-left: 10px; padding-right: 5px;" width="55px">Login with Google</a> <p> </p>
+                                <a id="signup_social" href="#" class="btn btn-primary btn-md" style="padding-left: 5px;"> <img src="images/facebook.png" alt="" style="padding-left: 10px; padding-right: 5px;" width="47px">Login with Facebook</a>
+                        </div>
+
                         <div class="modal-body">
                         <form method="POST" action="">  
-                            <br>
-                            <div>
-                                <a id="signup_social" href="#" class="btn btn-primary btn-md" style="padding-left: 5px;"> <img src="images/google.png" alt="" style="padding-left: 10px; padding-right: 5px;" width="55px">Login with Google</a>
-                                <a id="signup_social" href="#" class="btn btn-primary btn-md" style="padding-left: 5px;"> <img src="images/facebook.png" alt="" style="padding-left: 10px; padding-right: 5px;" width="47px">Login with Facebook</a>
-                            </div>
+
                 
-                            <div class="break-line"> 
+                            <div class="break-line-signup"> 
                                 <p>___________________________________ or ____________________________________</p>
                             </div>
                 
-                            <div class="input-group mb-3">
+                            <div id="input_signup" class="input-group mb-3">
                                 <input id="signup_field" type="text" class="form-control d-bl" placeholder="Email" aria-label="Email"> <br>
                             </div>
                 
-                            <div class="input-group mb-3">
+                            <div id="input_signup" class="input-group mb-3">
                                 <input id="signup_field" type="text" class="form-control" placeholder="Password" aria-label="Password">
                             </div>
                 
-                            <div class="input-group mb-3">
+                            <div id="input_signup" class="input-group mb-3">
                                 <input id="signup_field" type="text" class="form-control" placeholder="Retype Password" aria-label="Retype Password">
                             </div>
                 
-                            <div id="login_remember" class="form-check justify-content-start text-start">
+                            <div id="signup_remember" class="form-check justify-content-start text-start">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                                 <label class="form-check-label" for="flexCheckChecked">
                                     Remember Me
@@ -762,6 +915,60 @@
                 </div>
             </div>
         </div>
+
+        <div id="login-container" class="right">
+                    <form action="" method="post">
+                        <div id="login_form" class="aside">
+                            <div id="login_title"><p>Welcome to</p></div>
+
+                            <div>
+                                <img class="img-fluid" src="images/Logo2.png" alt="logo2" width="50px"> 
+                                <img id="logo_icon" class="img-fluid" src="images/Logo1.png" alt="logo1" width="250px">  
+                            </div>
+
+                            <br>
+
+                            <div id="social_icons">
+                                <a id="login_social" href="#" class="btn btn-primary btn-md" style="padding-left: 2px;"> <img id="iconsg" src="images/google.png" alt="" style="padding-left: 10px; padding-right: 5px;" width="55px">Login with Google</a> <p> </p>
+                                <a id="login_social" href="#" class="btn btn-primary btn-md" style="padding-left: 2px;"> <img id="iconsf" src="images/facebook.png" alt="" style="padding-left: 10px; padding-right: 5px;" width="47px">Login with Facebook</a>
+                            </div>
+
+                            <div class="break-line"> 
+                                <p>___________________________________ or ____________________________________</p>
+                            </div>
+
+                            <div class="input-group">
+                                <input id="login_field" type="text" class="" placeholder="Email" aria-label="Email">
+                            </div>
+
+                            <div class="input-group">
+                                <input id="login_field" type="text" class="" placeholder="Password" aria-label="Password">
+                            </div>
+
+                            <div id="login_remember" class="form-check justify-content-start text-start">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Remember Me
+                                    <a id="login_forgot" href="#" class="text-decoration-none">Forgot Password</a>
+                                </label>
+                            </div>
+
+                            <div>
+                                <a id="login_button" href="#login" class="btn btn-primary btn-md" >Log in</a>
+                            </div>
+
+                            <div>
+                                <p id="login_notice" >Don't have an account yet? <a id="login_sign_up" href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#signup">Sign up</a></p>
+                            </div>   
+
+                            <div id="powered">
+                                Powered by <img src="images/power1.png" alt="" width="100px" >
+                            </div>
+
+                        </div>
+                    </form>
+                    
+                </div>
  
 
         <!-- Option 1: Bootstrap Bundle with Popper -->
