@@ -9,7 +9,12 @@
     </div>
   </div>
         <div class="row2 container-fluid"  style="height: 580px; background-color:#F8FFFE; ">  
-            <div class="table-responsive-xl">
+        <div class="row">
+                  <div class="col-2">
+                    <a href="{{url ('/addNewPost')}}"><button type="button" class="btn text-white" style = "background-color: #9D71BC;">Add Post</button></a>
+                  </div>
+                </div>    
+        <div class="table-responsive-xl">
                 <table class="table table-striped table-hover">
                   <thead>
                     <tr>
@@ -60,11 +65,7 @@
                     </tr>
                   </tbody>
                 </table>
-                <div class="row">
-                  <div class="col-2">
-                    <a href="{{url ('/addNewPost')}}"><button type="button" class="btn text-white" style = "background-color: #9D71BC;">Add Post</button></a>
-                  </div>
-                </div>
+                
               </div>
         </div>       
 

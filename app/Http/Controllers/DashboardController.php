@@ -84,6 +84,14 @@ class DashboardController extends Controller
     {
         return view('cmsContactUs');
     }
+    public function addNewAddress()
+    {
+        return view('addAddress');
+    }
+    public function storeAddress(Request $request)
+    {
+        return $request->all();
+    } 
 
     public function domainSettings()
     {

@@ -1,6 +1,6 @@
 @extends('layouts.cmsnavigation')
 @section('content')
-    <div class="row">
+    <div class="row row1">
         <div class="col-10">
             <p class="fs-5 fw-bold text-white">Contact Us</p> 
         </div>
@@ -46,7 +46,7 @@
                         </div>    
                         <div class="row container-fluid">
                             <div class="col-3 offset-11 ">
-                            <a href="#" class="btn btn-outline-dark btn-sm"><i class="fas fa-plus-circle"></i> Add New</a>
+                            <a href="{{url ('/addAddress')}}" class="btn btn-outline-dark btn-sm"><i class="fas fa-plus-circle"></i> Add New</a>
                             </div>
                         </div>
                         </div>   
