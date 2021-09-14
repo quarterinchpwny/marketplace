@@ -91,7 +91,7 @@ body {
   margin-right: auto;
   margin-top: 20px;
   border-radius: 15px;
-  padding: 20px 0PX;
+  padding: 20px 0px;
   width:1170px;
 }
 .btn{
@@ -102,9 +102,10 @@ body {
   right: 10px;
   padding: 10px;
   margin-left: 50px;
-  width: 1141px;
+  max-width: 1141px;
   margin: 10px 0px;
 }
+
 .tab-content{
   margin: 10px 0px;
 }
@@ -157,3 +158,10 @@ body {
 }
 
 /* Contact Us */
+
+
+
+/* Lawyer's Profile */
+.row2 .uploadButton, .saveButton{
+  padding-top: 5px;
+}

@@ -1,15 +1,16 @@
 @extends('layouts.cmsnavigation')
 @section('content')
-<div class="row  ">
-    <div class="col-sm-1 previewbutton">
-         <button type="button" class="d-flex btn btn-primary text-white">Preview</button>
+<div class="row row1">
+        <div class="col-10"></div>
+        <div class="col-1">
+            <button type="button" class="btn text-white addnewbtn" style = "background-color: #9D71BC;"> Preview</button>       
+        </div>
     </div>
-</div>
 
 <div class="row row2 container-fluid"  style="height: 580px; background-color:#F8FFFE; margin-left: 5px; ">
     <div class="col-xl container-fluid texteditor" style="width: 300px;">
         <script src="https://cdn.ckeditor.com/ckeditor5/29.2.0/decoupled-document/ckeditor.js"></script>
-            <h5>Add New Post</h5>
+            <h5>Add New Law Update</h5>
             <label for="colFormLabel" class="col-sm-9 col-form-label">Select Law Update Photo:</label>
             <div class="col-sm-9">
                 <input class="form-control" type="file" id="formFile">
