@@ -19,7 +19,7 @@
                <br>
                Ano ang panganib kung ikaw ay pipirma bilang co-maker sa isang loan?
             </p>
-            <div id="law-updates-button" style="padding: 0 0 0 15%">
+            <div id="everyday-law-button">
                <a class="btn" href="#" role="button" id="areas_seemore">SEE MORE</a>
             </div>
          </div>
