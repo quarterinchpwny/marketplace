@@ -193,6 +193,10 @@ input::placeholder {
     outline: none;
     align-items: center;
 }
+
+.cardservices{
+    height: 416px;
+}
 #logoFooter{
     position: relative;
     right: 100px;
@@ -313,9 +317,9 @@ body{//for testing
 
 }
 
-*{
-outline: 1px solid red;
-}
+// *{
+// outline: 1px solid red;
+// }
 
 #frameWhiteBig{
     height: 550px;
@@ -496,6 +500,19 @@ $phones: 600px;
     #everydayLawVid{
         padding-top: 50px;
     }
+    .footerbody{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 
 }
 
+.containerfooterb{
+    display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+}

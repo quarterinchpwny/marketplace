@@ -87,7 +87,7 @@
 
 <div class="row" id="servicesRow">
       <div class="col-xs-2 col-s-2 col-md-3 col-lg-3">
-        <div class="card text-center mb-4 p-4">
+        <div class="card cardservices text-center mb-4 p-4">
           <img src="/images/assistIcon.png"  width="100" height="100">
           <br>
           <h2 id="textStyle"> <strong>ASSIST </strong></h2>
@@ -99,7 +99,7 @@
         </div>
       </div>
       <div class="col-xs-2 col-s-2 col-md-3 col-lg-3">
-        <div class="card text-center mb-4 p-4">
+        <div class="card cardservices text-center mb-4 p-4">
           <img src="/images/consultIcon.png"  width="100" height="100">
           <br>
           <h2 id="textStyle"><strong>CONSULT</strong></h2>
@@ -111,7 +111,7 @@
         </div>
       </div>
       <div class="col-xs-2 col-s-2 col-md-3 col-lg-3">
-        <div class="card text-center mb-4 p-4">
+        <div class="card cardservices text-center mb-4 p-4">
           <img src="/images/worksIcon.png"  width="100" height="100">
           <br>
           <h2 id="textStyle"><strong>WORKS</strong></h2>
@@ -121,7 +121,7 @@
         </div>
       </div>
       <div class="col-xs-2 col-s-2 col-md-3 col-lg-3">
-        <div class="card text-center mb-4 p-4">
+        <div class="card cardservices text-center mb-4 p-4">
           <img src="/images/docsIcon.png" width="100" height="100">
           <br>
          <h2 id="textStyle"><strong>DOCS</strong></h2>
@@ -228,7 +228,7 @@
 @endsection
 @section('EverydayLaw')
 <!-- Everyday Law -->
-<div class="container-fluid" id="white-rect"><p id="headerStyleBlue">LAW UPDATES</p></div>
+<div class="container-fluid" id="white-rect"><p id="headerStyleBlue">EVERYDAY LAW</p></div>
 
 <div class="container" id="frameWhite">
 
@@ -253,18 +253,17 @@
 @section('Footer')
 <!-- Footer -->
 
-<
 <footer class="text-center text-lg-start text-light pt-0" style="background-color: #092059;">
 
   <!-- Section: Links  -->
-  <section class="">
+  <section class="footerbody">
     <div class="container text-md-start mt-2">
       <!-- Grid row -->
       <div class="row mt-3 contentsFooter">
         <!-- Grid column -->
         <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
           <!-- Content -->
-          <div class="container-fluid" >
+          <div class="container" >
                 <img src="/images/rizalLogo.png" alt="Rizal Logo" id="logoFooter">
           </div>
 
@@ -275,7 +274,7 @@
         <!-- Grid column -->
 
         <!-- Grid column -->
-        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4 ms-3">
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4" id="footerHeading">
             Visit
@@ -290,20 +289,20 @@
         <!-- Grid column -->
 
         <!-- Grid column -->
-        <div class="col-md-3 col-lg-2 col-xl-2 mb-4">
+        <div class="col-md-6 col-lg-3 col-xl-2 mb-4">
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4 " id="footerHeading">
             Contact
           </h6>
           <p class="text-left" id="footerInfo" >
-            (02) 84511594
+            (02) 84511594<br>
             contact@rizallawoffice.com
           </p>
         </div>
         <!-- Grid column -->
 
         <!-- Grid column -->
-        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-md-0 mb-4 ms-5">
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-md-0 mb-4">
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4" id="footerHeading">
             Socials
@@ -336,7 +335,7 @@
   <hr class="style1">
   <!-- Copyright -->
   <div class="container text-center text-md-start mt-2">
-        <p class="text-left p-4 poweredBy">Powered by <img src="/images/lexmeetLogo.png"  alt="lexlogo" height="13" width="85"></p>
+        <p class="text-left poweredBy">Powered by <img src="/images/lexmeetLogo.png"  alt="lexlogo" height="13" width="85"></p>
 
   <div class="text-right p-4" style="background-color: rgba(0, 0, 0, 0.05);">
     <ul>
