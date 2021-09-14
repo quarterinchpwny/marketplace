@@ -41,11 +41,7 @@
             */
 
             .service-main-con{
-                background-image: url("https://media.istockphoto.com/photos/judge-gavel-with-justice-lawyers-business-woman-in-suit-or-lawyer-on-picture-id1130829509?k=20&m=1130829509&s=612x612&w=0&h=9VMWql4leRnpb53RSt9fW7-V999aUp9PnvVReSj1RBg=");
-                background-blend-mode:overlay ;
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center center;
+    
                 background-color: #d08197b7;
             }
 
@@ -73,8 +69,8 @@
             }
 
             .service-icons-con {
-                max-width: 200px;
-                max-height: 180px;
+                max-width: 150px;
+                max-height: 120px;
 
                 text-decoration: none;
             }
@@ -101,8 +97,8 @@
                 color: white;
                 font-weight: 700;
 
-                width: 250px;
-                min-width: 230px;
+                width: 230px;
+                min-width: 200px;
             }
 
             .btn-service:hover {
@@ -133,10 +129,10 @@
                             <div class = "col-xl-3 col-lg-6 col-md-6 col-xs-2 mb-4">
                                 <div class="service-card card align-items-center">
                                    <div class = "service-icons-con mb-5 mt-5">
-                                        <img src="{{ URL::to('/') }}/images/assist.png" class="card-img-top" alt="Assist">
+                                    <img src="{{ URL::to('/') }}/images/assist.png" class="card-img-top" alt="Assist">
                                    </div>
 
-                                   <div class = "service-label-holder mt-3 mb-4">
+                                   <div class = "service-label-holder mt-5 mb-4">
                                         <p class = "service-label-con text-center h4">
                                             FREE Legal <br> Assessment <br>
                                         </p>
@@ -152,10 +148,10 @@
                             <div class = "col-xl-3 col-lg-6 col-md-6 col-xs-2 mb-4">
                                 <div class="service-card card align-items-center">
                                    <div class = "service-icons-con mb-5 mt-5">
-                                        <img src="{{ URL::to('/') }}/images/consult.png" class="card-img-top" alt="Consult">
+                                    <img src="{{ URL::to('/') }}/images/consult.png" class="card-img-top" alt="Consult">
                                    </div>
 
-                                   <div class = "service-label-holder mt-3 mb-4">
+                                   <div class = "service-label-holder mt-5 mb-4">
                                     <p class = "service-label-con text-center h4">
                                         Paid Legal <br> Consultation 
                                    </p>
@@ -172,10 +168,10 @@
                             <div class = "col-xl-3 col-lg-6 col-md-6 col-xs-2 mb-4">
                                 <div class="service-card card align-items-center">
                                    <div class = "service-icons-con mb-5 mt-5">
-                                        <img src="{{ URL::to('/') }}/images/Works.png" class="card-img-top" alt="Works">
+                                    <img src="{{ URL::to('/') }}/images/Works.png" class="card-img-top" alt="Works">
                                    </div>
 
-                                   <div class = "service-label-holder mt-3 mb-4">
+                                   <div class = "service-label-holder mt-5 mb-4">
                                     <p class = "service-label-con text-center h4">
                                         FREE Legal Fee <br> Crowdsourcing and <br> Paid Legal Works <br> Escrow Delivery
                                    </p>
@@ -191,9 +187,9 @@
                             <div class = "col-xl-3 col-lg-6 col-md-6 col-xs-2 mb-4">
                                 <div class="service-card card align-items-center">
                                    <div class = "service-icons-con mb-5 mt-5">
-                                        <img src="{{ URL::to('/') }}/images/docs.png" class="card-img-top" alt="Docs">
+                                    <img src="{{ URL::to('/') }}/images/docs.png" class="card-img-top" alt="Docs">
                                    </div>
-                                   <div class = "service-label-holder mt-3 mb-4">
+                                   <div class = "service-label-holder mt-5 mb-4">
                                     <p class = "service-label-con text-center h4">
                                         Create Your Own Legal <br> Documents From <br> Hundreds of <br> Template
                                    </p>
