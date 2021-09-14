@@ -8,15 +8,6 @@
             @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Raleway:wght@500;700&display=swap');
             @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Raleway:wght@700&display=swap');
 
-
-            html{
-                width: 100%;
-                height: 100%;
-                margin: 0;
-                padding: 0;
-                overflow-x: hidden;
-            }
-
             .col-1{
                 margin: 0 !important;
                 padding: 0 !important;
@@ -33,14 +24,12 @@
             }
 
             .row{
-                width: 100%;
-                display: flex;
                 margin: 0 !important;
                 padding: 0 !important;
             }
 
             .banner-image{
-                height: 800px;
+                height: 750px;
                 background: url(images/banner-header-image.jpeg) no-repeat center;
                 background-size: cover;
                 border-style: solid;
@@ -64,7 +53,7 @@
                 height: 200px;
                 padding: 20px;
                 box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-                width: 100%;
+
             }
 
             #header-area h1{
@@ -396,7 +385,7 @@
 
             }
 
-            @media only screen and (min-width: 768px) and (max-width: 992px){
+            @media only screen and (min-width: 768px) and (max-width: 1024px){
                 /* For tablets: */
                 [class*="col-"] {
                     width: 100%;
@@ -488,6 +477,107 @@
        
             }
 
+            @media only screen and (min-width: 1024px) and (max-width: 1280px){
+
+
+                .banner-image{
+                    width: 100%;
+                    height: 615px;
+                    object-fit: fill;
+                }
+
+                #header-area{
+                    margin-top: 350px;
+                    height: 100%;
+                    padding: 10px 0px 0px 20px;
+                }
+
+                #header-area h1{
+                    font-size: 36px;
+                 }
+
+                #header-area p{
+                    font-size: 20px;
+                }
+
+                #login_form{
+                    width: 340px;
+                    margin-top: 25px;
+                }
+
+                #login_title{
+                    font-size: 22px;
+                    padding-top: 0px;
+                }
+
+                #logo_icon{
+                    width: 50%;
+                }
+
+                #login_field{
+                    font-size: 12px;
+                    padding: 6px;
+                    width: 100%;
+                }
+
+                .input-group{
+                    padding: 5px 10px;
+                    width: 78%;
+                }
+
+                #login_remember{
+                    font-size: 12px;
+                    padding-left: 45px;
+                }
+
+                #login_forgot{
+                    font-size: 12px;
+                    padding-left: 60px;
+                }
+
+                #login_social{
+                    height: 40px;
+                    padding-top: 10px;
+                    text-align: center;
+                    font-size: 12px;
+                    width: 70%;
+                }
+
+                #iconsg{
+                    width: 20%;
+
+                }
+                #iconsf{
+                    width: 18%;
+                }
+
+                .break-line p{
+                    padding: 5px 0px 0px 0px;
+                    font-size: 9px;
+                }
+
+                #login_notice{
+                    font-size: 16px;
+                }
+
+                #login_sign_up{
+                    font-size: 16px;
+                }
+
+                #powered{
+                    padding-top: 30px;
+                    font-size: 12px;
+                }
+
+                #login_button{
+                    width: 100px;
+                    height: 30px;
+                    font-size: 14px;
+                }
+       
+            }
+
+
         </style>
     </head>
 
@@ -511,14 +601,14 @@
 
                         <div>
                             <img class="img-fluid" src="images/Logo2.png" alt="logo2" width="50px"> 
-                            <img class="img-fluid" src="images/Logo1.png" alt="logo1" width="250px">  
+                            <img id="logo_icon" class="img-fluid" src="images/Logo1.png" alt="logo1" width="250px">  
                         </div>
 
                         <br>
                         
                         <div id="social_icons">
-                            <a id="login_social" href="#" class="btn btn-primary btn-md" style="padding-left: 2px;"> <img src="images/google.png" alt="" style="padding-left: 10px; padding-right: 5px;" width="55px">Login with Google</a>
-                            <a id="login_social" href="#" class="btn btn-primary btn-md" style="padding-left: 2px;"> <img src="images/facebook.png" alt="" style="padding-left: 10px; padding-right: 5px;" width="47px">Login with Facebook</a>
+                            <a id="login_social" href="#" class="btn btn-primary btn-md" style="padding-left: 2px;"> <img id="iconsg" src="images/google.png" alt="" style="padding-left: 10px; padding-right: 5px;" width="55px">Login with Google</a>
+                            <a id="login_social" href="#" class="btn btn-primary btn-md" style="padding-left: 2px;"> <img id="iconsf" src="images/facebook.png" alt="" style="padding-left: 10px; padding-right: 5px;" width="47px">Login with Facebook</a>
                         </div>
 
                         <div class="break-line"> 
