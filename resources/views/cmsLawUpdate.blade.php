@@ -63,6 +63,10 @@
                     </tr>
                   </tbody>
                 </table>
+                <div class="row">
+                  <div class="col-2">
+                    <a href="{{url ('/addNewPostLawUpdate')}}"><button type="button" class="btn text-white" style = "background-color: #9D71BC;">Add New Update</button></a>
+                  </div>
               </div>
         </div>       
 
