@@ -159,7 +159,7 @@ input::placeholder {
 }
 .practicesRow{
     position: relative;
-    bottom: 400px;
+    bottom: 200px;
 }
 .areasHolderServices{
     position: relative;
@@ -493,6 +493,7 @@ $phones: 600px;
         display: none;
     }
     #buttonStart{
+        display: hidden ;
         position: relative;
         bottom: 300px;
     }

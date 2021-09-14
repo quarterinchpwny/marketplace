@@ -31,14 +31,14 @@
      @include('layouts.nav', ['from' => 'app'])
         @yield('content')
   </div>
-  <main class="py-0">
-            @yield('signUp')
-            @yield('Services')
-            @yield('PracticeAreas')
-            @yield('LawUpdates')
-            @yield('EverydayLaw')
-            @yield('Footer')
-      </main> 
-  
+  <div id="body">
+      @include('layouts.signUp', ['from' => 'app'])
+      @include('layouts.services', ['from' => 'app'])
+      @include('layouts.practiceAreas', ['from' => 'app'])
+      @include('layouts.lawUpdates', ['from' => 'app'])
+      @include('layouts.everydayLaw', ['from' => 'app'])
 </body>
+<div id="footer py-0">
+      @include('layouts.footer', ['from' => 'app'])
+</div>
 </html>

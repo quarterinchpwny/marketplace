@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Public Routes
-Route::get('/', [App\Http\Controllers\AppController::class, 'index'])->name('home');
+Route::get('/', [App\Http\Controllers\AppController::class, 'index'])->name('app');
 
 Route::middleware(['guest'])->group(function () {
   Route::get('login', [App\Http\Controllers\LoginController::class, 'index'])->name('login');
@@ -34,7 +34,7 @@ Route::middleware(['auth'])->group(function () {
 });
 
 Route::get('/Masculine', function(){
-  return view('layouts.home');
+  return view('layouts.app');
 }); 
 
 

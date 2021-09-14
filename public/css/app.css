@@ -11442,7 +11442,7 @@ input::placeholder {
 
 .practicesRow {
   position: relative;
-  bottom: 400px;
+  bottom: 200px;
 }
 
 .areasHolderServices {
@@ -11799,6 +11799,7 @@ body {
   }
 
   #buttonStart {
+    display: hidden;
     position: relative;
     bottom: 300px;
   }
