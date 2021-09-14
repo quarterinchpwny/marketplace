@@ -8,3 +8,4 @@
 
 @include('feminine-layouts.header')
 @include('feminine-layouts.banner-header')
+@include('feminine-layouts.services')

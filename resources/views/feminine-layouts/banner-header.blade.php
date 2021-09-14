@@ -59,14 +59,14 @@
 
             #header-area h1{
                 font-family: 'Libre Baskerville';
-                font-size: 50px;
+                font-size: 45px;
                 text-shadow: 2px 2px 5px grey;
                 color: #733657;
             }
 
             #header-area p{
                 font-family: 'Raleway';
-                font-size: 24px;
+                font-size: 20px;
                 color: #641F43;
                 padding-right: 15px;
             }
@@ -84,6 +84,7 @@
                 box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
                 width: 530px;
                 margin-top: 30px;
+                margin-left: 15%;
             }
 
             /* Log-in/Sign-up CSS */
@@ -328,6 +329,10 @@
                     font-size: 10px;
                 }
 
+                .aside{
+                    margin-left: 0%;
+                }
+
                 #login_form{
                     width: 100%;
                     margin-top: 15px;
@@ -422,6 +427,10 @@
                     font-size: 18px;
                 }
 
+                .aside{
+                    margin-left: 0%;
+                }
+
                 #login_form{
                     width: 100%;
                     margin-top: 25px;
@@ -510,6 +519,10 @@
                     font-size: 20px;
                 }
 
+                .aside{
+                    margin-left: 0%;
+                }
+
                 #login_form{
                     width: 370px;
                     margin-top: 25px;
@@ -588,7 +601,7 @@
             }
 
 
-            @media only screen and (min-width: 1280px){
+            @media  screen and (min-width: 1280px) and (max-width: 1480px){
                 
                 .banner-image{
                     width: 100%;
@@ -606,9 +619,17 @@
                 }
 
                 .aside{
-                    margin-left: 15%;
+                    margin-left: 0%;
                 }
 
+            }
+
+            @media  screen and (min-width: 1480px){
+                
+                #social_icons p {
+                    display: none;
+                }
+                
             }
 
 
@@ -628,56 +649,58 @@
         
                 <div class="col-1"></div>
                 
-                <div id="login-container" class="col-3 right">
-                    <div id="login_form" class="aside">
+                <div id="login-container" class="col-2 right">
+                    <form action="" method="post">
+                        <div id="login_form" class="aside">
+                            <div id="login_title"><p>Welcome to</p></div>
 
-                        <div id="login_title"><p>Welcome to</p></div>
+                            <div>
+                                <img class="img-fluid" src="images/Logo2.png" alt="logo2" width="50px"> 
+                                <img id="logo_icon" class="img-fluid" src="images/Logo1.png" alt="logo1" width="250px">  
+                            </div>
 
-                        <div>
-                            <img class="img-fluid" src="images/Logo2.png" alt="logo2" width="50px"> 
-                            <img id="logo_icon" class="img-fluid" src="images/Logo1.png" alt="logo1" width="250px">  
+                            <br>
+
+                            <div id="social_icons">
+                                <a id="login_social" href="#" class="btn btn-primary btn-md" style="padding-left: 2px;"> <img id="iconsg" src="images/google.png" alt="" style="padding-left: 10px; padding-right: 5px;" width="55px">Login with Google</a> <p> </p>
+                                <a id="login_social" href="#" class="btn btn-primary btn-md" style="padding-left: 2px;"> <img id="iconsf" src="images/facebook.png" alt="" style="padding-left: 10px; padding-right: 5px;" width="47px">Login with Facebook</a>
+                            </div>
+
+                            <div class="break-line"> 
+                                <p>___________________________________ or ____________________________________</p>
+                            </div>
+
+                            <div class="input-group">
+                                <input id="login_field" type="text" class="" placeholder="Email" aria-label="Email">
+                            </div>
+
+                            <div class="input-group">
+                                <input id="login_field" type="text" class="" placeholder="Password" aria-label="Password">
+                            </div>
+
+                            <div id="login_remember" class="form-check justify-content-start text-start">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Remember Me
+                                    <a id="login_forgot" href="#" class="text-decoration-none">Forgot Password</a>
+                                </label>
+                            </div>
+
+                            <div>
+                                <a id="login_button" href="#login" class="btn btn-primary btn-md" >Log in</a>
+                            </div>
+
+                            <div>
+                                <p id="login_notice" >Don't have an account yet? <a id="login_sign_up" href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#signup">Sign up</a></p>
+                            </div>   
+
+                            <div id="powered">
+                                Powered by <img src="images/power1.png" alt="" width="100px" >
+                            </div>
+
                         </div>
-
-                        <br>
-                        
-                        <div id="social_icons">
-                            <a id="login_social" href="#" class="btn btn-primary btn-md" style="padding-left: 2px;"> <img id="iconsg" src="images/google.png" alt="" style="padding-left: 10px; padding-right: 5px;" width="55px">Login with Google</a> <p> </p>
-                            <a id="login_social" href="#" class="btn btn-primary btn-md" style="padding-left: 2px;"> <img id="iconsf" src="images/facebook.png" alt="" style="padding-left: 10px; padding-right: 5px;" width="47px">Login with Facebook</a>
-                        </div>
-
-                        <div class="break-line"> 
-                            <p>___________________________________ or ____________________________________</p>
-                        </div>
-
-                        <div class="input-group">
-                            <input id="login_field" type="text" class="" placeholder="Email" aria-label="Email">
-                        </div>
-
-                        <div class="input-group">
-                            <input id="login_field" type="text" class="" placeholder="Password" aria-label="Password">
-                        </div>
-
-                        <div id="login_remember" class="form-check justify-content-start text-start">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                            <label class="form-check-label" for="flexCheckChecked">
-                                Remember Me
-                                <a id="login_forgot" href="#" class="text-decoration-none">Forgot Password</a>
-                            </label>
-                        </div>
-
-                        <div>
-                            <a id="login_button" href="#login" class="btn btn-primary btn-md" >Log in</a>
-                        </div>
-
-                        <div>
-                            <p id="login_notice" >Don't have an account yet? <a id="login_sign_up" href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#signup">Sign up</a></p>
-                        </div>   
-
-                        <div id="powered">
-                            Powered by <img src="images/power1.png" alt="" width="100px" >
-                        </div>
-
-                    </div>
+                    </form>
+                    
                 </div>
 
             </div>
