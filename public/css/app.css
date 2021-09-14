@@ -11442,7 +11442,7 @@ input::placeholder {
 
 .practicesRow {
   position: relative;
-  bottom: 200px;
+  bottom: 400px;
 }
 
 .areasHolderServices {
@@ -11666,9 +11666,11 @@ body {
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s opacity 0, 5s;
+  pointer-events: none;
 }
 
-.bg-active {
+.modal-bg.show {
+  pointer-events: auto;
   visibility: visible;
   opacity: 1;
 }

@@ -9,9 +9,9 @@ menu_btn.addEventListener("click", () => {
   container.classList.toggle("active-cont");
 });
 
-var buttonStart = document.querySelector('#buttonStart');
+var buttonStart = document.getElementById('#buttonStart');
 var modalBg = document.querySelector('.modal-bg');
 
 buttonStart.addEventListener('click',function(){
-  modalBg.classList.add('bg-active');
+  modalBg.classList.add('show');
 });

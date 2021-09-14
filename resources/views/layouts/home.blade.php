@@ -227,7 +227,7 @@ At that time, text message or e-mail message, as it was not yet widely used and 
 @endsection
 @section('EverydayLaw')
 <!-- Everyday Law -->
-<div class="container-fluid" id="white-rect"><p id="headerStyleBlue">LAW UPDATES</p></div>
+<div class="container-fluid" id="white-rect"><p id="headerStyleBlue">Everyday Law</p></div>
 
 <div class="container-fluid" id="frameWhite">
 
