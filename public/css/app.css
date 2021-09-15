@@ -11350,6 +11350,7 @@ textarea.form-control-lg {
 }
 
 #buttonStart {
+  display: none;
   font-family: "Poppins", sans-serif;
   font-size: 18px;
   color: white;
@@ -11360,7 +11361,6 @@ textarea.form-control-lg {
   border-radius: 6px;
   width: 260px;
   height: 55px;
-  display: block;
   width: 100%;
 }
 
@@ -11442,7 +11442,7 @@ input::placeholder {
 
 .practicesRow {
   position: relative;
-  bottom: 200px;
+  bottom: 220px;
 }
 
 .areasHolderServices {
@@ -11671,15 +11671,18 @@ body {
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s opacity 0, 5s;
-  pointer-events: none;
-}
-
-.modal-bg.show {
   pointer-events: auto;
-  visibility: visible;
-  opacity: 1;
+}
+.modal-bg body {
+  overflow: hidden;
 }
 
+/*
+.modal-bg.active{
+    pointer-events: auto;
+    visibility: visible;
+    opacity: 1;
+}*/
 .modal {
   position: relative;
   background-color: #ffffff;
@@ -11700,9 +11703,15 @@ body {
 }
 @media screen and (max-width: 768px) {
   .modal {
-    height: 500px;
-    width: 50%;
+    height: 400px;
+    width: 70%;
   }
+}
+
+#modal-close {
+  background-color: #ffffff;
+  border: none;
+  position: relative;
 }
 
 #buttonModalLog {
@@ -11752,6 +11761,30 @@ body {
   #everydayLawVid {
     padding-top: 50px;
   }
+
+  #frameWhiteServices {
+    height: 350px;
+    background-color: white;
+    background-color: white;
+    position: relative;
+    bottom: 300px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    height: auto;
+  }
+
+  #frameWhiteBig {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: auto;
+  }
+
+  .practicesRow {
+    position: relative;
+    bottom: 100px;
+  }
 }
 @media screen and (max-width: 600px) {
   #headerLogo {
@@ -11792,6 +11825,11 @@ body {
     height: auto;
   }
 
+  .practicesRow {
+    position: relative;
+    bottom: 100px;
+  }
+
   #frameWhiteBig {
     display: flex;
     flex-direction: column;
@@ -11804,7 +11842,7 @@ body {
   }
 
   #buttonStart {
-    display: hidden;
+    display: block;
     position: relative;
     bottom: 300px;
   }

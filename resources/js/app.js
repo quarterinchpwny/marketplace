@@ -9,9 +9,12 @@ menu_btn.addEventListener("click", () => {
   container.classList.toggle("active-cont");
 });
 
-var buttonStart = document.getElementById('#buttonStart');
+var buttonStart = document.querySelector('#buttonStart');
 var modalBg = document.querySelector('.modal-bg');
 
-buttonStart.addEventListener('click',function(){
-  modalBg.classList.add('show');
+buttonStart.addEventListener("click", () =>{
+  modalBg.classList.add("show");
 });
+function myFunction() {
+  alert("Hello! I am an alert box!");
+}
