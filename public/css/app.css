@@ -11487,7 +11487,8 @@ input::placeholder {
 
 #logoFooter {
   position: relative;
-  right: 100px;
+  align-items: center;
+  max-width: 100%;
 }
 
 #areasHolder {
@@ -11607,6 +11608,10 @@ body {
   background-color: #ffffff;
   height: 100%;
   width: 100%;
+}
+
+* {
+  outline: 1px solid red;
 }
 
 #frameWhiteBig {
@@ -11825,4 +11830,24 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .text-left {
+    text-align: center !important;
+  }
+
+  .text-right {
+    text-align: center !important;
+  }
+
+  .spacing {
+    margin-bottom: 0% !important;
+  }
+}
+#powby {
+  position: relative;
+  align-items: center;
+  max-width: 100%;
 }

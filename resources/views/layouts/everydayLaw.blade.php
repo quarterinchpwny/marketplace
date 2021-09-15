@@ -1,8 +1,8 @@
-<div class="container-fluid" id="white-rect"><p id="headerStyleBlue">Everyday Law</p></div>
+<div class="container-fluid" id="white-rect"><p id="headerStyleBlue">EVERYDAY LAW</p></div>
 
 <div class="container" id="frameWhite">
 
-    <div class="col-md-12 col-lg-6">
+    <div class="col-sm-12 col-md-12 col-lg-6">
         <div class="card-body evrcard">
 
                  <h5 class="card-title cardTitle evrcardfont">Co-maker ng ‘di nagbayad sa utang,
@@ -15,7 +15,7 @@
         </div>
     </div>
 
-    <div class="col-md-12 col-lg-6">
+    <div class="col-sm-12 col-md-12 col-lg-6">
           <img src="/images/eLaw.png"  alt="video" id="everydayLawVid">
     </div>
 </div>
