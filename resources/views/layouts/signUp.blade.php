@@ -54,12 +54,12 @@
             </label>
         </div>
         </div>
-        <div class="col-sm-4 forgotPass">
+        <div class="col-sm-4 justify-content-center forgotPass">
               <a href="url"><strong>Forgot Password?</strong></a>
         </div>
 
         <div class="col-sm-7 signupButton">
-         <a href="url">Don't have an account yet? <strong>Sign Up.</strong></a>
+         <a href="url"><H4>Don't have an account yet? <strong>Sign Up.</strong></H4></a>
         </div>
 
         <div class="buttonsSignin">

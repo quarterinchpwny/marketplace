@@ -11487,7 +11487,8 @@ input::placeholder {
 
 #logoFooter {
   position: relative;
-  right: 100px;
+  align-items: center;
+  max-width: 100%;
 }
 
 #areasHolder {
@@ -11588,7 +11589,6 @@ input::placeholder {
 .poweredBy {
   position: relative;
   top: 85px;
-  left: 25px;
   color: #5893D4;
 }
 
@@ -11600,7 +11600,7 @@ hr.style1 {
 
 .contentsFooter {
   position: relative;
-  top: 100px;
+  top: 25px;
 }
 
 body {
@@ -11858,14 +11858,49 @@ body {
     flex-direction: column;
   }
 }
-.containerfooterb {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+@media (max-width: 768px) {
+  .text-left {
+    text-align: center !important;
+  }
+
+  .text-right {
+    text-align: center !important;
+  }
+
+  .spacing {
+    margin-bottom: 0% !important;
+  }
+}
+#powby {
+  position: relative;
   align-items: center;
+  max-width: 100%;
 }
 
-.registerBody {
-  position: relative;
-  top: 0px;
+.ftr {
+  height: auto;
+  background-color: #092059;
+}
+
+.disc {
+  color: white;
+  font-size: 16px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .text-left {
+    text-align: center !important;
+  }
+
+  .text-right {
+    text-align: center !important;
+  }
+
+  .spacing {
+    margin-bottom: 0% !important;
+  }
+
+  .logocenter {
+    text-align: center;
+  }
 }
