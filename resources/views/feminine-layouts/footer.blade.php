@@ -35,6 +35,7 @@
             - FFFFFF (white)
             - F1DBE8 (very light purple)
             - B8537B (light purple)
+            - D08198 (light pink)
             - B5375B (pink)
             - 733657 (dark purple)
             */
@@ -87,6 +88,15 @@
 
             .footer-others-bold-italic {
                 color: white;
+
+                -webkit-transition: all 300ms ease;
+                -moz-transition: all 300ms ease;
+                -ms-transition: all 300ms ease;
+                transition: all 300ms ease;
+            }
+
+            .footer-others-bold-italic:hover {
+                color: #D08198;
             }
         </style>
     </head>

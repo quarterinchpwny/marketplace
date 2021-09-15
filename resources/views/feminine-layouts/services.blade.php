@@ -69,8 +69,8 @@
             }
 
             .service-icons-con {
-                max-width: 150px;
-                max-height: 120px;
+                max-width: 120px;
+                max-height: 100px;
 
                 text-decoration: none;
             }
@@ -102,8 +102,11 @@
             }
 
             .btn-service:hover {
-                background-color: #D08198;
-                border: 1px solid #D08198;
+                background-color: #F1DBE8;
+                border: 1px solid #B5375B;
+                border-radius: 10px;
+
+                color: #B5375B;
 
             }
 
@@ -114,14 +117,14 @@
 
         <div class="service-header-holder align-content-center pd-1">
             <hr class="service-header-line border-1 mx-auto">
-            <div class="service-header card-title text-center h2 mt-3 pb-3"> Our Services </div>
+            <div class="service-header card-title text-center h2 mt-3 pb-3"> OUR SERVICES </div>
         </div>
 
         <!-- Our Services -->
         <div class="service-main-con position-relative service-container-fluid py-5">       
 
 
-                <section class="p-5">
+                <section class="p-3">
                     <div class = "service-container">
                         <div class = "row justify-content-center mb-3">
 
