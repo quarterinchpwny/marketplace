@@ -41,6 +41,7 @@ Route::middleware(['auth'])->group(function () {
   Route::get('addBanner', [App\Http\Controllers\DashboardController::class, 'addBanner'])->name('addBanner');
   Route::get('cmsRegistration', [App\Http\Controllers\DashboardController::class, 'registration'])->name('cmsRegistration');
   Route::get('cmsPrivacyPolicy', [App\Http\Controllers\DashboardController::class, 'privacyPolicy'])->name('cmsPrivacyPolicy');
+  Route::get('addNewPrivacyPolicy', [App\Http\Controllers\DashboardController::class, 'addPrivacyPolicy'])->name('addNewPrivacyPolicy');
   Route::get('cmsLawyersBlog', [App\Http\Controllers\DashboardController::class, 'lawyersBlog'])->name('cmsLawyersBlog');
   Route::get('addNewPost', [App\Http\Controllers\DashboardController::class, 'addPost'])->name('addNewPost');
   Route::get('addNewPostLawUpdate', [App\Http\Controllers\DashboardController::class, 'addPostLawUpdate'])->name('addNewPostLawUpdate');

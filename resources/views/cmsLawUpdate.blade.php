@@ -30,11 +30,7 @@
                       <td>Cell</td>
                       <td>Cell</td>
                       <td><div class="btn">
-<<<<<<< HEAD
                       <button type="button" class="btn btn-secondary"><i class="fas fa-eye"></i> View</button>
-=======
-                        <button type="button" class="btn btn-secondary"><i class="fas fa-eye"></i> View</button>
->>>>>>> af70a4d22629e675ad704bdb98f2c76ca321c828
                         <button type="button" class="btn btn-secondary"><i class="fas fa-pencil-alt"></i> Edit</button>
                         <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i> Delete</button>
                       </div></td>
@@ -46,11 +42,7 @@
                       <td>Cell</td>
                       <td>Cell</td>
                       <td><div class="btn">
-<<<<<<< HEAD
                       <button type="button" class="btn btn-secondary"><i class="fas fa-eye"></i> View</button>
-=======
-                        <button type="button" class="btn btn-secondary"><i class="fas fa-eye"></i> View</button>
->>>>>>> af70a4d22629e675ad704bdb98f2c76ca321c828
                         <button type="button" class="btn btn-secondary"><i class="fas fa-pencil-alt"></i> Edit</button>
                         <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i> Delete</button>
                       </div>
@@ -63,11 +55,7 @@
                       <td>Cell</td>
                       <td>Cell</td>
                       <td><div class="btn">
-<<<<<<< HEAD
                       <button type="button" class="btn btn-secondary"><i class="fas fa-eye"></i> View</button>
-=======
-                        <button type="button" class="btn btn-secondary"><i class="fas fa-eye"></i> View</button>
->>>>>>> af70a4d22629e675ad704bdb98f2c76ca321c828
                         <button type="button" class="btn btn-secondary"><i class="fas fa-pencil-alt"></i> Edit</button>
                         <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i> Delete</button>
                       </div></td>
@@ -75,11 +63,7 @@
                     </tr>
                   </tbody>
                 </table>
-                <div class="row">
-                  <div class="col-5">
-                    <a href="{{url ('/addNewPostLawUpdate')}}"><button type="button" class="btn text-white" style = "background-color: #9D71BC;">Add New Law Update</button></a>
-                  </div>
-              </div>
+                
         </div>       
 
 @endsection
