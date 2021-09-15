@@ -1,0 +1,595 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@charset "UTF-8";
+
+/*!
+ * Bootstrap v5.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+ :root {
+    --bs-blue: #3490dc;
+    --bs-indigo: #6574cd;
+    --bs-purple: #9561e2;
+    --bs-pink: #f66d9b;
+    --bs-red: #e3342f;
+    --bs-orange: #f6993f;
+    --bs-yellow: #ffed4a;
+    --bs-green: #38c172;
+    --bs-teal: #4dc0b5;
+    --bs-cyan: #6cb2eb;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+    --bs-primary: #3490dc;
+    --bs-secondary: #6c757d;
+    --bs-success: #38c172;
+    --bs-info: #6cb2eb;
+    --bs-warning: #ffed4a;
+    --bs-danger: #e3342f;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-primary-rgb: 52, 144, 220;
+    --bs-secondary-rgb: 108, 117, 125;
+    --bs-success-rgb: 56, 193, 114;
+    --bs-info-rgb: 108, 178, 235;
+    --bs-warning-rgb: 255, 237, 74;
+    --bs-danger-rgb: 227, 52, 47;
+    --bs-light-rgb: 248, 249, 250;
+    --bs-dark-rgb: 33, 37, 41;
+    --bs-white-rgb: 255, 255, 255;
+    --bs-black-rgb: 0, 0, 0;
+    --bs-body-rgb: 33, 37, 41;
+    --bs-font-raleway: "Raleway";
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --bs-body-font-size: 0.9rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.6;
+    --bs-body-color: #212529;
+    --bs-body-bg: #f8fafc;
+    --bs-dirtywhite-bg: #EAE5E1;
+}
+/* CSS for general typography */
+.display-1{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    padding: 30px 0 30px 0;
+    font-size: 3rem;
+}
+.display-2{
+    padding:30px 0 0 230px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #333A44;
+}
+
+.display-3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+.display-4{
+    font-family: 'Raleway', sans-serif;
+    font-weight:600;
+    font-size:2rem;
+}
+.display-5{
+    font-weight:200;
+    font-size:2rem;
+}
+.display-6,.card-title{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center !important;
+    padding-top:15px;
+    color:#333A44;
+}
+.display-7{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #000000;
+}
+h1, h2{
+    font-family: 'Raleway', sans-serif;
+}
+p{
+    font-family: 'Raleway', sans-serif;
+}
+/*NAVIGATION */
+.navbar{
+    background-color: #EAE5E1;
+}
+.navbar-custom {
+    height: 70px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    color: #6E6D6E;
+}
+.navbar-nav {
+    text-align: left;
+    justify-content: end;
+    padding: 0;
+    margin: 0;
+    background-color: #EAE5E1;
+}
+.nav-logo {
+    padding-bottom: 6px;
+}
+.nav-brand{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #333A44;
+}
+.nav-link {
+    padding: 10px;
+    margin: 10px;
+    color:black;
+}
+.nav-link:hover {
+    color: #7C9CAB!important;
+}
+a:focus {
+    color: #929ea3!important;
+    font-weight: bold!important; 
+}
+
+/*BANNER AND LOG IN*/
+.padding-0{
+padding-right:0;
+padding-left:0;
+}
+/* BANNER */
+.carousel-caption .display-1{
+    margin: 0;
+    padding: 0;
+    text-align: start;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+}
+.carousel-caption .display-2{
+    color: white;
+    text-align: start;
+    margin-top: 0;
+    padding-left:20px;
+    font-size: 2rem;
+    font-weight: 300;
+}
+.banner-login{
+    background-color: #FAF8F5;
+}
+/* LOG IN */
+.login{
+    font-family: 'Raleway', sans-serif;
+    background-color: #FAF8F5;
+}
+.logo{
+    text-align: center;
+    padding-top: 10%;
+}
+#login_field{
+    background: #FCFCFC;
+    border: 2px solid #7C9CAB;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight:300;
+    height: 45px;
+}
+.input-group{
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.sm-screen-input-group{
+    width: 90%;
+    margin: 0 auto;
+}
+.form-check{
+    padding-left: 18%;
+    padding-top: 10px;
+    color: #6E6D6E;
+}
+.form-check-input{
+    background-color: #FAF8F5;
+    border: solid 1px #7C9CAB;
+}
+.form-check-input:checked{
+    border: solid 1px #7C9CAB;
+    background-color: #7C9CAB;
+}
+.login-button .btn{
+    margin-top: 30px;
+    height: 45px;
+    width: 74%;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+.sm-screen-login-button .btn{
+    margin-top: 15px;
+    height: 45px;
+    width: 90%;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+.login_forgot a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #333A44;
+}
+a:hover {
+    color: #7C9CAB;
+}
+.login-socials .btn{
+    margin-top: 15px;
+    padding-left: 30px;
+    height: 45px;
+    width: 74%;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+}   
+.sm-screen-login-socials .btn{
+    margin-top: 15px;
+    height: 45px;
+    width: 90%;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+#login_notice{
+    font-size: 20px;
+    font-weight: 300;
+    color: #6E6D6E;
+}
+#login_create{
+    margin-top:10;
+    font-size: 20px;
+    font-weight: 700;
+    color: #555b64;
+}
+#login_create:hover {
+    color: black;
+}
+#powered{
+    color: black;
+    padding-top: 60px;
+    padding-bottom: 5%;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/*OUR SERVICES*/
+#ourservices {
+    background-color: #EAE5E1;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+.card {
+    background-color: #FAF8F5;
+    margin-bottom: 40px;
+    width: 18rem;
+    border-radius: 25px;;
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-top: 30px;
+}
+.card-body {
+    padding-left: 20px;
+}
+.card-body p{
+    height: 99px;
+    color: #6E6D6E;
+    font-size: 1rem;
+}
+.img-logo {
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+.os-title {
+    padding: 60px 0 10px 0;
+    font-size: 55px;
+    font-weight: 700;
+}
+hr {
+    margin-top: 1px;
+    width: 15%;
+    border-top: 3px solid black;
+    margin-left: 240px;
+}
+.btn {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: #7C9CAB;
+    border: solid 2px #7C9CAB;
+    border-radius: 10px;
+}
+.btn:hover {
+    background-color: #547584;
+    border: 2px solid #7C9CAB;
+}
+
+/*LAW PRACTICE AREAS*/
+#law-practice{
+background-color: #FAF8F5;
+padding-top: 30px;
+
+}
+#areas_pics{
+    text-align: center;
+    padding-top: 30px;    
+}
+.col-3.hover{
+    transition: all 2s ease;
+}
+.areas_labels p{
+    font-weight: 600;
+    text-align: center;
+    padding-top: 15px;
+    color: #333A44;
+}
+#law-practice .h4{
+    font-weight: 600;
+}
+#areas_seemore{
+    max-width: 150px;
+    height: 45px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #7C9CAB;
+    color: #FAF8F5;
+    margin: auto;
+    border-radius: 12px;
+    margin-top: 30px;
+}
+.btn:hover{
+    color: #FAF8F5;
+}
+.zoom img {
+transition: transform .8s ease;
+padding-top:30px;
+}
+.zoom:hover img {
+transform: scale(.9);
+}
+
+
+/*FOOTER */
+.footer-top{
+    background-color: #333A44;
+    justify-content: space-around, end;
+    padding:30px 30px 30px 60px;
+    justify-content: center;
+    align-items: center;
+}
+.footer-top h4,h3,p{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+.footer-top .h1{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+.footer-bottom{
+    background-color: #292929;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Law-Updates */
+#law-updates {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #EAE5E1;
+}
+
+#law-updates-section {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) / -2);
+    margin-left: calc(var(--bs-gutter-x) / -2);
+}
+
+#law-updates-section .columns{
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+#law-updates-header {
+    width:100%;
+}
+
+#law-updates-section .columns.content #law-updates-content{
+    padding: 30px 30px;
+}
+
+#law-updates-section .columns.image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#law-updates-image {
+    display: block;
+    position: top;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+} 
+
+#law-updates-content, #law-updates-title, #law-updates-button, .display-7 {
+    padding-left: 190px;
+}
+
+#law-updates-content.p {
+    text-align: justify;
+}
+
+#law-updates-title{
+    color: #7C9CAB;
+}
+
+@media screen and (max-width: 1024px){
+    #law-updates-section {
+        flex-flow: row wrap;
+    }
+    #law-updates-alt{
+        margin: 4%;
+    }
+    #law-updates-section .columns.content #law-updates-content{
+        padding: 60px 60px;
+    }
+    #law-updates-image {
+        display: block;
+        position: top;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        height: auto;
+    }
+    #law-updates-content #law-updates-title, #law-updates-desc, #law-updates-button {
+        padding: 0;
+    }
+    #law-updates-section #law-updates-header {
+        display: block;
+        order: 1;
+        width: 100%;
+    }
+    #law-updates-section .columns.image {
+        display: block;
+        order: 2;
+        width: 100%;
+    }
+    #law-updates-section .columns.content {
+        display: block;
+        order: 3;
+        width: 100%;
+    }
+}
+
+/* Everyday Law */
+#everyday-law {
+    background-color: #EAE5E1;
+}
+
+#everyday-law-section {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-left: calc(var(--bs-gutter-x) / -2);
+}
+
+#everyday-law-section .columns{
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+#everyday-law-header {
+    width:100%;
+}
+
+#everyday-law-section .columns.content #everyday-law-content{
+    padding: 60px 60px;
+}
+#everyday-law-section .columns.image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#everyday-law-image {
+    display: block;
+    position: center;
+    max-width: 100%;
+    height: auto;
+    margin-left: 60px;
+    padding: 60px;
+}
+#everyday-law-title1 {
+    color: #7C9CAB;
+    font-weight: 800;
+}
+#everyday-law-title2{
+    color: #333A44;
+    font-weight: 800;
+}
+#everyday-law-content p, #everyday-law-button{
+    padding: 0;
+}
+@media screen and (max-width: 1024px){
+    /* #everyday-law-section {
+        flex-flow: row wrap;
+    }*/
+    #everyday-law-alt{
+        padding-left: 6%;
+    } 
+    #everyday-law-content p{
+        padding: 0;
+        margin: 0;
+    }
+    #everyday-law-button {
+        margin-bottom: 30px;
+    } 
+    #everyday-law-image {
+        display: block;
+        margin-left: auto;
+        max-width: 100%;
+        height: auto;
+        padding: 0 30px 0px 30px;
+        margin-right: 80px;
+    }
+
+    #everyday-law-section #everyday-law-header {
+        display: block;
+        order: 1;
+        width: 100%;
+    }
+    #everyday-law-section .columns.image {
+        display: block;
+        order: 2;
+        width: 100%;
+        height: auto;
+    }
+    #everyday-law-section .columns.content {
+        display: block;
+        order: 3;
+        width: 100%;
+    }
+}
+
