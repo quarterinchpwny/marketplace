@@ -24,7 +24,7 @@
   
   
   <div class="p-3 pb-md-4 mx-auto">
-      <h2 class="display-5 fw-normal text-center">Step 6 - Review your Subscription Agreement</h1>
+      <h2 class="display-5 fw-normal text-center"><b>Step 6</b> - Review your Subscription Agreement</h1>
         
           <div class="container"style="margin-top:auto">
             <div class="row align-items-center justify-content-between ">

@@ -30,7 +30,7 @@
       <div class="tracking-progress-bar__item">8</div>
     </div>
   <div class="p-3 pb-md-4 mx-auto text-center">
-      <h2 class="display-5 fw-normal">Step 1 - Choose Your Plan</h2>
+      <h2 class="display-5 fw-normal"><b>Step 1</b> - Choose Your Plan</h2>
       
     </div>
   

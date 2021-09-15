@@ -26,7 +26,7 @@
   
   
   <div class="p-3 pb-md-4 mx-auto text-center">
-      <h2 class="display-5 fw-normal">Step 3 - Select your Website Template.</h2>
+      <h2 class="display-5 fw-normal"><b>Step 3</b> - Select your Website Template.</h2>
         <div class="album py-5">
          
           <div class="container">
@@ -57,13 +57,16 @@
                     </div>
                   <a  href="#" data-bs-toggle="modal" data-bs-target="#feminine">
                     <div class="overlay "><h3>[View]</h3></div>
-                  <img class="card-img-top p-3" style="height: 34rem; display: block;" src="/images/female.png " data-holder-rendered="true">
+                  <img class="card-img-top p-3" style="height: 32rem; display: block;" src="/images/female.png " data-holder-rendered="true">
                   </a>
-                  <div class="card-body">
-                    
-                    <div class="d-flex justify-content-between align-items-center">
-                      
-                        <a type="button" class="w-100 btn btn-orange" href="{{route('step4', ['template' => 'fem'] + \Request::all())}}">Select</a>
+                  <div class="container">
+                    <div class="d-flex  flex-column">
+                      <div>
+                        <h3>Feminine</h3>
+                      </div>
+                      <div class="p-3">
+                          <a type="button" class="w-100 btn btn-orange" href="{{route('step4', ['template' => 'fem'] + \Request::all())}}">Select</a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -91,11 +94,16 @@
                     </div>
                   <a  href="#" data-bs-toggle="modal" data-bs-target="#neutral">
                     <div class="overlay "><h3>[View]</h3></div>
-                  <img class="card-img-top p-3" style="height: 34rem; display: block;" src="/images/neutral.png " data-holder-rendered="true">
+                  <img class="card-img-top p-3" style="height: 32rem; display: block;" src="/images/neutral.png " data-holder-rendered="true">
                   </a>          
-                  <div class="card-body">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <a type="button" class="w-100 btn btn-orange" href="{{route('step4', ['template' => 'neut'] + \Request::all())}}">Select</a>
+                  <div class="container">
+                    <div class="d-flex  flex-column">
+                      <div>
+                        <h3>Neutral</h3>
+                      </div>
+                      <div class="p-3">
+                          <a type="button" class="w-100 btn btn-orange" href="{{route('step4', ['template' => 'neut'] + \Request::all())}}">Select</a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -123,16 +131,18 @@
                       </div>
                     </div>
                   <a  href="#" data-bs-toggle="modal" data-bs-target="#masculine">
-
                     <div class="overlay "><h3>[View]</h3></div>
-                  <img class="card-img-top p-3" style="height: 34rem; display: block;" src="/images/masculine.png " data-holder-rendered="true">
+                  <img class="card-img-top p-3" style="height: 32rem; display: block;" src="/images/masculine.png " data-holder-rendered="true">
                   </a>              
-                  <div class="card-body">
-                    <div class="d-flex justify-content-between align-items-center">
-                        
-                        <a type="button" class="w-100 btn btn-orange" href="{{route('step4', ['template' => 'mas'] + \Request::all())}}">Select</a>
+                  <div class="container">
+                    <div class="d-flex  flex-column">
+                      <div>
+                        <h3>Masculine</h3>
+                      </div>
+                      <div class="p-3">
+                          <a type="button" class="w-100 btn btn-orange" href="{{route('step4', ['template' => 'mas'] + \Request::all())}}">Select</a>
+                      </div>
                     </div>
-                    
                   </div>
                 </div>
               </div>

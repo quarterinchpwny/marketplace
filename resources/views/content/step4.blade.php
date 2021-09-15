@@ -29,7 +29,7 @@
   
   <form class="qq">
   <div class="p-3 pb-md-4 mx-auto text-center">
-      <h2 class="display-5 fw-normal">Step 4 - Customize Your Website.</h1>
+      <h2 class="display-5 fw-normal"><b>Step 4</b> - Customize Your Website.</h1>
         <div class="container align-center" style="padding-top: 3rem;padding-bottom: 2.4rem; width:70%">
         <div class="table-responsive">
           <table class="table text-center">
