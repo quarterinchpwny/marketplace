@@ -18,11 +18,23 @@
     </div>
     <div class="row row4">
       <form method = "post" action="{{ route('addAddress.post')}}" >
+        @csrf
         <div class="form-floating mb-3">
-            @csrf 
-            <input type="text" class="form-control" id="floatingInput" placeholder="title">
+            
+            <input type="text" class="form-control" id="floatingInput" name="address" placeholder="title">
             <label for="floatingInput">Address</label>
         </div>
+        <div class="form-floating mb-3">
+             
+            <input type="text" class="form-control" id="floatingInput1" name="telephone" placeholder="title">
+            <label for="floatingInput1">Telephone</label>
+        </div>
+        <div class="form-floating mb-3">
+             
+            <input type="text" class="form-control" id="floatingInput2" name="email" placeholder="title">
+            <label for="floatingInput2">Email</label>
+        </div>
+        <button type="submit"> Submit </button>
       </form>
     </div>
   </div>

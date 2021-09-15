@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Contact;
 
 class DashboardController extends Controller
 {
@@ -90,7 +91,8 @@ class DashboardController extends Controller
     }
     public function storeAddress(Request $request)
     {
-        return $request->all();
+        Contact::create($request->all());
+        return redirect(route('cmsContactUs'))->withSuccess('Success');
     } 
 
     public function domainSettings()

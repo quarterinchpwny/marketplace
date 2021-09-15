@@ -8,6 +8,11 @@
           <button type="button" class="btn text-white addnewbtn" style = "background-color: #9D71BC;"> Preview</button>       
         </div>
     </div>
+    @if (session('success'))
+        <div class="alert alert-success" role="alert">
+            {{ session('success') }}
+    </div>
+    @endif
     <div class="row2 container-fluid"  style="height: 580px; background-color:#F8FFFE; ">
         <div class="accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item">
