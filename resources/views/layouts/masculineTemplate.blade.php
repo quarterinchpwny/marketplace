@@ -1,3 +1,13 @@
+<!-- CSRF Token -->
+<meta name="csrf-token" content="{{ csrf_token() }}">
+  <title>LexWeb-Masculine</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Fonts -->
+<link rel="dns-prefetch" href="//fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;400&family=Poppins:wght@200;600&family=Roboto&display=swap" rel="stylesheet">
 <!-- Header and Navbar -->
 <div class="container-fluid" id="topContent">
       <a href="/Masculine">
@@ -15,6 +25,7 @@
   function closeModal(){
     document.querySelector(".modal-bg").style.visibility = "hidden";
     document.querySelector(".modal-bg").style.opacity = 0;
+    document.querySelector("body").style.overflow = "scroll";
   }
 </script>
  <!-- ALERT -->
@@ -38,7 +49,7 @@
 
      
 
-<form action="{{ route('post.login') }}" method="POST">
+<form class ="formModal" action="{{ route('post.login') }}" method="POST">
   @csrf
 <div class="container" id="lblue-signup">
     <!-- Sign up -->
@@ -84,7 +95,7 @@
 </div>
 <div class="modal-bg">
   
-<form action="{{ route('post.login') }}" method="POST">
+<form class ="formModal" action="{{ route('post.login') }}" method="POST">
   @csrf
     <div class="modal">
       <div class="modal-header">
@@ -102,16 +113,18 @@
             <a href="url"><strong>Forgot Password?</strong></a>
         </div>
         <button type="submit" id="buttonModalLog">Log in</button>
+        </form>
         <div class="strike"><span>or</span></div>
         <button type="button" id="buttonModal"><img src="/images/facebookLogo.svg" alt="facebook logo" height=25px width=25px>&nbsp Sign in with Facebook</button>
         <button type="button" id="buttonModal"><img src="/images/googleLogo.svg" alt="google logo" height=25px width=25px>&nbsp Sign in with Google</button>
         <button type="button" id="buttonModal"><img src="/images/appleLogo.svg" alt="apple logo" height=25px width=25px>&nbsp Sign in with ios</button>
         <a href="url">Don't have an account yet? <strong>Sign Up.</strong></a>
       </div>
-</form>
-</div>
-</div>
 
+</div>
+</div>
+<!-- Sign up -->
+<!-- Services -->
 <div class="container-fluid" id="blue-rect"><p id="headerStyleWhite">OUR SERVICES</p>
 
 </div>
@@ -165,7 +178,8 @@
 
 </div>
 </div>
-
+<!-- Services -->
+<!-- Practice Areas -->
 <div class="container-fluid" id="white-rect">
     <p id="headerStyleBlue">PRACTICE AREAS</p>
 </div>
@@ -229,7 +243,8 @@
                 </div>
                 </div>
 </div>
-
+<!-- Practice Areas -->
+<!-- Law Updates -->
 <div class="container-fluid" id="blue-rect"><p id="headerStyleWhite">LAW UPDATES</p></div>
 
     <div class="container" id="frameWhite">
@@ -250,7 +265,7 @@
         </div>
     </div>
 
-    <div class="container-fluid" id="white-rect"><p id="headerStyleBlue">Everyday Law</p></div>
+    <div class="container-fluid" id="white-rect"><p id="headerStyleBlue">EVERYDAY LAW</p></div>
 
 <div class="container" id="frameWhite">
 
@@ -271,102 +286,114 @@
           <img src="/images/eLaw.png"  alt="video" id="everydayLawVid">
     </div>
 </div>
-
+<!-- Law Updates -->
 <!-- Footer -->
 
-<footer class="text-center text-lg-start text-light pt-0" style="background-color: #092059;">
+<footer class="ftr text-center text-lg-start text-light pt-0"">
 
-  <!-- Section: Links  -->
-  <section class="footerbody">
-    <div class="container text-md-start mt-2">
-      <!-- Grid row -->
-      <div class="row mt-3 contentsFooter">
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
-          <!-- Content -->
-          <div class="container" >
-                <img src="/images/rizalLogo.png" alt="Rizal Logo" id="logoFooter">
-          </div>
+            <!-- Section: Links  -->
+            <section class="footerbody">
+                <div class="container text-md-start">
+                <!-- Grid row -->
+                    <div class="row contentsFooter">
+                        <!-- Grid column -->
 
-          <p>
-           Lorem ipsum dolor sit amet
-          </p>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                             <!-- Content -->
+                                <img src="/images/rizalLogo.png" alt="Rizal Logo" id="logoFooter">
+                                <p class="text-center">Lorem ipsum dolor sit amet</p>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 mx-auto mb-4 spacing">
+                             <!-- Links -->
+                                <h6 class="text-left text-uppercase fw-bold mb-4 spacing" id="footerHeading">
+                                    Visit
+                                </h6>
+                                <p class="text-left" id="footerInfo">
+                                    Unit 608, 6th floor,<br>
+                                    AIC Burgundy Empire Tower
+                                    ADB Avenue corner Garnet Road
+                                    Ortigas Center, Pasig City
+                                </p>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-4 spacing">
+                             <!-- Links -->
+                                <h6 class="text-left text-uppercase fw-bold mb-4 spacing" id="footerHeading">
+                                    Contact
+                                </h6>
+                                <p class="text-left" id="footerInfo" >
+                                    (02) 84511594<br>
+                                    contact@rizallawoffice.com
+                                </p>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 pb-3">
+                                <!-- Links -->
+                                    <h6 class="text-left text-uppercase fw-bold mb-4 spacing" id="footerHeading">
+                                        Socials
+                                    </h6>
+                                <div class="logocenter">
+                                    <a href="#" class="me-3 text-reset">
+                                        <img src="/images/fbLogo.svg" alt="facebook logo" height=25px width=25px>
+                                    </a>
+                                    <a href="" class="me-3 text-reset">
+                                        <img src="/images/linkedInLogo.svg" alt="LinkedIn logo" height=25px width=25px>
+                                    </a>
+                                    <a href="" class="me-3 text-reset">
+                                        <img src="/images/ytLogo.svg" alt="YouTube logo" height=25px width=25px>
+                                    </a>
+                                    <a href="" class="me-3 text-reset">
+                                        <img src="/images/igLogo.svg" alt="Instagram logo" height=25px width=25px>
+                                    </a>
+                                    <a href="" class="me-3 text-reset">
+                                        <img src="/images/twtLogo.svg" alt="Twitter logo" height=25px width=25px>
+                                    </a>
+                                </div>
+                            </div>
+
+                        <!-- Grid column -->
+                    </div>
+
+                <!-- Grid row -->
+                </div>
+
+
+
+            </section>
+<hr>
+  <div class="container text-md-start">
+        <div class="row">
+
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <p class="text-left text-primary">Powered by <img src="/images/lexmeetLogo.png"  alt="lexlogo" height="13" width="85"></p>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
+                    <a href="" class="text-left disc">Disclaimer</a></ul>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
+                     <a href="" class="text-left disc">Terms of Use</a>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
+                    <a href="" class="text-left disc">Privacy Policy</a>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <a href="" class="text-left disc">Informed Consent of Service Performed</a>
+                </div>
+
         </div>
-        <!-- Grid column -->
 
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4" id="footerHeading">
-            Visit
-          </h6>
-          <p class="text-left" id="footerInfo">
-            Unit 608, 6th floor,<br>
-            AIC Burgundy Empire Tower
-            ADB Avenue corner Garnet Road
-            Ortigas Center, Pasig City
-          </p>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-6 col-lg-3 col-xl-2 mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4 " id="footerHeading">
-            Contact
-          </h6>
-          <p class="text-left" id="footerInfo" >
-            (02) 84511594<br>
-            contact@rizallawoffice.com
-          </p>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-md-0 mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4" id="footerHeading">
-            Socials
-          </h6>
-          <div>
-            <a href="#" class="me-3 text-reset">
-                <img src="/images/fbLogo.svg" alt="facebook logo" height=25px width=25px>
-            </a>
-            <a href="" class="me-3 text-reset">
-                <img src="/images/linkedInLogo.svg" alt="LinkedIn logo" height=25px width=25px>
-            </a>
-            <a href="" class="me-3 text-reset">
-                <img src="/images/ytLogo.svg" alt="YouTube logo" height=25px width=25px>
-            </a>
-            <a href="" class="me-3 text-reset">
-                <img src="/images/igLogo.svg" alt="Instagram logo" height=25px width=25px>
-            </a>
-            <a href="" class="me-3 text-reset">
-                <img src="/images/twtLogo.svg" alt="Twitter logo" height=25px width=25px>
-            </a>
-          </div>
-        </div>
-        <!-- Grid column -->
-      </div>
-
-      <!-- Grid row -->
     </div>
-  </section>
-  <!-- Section: Links  -->
-  <hr class="style1">
-  <!-- Copyright -->
-  <div class="container text-center text-md-start mt-2">
-        <p class="text-left poweredBy">Powered by <img src="/images/lexmeetLogo.png"  alt="lexlogo" height="13" width="85"></p>
 
-  <div class="text-right p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-    <ul>
-    <a href="" id="linksLegal">Terms of Use</a>
-    <a href="" id="linksLegal">Privacy Policy</a>
-    <a href="" id="linksLegal">Informed Consent of Service Performed</a>
-    <a href="" id="linksLegal">Disclaimer</a></ul>
-  </div>
-  </div>
-  <!-- Copyright -->
 </footer>
-<!-- Footer -->
 

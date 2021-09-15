@@ -11420,8 +11420,9 @@ input::placeholder {
   background-color: white;
   position: relative;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   bottom: 300px;
+  height: auto;
 }
 
 #frameWhiteServices {
@@ -11699,7 +11700,7 @@ body {
 @media screen and (max-width: 768px) {
   .modal {
     height: 400px;
-    width: 70%;
+    width: 100%;
   }
 }
 
@@ -11739,6 +11740,26 @@ body {
   height: 30px;
   display: block;
   width: 100%;
+}
+
+#powby {
+  position: relative;
+  align-items: center;
+  max-width: 100%;
+}
+
+.ftr {
+  height: auto;
+  background-color: #092059;
+}
+
+.disc {
+  color: white;
+  font-size: 16px;
+}
+
+.formModal {
+  background-color: #1F3C88;
 }
 
 @media screen and (max-width: 900px) and (min-width: 600px) {
@@ -11857,37 +11878,7 @@ body {
     align-items: center;
     flex-direction: column;
   }
-}
-@media (max-width: 768px) {
-  .text-left {
-    text-align: center !important;
-  }
 
-  .text-right {
-    text-align: center !important;
-  }
-
-  .spacing {
-    margin-bottom: 0% !important;
-  }
-}
-#powby {
-  position: relative;
-  align-items: center;
-  max-width: 100%;
-}
-
-.ftr {
-  height: auto;
-  background-color: #092059;
-}
-
-.disc {
-  color: white;
-  font-size: 16px;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
   .text-left {
     text-align: center !important;
   }
@@ -11902,5 +11893,17 @@ body {
 
   .logocenter {
     text-align: center;
+  }
+
+  .text-left {
+    text-align: center !important;
+  }
+
+  .text-right {
+    text-align: center !important;
+  }
+
+  .spacing {
+    margin-bottom: 0% !important;
   }
 }

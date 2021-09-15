@@ -142,8 +142,9 @@ input::placeholder {
     background-color: white;
     position: relative;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     bottom:300px;
+    height: auto;
 }
 #frameWhiteServices{
     @include frame-canvas();
@@ -393,7 +394,7 @@ min-height: 300px;
 }*/
 .modal{
     @media screen and (min-width: 768px ){height: 500px; width: 50%;}
-    @media screen and (max-width: 768px ){height: 400px; width: 70%;}
+    @media screen and (max-width: 768px ){height: 400px; width: 100%;}
     position: relative;
     background-color: #ffffff;
     width: 100%;
@@ -435,6 +436,24 @@ min-height: 300px;
     width: 100%;
 }
 
+#powby{
+    position: relative;
+    align-items: center;
+    max-width:100%;
+}
+
+.ftr{
+    height: auto;
+    background-color: #092059;
+}
+.disc{
+    color: white;
+    font-size: 16px;
+}
+.formModal{
+    background-color: $all-blue;
+}
+//variables for diff viewports
 $iphone5s: 320px;
 $iphonex: 375px;
 $ipad: 768px;
@@ -442,7 +461,6 @@ $pixel2: 411px;
 
 $tablets: 900px;
 $phones: 600px;
-
 
 
 @media screen and (max-width: $tablets )and (min-width: $phones) {
@@ -543,38 +561,6 @@ $phones: 600px;
         align-items: center;
         flex-direction: column;
     }
-
-}
-
-@media(max-width:768px) {
-    .text-left {
-        text-align: center!important;
-    }
-    .text-right {
-        text-align: center!important;
-    }.spacing{
-        margin-bottom: 0%!important;
-    }
-
-  }
-
-
-#powby{
-    position: relative;
-    align-items: center;
-    max-width:100%;
-}
-
-.ftr{
-    height: auto;
-    background-color: #092059;
-}
-.disc{
-    color: white;
-    font-size: 16px;
-}
-
-@media(min-width:768px) and (max-width:991px) {
     .text-left {
         text-align: center!important;
     }
@@ -586,5 +572,20 @@ $phones: 600px;
     .logocenter{
         text-align: center;
     }
+    .text-left {
+        text-align: center!important;
+    }
+    .text-right {
+        text-align: center!important;
+    }.spacing{
+        margin-bottom: 0%!important;
+    }
 
-  }
+}
+
+
+
+
+
+
+
