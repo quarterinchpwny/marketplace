@@ -11762,6 +11762,11 @@ body {
   background-color: #1F3C88;
 }
 
+.registerBody {
+  position: relative;
+  top: 0px;
+}
+
 @media screen and (max-width: 900px) and (min-width: 600px) {
   #frameWhite {
     display: flex;

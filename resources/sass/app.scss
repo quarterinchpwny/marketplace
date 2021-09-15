@@ -453,6 +453,10 @@ min-height: 300px;
 .formModal{
     background-color: $all-blue;
 }
+.registerBody{
+    position: relative;
+    top:0px;
+}
 //variables for diff viewports
 $iphone5s: 320px;
 $iphonex: 375px;
