@@ -47,7 +47,7 @@ Route::middleware(['auth'])->group(function () {
   Route::get('addNewPostLawUpdate', [App\Http\Controllers\DashboardController::class, 'addPostLawUpdate'])->name('addNewPostLawUpdate');
   Route::get('cmsContactUs', [App\Http\Controllers\DashboardController::class, 'contactUs'])->name('cmsContactUs');
   Route::get('addAddress', [App\Http\Controllers\DashboardController::class, 'addNewAddress'])->name('addAddress');
-  //Route::post('addAddress', [App\Http\Controllers\DashboardController::class, 'addNewAddress'])->name('addAddress');
+  Route::post('addAddress/post', [App\Http\Controllers\DashboardController::class, 'storeAddress'])->name('addAddress.post');
   Route::get('cmsDomainSettings', [App\Http\Controllers\DashboardController::class, 'domainSettings'])->name('cmsDomainSettings');
 
 });
