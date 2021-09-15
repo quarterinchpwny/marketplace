@@ -91,7 +91,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
-  border-radius: 15px;
+  border-radius: 10px;
   padding: 20px 0px;
   width:1170px;
 }
@@ -136,7 +136,7 @@ body {
   padding: 15px;
 }
 .addnewbtn{
-  margin-left: 75px;
+  margin-left: 85px;
 }
 
 
@@ -165,9 +165,45 @@ body {
 /* Lawyer's Profile */
 .row2 .uploadButton, .saveButton{
   padding-top: 5px;
-
+}
+.labels {
+  font-size: 12px
+}
+.upload{
+  position: relative;
+  overflow: hidden;
+}
+.uploadInput {
+  position: absolute;
+  font-size: 50px;
+  opacity: 0;
+  right: 0;
+  top: 0;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: red;
+  font-size: 9pt; 
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: red;
+  font-size: 12pt; 
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: red;
+  font-size: 9pt; 
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: red;
+  font-size: 5pt;
 }
 /* Law Update */
 .col-sm-1{
   margin-left: 2px;
 }
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #BA68C8
+}
+
+
