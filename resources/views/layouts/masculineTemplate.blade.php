@@ -29,7 +29,7 @@
   }
 </script>
  <!-- ALERT -->
- 
+
 <div class="container-fluid py-0" id="bg">
         @if (session('success'))
                     <div class="alert alert-success" role="alert">
@@ -47,7 +47,7 @@
 </div>
 <button type="button" id="buttonStart" onclick="showModal()">Get Started</button>
 
-     
+
 
 <form class ="formModal" action="{{ route('post.login') }}" method="POST">
   @csrf
