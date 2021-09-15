@@ -11589,7 +11589,6 @@ input::placeholder {
 .poweredBy {
   position: relative;
   top: 85px;
-  left: 25px;
   color: #5893D4;
 }
 
@@ -11601,17 +11600,13 @@ hr.style1 {
 
 .contentsFooter {
   position: relative;
-  top: 100px;
+  top: 25px;
 }
 
 body {
   background-color: #ffffff;
   height: 100%;
   width: 100%;
-}
-
-* {
-  outline: 1px solid red;
 }
 
 #frameWhiteBig {
@@ -11863,14 +11858,6 @@ body {
     flex-direction: column;
   }
 }
-.containerfooterb {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-}
-
 @media (max-width: 768px) {
   .text-left {
     text-align: center !important;
@@ -11888,4 +11875,32 @@ body {
   position: relative;
   align-items: center;
   max-width: 100%;
+}
+
+.ftr {
+  height: auto;
+  background-color: #092059;
+}
+
+.disc {
+  color: white;
+  font-size: 16px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .text-left {
+    text-align: center !important;
+  }
+
+  .text-right {
+    text-align: center !important;
+  }
+
+  .spacing {
+    margin-bottom: 0% !important;
+  }
+
+  .logocenter {
+    text-align: center;
+  }
 }
