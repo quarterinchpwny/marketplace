@@ -14,8 +14,8 @@
             <a href="#" class="btn btn-primary evrbtn">Learn more</a>
         </div>
     </div>
-
+{{--
     <div class="col-sm-12 col-md-12 col-lg-6">
           <img src="/images/eLaw.png"  alt="video" id="everydayLawVid">
-    </div>
+    </div> --}}
 </div>

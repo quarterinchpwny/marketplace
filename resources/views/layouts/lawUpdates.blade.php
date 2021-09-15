@@ -13,7 +13,7 @@
             </div>
         </div>
 
-        <div class="col-md-12 col-lg-6">
+        {{-- <div class="col-md-12 col-lg-6">
             <img src="/images/laptop-lawupdates.jpg" class=" lawUpdatesImage" alt="LapUpdatesPic" width="550" height="300">
-        </div>
+        </div> --}}
     </div>
