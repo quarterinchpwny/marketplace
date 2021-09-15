@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,7 +19,7 @@ Route::get('/', [App\Http\Controllers\AppController::class, 'index'])->name('app
 
 Route::middleware(['guest'])->group(function () {
   Route::get('login', [App\Http\Controllers\LoginController::class, 'index'])->name('login');
-  Route::post('login', [App\Http\Controllers\LoginController::class, 'logIn'])->name('post.login'); 
+  Route::post('login/success', [App\Http\Controllers\LoginController::class, 'sheesh'])->name('post.login'); 
   Route::get('register', [App\Http\Controllers\RegisterController::class, 'index'])->name('register');
   Route::post('register', [App\Http\Controllers\RegisterController::class, 'register'])->name('post.register');
 });
@@ -36,7 +37,9 @@ Route::middleware(['auth'])->group(function () {
 Route::get('/Masculine', function(){
   return view('layouts.app');
 }); 
-
+Route::get('/loginTemplate', function(){
+  return view('layouts.masculineTemplate');
+}); 
 
 // Carl Note
 // if route changes not work try to run "php artisan optimize"

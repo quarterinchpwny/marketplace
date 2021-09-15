@@ -11864,3 +11864,8 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
+.registerBody {
+  position: relative;
+  top: 0px;
+}

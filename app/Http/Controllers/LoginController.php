@@ -17,7 +17,11 @@ class LoginController extends Controller
      */
     public function index()
     {   
-        return view('auth.login');
+        return view('layouts.masculineTemplate');
+    }
+    public function sheesh(Request $req)
+    {  
+        return $req->input();
     }
 
     public function logIn(LoginRequest $request)

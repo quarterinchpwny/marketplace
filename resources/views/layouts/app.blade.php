@@ -28,16 +28,8 @@
 
 
   <div id="app">
-     @include('layouts.nav', ['from' => 'app'])
+     @include('layouts.navHome', ['from' => 'app'])
+     @yield('content');
   </div>
-  <div id="body">
-      @include('layouts.signUp', ['from' => 'app'])
-      @include('layouts.services', ['from' => 'app'])
-      @include('layouts.practiceAreas', ['from' => 'app'])
-      @include('layouts.lawUpdates', ['from' => 'app'])
-      @include('layouts.everydayLaw', ['from' => 'app'])
-</body>
-<div id="footer py-0">
-      @include('layouts.footer', ['from' => 'app'])
-</div>
+  
 </html>
