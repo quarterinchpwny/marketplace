@@ -119,8 +119,9 @@
             }
 
             #login_button:hover{
-                background: #733657;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);  
+                background-color: #FFFF;
+                border: 1px solid #B5375B;
+                color: #B5375B;
             }
 
             .input-group{
@@ -163,6 +164,12 @@
                 font-size: 18px;
             }
 
+            #login_social:hover{
+                background-color: #FFFF;
+                border: 2px solid #B5375B;
+                color: #B5375B;
+            }
+
             #login_notice{
                 font-size: 20px;
                 font-weight: 300;
@@ -191,7 +198,8 @@
             .break-line p{
                 color: rgb(100, 31, 67);
                 font-weight: bolder;
-                text-shadow: 2px 2px 5px #B5375B;
+                padding-top: 5px;
+                font-size: 16px;
             }
 
             /* Signup Form CSS  */
@@ -237,8 +245,9 @@
             }
 
             #signup_button:hover{
-                color: #641F43;
-                background: white;
+                background-color: #FFFF;
+                border: 1px solid #B5375B;
+                color: #B5375B;
             }
 
 
@@ -251,7 +260,6 @@
             }
 
             #signup_social{
-                
                 width: 245px;
                 height: 50px;
                 background: #FFFFFF;
@@ -263,6 +271,12 @@
                 color: #641F43;
                 font-size: 18px;
 
+            }
+
+            #signup_social:hover{
+                background-color: #FFFF;
+                border: 2px solid #B5375B;
+                color: #B5375B;
             }
 
             #signup_notice{
@@ -293,7 +307,8 @@
             .break-line-signup p{
                 color: rgb(100, 31, 67);
                 font-weight: bolder;
-                text-shadow: 2px 2px 5px #B5375B;
+                padding-top: 5px;
+                font-size: 16px;
             }
 
             /* For desktop: */
@@ -389,7 +404,7 @@
 
                 .break-line p{
                     padding: 5px;
-                    font-size: 10px;
+                    font-size: 14px;
                 }
 
                 #login_notice{
@@ -465,7 +480,7 @@
                 }
                 
                 .break-line-signup p{
-                    font-size: 8px;
+                    font-size: 14px;
                 }
 
             }
@@ -626,7 +641,7 @@
                 }
                 
                 .break-line-signup p{
-                    font-size: 8px;
+                    font-size: 14px;
                 }
        
             }
@@ -715,7 +730,8 @@
 
                 .break-line p{
                     padding: 5px 0px 0px 0px;
-                    font-size: 9px;
+                    font-size: 14px;
+                    padding-top: 5px;
                 }
 
                 #login_notice{
@@ -818,7 +834,7 @@
                             </div>
 
                             <div class="break-line"> 
-                                <p>___________________________________ or ____________________________________</p>
+                                <p> or </p>
                             </div>
 
                             <div class="input-group">
@@ -875,7 +891,7 @@
 
                 
                             <div class="break-line-signup"> 
-                                <p>___________________________________ or ____________________________________</p>
+                                <p> or </p>
                             </div>
                 
                             <div id="input_signup" class="input-group mb-3">
@@ -934,7 +950,7 @@
                             </div>
 
                             <div class="break-line"> 
-                                <p>___________________________________ or ____________________________________</p>
+                                <p> or </p>
                             </div>
 
                             <div class="input-group">
