@@ -31,7 +31,6 @@ Route::middleware(['auth'])->group(function () {
       Route::get('/', [App\Http\Controllers\AccountController::class, 'index'])->name('account');
       Route::post('update', [App\Http\Controllers\AccountController::class, 'updateAccount'])->name('account.update'); 
   });
-
   Route::get('cms', [App\Http\Controllers\DashboardController::class, 'index'])->name('cms');
   Route::get('cmsServices', [App\Http\Controllers\DashboardController::class, 'services'])->name('cmsServices');
   Route::get('cmsLawUpdate', [App\Http\Controllers\DashboardController::class, 'lawUpdates'])->name('cmsLawUpdate');
@@ -42,14 +41,24 @@ Route::middleware(['auth'])->group(function () {
   Route::get('cmsRegistration', [App\Http\Controllers\DashboardController::class, 'registration'])->name('cmsRegistration');
   Route::get('cmsPrivacyPolicy', [App\Http\Controllers\DashboardController::class, 'privacyPolicy'])->name('cmsPrivacyPolicy');
   Route::get('addNewPrivacyPolicy', [App\Http\Controllers\DashboardController::class, 'addPrivacyPolicy'])->name('addNewPrivacyPolicy');
-  Route::get('cmsLawyersBlog', [App\Http\Controllers\DashboardController::class, 'lawyersBlog'])->name('cmsLawyersBlog');
-  Route::get('addNewPost', [App\Http\Controllers\DashboardController::class, 'addPost'])->name('addNewPost');
+  Route::post('addNewPrivacyPolicy/post', [App\Http\Controllers\DashboardController::class, 'storePrivacyPolicy'])->name('addNewPrivacyPolicy.post');
   Route::get('addNewPostLawUpdate', [App\Http\Controllers\DashboardController::class, 'addPostLawUpdate'])->name('addNewPostLawUpdate');
   Route::get('cmsContactUs', [App\Http\Controllers\DashboardController::class, 'contactUs'])->name('cmsContactUs');
   Route::get('addAddress', [App\Http\Controllers\DashboardController::class, 'addNewAddress'])->name('addAddress');
   Route::post('addAddress/post', [App\Http\Controllers\DashboardController::class, 'storeAddress'])->name('addAddress.post');
   Route::get('cmsDomainSettings', [App\Http\Controllers\DashboardController::class, 'domainSettings'])->name('cmsDomainSettings');
 
+
+  //blog
+  Route::group(['prefix' => 'blog'], function () {
+    Route::get('cmsLawyersBlog', [App\Http\Controllers\BlogController::class, 'lawyersBlog'])->name('cmsLawyersBlog');
+    Route::get('addNewPost', [App\Http\Controllers\BlogController::class, 'addPost'])->name('addNewPost');
+    Route::post('store', [App\Http\Controllers\BlogController::class, 'store'])->name('blog.store');
+    Route::get('editBlog/{blog_id}', [App\Http\Controllers\BlogController::class, 'edit'])->name('blog.edit');
+    Route::post('update/{blog_id}', [App\Http\Controllers\BlogController::class, 'update'])->name('blog.update');
+    Route::get('delete/{blog_id}', [App\Http\Controllers\BlogController::class, 'destroy'])->name('blog.delete');
+    Route::get('view/{blog_id}', [App\Http\Controllers\BlogController::class, 'show'])->name('blog.view');
+});
 });
 
 // Carl Note

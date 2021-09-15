@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Contact;
+use App\Models\PrivacyPolicy;
+
 
 class DashboardController extends Controller
 {
@@ -42,11 +44,6 @@ class DashboardController extends Controller
         return view('cmsRegistration');
     }
 
-    public function lawyersBlog()
-    {
-        return view('cmsLawyersBlog');
-    }
-
     public function lawUpdates()
     {
         return view('cmsLawUpdate');
@@ -71,15 +68,17 @@ class DashboardController extends Controller
     {
         return view('cmsPrivacyPolicy');
     }
+    public function storePrivacyPolicy(Request $request)
+    {
+        PrivacyPolicy::create($request->all());
+        return redirect(route('cmsPrivacyPolicy'))->withSuccess('Success');
+    } 
     public function addPrivacyPolicy()
     {
         return view('addNewPrivacyPolicy');
     }
 
-    public function addPost()
-    {
-        return view('addNewPost');
-    }
+    
     
     public function addPostLawUpdate(){
         return view('addNewPostLawUpdate');

@@ -11,23 +11,21 @@
             <script src="https://cdn.ckeditor.com/ckeditor5/29.2.0/decoupled-document/ckeditor.js"></script>
             <h5>Add New Post</h5>
     
-           <form method="post" action ="{{ route('blog.store')}}" >
+           <form method="post" action ="{{ route('blog.update', $blog->blog_id)}}" >
                @csrf
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput" name="title" placeholder="title">
+                    <input type="text" class="form-control" id="floatingInput" name="title" value="{{$blog->title}}"placeholder="title">
                     <label for="floatingInput"> Enter title here</label>
                 </div> 
                 <div class="form-floating mb-3">
-                    <textarea name="body" > </textarea>
+                    <textarea name="body" > 
+                        {{$blog->body}}
+                    </textarea>
                 </div>
                     <button type = "submit"> Submit</button>
 
            </form>  
 
-            <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="title">
-                <label for="floatingInput"> Enter title here</label>
-            </div>
             <!--  
             <div id="editor">
                 <p>Add text here.</p>

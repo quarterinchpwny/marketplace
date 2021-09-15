@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePrivacyPolicyTable extends Migration
+class CreateBlogsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,11 @@ class CreatePrivacyPolicyTable extends Migration
      */
     public function up()
     {
-        Schema::create('privacy_policy', function (Blueprint $table) {
-            $table->integer('policy_id', true);
+        Schema::create('blogs', function (Blueprint $table) {
+            $table->increments('blog_id');
+            $table->integer('lawyer_profile_id')->nullable();
             $table->string('title', 50)->nullable();
-            $table->string('body', 50)->nullable();
+            $table->longText('body')->nullable();
             $table->timestamps();
         });
     }
@@ -28,6 +29,6 @@ class CreatePrivacyPolicyTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('privacy_policy');
+        Schema::dropIfExists('blogs');
     }
 }
