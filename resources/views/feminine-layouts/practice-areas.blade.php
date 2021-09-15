@@ -107,12 +107,12 @@
             }
 
             .btn-practice {
-                background-color: transparent;
+                background-color: #B5375B;
                 border: 1px solid #B5375B;
                 border-radius: 10px;
 
                 font-family: 'Raleway', serif;
-                color: #B5375B;
+                color: white;
                 font-weight: 700;
 
                 margin-top: auto;
@@ -124,11 +124,11 @@
             }
 
             .btn-practice:hover {
-                background-color: #B5375B;
+                background-color: transparent;
                 border: 1px solid #B5375B;
                 border-radius: 10px;
 
-                color: white;
+                color: #B5375B;
             }
         </style>
     </head>

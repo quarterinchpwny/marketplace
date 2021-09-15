@@ -83,26 +83,9 @@
                 font-weight: 700 !important;
             }
 
-            .btn-contact-us {
-                background-color: transparent;
-                border: 1px solid #733657;
-                border-radius: 10px;
-
-                color: #733657;
-                font-weight: 700;
-
-                bottom: 4rem;
-                margin-top: auto;
-
-                -webkit-transition: all 300ms ease;
-                -moz-transition: all 300ms ease;
-                -ms-transition: all 300ms ease;
-                transition: all 300ms ease;
-            }
-
-            .btn-law-updates {
-                background-color: transparent;
-                border: 1px solid white;
+            .btn-contact-us, .btn-law-updates, .btn-everyday-law {
+                background-color: #B5375B;
+                border: 1px solid #B5375B;
                 border-radius: 10px;
 
                 color: white;
@@ -117,26 +100,15 @@
                 transition: all 300ms ease;
             }
 
-            .btn-everyday-law {
+            .btn-everyday-law:hover {
                 background-color: transparent;
                 border: 1px solid #B5375B;
-                border-radius: 10px;
-
                 color: #B5375B;
-                font-weight: 700;
-
-                bottom: 4rem;
-                margin-top: auto;
-
-                -webkit-transition: all 300ms ease;
-                -moz-transition: all 300ms ease;
-                -ms-transition: all 300ms ease;
-                transition: all 300ms ease;
             }
 
-            .btn-contact-us:hover, .btn-law-updates:hover, .btn-everyday-law:hover {
-                background-color: #B5375B;
-                border: 1px solid #B5375B;
+            .btn-contact-us:hover, .btn-law-updates:hover {
+                background-color: transparent;
+                border: 1px solid white;
                 color: white;
             }
         </style>
