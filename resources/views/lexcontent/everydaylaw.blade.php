@@ -3,7 +3,7 @@
       <div class="row" id="everyday-law-header">
          <h1 class="display-2 d-none d-xl-block">Everyday Law</h1>
          <hr class="d-none d-xl-block" style="width: 188px; margin-bottom: 30px;">
-         <h1 class="display-1 d-block d-xl-none">Everyday Law</h1>
+         <h1 class="display-1 d-block d-xl-none" id="everyday-law-alt">Everyday Law</h1>
       </div>
       <div class="columns image" id="everyday-law-media">
          <img id="everyday-law-image" src="{{ URL::to('/') }}/NeutralHome_Graphics/law_video.png" alt="Law Updates">

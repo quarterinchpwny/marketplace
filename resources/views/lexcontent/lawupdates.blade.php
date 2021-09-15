@@ -1,7 +1,7 @@
 <section id="law-updates">
    <div id="law-updates-section">
       <div class="row" id="law-updates-header">
-         <h1 class="display-2 d-none d-xl-block">Law Updates</h1>
+         <h1 class="display-2 d-none d-xl-block" >Law Updates</h1>
          <hr class="d-none d-xl-block" style="width: 188px; margin-bottom: 30px;">
          <h1 class="display-1 d-block d-xl-none" id="law-updates-alt">Law Updates</h1>
       </div>
