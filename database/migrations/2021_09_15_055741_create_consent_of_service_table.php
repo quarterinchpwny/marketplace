@@ -14,9 +14,10 @@ class CreateConsentOfServiceTable extends Migration
     public function up()
     {
         Schema::create('consent_of_service', function (Blueprint $table) {
-            $table->integer('consent_id', true);
+            $table->increments('consent_id');
+            $table->integer('lawyer_profile_id')->nullable();
             $table->string('title', 50)->nullable();
-            $table->string('body', 200)->nullable();
+            $table->longText('body')->nullable();
             $table->timestamps();
         });
     }

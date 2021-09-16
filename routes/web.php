@@ -39,9 +39,8 @@ Route::middleware(['auth'])->group(function () {
   Route::get('cmsLawFirmPractice', [App\Http\Controllers\DashboardController::class, 'lawFirmPractice'])->name('cmsLawFirmPractice');
   Route::get('addBanner', [App\Http\Controllers\DashboardController::class, 'addBanner'])->name('addBanner');
   Route::get('cmsRegistration', [App\Http\Controllers\DashboardController::class, 'registration'])->name('cmsRegistration');
-  Route::get('cmsPrivacyPolicy', [App\Http\Controllers\DashboardController::class, 'privacyPolicy'])->name('cmsPrivacyPolicy');
-  Route::get('addNewPrivacyPolicy', [App\Http\Controllers\DashboardController::class, 'addPrivacyPolicy'])->name('addNewPrivacyPolicy');
-  Route::post('addNewPrivacyPolicy/post', [App\Http\Controllers\DashboardController::class, 'storePrivacyPolicy'])->name('addNewPrivacyPolicy.post');
+
+ 
   Route::get('addNewPostLawUpdate', [App\Http\Controllers\DashboardController::class, 'addPostLawUpdate'])->name('addNewPostLawUpdate');
   Route::get('cmsContactUs', [App\Http\Controllers\DashboardController::class, 'contactUs'])->name('cmsContactUs');
   Route::get('addAddress', [App\Http\Controllers\DashboardController::class, 'addNewAddress'])->name('addAddress');
@@ -58,8 +57,32 @@ Route::middleware(['auth'])->group(function () {
     Route::post('update/{blog_id}', [App\Http\Controllers\BlogController::class, 'update'])->name('blog.update');
     Route::get('delete/{blog_id}', [App\Http\Controllers\BlogController::class, 'destroy'])->name('blog.delete');
     Route::get('view/{blog_id}', [App\Http\Controllers\BlogController::class, 'show'])->name('blog.view');
+  });
+  
+  //privacy policy
+  Route::group(['prefix' => 'privacypolicy'], function () {
+    Route::get('cmsPrivacyPolicy', [App\Http\Controllers\PrivacyPolicyController::class, 'privacyPolicy'])->name('cmsPrivacyPolicy');
+    Route::get('addNewPrivacyPolicy', [App\Http\Controllers\PrivacyPolicyController::class, 'addPrivacyPolicy'])->name('addNewPrivacyPolicy');
+    Route::post('store', [App\Http\Controllers\PrivacyPolicyController::class, 'store'])->name('privacypolicy.store');
+    Route::get('editPrivacyPolicy/{policy_id}', [App\Http\Controllers\PrivacyPolicyController::class, 'edit'])->name('privacypolicy.edit');
+    Route::post('update/{policy_id}', [App\Http\Controllers\PrivacyPolicyController::class, 'update'])->name('privacypolicy.update');
+    Route::get('delete/{policy_id}', [App\Http\Controllers\PrivacyPolicyController::class, 'destroy'])->name('privacypolicy.delete');
+    Route::get('view/{policy_id}', [App\Http\Controllers\PrivacyPolicyController::class, 'show'])->name('privacypolicy.view');
+
+    //Terms of Use
+    Route::get('createTerms', [App\Http\Controllers\PrivacyPolicyController::class, 'createTermsofUse'])->name('createTerms');
+    Route::post('storeTerms', [App\Http\Controllers\PrivacyPolicyController::class, 'storeTerms'])->name('termsofuse.storeterms');
+    Route::get('editTermsofUse/{term_id}', [App\Http\Controllers\PrivacyPolicyController::class, 'editTerms'])->name('termsofuse.edit');
+    Route::post('updateTermsofUse/{term_id}', [App\Http\Controllers\PrivacyPolicyController::class, 'updateTerms'])->name('termsofuse.update');
+    Route::get('deleteTerms/{term_id}', [App\Http\Controllers\PrivacyPolicyController::class, 'destroyTerms'])->name('termsofuse.delete');
+  });
+
+  
+
+
 });
-});
+
+
 
 // Carl Note
 // if route changes not work try to run "php artisan optimize"

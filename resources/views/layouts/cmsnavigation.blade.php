@@ -47,7 +47,7 @@
           <a href="{{url ('/cmsContactUs') }}" class="nav-link">Contact Us Page</a>
         </li>
         <li class="nav-item">
-          <a href="{{url ('/cmsPrivacyPolicy') }}" class="nav-link">Privacy Policy</a>
+          <a href="{{route ('cmsPrivacyPolicy') }}" class="nav-link">Privacy Policy</a>
         </li>
         <li class="nav-item">
           <a href="{{url ('/cmsDomainSettings') }}" class="nav-link">Domain Settings</a>

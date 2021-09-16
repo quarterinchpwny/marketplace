@@ -19,24 +19,30 @@ class BlogController extends Controller
     {
         return view('addNewPost');
     }
-    public function store(Request $request){
+    public function store(Request $request)
+    {
         Blog::create( $request->all() + ['lawyer_profile_id'=>Auth::user()->lawyer->lawyer_profile_id ] ) ;
-        return redirect(route ('cmsLawyersBlog'));
-            
+        return redirect(route ('cmsLawyersBlog'));        
     }
-    public function edit($blog_id){
+
+    public function edit($blog_id)
+    {
         return view('editLawyerBlog',[
             'blog'=>Blog::find($blog_id)
         ]);
     }
-    public function update($blog_id, Request $request) {
+
+    public function update($blog_id, Request $request) 
+    {
         Blog::find($blog_id)->update($request->all());
         return redirect(route ('cmsLawyersBlog'));
     }
+
     public function destroy($blog_id){
         Blog::find($blog_id)->delete();
         return redirect(route ('cmsLawyersBlog'));
     }
+    
     public function show($blog_id){
         return view('viewLawyersBlog',[
             'blog'=>Blog::find($blog_id)

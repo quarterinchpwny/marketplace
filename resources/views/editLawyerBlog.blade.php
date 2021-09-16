@@ -9,12 +9,12 @@
     <div class="row row2 container-fluid"  style="height: 570px; background-color:#F8FFFE; margin-left: 5px; ">
         <div class="col-xl container-fluid texteditor" style="width: 300px;">
             <script src="https://cdn.ckeditor.com/ckeditor5/29.2.0/decoupled-document/ckeditor.js"></script>
-            <h5>Add New Post</h5>
+            <h5>Edit Post</h5>
     
            <form method="post" action ="{{ route('blog.update', $blog->blog_id)}}" >
                @csrf
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput" name="title" value="{{$blog->title}}"placeholder="title">
+                    <input type="text" class="form-control" id="floatingInput" name="title" value="{{$blog->title}}" placeholder="title">
                     <label for="floatingInput"> Enter title here</label>
                 </div> 
                 <div class="form-floating mb-3">
