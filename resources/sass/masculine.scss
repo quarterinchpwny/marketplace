@@ -26,7 +26,7 @@
 }
 @mixin frame-canvas{
     height: 350px;
-    background-color: white;
+    background-color: #ffffff;
 }
 //themes
 $theme-colors: (
@@ -346,7 +346,7 @@ min-height: 300px;
 
 #bg{
     height: 720px; ;
-    background-image: url("/images/bgLandingPage.png");
+    background-image: url("/images/masculineImages/bgLandingPage.png");
     background-size:cover;
     background-repeat: no-repeat;
     background-position: 50%;
