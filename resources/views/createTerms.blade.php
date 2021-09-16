@@ -10,31 +10,26 @@
     <div class="row row3" >
       <div class="d-grid gap-2 d-md-flex justify-content-md-end">
         <div class="col-10">
-          <h5>Add New Privacy Policy</h5>
+          <h5>Add New Terms of Use</h5>
         </div>
         <button class="btn me-md-2 text-white" type="button" style = "background-color: #9D71BC;" >Save</button>
         <a href="{{route ('cmsPrivacyPolicy')}}" ><button class="btn text-white" type="submit" style = "background-color: #9D71BC;">Cancel</button></a>
       </div>
     </div>
     <div class="row row4">
-      <form method = "post" action="{{ route('privacypolicy.store')}}" >
+      <form method = "post" action="{{ route('termsofuse.storeterms')}}" >
         @csrf
         <div class="form-floating mb-3">
           <div class="form-floating">
               <input type="text" class="form-control"  name="title" placeholder="Enter title here">
-              <label >Title</label>
+              <label for="floatingPassword">Title</label>
               </div>
           </div>
-          <div class="form-floating mb-3">
-              
           <div class="form-floating">
-            <textarea class="form-control" name = "body" id="floatingTextarea" style="height: 100px"></textarea>
-            <label for="floatingTextarea">Content</label>
+            <textarea name="body" > </textarea>
           </div>
           </div>
-          <div class="form-floating mb-3">
-              
-          </div>
+    
         <button type="submit"> Submit </button>
       </form>
     </div>

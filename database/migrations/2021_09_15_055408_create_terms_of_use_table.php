@@ -14,9 +14,10 @@ class CreateTermsOfUseTable extends Migration
     public function up()
     {
         Schema::create('terms_of_use', function (Blueprint $table) {
-            $table->integer('term_id', true);
+            $table->increments('term_id');
+            $table->integer('lawyer_profile_id')->nullable();
             $table->string('title', 50)->nullable();
-            $table->string('body', 50)->nullable();
+            $table->longText('body')->nullable();
             $table->timestamps();
         });
     }

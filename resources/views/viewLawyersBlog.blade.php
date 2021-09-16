@@ -11,6 +11,7 @@
             <script src="https://cdn.ckeditor.com/ckeditor5/29.2.0/decoupled-document/ckeditor.js"></script>
             <h5>View</h5>
             {{$blog->title}}
+            </br>
             {{$blog->body}}
           
 

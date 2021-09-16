@@ -23,29 +23,30 @@
                             <table class="table table-hover">
                             <thead class="bg-light">
                                 <tr >
-                                <th scope="col">ID</th>
+                                <th scope="col">Title</th>
                                 <th scope="col">Privacy Policy</th>
                                 <th scope="col">Action</th>
                                 </tr>
                             </thead>
                             <tbody>
+                            @foreach($privacypolicy as $policy)
                                 <tr>
-                                    <th scope="row"></th>
-                                    <td scope="col" width="70%">
-                        
-                                    </td>
-                                    <td>
-                                        <a href="#" class="btn btn-outline-dark btn-sm"><i class="fas fa-eye"></i> View</a>
-                                        <a href="#" class="btn btn-outline-dark btn-sm"><i class="fas fa-pencil-alt"></i> Edit</a>
-                                        <a href="#" class="btn btn-outline-dark btn-sm"><i class="fas fa-trash-alt"></i> Delete</a>
+                    
+                                    <td scope="col" width="30%">{{$policy->title  }}</td>
+                                    <td scope="col" width="40%">{{$policy->body  }}</td>
+                                    <td scope="col" width="30%">
+                                        <a href="{{route ('privacypolicy.view',$policy->policy_id )}}" class="btn btn-outline-dark btn-sm"><i class="fas fa-eye"></i> View</a>
+                                        <a href="{{route ('privacypolicy.edit',$policy->policy_id )}}" class="btn btn-outline-dark btn-sm"><i class="fas fa-pencil-alt"></i> Edit</a>
+                                        <a href="{{route ('privacypolicy.delete',$policy->policy_id )}}" class="btn btn-outline-dark btn-sm"><i class="fas fa-trash-alt"></i> Delete</a>
                                     </td>
                                 </tr>
+                                @endforeach
                             </tbody>
                             </table>
                         </div>    
                         <div class="row container-fluid">
                             <div class="col-3 offset-11 ">
-                            <a href="{{url ('/addNewPrivacyPolicy') }}" class="btn btn-outline-dark btn-sm"><i class="fas fa-plus-circle"></i> Add New</a>
+                            <a href="{{route ('addNewPrivacyPolicy')}}" class="btn btn-outline-dark btn-sm"><i class="fas fa-plus-circle"></i> Add New</a>
                             </div>
                         </div>
                         </div>   
@@ -63,29 +64,31 @@
                         <div class="table-responsive">
                             <table class="table table-hover">
                             <thead>
-                                <tr class="bg-light">
-                                <th scope="col">#</th>
-                                <th scope="col">Terms of Use</th></th>
-                                <th scope="col">Action</th>
+                                <tr >
+                                    <th scope="col">Title</th>
+                                    <th scope="col">Terms Of Use</th>
+                                    <th scope="col">Action</th>
                                 </tr>
                             </thead>
                             <tbody>
+                            @foreach($termsofuse as $terms)
                                 <tr>
-                                    <th scope="row">1</th>
-                                    <td></td>
-                                    <td>
+                                    <td scope="col" width="30%">{{$terms->title  }}</td>
+                                    <td scope="col" width="40%">{{$terms->body  }}</td>
+                                    <td scope="col" width="30%">
                                         <a href="#" class="btn btn-outline-dark btn-sm"><i class="fas fa-eye"></i> View</a>
-                                        <a href="#" class="btn btn-outline-dark btn-sm"><i class="fas fa-pencil-alt"></i> Edit</a>
-                                        <a href="#" class="btn btn-outline-dark btn-sm"><i class="fas fa-trash-alt"></i> Delete</a>
+                                        <a href="{{route ('termsofuse.edit',$terms->term_id )}}" class="btn btn-outline-dark btn-sm"><i class="fas fa-pencil-alt"></i> Edit</a>
+                                        <a href="{{route ('termsofuse.delete',$terms->term_id )}}" class="btn btn-outline-dark btn-sm"><i class="fas fa-trash-alt"></i> Delete</a>
                                     </td>
                                 </tr>
+                                @endforeach
 
                             </tbody>
                             </table>
                         </div>    
                         <div class="row container-fluid">
                             <div class="col-3 offset-11 ">
-                                <a href="#" class="btn btn-outline-dark btn-sm"><i class="fas fa-plus-circle"></i> Add New</a>
+                                <a href="{{route ('createTerms')}}" class="btn btn-outline-dark btn-sm"><i class="fas fa-plus-circle"></i> Add New</a>
                             </div>
                         </div>
                     </div>
@@ -125,7 +128,7 @@
                         </div>    
                         <div class="row container-fluid">
                             <div class="col-3 offset-11 ">
-                                <a href="#" class="btn btn-outline-dark btn-sm"><i class="fas fa-plus-circle"></i> Add New</a>
+                                <a href="" class="btn btn-outline-dark btn-sm"><i class="fas fa-plus-circle"></i> Add New</a>
                             </div>
                         </div>
                     </div>

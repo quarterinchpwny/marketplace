@@ -17,19 +17,20 @@
       </div>
     </div>
     <div class="row row4">
-      <form method = "post" action="{{ route('privacypolicy.store')}}" >
+      <form method = "post" action="{{ route('privacypolicy.update', $policy->policy_id)}}" >
         @csrf
         <div class="form-floating mb-3">
           <div class="form-floating">
-              <input type="text" class="form-control"  name="title" placeholder="Enter title here">
-              <label >Title</label>
+              <input type="text" class="form-control" value="{{$policy->title}}"  name="title" placeholder="Enter title here">
+              <label for="floatingtitle">Title</label>
               </div>
           </div>
           <div class="form-floating mb-3">
               
           <div class="form-floating">
-            <textarea class="form-control" name = "body" id="floatingTextarea" style="height: 100px"></textarea>
-            <label for="floatingTextarea">Content</label>
+          <textarea name="body" > 
+                        {{$policy->body}}
+                    </textarea>
           </div>
           </div>
           <div class="form-floating mb-3">

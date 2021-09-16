@@ -5,17 +5,18 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class PrivacyPolicy extends Model
+class Terms extends Model
 {
     use HasFactory;
-    
-    protected $table = 'privacy_policy';
 
-    protected $primaryKey = 'policy_id';
+    protected $table = 'terms_of_use';
+
+    protected $primaryKey = 'term_id';
 
     protected $fillable = [
         'lawyer_profile_id',
-        'title',
-        'body',
+       'title',
+        'body'
     ];
+
 }
