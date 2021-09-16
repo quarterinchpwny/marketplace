@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
+use App\Http\Controllers\LoginController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,7 +16,7 @@ use Illuminate\Http\Request;
 */
 
 // Public Routes
-Route::get('/', [App\Http\Controllers\AppController::class, 'index'])->name('home');
+Route::get('/', [App\Http\Controllers\AppController::class, 'index'])->name('app');
 
 
 Route::get('content', [App\Http\Controllers\ContentController::class, 'index'])->name('content');
@@ -32,7 +34,11 @@ Route::get('step8', [App\Http\Controllers\ContentController::class, 'step8'])->n
 
 Route::middleware(['guest'])->group(function () {
   Route::get('login', [App\Http\Controllers\LoginController::class, 'index'])->name('login');
+<<<<<<< HEAD
   Route::post('login', [App\Http\Controllers\LoginController::class, 'logIn'])->name('post.login');
+=======
+  Route::post('login/success', [App\Http\Controllers\LoginController::class, 'sheesh'])->name('post.login'); 
+>>>>>>> Masculine
   Route::get('register', [App\Http\Controllers\RegisterController::class, 'index'])->name('register');
   Route::post('register', [App\Http\Controllers\RegisterController::class, 'register'])->name('post.register');
 });
@@ -47,6 +53,7 @@ Route::middleware(['auth'])->group(function () {
   });
 });
 
+<<<<<<< HEAD
 // New
 Route::get('/feminine', [App\Http\Controllers\FeminineHomepageController::class, 'index'])->name('feminine');
 /*
@@ -61,6 +68,14 @@ Route::get('/sample', [App\Http\Controllers\SampleController::class, 'index'])->
 Route::get('/testing-area', [App\Http\Controllers\TestingController::class, 'index'])->name('testing-area');
 
 Route::get('/NeutralHome', [App\Http\Controllers\NeutralHomeController::class, 'index'])->name('neutralhome');
+=======
+Route::get('/Masculine', function(){
+  return view('layouts.app');
+}); 
+Route::get('/loginTemplate', function(){
+  return view('layouts.masculineTemplate');
+}); 
+>>>>>>> Masculine
 
 // Carl Note
 // if route changes not work try to run "php artisan optimize"

@@ -1,31 +1,29 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+<nav class="navbar navbar-expand-lg navbar-dark ced">
   <div class="container-fluid">
-    @if ($from === 'app')
-      <a class="navbar-brand" href="{{ url('/') }}">
-        LexWeb
-      </a>
-    @else
-      <a class="btn border-0" id="menu-btn">
-        Menu
-      </a>  
-    @endif
+
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+      <ul class="navFont navbar-nav mx-auto">
         @guest
-            @if (Route::has('login'))
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+            @if (Route::has('home'))
+                <li class="nav-item" style="padding-right: 10px">
+                    <a class="nav-link" href="{{ route('home') }}">{{ __('Home') }}</a>
                 </li>
             @endif
 
-            @if (Route::has('register'))
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+
+                <li class="nav-item" style="padding-right: 10px">
+                    <a class="nav-link" href="/register">{{ __('Register') }}</a>
                 </li>
-            @endif
+
+                <li class="nav-item" style="padding-right: 10px">
+                    <a class="nav-link" href="/loginTemplate">{{ __('Login') }}</a>
+                </li>
+
+
         @else
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('dashboard') }}">{{ __('Dashboard') }}</a>
@@ -50,3 +48,6 @@
     </div>
   </div>
 </nav>
+
+
+

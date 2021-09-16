@@ -1,11 +1,11 @@
-@extends('layouts.app')
-@section('content')
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-md-4 col-offset-4">
       <div class="card">
         <div class="card-header text-center h5">{{ __('Register') }}</div>
-        <div class="card-body registerBody">
+        <div class="card-body">
           @if (session('error'))
             <div class="alert alert-danger" role="alert">
               {{ session('error') }}
@@ -64,4 +64,4 @@
     </div>
   </div>
 </div>
-@endsection
+

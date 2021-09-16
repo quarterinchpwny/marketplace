@@ -1,5 +1,8 @@
-<<<<<<< HEAD
+
 @import 'marketplace';
-=======
 @import 'neutral';
->>>>>>> Neutral2
+@import 'masculine';
+.bg-primary{
+background-color: #CEDDEF !important;
+}
+
