@@ -1,42 +1,37 @@
 @extends('layouts.layout')
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-    <symbol id="check" viewBox="0 0 16 16">
-      
-      <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
-    </symbol>
-  </svg>
+  <symbol id="check" viewBox="0 0 16 16">
+    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
+  </symbol>
+</svg>
       
   
-  <div class="container" style="padding-top: 2.4rem;padding-bottom: 2.4rem; max-width: 960px;" id="step1">
-    <div class="tracking-progress-bar text-center">
-      <div class="tracking-progress-bar__item tracking-progress-bar__item--first tracking-progress-bar__item--active">1</div>
-    
-      <span class="tracking-progress-bar__item__bar"></span>
-      <div class="tracking-progress-bar__item ">2</div>
-    
-      <span class="tracking-progress-bar__item__bar"></span>
-      <div class="tracking-progress-bar__item ">3</div>
-    
-      <span class="tracking-progress-bar__item__bar "></span>
-      <div class="tracking-progress-bar__item ">4</div>
-    
-      <span class="tracking-progress-bar__item__bar"></span>
-      <div class="tracking-progress-bar__item">5</div>
-      <span class="tracking-progress-bar__item__bar"></span>
-      <div class="tracking-progress-bar__item">6</div>
-      <span class="tracking-progress-bar__item__bar"></span>
-      <div class="tracking-progress-bar__item">7</div>
-      <span class="tracking-progress-bar__item__bar"></span>
-      <div class="tracking-progress-bar__item">8</div>
-    </div>
+<div class="container" style="padding-top: 2.4rem;padding-bottom: 2.4rem; max-width: 960px;" id="step1">
+  <div class="tracking-progress-bar text-center">
+    <div class="tracking-progress-bar__item tracking-progress-bar__item--first tracking-progress-bar__item--active">1</div>
+    <span class="tracking-progress-bar__item__bar"></span>
+    <div class="tracking-progress-bar__item ">2</div>
+    <span class="tracking-progress-bar__item__bar"></span>
+    <div class="tracking-progress-bar__item ">3</div>
+    <span class="tracking-progress-bar__item__bar "></span>
+    <div class="tracking-progress-bar__item ">4</div>
+    <span class="tracking-progress-bar__item__bar"></span>
+    <div class="tracking-progress-bar__item">5</div>
+    <span class="tracking-progress-bar__item__bar"></span>
+    <div class="tracking-progress-bar__item">6</div>
+    <span class="tracking-progress-bar__item__bar"></span>
+    <div class="tracking-progress-bar__item">7</div>
+    <span class="tracking-progress-bar__item__bar"></span>
+    <div class="tracking-progress-bar__item">8</div>
+  </div>
+
   <div class="p-3 pb-md-4 mx-auto text-center">
-      <h2 class="display-5 fw-normal"><b>Step 1</b> - Choose Your Plan</h2>
-      
-    </div>
+    <h2 class="display-5 fw-normal"><b>Step 1</b> - Choose Your Plan</h2>
+  </div>
   
   
+
   <main>
-      
     <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
       <div class="col">
         <div class="card mb-4 rounded-3 shadow-sm">
@@ -51,7 +46,6 @@
               <li>Email support</li>
               <li>Help center access</li>
             </ul>
-            
             <div class="table-responsive">
                 <table class="table text-center">
                   <thead>
@@ -76,7 +70,6 @@
                       <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
                     </tr>
                   </tbody>
-          
                   <tbody>
                     <tr>
                       <th scope="row" class="text-start">Permissions</th>
@@ -105,10 +98,7 @@
                   </tbody>
                   
                 </table>
-               
                   <a class="w-100 btn btn-lg btn-orange" href="{{route('step2', ['plan' => 'basic'])}}">Select</a>
-               
-                
               </div>
           </div>
         </div>
@@ -126,7 +116,6 @@
               <li>Priority email support</li>
               <li>Help center access</li>
             </ul>
-            
             <div class="table-responsive">
                 <table class="table text-center">
                   <thead>
@@ -151,7 +140,6 @@
                       <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
                     </tr>
                   </tbody>
-          
                   <tbody>
                     <tr>
                       <th scope="row" class="text-start">Permissions</th>
@@ -197,7 +185,6 @@
               <li>Phone and email support</li>
               <li>Help center access</li>
             </ul>
-            
             <div class="table-responsive">
                 <table class="table text-center">
                   <thead>
@@ -222,7 +209,6 @@
                       <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
                     </tr>
                   </tbody>
-          
                   <tbody>
                     <tr>
                       <th scope="row" class="text-start">Permissions</th>
@@ -254,12 +240,7 @@
               </div>
           </div>
         </div>
-        
       </div>
-      
     </div>
-  
-  
-  
   </main>
-  </div>  
+</div>  

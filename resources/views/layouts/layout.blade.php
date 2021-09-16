@@ -21,47 +21,38 @@
     var l,t,cw,sp,cb1,cb2 = 0;
 
 
-  function onAddWebsite(){
-    
-   
-
-    if (checkBoxLogo.checked == true){
+    function onAddWebsite(){
+      if (checkBoxLogo.checked == true){
         localStorage.setItem("l", "1");
 
-    } 
-    if (checkBoxTemplate.checked == true){
+      } 
+      if (checkBoxTemplate.checked == true){
         localStorage.setItem("t", "1");
-    } 
-    if (checkBoxCW.checked == true){
+      } 
+      if (checkBoxCW.checked == true){
         localStorage.setItem("cw", "1");
-    } 
-    if (checkBoxSP.checked == true){
+      } 
+      if (checkBoxSP.checked == true){
         localStorage.setItem("sp", "1");
-    } 
-    if (checkBox1.checked == true){
-      localStorage.setItem("cb1", "1");
-    } 
-    if (checkBox2.checked == true){
+      } 
+      if (checkBox1.checked == true){
+        localStorage.setItem("cb1", "1");
+      } 
+      if (checkBox2.checked == true){
         localStorage.setItem("cb2", "1");
-    } 
-
-
+      } 
     }
+
   var data = 1;
   function dec(x){
-   
     data=parseInt(document.getElementById("box".concat(x)).value);
-    if(parseInt(document.getElementById("box".concat(x)).value )>1)
-    {
+    if(parseInt(document.getElementById("box".concat(x)).value )>1){
     data=data-1;
     document.getElementById("box".concat(x)).value=data;
     document.getElementById("label".concat(x)).innerText=data;
     data=parseInt(document.getElementById("val".concat(x)).innerText);
     document.getElementById("val".concat(x)).innerText=data-5000;
-
-
     }
-    
   }
 
 

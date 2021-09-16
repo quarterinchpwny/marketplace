@@ -2,16 +2,12 @@
 <div class="container " style="padding-top: 2.4rem;padding-bottom: 2.4rem;" id="step7">
   <div class="tracking-progress-bar text-center">
     <div class="tracking-progress-bar__item tracking-progress-bar__item--first tracking-progress-bar__item--active">1</div>
-  
     <span class="tracking-progress-bar__item__bar tracking-progress-bar__item--active"></span>
     <div class="tracking-progress-bar__item tracking-progress-bar__item--active">2</div>
-  
     <span class="tracking-progress-bar__item__bar tracking-progress-bar__item--active"></span>
     <div class="tracking-progress-bar__item  tracking-progress-bar__item--active">3</div>
-  
     <span class="tracking-progress-bar__item__bar tracking-progress-bar__item--active "></span>
     <div class="tracking-progress-bar__item  tracking-progress-bar__item--active">4</div>
-  
     <span class="tracking-progress-bar__item__bar tracking-progress-bar__item--active"></span>
     <div class="tracking-progress-bar__item tracking-progress-bar__item--active">5</div>
     <span class="tracking-progress-bar__item__bar tracking-progress-bar__item--active"></span>
@@ -21,49 +17,35 @@
     <span class="tracking-progress-bar__item__bar "></span>
     <div class="tracking-progress-bar__item ">8</div>
   </div>
-
-
-<div class="p-3 pb-md-4 mx-auto text-center">
-    <h2 class="display-5 fw-normal"><b>Step 7</b> - Complete Your Payment</h2>
-    
+  <div class="p-3 pb-md-4 mx-auto text-center">
+    <h2 class="display-5 fw-normal"><b>Step 7</b> - Complete Your Payment</h2>  
   </div>
 
-
-  
   <div class=" pb-md-4 mx-auto">
-
-      
-        <div class="container"style="margin-top:auto">
-          <div class="row align-items-center justify-content-between ">
-           
-            <div class="col-lg bg-light m-3 p-3 " style="height: 34rem">
-              <h2 class="mb-4" style="color: #F4512C !important">Order Summary</h2>
-              <div class="table-responsive">
-                <table class="table text-center" id="tables">
-                  <thead>
-                    <tr >
-                  
-                      <th style="width: 20%;">Product</th>
-                      <th style="width: 20%;">Price</th>
-                      <th style="width: 20%;">Quantity</th>
-                      <th style="width: 20%;">Total Amount</th>
-                
-                    </tr>
-                  </thead>
-                  <tbody id="tbv">
-                   
-                  </tbody>
-                  
-                </table>
-                <h5  class = "text-end p-2" >Total amount: <b id= "total"></b></h5>
+    <div class="container"style="margin-top:auto">
+      <div class="row align-items-center justify-content-between ">
+        <div class="col-lg bg-light m-3 p-3 " style="height: 34rem">
+          <h2 class="mb-4" style="color: #F4512C !important">Order Summary</h2>
+            <div class="table-responsive">
+              <table class="table text-center" id="tables">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Product</th>
+                    <th style="width: 20%;">Price</th>
+                    <th style="width: 20%;">Quantity</th>
+                    <th style="width: 20%;">Total Amount</th>
+                  </tr>
+                </thead>
+                <tbody id="tbv">
+                </tbody>
+              </table>
+                  <h5 class = "text-end p-2" >Total amount: <b id= "total"></b></h5>
             </div>
-             
           </div>
-           
           <div class="col-lg bg-light m-3 p-3 overflow-auto scrollbar scrollbar-primary" style="height: 34rem">
-          <div>
-            <h2 class="mb-4 ">Payment Method</h2>
-          </div>
+            <div>
+              <h2 class="mb-4 ">Payment Method</h2>
+            </div>
           <!--Paypal-->
           <div class="accordion accordion-flush" id="Paypal">
             <div class="accordion-item">
@@ -74,7 +56,6 @@
               </h2>
               <div id="flush-collapsePaypal" class="accordion-collapse collapse" aria-labelledby="flush-Paypal" data-bs-parent="#Paypal">
                 <div class="accordion-body ">
-
                   <div class="col-md-8 order-md-1 overflow-hidden" style="height: 60 %;width:100%">
                     <form class="needs-validation" novalidate="">
                       <div class="row">
@@ -93,8 +74,6 @@
                           </div>
                         </div>
                       </div>
-              
-              
                       <div class="mb-3">
                         <label for="address">Address</label>
                         <input type="text" class="form-control" id="paypaladdress" placeholder="1234 Main St" required="">
@@ -102,7 +81,6 @@
                           Please enter your shipping address.
                         </div>
                       </div>
-              
                       <div class="row">
                         <div class="col-md-6 mb-3">
                           <label for="cc-name">Name on card</label>
@@ -136,7 +114,6 @@
                           </div>
                         </div>
                       </div>
-
                     </form>
                   </div>
                 </div>
@@ -168,8 +145,6 @@
                           </div>
                         </div>
                       </div>
-              
-              
                       <div class="mb-3">
                         <label for="address">Address</label>
                         <input type="text" class="form-control" id="dragonPayaddress" placeholder="1234 Main St" required="">
@@ -177,7 +152,6 @@
                           Please enter your shipping address.
                         </div>
                       </div>
-              
                       <div class="row">
                         <div class="col-md-6 mb-3">
                           <label for="cc-name">Name on card</label>
@@ -211,7 +185,6 @@
                           </div>
                         </div>
                       </div>
-
                     </form>
                   </div>
                   </div>
@@ -244,8 +217,6 @@
                           </div>
                         </div>
                       </div>
-              
-              
                       <div class="mb-3">
                         <label for="address">Address</label>
                         <input type="text" class="form-control" id="paymongoaddress" placeholder="1234 Main St" required="">
@@ -253,7 +224,6 @@
                           Please enter your shipping address.
                         </div>
                       </div>
-              
                       <div class="row">
                         <div class="col-md-6 mb-3">
                           <label for="cc-name">Name on card</label>
@@ -287,7 +257,6 @@
                           </div>
                         </div>
                       </div>
-
                     </form>
                   </div>
                 </div>
@@ -302,7 +271,6 @@
       </div>
   </div>
 </div>
-
 <script>
 
     const tbodyEl = document.getElementById("tbv");
