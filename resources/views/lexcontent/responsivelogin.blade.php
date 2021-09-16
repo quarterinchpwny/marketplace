@@ -54,7 +54,7 @@
                 </div>
                 <div class="text-center login-socials d-none d-sm-block"> 
                     <a  href="#" class="btn"> <img src="{{ URL::to('/') }}/NeutralHome_Graphics/fb_icon.png" alt="">  LOG IN WITH FACEBOOK</a>
-                    <a  href="#" class="btn"> <img src="{{ URL::to('/') }}/NeutralHome_Graphics/google_icon.png" alt="">LOG IN WITH GOOGLE</a>
+                    <a  href="#" class="btn"> <img src="{{ URL::to('/') }}/NeutralHome_Graphics/google_icon.png" alt="">  LOG IN WITH GOOGLE</a>
                 </div>
                 <div class="text-center sm-screen-login-socials d-block d-sm-none"> 
                     <a  href="#" class="btn"> <img src="{{ URL::to('/') }}/NeutralHome_Graphics/fb_icon.png" alt="" height="25px">  LOG IN WITH FACEBOOK</a>
