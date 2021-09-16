@@ -14,7 +14,6 @@ use Illuminate\Http\Request;
 */
 
 // Public Routes
-<<<<<<< HEAD
 Route::get('/', [App\Http\Controllers\AppController::class, 'index'])->name('home');
 
 
@@ -60,40 +59,8 @@ Route::get('/banner-area', [App\Http\Controllers\BannerController::class, 'index
 Route::get('/sample', [App\Http\Controllers\SampleController::class, 'index'])->name('sample');
 
 Route::get('/testing-area', [App\Http\Controllers\TestingController::class, 'index'])->name('testing-area');
-=======
-//Route::get('/content', [App\Http\Controllers\AppController::class, 'index'])->name('content');
 
 Route::get('/NeutralHome', [App\Http\Controllers\NeutralHomeController::class, 'index'])->name('neutralhome');
-// Route::group(['prefix' => 'NeutralHome'], function () {
-//   Route::get('/NeutralHome/SignUp', [App\Http\Controllers\SignUpController::class, 'add'])->name('add.user');
-//   Route::post('/NeutralHome/SignUp/Post', [App\Http\Controllers\SignUpController::class, 'store'])->name('add.user.post');
-// });
-
-
-// Route::middleware(['guest'])->group(function () {
-//   Route::get('login', [App\Http\Controllers\LoginController::class, 'index'])->name('login');
-//   Route::post('login', [App\Http\Controllers\LoginController::class, 'logIn'])->name('post.login'); 
-//   Route::get('register', [App\Http\Controllers\RegisterController::class, 'index'])->name('register');
-//   Route::post('register', [App\Http\Controllers\RegisterController::class, 'register'])->name('post.register');
-// });
-// Route::post('logout', [App\Http\Controllers\LoginController::class, 'logOut'])->name('logout');
-
-// // Athenticated Routes
-// Route::middleware(['auth'])->group(function () {
-//   Route::get('dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard'); 
-//   Route::group(['prefix' => 'account'], function () {
-//       Route::get('/', [App\Http\Controllers\AccountController::class, 'index'])->name('account');
-//       Route::post('update', [App\Http\Controllers\AccountController::class, 'updateAccount'])->name('account.update'); 
-//   });
-// });
-
-// Route::group(['prefix' => 'admin'], function (){
-//     Route::get('test/{name}', [App\Http\Controllers\DashboardController::class, 'test'])->name('Lunod');
-//     Route::get('/Hehe', function() {
-//         dd('Stream Pebble House by Ben&Ben HEHE');
-//     });
-// });
->>>>>>> Neutral2
 
 // Carl Note
 // if route changes not work try to run "php artisan optimize"
