@@ -30,7 +30,7 @@
                 <div class="row mt-3">
                     <div class="col-md-12">
                       <label class="labels"><b>About Me</b></label>
-                      <textarea class="form-control" placeholder="About Me" id="floatingTextarea" style="height: 150px"></textarea>
+                      <textarea class="form-control" placeholder="About Me" id="floatingTextarea" style="height: 100px"></textarea>
                     </div>
                 </div>
                 <div class="row mt-3">
