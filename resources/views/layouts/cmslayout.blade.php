@@ -71,7 +71,7 @@
      <!--Top Navigation--> 
      <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #F8FFFE;">
       <div class="container-fluid">
-        <a class="align-items-center mb-3 mb-md-0 me-md-auto sidebar-logo" href="#"><img src="{{ URL::to('/') }}/cms-graphics/logo1.png" alt="Rizal Law Office" width="190" height="35"></a>
+        <a class="align-items-center mb-3 mb-md-0 me-md-auto sidebar-logo" href="{{ URL::to('/') }}"><img src="{{ URL::to('/') }}/cms-graphics/logo1.png" alt="Rizal Law Office" width="190" height="35"></a>
        
         <ul class="nav navbar-nav ml-end">
           <li class="nav-item dropdown">

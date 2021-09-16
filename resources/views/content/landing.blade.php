@@ -7,14 +7,16 @@
           <div class="masthead-main">Start E-Lawyering. </div>
           <div class="masthead-subheading">Create Your Own Website with </div>
           <div class="masthead-heading"> LEXWEB WEBSITE BUILDER</div>
+          <a class="w-100 btn btn-lg btnviolet mb-2" href="{{url('/login')}}">LOGIN</a>
+          <div class="text-center">
+            <p>Or</p>
+          </div>
           <a class="w-100 btn btn-lg btnviolet" href="{{url('step1')}}">START HERE</a>
         </div>
-       
         <div class="col">
         <img class="mw-100" style="margin-top:auto" src="/images/devices.png" alt="">
         </div>
     </div>
-    
     </div>
   </header>
   
