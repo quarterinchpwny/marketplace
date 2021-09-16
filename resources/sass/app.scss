@@ -42,3 +42,63 @@
   background-color: #100901;
   color: #fff;
 }
+
+/* ---------- HEADER ---------- */
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+Color Palette
+- FFFFFF (white)
+- F1DBE8 (very light purple)
+- B8537B (light purple)
+- D08198 (light pink)
+- B5375B (pink)
+- 733657 (dark purple)
+*/
+
+.header-main-con {
+    background-color: white;
+    border-bottom: 5px solid #B5375B;
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: white;
+    line-height: 0.5cm;
+}
+
+.header-menu {
+    background-color: transparent;
+    color: #733657;
+}
+
+.header-logo {
+    background-color: transparent;
+}
+
+.header-name {
+    color: #B5375B;
+    font-weight: 800;
+}
+
+.header-lst {
+    text-decoration: none;
+
+    background-color: white;
+    color: #733657 !important;
+    font-weight: 700 !important;
+}
+
+.header-lst:hover {
+    text-decoration: none;
+
+    color: #B5375B !important;
+    font-weight: 700 !important;
+}
