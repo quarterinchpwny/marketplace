@@ -19,90 +19,10 @@
         <title>Footer</title>
 
         <!-- CSS -->
-        <style>
-            html {
-                height: 100%;
-            }
-
-            body {
-                min-height: 100%;
-                display: flex;
-                flex-direction: column;
-            }
-
-            /*
-            Color Palette
-            - FFFFFF (white)
-            - F1DBE8 (very light purple)
-            - B8537B (light purple)
-            - D08198 (light pink)
-            - B5375B (pink)
-            - 733657 (dark purple)
-            */
-
-            .footer-main-con {
-                background-color: #733657;
-                border-top: 5px solid #B5375B;
-
-                font-family: 'Raleway', sans-serif;
-                font-weight: 300;
-                color: white;
-                line-height: 0.5cm;
-
-                margin-top: auto;
-            }
-
-            .footer-brand, .footer-visit-us, .footer-contact-us, .footer-follow-us {
-                background-color: transparent;
-            }
-
-            .footer-visit-us-title, .footer-contact-us-title, .footer-follow-us-title {
-                font-weight: 700;
-                font-style: italic;
-            }
-
-            /* column 1 */
-            .footer-brand-logo {
-                width: 4rem;
-            }
-
-            .footer-brand-name {
-                width: 10rem;
-            }
-
-            .footer-brand-lexmeet {
-                width: 6rem;
-            }
-
-            /* column 3 */
-            .footer-contact-us-bold {
-                font-weight: 700;
-            }
-
-            /* column 4 */
-            .footer-follow-us-icons, .footer-others-bold-italic {
-                text-decoration: none;
-                font-weight: 700;
-                font-style: italic;
-            }
-
-            .footer-others-bold-italic {
-                color: white;
-
-                -webkit-transition: all 300ms ease;
-                -moz-transition: all 300ms ease;
-                -ms-transition: all 300ms ease;
-                transition: all 300ms ease;
-            }
-
-            .footer-others-bold-italic:hover {
-                color: #D08198;
-            }
-        </style>
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     </head>
 
     <body>
-
         <footer class="footer-main-con container-fluid p-3">
             <div class="row justify-content-center">
 

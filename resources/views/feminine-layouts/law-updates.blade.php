@@ -19,106 +19,14 @@
         <title>Law Updates</title>
 
         <!-- CSS -->
-        <style>
-            html {
-                height: 100%;
-            }
-
-            body {
-                min-height: 100%;
-                display: flex;
-                flex-direction: column;
-            }
-
-            /*
-            Color Palette
-            - FFFFFF (white)
-            - F1DBE8 (very light purple)
-            - B8537B (light purple)
-            - D08198 (light pink)
-            - B5375B (pink)
-            - 733657 (dark purple)
-            */
-
-            .blog-section {
-                font-family: 'Raleway', sans-serif;
-                font-weight: 500 !important;
-                color: black;
-                line-height: 0.7cm;
-            }
-
-            .blog-contact-us, .blog-blank {
-                background-color: #D08198;
-                line-height: 0.5cm
-                color: black;
-            }
-
-            .header-line-left {
-                border: 1.5px solid white;
-                width: 100px;
-            }
-
-            .header-line-right {
-                border: 1.5px solid #733657;
-                width: 100px;
-            }
-
-            .law-updates {
-                background-color: #733657;
-                color: white;
-            }
-
-            .everyday-law {
-                background-color: #F1DBE8;
-                color: #733657;
-            }
-
-            .law-updates-header, .everyday-law-header {
-                font-family: 'Libre Baskerville', serif;
-                font-weight: 700 !important;
-            }
-
-            .law-updates-blog-title, .everyday-law-blog-title {
-                font-family: 'Raleway', serif;
-                font-weight: 700 !important;
-            }
-
-            .btn-contact-us, .btn-law-updates, .btn-everyday-law {
-                background-color: #B5375B;
-                border: 1px solid #B5375B;
-                border-radius: 10px;
-
-                color: white;
-                font-weight: 700;
-
-                bottom: 4rem;
-                margin-top: auto;
-
-                -webkit-transition: all 300ms ease;
-                -moz-transition: all 300ms ease;
-                -ms-transition: all 300ms ease;
-                transition: all 300ms ease;
-            }
-
-            .btn-everyday-law:hover {
-                background-color: transparent;
-                border: 1px solid #B5375B;
-                color: #B5375B;
-            }
-
-            .btn-contact-us:hover, .btn-law-updates:hover {
-                background-color: transparent;
-                border: 1px solid white;
-                color: white;
-            }
-        </style>
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     </head>
 
     <body>
-        <div class="blog-section row m-0 position-relative" data-bs-custom-class="beautifier">
+        <div class="update-everyday-section row m-0 position-relative" data-bs-custom-class="beautifier">
             <!-- Contact Us -->
-            <div class="blog-contact-us text-center flex-row px-5">
-                <div class="blog-contact-content py-4">
+            <div class="update-everyday-contact-us text-center flex-row px-5">
+                <div class="update-everyday-contact-content py-4">
                     <span class="h5">Got a legal question? Get in touch with us! &nbsp</span>
 
                     <span class="justify-content-md-center float">
@@ -180,7 +88,7 @@
             </div>
 
             <!-- Blank Space -->
-            <div class="blog-blank p-4"></div>
+            <div class="update-everyday-blank p-4"></div>
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
