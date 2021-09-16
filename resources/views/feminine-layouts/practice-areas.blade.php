@@ -19,7 +19,8 @@
         <title>Header</title>
 
         <!-- CSS -->
-        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
+        
     </head>
 
     <body>

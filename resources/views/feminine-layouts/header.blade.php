@@ -23,37 +23,40 @@
     </head>
 
     <body>
-        <header class="header-main-con sticky-top">
-            <nav class="navbar navbar-expand-lg p-3">
-                <div class="container-fluid">
+        <div class="header-container">
+            <header class="header-main-con sticky-top">
+                <nav class="navbar navbar-expand-lg p-3">
+                    <div class="container-fluid">
 
-                    <!-- Brand -->
-                    <div class="header-brand w-25 p-0 m-0">
-                        <a class="navbar-brand d-flex align-items-center" href="#">
-                            <img class="header-logo w-100 d-none d-lg-block" src="{{ URL::to('/') }}/images/Rizal_Law_Office_Logo Pink.png" alt="Rizal Law Office Brand">
-                            <span class="header-name d-lg-none">Rizal Law Office</span>
-                        </a>
-                    </div>
+                        <!-- Brand -->
+                        <div class="header-brand w-25 p-0 m-0">
+                            <a class="navbar-brand d-flex align-items-center" href="#">
+                                <img class="header-logo w-100 d-none d-lg-block" src="{{ URL::to('/') }}/images/Rizal_Law_Office_Logo Pink.png" alt="Rizal Law Office Brand">
+                                <span class="header-name d-lg-none">Rizal Law Office</span>
+                            </a>
+                        </div>
 
-                    <!-- Navigation -->
-                    <button class="header-menu navbar-toggler navbar-light bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                        <!-- Navigation -->
+                        <button class="header-menu navbar-toggler navbar-light bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
 
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav ms-auto text-start text-decoration-none">
-                            <a class="header-lst nav-link pe-3 active" aria-current="page" href="#">Home</a>
-                            <a class="header-lst nav-link pe-3" href="#">Our Services</a>
-                            <a class="header-lst nav-link pe-3" href="#">Law Practices</a>
-                            <a class="header-lst nav-link pe-3" href="#">Law Update</a>
-                            <a class="header-lst nav-link pe-3" href="#">Everyday Law</a>
-                            <a class="header-lst nav-link pe-3" href="#">Blog</a>
-                            <a class="header-lst nav-link" href="#">Profile</a>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav ms-auto text-start text-decoration-none">
+                                <a class="header-lst nav-link pe-3 active" aria-current="page" href="#">Home</a>
+                                <a class="header-lst nav-link pe-3" href="#">Our Services</a>
+                                <a class="header-lst nav-link pe-3" href="#">Law Practices</a>
+                                <a class="header-lst nav-link pe-3" href="#">Law Update</a>
+                                <a class="header-lst nav-link pe-3" href="#">Everyday Law</a>
+                                <a class="header-lst nav-link pe-3" href="#">Blog</a>
+                                <a class="header-lst nav-link" href="#">Profile</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </nav>
-        </header>
+                </nav>
+            </header>
+        </div>
+        
 
         <!-- Option 1: Bootstrap Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
