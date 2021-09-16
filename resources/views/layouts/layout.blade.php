@@ -4,120 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-   
-    <link href="{{ URL::asset('css/marketplace.css'); }}" rel="stylesheet">
+    
+    <link href="{{mix('/css/app.css')}}" rel="stylesheet">
 
     <title>LexMeet</title>
           
-  <script>
-    var checkBoxLogo = document.getElementById("logo");
-    var checkBoxTemplate = document.getElementById("template");
-    var checkBoxCW = document.getElementById("cw");
-    var checkBoxSP = document.getElementById("sp");
-    var checkBox1 = document.getElementById("1");
-    var checkBox2 = document.getElementById("2");
-    var l,t,cw,sp,cb1,cb2 = 0;
-
-
-  function onAddWebsite(){
-    
-   
-
-    if (checkBoxLogo.checked == true){
-        localStorage.setItem("l", "1");
-
-    } 
-    if (checkBoxTemplate.checked == true){
-        localStorage.setItem("t", "1");
-    } 
-    if (checkBoxCW.checked == true){
-        localStorage.setItem("cw", "1");
-    } 
-    if (checkBoxSP.checked == true){
-        localStorage.setItem("sp", "1");
-    } 
-    if (checkBox1.checked == true){
-      localStorage.setItem("cb1", "1");
-    } 
-    if (checkBox2.checked == true){
-        localStorage.setItem("cb2", "1");
-    } 
-
-
-    }
-  var data = 1;
-  function dec(x){
-   
-    data=parseInt(document.getElementById("box".concat(x)).value);
-    if(parseInt(document.getElementById("box".concat(x)).value )>1)
-    {
-    data=data-1;
-    document.getElementById("box".concat(x)).value=data;
-    document.getElementById("label".concat(x)).innerText=data;
-    data=parseInt(document.getElementById("val".concat(x)).innerText);
-    document.getElementById("val".concat(x)).innerText=data-5000;
-
-
-    }
-    
-  }
-
-
-  function inc(x){
-    data=parseInt(document.getElementById("box".concat(x)).value);
-    data=data+1;
-    document.getElementById("label".concat(x)).innerText=data;
-    document.getElementById("box".concat(x)).value=data;
-    document.getElementById("val".concat(x)).innerText=data*5000;
-  }
-  function urlStore(){
-    
-    localStorage.setItem("url", document.getElementById("url").value);
-
-  }
- 
-  function toStore(){
-    
-      localStorage.setItem("firstName", document.getElementById("first_name").value);
-      localStorage.setItem("lastName", document.getElementById("last_name").value);
-      localStorage.setItem("email",  document.getElementById("email").value);
-      localStorage.setItem("address",  document.getElementById("address").value);
-      localStorage.setItem("contact",  document.getElementById("contact").value);
-    }
-
-
-
-  function toCompute(){
-    
-  for(let x=1;x<=5;x++){
-     var element = document.getElementById("box".concat(x));
-    if(element!= null){
-      var value = parseInt(element.value);
-      if(value>=1){
-      localStorage.setItem("prod".concat(x), document.getElementById("prod".concat(x)).innerText);
-      localStorage.setItem("qty".concat(x), document.getElementById("box".concat(x)).value);
-      localStorage.setItem("tp".concat(x),  document.getElementById("val".concat(x)).innerText);
-
-      }
-
-    }
-    else
-      continue;
-   
   
-  }
-  
-  }
-
-  
-
- 
- 
-</script>
 
 </head>
+
+
 <body>
   
     
