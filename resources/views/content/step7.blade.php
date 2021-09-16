@@ -298,7 +298,7 @@
       </div>
       <div class="text-center p-3">
         <a class = "w-25 btn btn-orange" href="{{route('step6', \Request::all())}}">Back</a>
-        <a type="button" class="w-25 btn btn-primary " href="{{route('step8', \Request::all())}}">Next</a>
+        <a type="button" class="w-25 btn btnviolet " href="{{route('step8', \Request::all())}}">Next</a>
       </div>
   </div>
 </div>

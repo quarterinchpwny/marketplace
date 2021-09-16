@@ -88,7 +88,7 @@
     </div>
   </div>
   <a class = "w-25 btn btn-orange" href="{{route('step3', \Request::all())}}">Back </a>
-  <a type="button" class="w-25 btn  btn-primary" id="next" onClick="onAddWebsite()" href="{{route('step5', \Request::all() )}}">Next</a>
+  <a type="button" class="w-25 btn  btnviolet" id="next" onClick="onAddWebsite()" href="{{route('step5', \Request::all() )}}">Next</a>
  
   </div>
   

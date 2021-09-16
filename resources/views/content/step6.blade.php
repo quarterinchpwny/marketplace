@@ -114,7 +114,7 @@
         </div>
         <div class="text-center p-3">
           <a class = "w-25 btn  btn-orange" href="{{route('step5', \Request::all())}}"> Back </a>
-          <a type="button" class="w-25 btn btn-primary text-center" onClick ="toStore()"  href="{{route('step7', \Request::all())}}">Next</a>
+          <a type="button" class="w-25 btn btnviolet text-center" onClick ="toStore()"  href="{{route('step7', \Request::all())}}">Next</a>
         </div>
     </div>
   </div>

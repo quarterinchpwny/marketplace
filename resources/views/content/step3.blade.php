@@ -147,7 +147,7 @@
                 </div>
               </div>
             </div>
-            <a class = "w-25 btn btn-primary" href="{{route('step2', \Request::all())}}">Back </a>
+            <a class = "w-25 btn btnviolet" href="{{route('step2', \Request::all())}}">Back </a>
 
           </div>
         </div>

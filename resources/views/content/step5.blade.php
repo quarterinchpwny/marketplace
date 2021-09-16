@@ -48,7 +48,7 @@
       </div>
     </div>
     <a class = "w-25 btn  btn-orange" href="{{route('step4', \Request::all())}}">Back </a>
-    <a type="button" class="w-25 btn  btn-primary" onClick = "toCompute()" href="{{route('step6', \Request::all())}}">Next</a>
+    <a type="button" class="w-25 btn  btnviolet" onClick = "toCompute()" href="{{route('step6', \Request::all())}}">Next</a>
 
     </div>
   </div>
@@ -77,7 +77,7 @@ tbodyEl.innerHTML += `
 </div>
 </td>
 <td><p class = "step5p"  id = "val1">5000</p></td>
-<td><button class="deleteBtn btn-primary btn">Delete</button> </td>
+<td><button class="deleteBtn btnviolet btn">Delete</button> </td>
 </tr>
 `;
 
@@ -96,7 +96,7 @@ tbodyEl.innerHTML += `
 </div>
 </td>
 <td><p  class = "step5p" id = "val2">5000</p></td>
-<td><button class="deleteBtn btn-primary btn">Delete</button></td>
+<td><button class="deleteBtn btnviolet btn">Delete</button></td>
 </tr>
 `;
 } 
@@ -114,7 +114,7 @@ tbodyEl.innerHTML += `
 </div>
 </td>
 <td><p class = "step5p"  id = "val3">5000</p></td>
-<td><button class="deleteBtn btn-primary btn">Delete</button>  </td>
+<td><button class="deleteBtn btnviolet btn">Delete</button>  </td>
 </tr>
 `;
 } 
@@ -132,7 +132,7 @@ tbodyEl.innerHTML += `
 </div>
 </td>
 <td><p class = "step5p"  id = "val4">5000</p></td>
-<td><button class="deleteBtn btn-primary btn">Delete</button></td>
+<td><button class="deleteBtn btnviolet btn">Delete</button></td>
 </tr>
 `;
 } 
@@ -150,7 +150,7 @@ tbodyEl.innerHTML += `
 </div>
 </td>
 <td><p  class = "step5p" id = "val5">5000</p></td>
-<td><button class="deleteBtn btn-primary btn">Delete</button></td>
+<td><button class="deleteBtn btnviolet btn">Delete</button></td>
 </tr>
 `;
 } 
@@ -168,7 +168,7 @@ tbodyEl.innerHTML += `
 </div>
 </td>
 <td><p  class = "step5p" id = "val6">5000</p></td>
-<td><button class="deleteBtn btn-primary btn">Delete</button></td>
+<td><button class="deleteBtn btnviolet btn">Delete</button></td>
 </tr>
 `;
 } 

@@ -47,7 +47,7 @@
             </div>
             <a class = "w-25 btn  btn-orange" href="{{route('step1', \Request::all())}}">Back </a>
 
-            <a type="button" class="w-25 btn btn-primary " onclick = "urlStore()"href="{{route('step3', \Request::all())}}">Next</a>
+            <a type="button" class="w-25 btn btnviolet " onclick = "urlStore()"href="{{route('step3', \Request::all())}}">Next</a>
   
           </div>
           </div>

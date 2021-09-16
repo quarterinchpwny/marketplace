@@ -69,7 +69,7 @@
                       <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
                       <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
                     </tr>
-                    <tr class = "bg-light">
+                    <tr class = "bglight">
                       <th scope="row" class="text-start">Private</th>
                       <td></td>
                       <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
@@ -84,7 +84,7 @@
                       <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
                       <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
                     </tr>
-                    <tr class = "bg-light">
+                    <tr class = "bglight">
                       <th scope="row" class="text-start">Sharing</th>
                       <td></td>
                       <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
@@ -96,7 +96,7 @@
                       <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
                       <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
                     </tr>
-                    <tr class = "bg-light">
+                    <tr class = "bglight">
                       <th scope="row" class="text-start">Security</th>
                       <td></td>
                       <td></td>
@@ -114,8 +114,8 @@
         </div>
       </div>
       <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm border-primary">
-          <div class="card-header py-3 text-white bg-primary border-primary">
+        <div class="card mb-4 rounded-3 shadow-sm borderprimary">
+          <div class="card-header py-3 text-white violet borderprimary">
             <h4 class="my-0 fw-normal">Unlimited</h4>
           </div>
           <div class="card-body">
@@ -144,7 +144,7 @@
                       <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
                       <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
                     </tr>
-                    <tr class = "bg-light">
+                    <tr class = "bglight">
                       <th scope="row" class="text-start ">Private</th>
                       <td></td>
                       <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
@@ -159,7 +159,7 @@
                       <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
                       <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
                     </tr>
-                    <tr class = "bg-light">
+                    <tr class = "bglight">
                       <th scope="row" class="text-start">Sharing</th>
                       <td></td>
                       <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
@@ -171,7 +171,7 @@
                       <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
                       <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
                     </tr>
-                    <tr class = "bg-light">
+                    <tr class = "bglight">
                       <th scope="row" class="text-start">Security</th>
                       <td></td>
                       <td></td>
@@ -179,7 +179,7 @@
                     </tr>
                   </tbody>
                 </table>
-                <a type="button" class="w-100 btn btn-lg btn-primary" href="{{route('step2', ['plan' => 'Unlimited'])}}">Select</a>
+                <a type="button" class="w-100 btn btn-lg btnviolet" href="{{route('step2', ['plan' => 'Unlimited'])}}">Select</a>
               </div>
           </div>
         </div>
@@ -215,7 +215,7 @@
                       <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
                       <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
                     </tr>
-                    <tr class = "bg-light">
+                    <tr class = "bglight">
                       <th scope="row" class="text-start">Private</th>
                       <td></td>
                       <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
@@ -230,7 +230,7 @@
                       <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
                       <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
                     </tr>
-                    <tr class = "bg-light">
+                    <tr class = "bglight">
                       <th scope="row" class="text-start">Sharing</th>
                       <td></td>
                       <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
@@ -242,7 +242,7 @@
                       <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
                       <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
                     </tr>
-                    <tr class = "bg-light">
+                    <tr class = "bglight">
                       <th scope="row" class="text-start">Security</th>
                       <td></td>
                       <td></td>
