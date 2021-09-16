@@ -13,7 +13,7 @@
       <a href="/Masculine">
         <img src="/images/masculineImages/rizalLogo.png" alt="Rizal Logo" id="headerLogo"></a>
     </div>
-@include('layouts.nav', ['from' => 'app'])
+@include('layouts.navM', ['from' => 'app'])
 <!-- Styles -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <link href="{{ asset('css/masculine.css') }}" rel="stylesheet">
@@ -30,9 +30,9 @@ function closeModal(){
   document.querySelector("body").style.overflow = "scroll";
 }
 </script>
-@include('layouts.signUp')
-@include('layouts.services')
-@include('layouts.practiceAreas')
-@include('layouts.lawUpdates')
-@include('layouts.everydayLaw')
-@include('layouts.footer')
+@include('layouts.signUpM')
+@include('layouts.servicesM')
+@include('layouts.practiceAreasM')
+@include('layouts.lawUpdatesM')
+@include('layouts.everydayLawM')
+@include('layouts.footerM')
