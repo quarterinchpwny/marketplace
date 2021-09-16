@@ -23,7 +23,7 @@
   <!-- Header and Navbar -->
   <div class="container-fluid" id="topContent">
       <a href="/Masculine">
-        <img src="/images/rizalLogo.png" alt="Rizal Logo" id="headerLogo"></a>
+        <img src="/images/masculineImages/rizalLogo.png" alt="Rizal Logo" id="headerLogo"></a>
     </div>
 
 
