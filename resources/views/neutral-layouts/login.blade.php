@@ -63,7 +63,7 @@
                 <div class="text-center">
                     <br>
                     <p id="login_notice" >Don't have an account yet?</p>
-                    <a id="login_create" href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#signup">Create an Account</a>
+                    <a id="login_create" href="{{ URL::to('/') }}/neutral-layouts/signup.blade.php" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#signup">Create an Account</a>
                 </div>
                 <div id="powered">
                     Powered by <img src="{{ URL::to('/') }}/NeutralHome_Graphics/LM_logo.png" alt="" >
