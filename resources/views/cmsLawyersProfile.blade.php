@@ -13,37 +13,76 @@
       <div class="col-md-3 border-right">
         <div class="d-flex flex-column align-items-center text-center p-3 py-0"><img class="rounded-circle mt-2" width="100px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"><span class="font-weight-bold">Lawyer</span><span class="text-black-50">lawyer@gmail.com</span><span> </span></div>
         <div class="text-center mt-3">
-        <div class="file btn btn-sm upload text-white" style = "background-color: #9D71BC;">
-							Upload
-							<input class="uploadInput"type="file" name="file"/>
-						</div>
+          <div class="file btn btn-sm upload text-white" style = "background-color: #9D71BC;">
+                Upload
+                <input class="uploadInput"type="file" name="file"/>
+          </div>
+        </div>
+        <div class="row mt-2 ">
+          <div class="col-md-12">
+            <label class="labels"><b>Gender</b></label>
+            <input type="text" class="form-control " placeholder="Gender" value="">
+          </div>
+          <div class="col-md-12">
+            <label class="labels"><b>Marital Status</b></label>
+            <input type="text" class="form-control " placeholder="Marital Status" value="">
+          </div>
+          <div class="col-md-12">
+            <label class="labels"><b>Citizenship</b></label>
+            <input type="text" class="form-control " placeholder="Citizenship" value="">
+          </div>
         </div>   
       </div>
         <div class="col-md-5 border-right">
             <div class="p-3 py-0">
                 <div class="row mt-2">
-                    <div class="col-md-12">
-                      <label class="labels"><b>Lawyer Name</b></label>
-                      <input type="text" class="form-control " placeholder="Name" value="">
+                    <label class="labels"><b>Laywer's Name</b></label>
+                    <div class="col-md-4">
+                      <label class="labels"><b>First Name</b></label>
+                      <input type="text" class="form-control " placeholder="First Name" value="">
+                    </div>
+                    <div class="col-md-4">
+                      <label class="labels"><b>Middle Name</b></label>
+                      <input type="text" class="form-control " placeholder="Middle Name" value="">
+                    </div>
+                    <div class="col-md-4">
+                      <label class="labels"><b>Last Name</b></label>
+                      <input type="text" class="form-control " placeholder="Last Name" value="">
                     </div>
                 </div>
                 <div class="row mt-3">
                     <div class="col-md-12">
                       <label class="labels"><b>About Me</b></label>
-                      <textarea class="form-control" placeholder="About Me" id="floatingTextarea" style="height: 100px"></textarea>
+                      <textarea class="form-control" placeholder="About Me" id="floatingTextarea" style="height: 50px;"></textarea>
                     </div>
                 </div>
                 <div class="row mt-3">
                     <div class="col-md-12">
+                      <label class="labels"><b>Contact Number</b></label>
+                      <input type="text" class="form-control" placeholder="Contact Number" value="">
+                    </div>
+                    <div class="col-md-12">
+                      <label class="labels"><b>Address</b></label>
+                      <input type="text" class="form-control" placeholder="Address" value="">
+                    </div>
+                    <div class="col-md-6">
+                      <label class="labels"><b>Province</b></label>
+                      <input type="text" class="form-control" placeholder="Province" value="">
+                    </div>
+                    <div class="col-md-6">
+                      <label class="labels"><b>City</b></label>
+                      <input type="text" class="form-control" placeholder="Vity" value="">
+                    </div>
+                    <div class="col-md-12">
                       <label class="labels"><b>Year Admitted to the Bar</b></label>
                       <input type="text" class="form-control" placeholder="Year" value="">
                     </div>
-                    <div class="col-md-12 mb-5">
+                    <div class="col-md-12 mb-1">
                       <label class="labels"><b>IBP Chapter</b></label>
                       <input type="text" class="form-control" placeholder="IBP Chapter" value="">
                     </div>  
                 </div>
-                <div class="mt-5 text-center">
+                <div class="mt-1 text-center">
                   <button class="btn btn-sm profile-button text-white" style = "background-color: #9D71BC;" type="button">Save Profile</button>
                 </div>
             </div>
