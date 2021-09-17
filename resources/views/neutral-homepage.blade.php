@@ -15,16 +15,16 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
-        <link href="{{ URL::asset('css/layout.css'); }}" rel="stylesheet">
+        <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
     <title>LexHome</title>
 </head>
 <body>    
-    @include('lexcontent.navigation')
-    @include('lexcontent.login')
-    @include('lexcontent.ourservices')
-    @include('lexcontent.lawpractice')
-    @include('lexcontent.lawupdates')
-    @include('lexcontent.everydaylaw')
-    @include('lexcontent.footer')
+    @include('neutral-layouts.navigation')
+    @include('neutral-layouts.login')
+    @include('neutral-layouts.ourservices')
+    @include('neutral-layouts.lawpractice')
+    @include('neutral-layouts.lawupdates')
+    @include('neutral-layouts.everydaylaw')
+    @include('neutral-layouts.footer')
 </body>
 </html>

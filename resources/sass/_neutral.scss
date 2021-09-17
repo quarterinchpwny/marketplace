@@ -119,6 +119,7 @@ h1, h2, p {
 
 .navbar {
   background-color: #EAE5E1;
+  box-shadow: 0.5px 0.5px 5px 0.5px rgb(139, 125, 104);
 }
 
 .navbar-custom {
@@ -306,10 +307,10 @@ a:hover {
   margin-top: 10;
   font-size: 20px;
   font-weight: 700;
-  color: #555b64;
+  color: #333A44;
 
   &:hover {
-    color: black;
+    color: #7C9CAB;
   }
 }
 
@@ -389,6 +390,11 @@ hr {
   }
 }
 
+#areas_seemore:hover {
+  background-color: #547584;
+  border: 2px solid #7C9CAB;
+}
+
 /*LAW PRACTICE AREAS*/
 
 #law-practice {
@@ -428,10 +434,6 @@ hr {
   margin-top: 30px;
 }
 
-.btn:hover {
-  color: #FAF8F5;
-}
-
 .zoom {
   img {
     transition: transform .8s ease;
@@ -441,42 +443,6 @@ hr {
   &:hover img {
     transform: scale(0.9);
   }
-}
-
-/*FOOTER */
-
-.footer-top {
-  background-color: #333A44;
-  justify-content: space-around, end;
-  padding: 30px 30px 30px 60px;
-  justify-content: center;
-  align-items: center;
-
-  h4 {
-    font-family: 'Raleway', sans-serif;
-    color: white;
-  }
-}
-
-h3, p {
-  font-family: 'Raleway', sans-serif;
-  color: white;
-}
-
-.footer-top .h1 {
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 600;
-  font-size: 1.8rem;
-}
-
-.footer-bottom {
-  background-color: #292929;
-  color: white;
-  font-family: 'Raleway', sans-serif;
-  display: flex;
-  height: 45px;
-  justify-content: center;
-  align-items: center;
 }
 
 /* Law-Updates */
@@ -697,4 +663,40 @@ h3, p {
       }
     }
   }
+}
+
+/*FOOTER */
+
+.footer-top {
+  background-color: #333A44;
+  justify-content: space-around, end;
+  padding: 30px 30px 30px 60px;
+  justify-content: center;
+  align-items: center;
+
+  h4 {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+  }
+}
+
+h3, p {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+}
+
+.footer-top .h1 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.footer-bottom {
+  background-color: #292929;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
 }
