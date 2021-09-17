@@ -16,12 +16,7 @@ use Illuminate\Support\Facades\Route;
 // Public Routes
 Route::get('/', [App\Http\Controllers\AppController::class, 'index'])->name('home');
 
-
 Route::middleware(['guest'])->group(function () {
-  Route::get('login', [App\Http\Controllers\LoginController::class, 'index'])->name('login');
-  Route::post('login', [App\Http\Controllers\LoginController::class, 'logIn'])->name('post.login');
-  Route::get('register', [App\Http\Controllers\RegisterController::class, 'index'])->name('register');
-  Route::post('register', [App\Http\Controllers\RegisterController::class, 'register'])->name('post.register');
   Route::get('content', [App\Http\Controllers\MarketplaceContentController::class, 'index'])->name('content');
   Route::get('step1', [App\Http\Controllers\MarketplaceContentController::class, 'step1'])->name('step1');
   Route::get('step2', [App\Http\Controllers\MarketplaceContentController::class, 'step2'])->name('step2');
@@ -31,6 +26,15 @@ Route::middleware(['guest'])->group(function () {
   Route::get('step6', [App\Http\Controllers\MarketplaceContentController::class, 'step6'])->name('step6');
   Route::get('step7', [App\Http\Controllers\MarketplaceContentController::class, 'step7'])->name('step7');
   Route::get('step8', [App\Http\Controllers\MarketplaceContentController::class, 'step8'])->name('step8');
+});
+
+
+
+Route::middleware(['guest'])->group(function () {
+  Route::get('login', [App\Http\Controllers\LoginController::class, 'index'])->name('login');
+  Route::post('login', [App\Http\Controllers\LoginController::class, 'logIn'])->name('post.login');
+  Route::get('register', [App\Http\Controllers\RegisterController::class, 'index'])->name('register');
+  Route::post('register', [App\Http\Controllers\RegisterController::class, 'register'])->name('post.register');
 });
 Route::post('logout', [App\Http\Controllers\LoginController::class, 'logOut'])->name('logout');
 
