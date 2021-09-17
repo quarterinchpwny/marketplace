@@ -101,9 +101,7 @@ Route::get('/testing-area', [App\Http\Controllers\TestingController::class, 'ind
 
 Route::get('/neutral', [App\Http\Controllers\NeutralHomeController::class, 'index'])->name('neutral-homepage');
 
-Route::get('/Masculine', function(){
-  return view('masculine-layouts.masculineTemplate');
-}); 
+
 Route::get('/masculine', function(){
   return view('masculine-layouts.masculineTemplate');
 }); 
