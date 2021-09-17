@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-xl sticky-top navbar-custom navbar-light ">
     <div class="container-fluid">
         <a href="#login" class="navbar-brand">
-            <img class="nav-logo d-none d-xl-block" src="{{ URL::asset('NeutralHome_Graphics/Rizal_Law_Office_Logo.png')}}" alt="Rizal Law Office Brand">
+            <img class="nav-logo d-none d-xl-block" src="images/neutral/Rizal_Law_Office_Logo.png" alt="Rizal Law Office Brand">
             <span class="nav-brand d-xl-none">Rizal Law Office</span>
         </a>
 

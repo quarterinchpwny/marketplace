@@ -28,19 +28,19 @@
                 <p>(02) 8-451-1594</p>
                 <p>contact@rizallawoffice.com</p>
                 <a href="#" class="text-decoration-none">
-                    <img src="{{ URL::to('/') }}/NeutralHome_Graphics/fb_icon.png" alt="" style="height: 33px;">
-                </a>
+                    <img src="images/neutral/fb_icon.png" alt="" style="height: 33px;">
+                </a> 
                 <a href="#" class="text-decoration-none">                            
-                    <img src="{{ URL::to('/') }}/NeutralHome_Graphics/twitter_icon.png" alt="" style="height: 33px;">
+                    <img src="images/neutral/twitter_icon.png" alt="" style="height: 33px;">
                 </a>                    
                 <a href="/" class="text-decoration-none">
-                    <img src="{{ URL::to('/') }}/NeutralHome_Graphics/LinkedIN_icon.png" alt="" style="height: 33px;">
+                    <img src="images/neutral/linked-in_icon.png'" alt="" style="height: 33px;">
+                </a> 
+                <a href="/" class="text-decoration-none">
+                    <img src="images/neutral/instagram _icon.png" alt="" style="height: 33px;">
                 </a>
                 <a href="/" class="text-decoration-none">
-                    <img src="{{ URL::to('/') }}/NeutralHome_Graphics/Instagram_icon.png" alt="" style="height: 33px;">
-                </a>
-                <a href="/" class="text-decoration-none">
-                    <img src="{{ URL::to('/') }}/NeutralHome_Graphics/Twitter_icon.png" alt="" style="height: 33px;">
+                    <img src="images/neutral/youtube_icon.png" alt="" style="height: 33px;">
                 </a>
             </div>
         </div>
@@ -48,7 +48,7 @@
     <div class="container-fluid footer-bottom">
                 <div class="row">
             <div>
-                Powered by &nbsp; <img src="{{ URL::to('/') }}/NeutralHome_Graphics/LM_white_logo.png" alt="" width="100px">
+                Powered by &nbsp; <img src="{{ URL::to('/') }}images/neutral/LM_white_logo.png" alt="" width="100px">
             </div>
         </div>  
     </div>

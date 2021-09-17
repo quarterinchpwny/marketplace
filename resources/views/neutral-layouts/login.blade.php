@@ -5,7 +5,7 @@
                 <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="{{ URL::to('/') }}/NeutralHome_Graphics/banner.png" class="d-block w-100" alt="banner picture">
+                            <img src="images/neutral/banner.png" class="d-block w-100" alt="banner picture">
                             <div class="carousel-caption d-none d-md-block">
                                 <div>
                                     <p class="display-1">Lorem, ipsum dolor sit amet</p> 
@@ -20,7 +20,7 @@
             </div>
             <div class="col-xl-4 col-lg-12 text-light login">
                 <div class="logo">
-                    <img class="img-fluid" src="{{ URL::to('/') }}/NeutralHome_Graphics/RLOLogo.png" alt="logo"> 
+                    <img class="img-fluid" src="images/neutral/RLOLogo.png" alt="logo"> 
                 </div>
                 <p class="display-6">Welcome to Rizal Law Office</p>
 
@@ -53,12 +53,12 @@
                     <a href="#" class=" ">Forgot Password?</a>
                 </div>
                 <div class="text-center login-socials d-none d-sm-block"> 
-                    <a  href="#" class="btn"> <img src="{{ URL::to('/') }}/NeutralHome_Graphics/fb_icon.png" alt="">  LOG IN WITH FACEBOOK</a>
-                    <a  href="#" class="btn"> <img src="{{ URL::to('/') }}/NeutralHome_Graphics/google_icon.png" alt="">  LOG IN WITH GOOGLE</a>
+                    <a  href="#" class="btn"> <img src="images/neutral/fb_icon.png" alt="">  LOG IN WITH FACEBOOK</a>
+                    <a  href="#" class="btn"> <img src="images/neutral/google_icon.png" alt="">  LOG IN WITH GOOGLE</a>
                 </div>
                 <div class="text-center sm-screen-login-socials d-block d-sm-none"> 
-                    <a  href="#" class="btn"> <img src="{{ URL::to('/') }}/NeutralHome_Graphics/fb_icon.png" alt="" height="25px">  LOG IN WITH FACEBOOK</a>
-                    <a  href="#" class="btn"> <img src="{{ URL::to('/') }}/NeutralHome_Graphics/google_icon.png" alt=""height="25px">LOG IN WITH GOOGLE</a>
+                    <a  href="#" class="btn"> <img src="images/neutral/fb_icon.png" alt="" height="25px">  LOG IN WITH FACEBOOK</a>
+                    <a  href="#" class="btn"> <img src="images/neutral/google_icon.png" alt=""height="25px">LOG IN WITH GOOGLE</a>
                 </div>
                 <div class="text-center">
                     <br>
@@ -66,7 +66,7 @@
                     <a id="login_create" href="{{ URL::to('/') }}/neutral-layouts/signup.blade.php" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#signup">Create an Account</a>
                 </div>
                 <div id="powered">
-                    Powered by <img src="{{ URL::to('/') }}/NeutralHome_Graphics/LM_logo.png" alt="" >
+                    Powered by <img src="images/neutral/LM_logo.png" alt="" >
                 </div>
             </div>
         </div>

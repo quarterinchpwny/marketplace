@@ -6,8 +6,8 @@
          <h1 class="display-1 d-block d-xl-none" id="everyday-law-alt">Everyday Law</h1>
       </div>
       <div class="columns image" id="everyday-law-media">
-         <img id="everyday-law-image" src="{{ URL::to('/') }}/NeutralHome_Graphics/law_video.png" alt="Law Updates">
-         &nbsp;
+         <img id="everyday-law-image" src="images/neutral/law_video.png" alt="Law Updates">
+         &nbsp; 
       </div>
       <div class="columns content">
          <div id="everyday-law-content">
