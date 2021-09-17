@@ -10,6 +10,10 @@
         
         <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
         <title>Law Office - Homepage</title>
+        
+        <!-- CSS -->    
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/feminine.css') }}" rel="stylesheet">  
 
     </head>
     <body>
@@ -20,8 +24,8 @@
                 <i class="fas fa-bars"></i>
             </label>
             <label class="logo">
-                <img class="img-fluid" src="images/Logo2.png" alt="logo2" width="50px"> 
-                <img class="img-fluid" src="images/Logo1.png" alt="logo1" width="230px">  
+                <img class="img-fluid" src="images/feminine/Logo2.png" alt="logo2" width="50px"> 
+                <img class="img-fluid" src="images/feminine/Logo1.png" alt="logo1" width="230px">  
             </label>
             <ul>
                 <li><a class="active" href="#">Home</a></li>
