@@ -35,7 +35,7 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                           <div class="modal-body">
-                            <img class="card-img-top p-3" style="" src="/images/female_large.png " data-holder-rendered="true">
+                            <img class="card-img-top p-3" style="" src="/marketplace-images/female_large.png " data-holder-rendered="true">
                           </div>
                           <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -45,7 +45,7 @@
                     </div>
                     <a  href="#" data-bs-toggle="modal" data-bs-target="#feminine">
                       <div class="overlay "><h3>[View]</h3></div>
-                      <img class="card-img-top p-3" style="height: 32rem; display: block;" src="/images/female.png " data-holder-rendered="true">
+                      <img class="card-img-top p-3" style="height: 32rem; display: block;" src="/marketplace-images/female.png " data-holder-rendered="true">
                     </a>
                   <div class="container">
                     <div class="d-flex  flex-column">
@@ -70,7 +70,7 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                             <div class="modal-body">
-                              <img class="card-img-top p-3" style="" src="/images/neutral_large.jpg " data-holder-rendered="true">
+                              <img class="card-img-top p-3" style="" src="/marketplace-images/neutral_large.jpg " data-holder-rendered="true">
                             </div>
                             <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -80,7 +80,7 @@
                     </div>
                     <a  href="#" data-bs-toggle="modal" data-bs-target="#neutral">
                       <div class="overlay "><h3>[View]</h3></div>
-                      <img class="card-img-top p-3" style="height: 32rem; display: block;" src="/images/neutral.png " data-holder-rendered="true">
+                      <img class="card-img-top p-3" style="height: 32rem; display: block;" src="/marketplace-images/neutral.png " data-holder-rendered="true">
                     </a>          
                   <div class="container">
                     <div class="d-flex  flex-column">
@@ -106,7 +106,7 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                           <div class="modal-body">
-                            <img class="card-img-top p-3" style="" src="/images/masculine_large.png " data-holder-rendered="true">
+                            <img class="card-img-top p-3" style="" src="/marketplace-images/masculine_large.png " data-holder-rendered="true">
                           </div>
                           <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -116,7 +116,7 @@
                     </div>
                     <a  href="#" data-bs-toggle="modal" data-bs-target="#masculine">
                       <div class="overlay "><h3>[View]</h3></div>
-                      <img class="card-img-top p-3" style="height: 32rem; display: block;" src="/images/masculine.png " data-holder-rendered="true">
+                      <img class="card-img-top p-3" style="height: 32rem; display: block;" src="/marketplace-images/masculine.png " data-holder-rendered="true">
                     </a>              
                   <div class="container">
                     <div class="d-flex  flex-column">

@@ -12,7 +12,7 @@
           </div>
         </div>
         <div class="col">
-        <img class="mw-100" style="margin-top:auto" src="/images/devices.png" alt="">
+        <img class="mw-100" style="margin-top:auto" src="/marketplace-images/devices.png" alt="">
         </div>
     </div>
     </div>
