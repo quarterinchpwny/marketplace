@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 
         <!-- Script -->
-        <script src="jquery-3.5.1.min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 
         <!-- CSS -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -203,15 +203,23 @@
                     
                 </div>
 
+                <div class="bannerDiv">
+                    <p>banner image</p>
+                    <img src="images/banner-header-image.jpeg" alt="">
+                </div>
+
         <!-- Option 1: Bootstrap Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         
         <script>
             //store image link inside a variable for later use
-        //    var getImageLink = $('.bannerDiv img').attr('src');
+            var getImageLink = $('.bannerDiv img').attr('src');
 
             // add the link from the variable to background image for the div
-           // $('.banner-image').css('background-image','url('+ getImageLink +')');
+            $('.banner-image').css('background-image','url('+ getImageLink +')');
+
+            //remove the banner image 
+            $('.bannerDiv').hide()
        </script>
 
     </body>
