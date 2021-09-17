@@ -33,7 +33,7 @@
                         <!-- Brand -->
                         <div class="header-brand w-25 p-0 m-0">
                             <a class="navbar-brand d-flex align-items-center" href="#">
-                                <img class="header-logo w-100 d-none d-lg-block" src="{{ URL::to('/') }}/images/feminine/Rizal_Law_Office_Logo Pink.png" alt="Rizal Law Office Brand">
+                                <img class="header-logo w-100 d-none d-lg-block" src="{{ URL::to('/') }}/Feminine-images/feminine/Rizal_Law_Office_Logo Pink.png" alt="Rizal Law Office Brand">
                                 <span class="header-name d-lg-none">Rizal Law Office</span>
                             </a>
                         </div>
