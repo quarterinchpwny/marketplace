@@ -1,5 +1,4 @@
-@extends('layouts.layout')
-
+@extends('marketplace.layout')
 <header class = "masthead">
 
     <div class="p-3 pb-md-4 mx-auto text-center">

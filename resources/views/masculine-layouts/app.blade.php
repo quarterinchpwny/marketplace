@@ -17,10 +17,19 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="{{ asset('css/app.css') }}" rel="stylesheet"> 
 </head>
 <body>
+  <!-- Header and Navbar -->
+  <div class="container-fluid" id="topContent">
+      <a href="/masculine">
+        <img src="/images/masculineImages/rizalLogo.png" alt="Rizal Logo" id="headerLogo"></a>
+    </div>
+
+
   <div id="app">
      @include('masculine-layouts.navHome', ['from' => 'app'])
      @yield('content');
   </div>
+  
 </html>

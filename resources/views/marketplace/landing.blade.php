@@ -1,5 +1,4 @@
-
-@extends('layouts.layout')
+@extends('marketplace.layout')
 <header class = "masthead">
     <div class="container"style="margin-top:auto">
       <div class="row align-items-center justify-content-between ">
@@ -7,11 +6,10 @@
           <div class="masthead-main">Start E-Lawyering. </div>
           <div class="masthead-subheading">Create Your Own Website with </div>
           <div class="masthead-heading"> LEXWEB WEBSITE BUILDER</div>
-          <a class="w-100 btn btn-lg btnviolet mb-2" href="{{url('/login')}}">LOGIN</a>
-          <div class="text-center">
-            <p>Or</p>
+          <div class="container ">
+          <a class="btn w-25 btn-lg btn-orange" href="{{route('login')}}">Login</a>
+          <a class=" btn w-25 btn-lg btn-orange" href="{{route('step1')}}">Start Here</a>
           </div>
-          <a class="w-100 btn btn-lg btnviolet" href="{{url('step1')}}">START HERE</a>
         </div>
         <div class="col">
         <img class="mw-100" style="margin-top:auto" src="/images/devices.png" alt="">
