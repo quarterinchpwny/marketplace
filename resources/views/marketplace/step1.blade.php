@@ -243,4 +243,8 @@
       </div>
     </div>
   </main>
+  <div class="text-center">
+    <a class = "w-25 btn btn-lg btn-orange" href="{{url()->previous()}}">Back </a>
+
+  </div>
 </div>  
