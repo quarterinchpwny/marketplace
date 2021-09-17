@@ -32,4 +32,3 @@
     @include('feminine-layouts.footer')
 </body>
 </html>
-
