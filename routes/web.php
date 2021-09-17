@@ -100,9 +100,7 @@ Route::get('/sample', [App\Http\Controllers\SampleController::class, 'index'])->
 Route::get('/testing-area', [App\Http\Controllers\TestingController::class, 'index'])->name('testing-area');
 Route::get('/NeutralHome', [App\Http\Controllers\NeutralHomeController::class, 'index'])->name('neutralhome');
 
-Route::get('/Masculine', function(){
-  return view('masculine-layouts.masculineTemplate');
-}); 
+
 Route::get('/masculine', function(){
   return view('masculine-layouts.masculineTemplate');
 }); 
