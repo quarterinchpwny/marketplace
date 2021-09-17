@@ -13,8 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Public Routes
-Route::get('/', [App\Http\Controllers\AppController::class, 'index'])->name('home');
+
 
 Route::middleware(['guest'])->group(function () {
   Route::group(['prefix'=>'marketplace'],function () {
