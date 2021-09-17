@@ -1,8 +1,17 @@
 {
+<<<<<<< HEAD
     "/js/app.js": "/js/app.js?id=b3470ff0f78b894cc69d",
     "/css/neutral.css": "/css/neutral.css?id=19b99f9b660e99896454",
     "/css/masculine.css": "/css/masculine.css?id=885601f951e5b742e762",
     "/css/app.css": "/css/app.css?id=5e22cefc3db660adea0d",
     "/css/feminine.css": "/css/feminine.css?id=b95952b231736ee13e3c",
     "/css/marketplace.css": "/css/marketplace.css?id=b61c40551accc64af45f"
+=======
+    "/js/app.js": "/js/app.js?id=186c43317a838c522e13",
+    "/css/neutral.css": "/css/neutral.css?id=a0d1fd243de2b3131368",
+    "/css/masculine.css": "/css/masculine.css?id=a3c4c2729ac652540d69",
+    "/css/app.css": "/css/app.css?id=7a4f50469277a0df6592",
+    "/css/feminine.css": "/css/feminine.css?id=c36348cd0610c3927b69",
+    "/css/marketplace.css": "/css/marketplace.css?id=33934b3a44c3e7edcb61"
+>>>>>>> release
 }

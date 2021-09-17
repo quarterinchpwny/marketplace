@@ -35,7 +35,16 @@ class RegisterController extends Controller
                   'last_name' => $request->last_name,
               ])) {
                 if ($user = User::where('email', '=', $request->email)->with(['lawyer'])->first()) {
-                    return redirect('login')->withSuccess('Register Success.');
+                    // return redirect('login')->withSuccess('Register Success.');
+
+                    // if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
+                    //     return redirect()->intended('dashboard')->withSuccess('You are logged in!');
+                    // }
+
+                    
+                    Auth::login($user);
+
+                    return redirect(route('step7'))->withSuccess('Register Success.');
                 }
             }
         }
