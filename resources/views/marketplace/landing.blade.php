@@ -8,7 +8,7 @@
           <div class="masthead-heading"> LEXWEB WEBSITE BUILDER</div>
           <div class="container ">
           <a class="btn w-25 btn-lg btn-orange" href="{{route('login')}}">Login</a>
-          <a class=" btn w-25 btn-lg btn-orange" href="{{url('step1')}}">Start Here</a>
+          <a class=" btn w-25 btn-lg btn-orange" href="{{route('step1')}}">Start Here</a>
           </div>
         </div>
        
