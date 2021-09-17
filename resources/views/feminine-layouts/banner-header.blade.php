@@ -99,8 +99,8 @@
                         </div>
 
                         <div id="social_icons">
-                                <a id="signup_social" href="#" class="btn btn-primary btn-md" style="padding-left: 5px;"> <img src="Feminine-Images/google.png" alt="" style="padding-left: 10px; padding-right: 5px;" width="55px">Login with Google</a> <p> </p>
-                                <a id="signup_social" href="#" class="btn btn-primary btn-md" style="padding-left: 5px;"> <img src="Feminine-Images/facebook.png" alt="" style="padding-left: 10px; padding-right: 5px;" width="47px">Login with Facebook</a>
+                                <a id="signup_social" href="#" class="btn btn-primary btn-md" style="padding-left: 5px;"> <img src="Feminine-Images/google.png" alt="" style="padding-left: 10px; padding-right: 5px;" width="55px">Sign up with Google</a> <p> </p>
+                                <a id="signup_social" href="#" class="btn btn-primary btn-md" style="padding-left: 0px;"> <img src="Feminine-Images/facebook.png" alt="" style="padding-left: 10px; padding-right: 5px;" width="47px">Sign up with Facebook</a>
                         </div>
 
                         <div class="modal-body">
