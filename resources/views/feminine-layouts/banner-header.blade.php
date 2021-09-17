@@ -11,8 +11,12 @@
         <!-- Stylesheet -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 
+        <!-- Script -->
+        <script src="jquery-3.5.1.min.js"></script>
+
         <!-- CSS -->
-        <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/feminine.css') }}" rel="stylesheet"> 
 
         <title>Law Office - Homepage</title>    
 
@@ -198,10 +202,17 @@
                     </form>
                     
                 </div>
- 
 
         <!-- Option 1: Bootstrap Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        
+        <script>
+            //store image link inside a variable for later use
+        //    var getImageLink = $('.bannerDiv img').attr('src');
+
+            // add the link from the variable to background image for the div
+           // $('.banner-image').css('background-image','url('+ getImageLink +')');
+       </script>
 
     </body>
 </html>
