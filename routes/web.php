@@ -98,11 +98,10 @@ Route::get('/navigation', [App\Http\Controllers\NavController::class, 'index'])-
 Route::get('/banner-area', [App\Http\Controllers\BannerController::class, 'index'])->name('banner-area');
 Route::get('/sample', [App\Http\Controllers\SampleController::class, 'index'])->name('sample');
 Route::get('/testing-area', [App\Http\Controllers\TestingController::class, 'index'])->name('testing-area');
-Route::get('/NeutralHome', [App\Http\Controllers\NeutralHomeController::class, 'index'])->name('neutralhome');
 
-Route::get('/Masculine', function(){
-  return view('masculine-layouts.masculineTemplate');
-}); 
+Route::get('/neutral', [App\Http\Controllers\NeutralHomeController::class, 'index'])->name('neutral-homepage');
+
+
 Route::get('/masculine', function(){
   return view('masculine-layouts.masculineTemplate');
 }); 

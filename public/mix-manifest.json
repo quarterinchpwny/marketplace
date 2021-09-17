@@ -1,5 +1,10 @@
 {
+<<<<<<< HEAD
     "/js/app.js": "/js/app.js?id=9939f25a08da88aa6689",
+=======
+    "/js/app.js": "/js/app.js?id=8ce6ef0097eaa8986441",
+    "/css/neutral.css": "/css/neutral.css?id=a0d1fd243de2b3131368",
+>>>>>>> 1ff3abb57c8db1cd456b9936c795904a66a0382d
     "/css/app.css": "/css/app.css?id=7a4f50469277a0df6592",
     "/css/feminine.css": "/css/feminine.css?id=c36348cd0610c3927b69",
     "/css/marketplace.css": "/css/marketplace.css?id=33934b3a44c3e7edcb61"
