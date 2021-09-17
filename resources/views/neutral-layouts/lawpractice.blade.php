@@ -7,16 +7,16 @@
         <div class="container-xxl text-center" style="padding-bottom:60px">
             <div class="row align-items-center justify-content-center">
                 <div class="col-12 col-lg-6 col-xl-3 col-md-6">
-                    <div class="zoom"><img src="images/neutral/personal.png" alt=""></div>
+                    <div class="zoom"><img src="NeutralHome_Graphics/personal.png" alt=""></div>
                 </div>
                 <div class="col-12 col-lg-6 col-xl-3 col-md-6">
-                    <div class="zoom"><img src="images/neutral/civil.png" alt=""></div>
+                    <div class="zoom"><img src="NeutralHome_Graphics/civil.png" alt=""></div>
                 </div>
                 <div class="col-12 col-lg-6 col-xl-3 col-md-6">
-                    <div class="zoom"><img src="images/neutral/commercial.png" alt=""></div>
+                    <div class="zoom"><img src="NeutralHome_Graphics/commercial.png" alt=""></div>
                 </div>
                 <div class="col-12 col-lg-6 col-xl-3 col-md-6">
-                    <div class="zoom"><img src="images/neutral/labor.png" alt=""></div>
+                    <div class="zoom"><img src="NeutralHome_Graphics/labor.png" alt=""></div>
                 </div>
             </div>
         
@@ -37,16 +37,16 @@
 
             <div class="row align-items-center justify-content-center">
                 <div class="col-12 col-lg-6 col-xl-3 col-md-6">
-                    <div class="zoom"><img src="images/neutral/immigration.png" alt=""></div>
+                    <div class="zoom"><img src="NeutralHome_Graphics/immigration.png" alt=""></div>
                 </div> 
                 <div class="col-12 col-lg-6 col-xl-3 col-md-6">
-                    <div class="zoom"><img src="images/neutral/criminal.png" alt=""></div>
+                    <div class="zoom"><img src="NeutralHome_Graphics/criminal.png" alt=""></div>
                 </div>
                 <div class="col-12 col-lg-6 col-xl-3 col-md-6">
-                    <div class="zoom"><img src="images/neutral/taxation.png" alt=""></div>
+                    <div class="zoom"><img src="NeutralHome_Graphics/taxation.png" alt=""></div>
                 </div>
                 <div class="col-12 col-lg-6 col-xl-3 col-md-6">
-                    <div class="zoom"><img src="images/neutral/special_services.png" alt=""></div>
+                    <div class="zoom"><img src="NeutralHome_Graphics/special_services.png" alt=""></div>
                 </div>
             </div>
 
