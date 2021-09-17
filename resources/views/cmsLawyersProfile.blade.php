@@ -20,18 +20,17 @@
         <div class="col-md-5 border-right">
             <div class="p-3 py-0">
                 <div class="row mt-2">
-                    <div class="col-md-6">
+                    <label class="labels"><b>Laywer's Name</b></label>
+                    <div class="col-md-4">
                       <label class="labels"><b>First Name</b></label>
                       <input type="text" class="form-control " placeholder="First Name" value="">
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                       <label class="labels"><b>Middle Name</b></label>
                       <input type="text" class="form-control " placeholder="Middle Name" value="">
                     </div>
-                </div>
-                <div class="row mt-2">
-                    <div class="col-md-12">
-                      <label class="labels"><b> Last Name</b></label>
+                    <div class="col-md-4">
+                      <label class="labels"><b>Last Name</b></label>
                       <input type="text" class="form-control " placeholder="Last Name" value="">
                     </div>
                 </div>
@@ -47,10 +46,26 @@
                       <input type="text" class="form-control " placeholder="Citizenship" value="">
                     </div>
                     <div class="col-md-12">
+                      <label class="labels"><b>Contact Number</b></label>
+                      <input type="text" class="form-control" placeholder="Contact Number" value="">
+                    </div>
+                    <div class="col-md-12">
+                      <label class="labels"><b>Address</b></label>
+                      <input type="text" class="form-control" placeholder="Address" value="">
+                    </div>
+                    <div class="col-md-6">
+                      <label class="labels"><b>Province</b></label>
+                      <input type="text" class="form-control" placeholder="Province" value="">
+                    </div>
+                    <div class="col-md-6">
+                      <label class="labels"><b>City</b></label>
+                      <input type="text" class="form-control" placeholder="Vity" value="">
+                    </div>
+                    <div class="col-md-12">
                       <label class="labels"><b>Year Admitted to the Bar</b></label>
                       <input type="text" class="form-control" placeholder="Year" value="">
                     </div>
-                    <div class="col-md-12 mb-5">
+                    <div class="col-md-12 mb-1">
                       <label class="labels"><b>IBP Chapter</b></label>
                       <input type="text" class="form-control" placeholder="IBP Chapter" value="">
                     </div>  

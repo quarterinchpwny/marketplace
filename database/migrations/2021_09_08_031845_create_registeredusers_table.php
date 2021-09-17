@@ -14,7 +14,7 @@ class CreateRegisteredusersTable extends Migration
     public function up()
     {
         Schema::create('registeredusers', function (Blueprint $table) {
-            $table->autoIncrement('id', true);
+            $table->increments('id', true);
             $table->string('username', 45);
             $table->string('password', 45);
             $table->string('first_name', 45);
