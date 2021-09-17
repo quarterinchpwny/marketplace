@@ -43,7 +43,7 @@
                     <div class="law-updates-header card-title text-center h2 mt-4">LAW UPDATES</div>
 
                     <div class="law-updates-picture text-center container-fluid py-5">
-                        <img src="{{ URL::to('/') }}/images/feminine/law-update.jpeg" class="img-law-updates img-fluid rounded mx-auto d-block" alt="Featured Law Update">
+                        <img src="{{ URL::to('/') }}/Feminine-images/feminine/law-update.jpeg" class="img-law-updates img-fluid rounded mx-auto d-block" alt="Featured Law Update">
                     </div>
 
                     <div class="law-updates-blog-title h4 pb-4">Can your text message or e-mail message be used as evidence in court? </div>
@@ -70,7 +70,7 @@
                     <div class="everyday-law-header card-title text-center h2 mt-4">EVERYDAY LAW</div>
 
                     <div class="everyday-law-picture text-center container-fluid py-5">
-                        <img src="{{ URL::to('/') }}/images/feminine/everyday-law-sample-pic.jpg" class="img-everyday-law img-fluid rounded mx-auto d-block" alt="Featured Everyday Law">
+                        <img src="{{ URL::to('/') }}/Feminine-images/feminine/everyday-law-sample-pic.jpg" class="img-everyday-law img-fluid rounded mx-auto d-block" alt="Featured Everyday Law">
                     </div>
 
                     <div class="everyday-law-blog-title h4 pb-4">Co-maker ng 'di nagbayad sa utang, tama ba na ikaw ang singilin? </div>

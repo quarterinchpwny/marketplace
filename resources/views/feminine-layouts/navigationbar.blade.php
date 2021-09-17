@@ -24,8 +24,8 @@
                 <i class="fas fa-bars"></i>
             </label>
             <label class="logo">
-                <img class="img-fluid" src="images/feminine/Logo2.png" alt="logo2" width="50px"> 
-                <img class="img-fluid" src="images/feminine/Logo1.png" alt="logo1" width="230px">  
+                <img class="img-fluid" src="Feminine-images/feminine/Logo2.png" alt="logo2" width="50px"> 
+                <img class="img-fluid" src="Feminine-images/feminine/Logo1.png" alt="logo1" width="230px">  
             </label>
             <ul>
                 <li><a class="active" href="#">Home</a></li>

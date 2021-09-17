@@ -2,7 +2,7 @@
     <div class="container-fluid footer-top">
         <div class="row">
             <div class="col-xl-6 col-lg-6">
-                <img src="images/neutral/Rizal_Law_Office_Logo_White.png" alt="footer logo" height="70px" class="d-none d-md-block" style="margin-top: 30px;"> 
+                <img src="NeutralHome_Graphics/Rizal_Law_Office_Logo_White.png" alt="footer logo" height="70px" class="d-none d-md-block" style="margin-top: 30px;"> 
                 <p class="h1 d-block d-md-none">Rizal Law Office</p>
                 <p style="padding-left: 1rem;"><i>Lorem ipsum dolor</i></p>
             </div>
@@ -28,19 +28,19 @@
                 <p>(02) 8-451-1594</p>
                 <p>contact@rizallawoffice.com</p>
                 <a href="#" class="text-decoration-none">
-                    <img src="images/neutral/fb_icon.png" alt="" style="height: 33px;">
+                    <img src="NeutralHome_Graphics/fb_icon.png" alt="" style="height: 33px;">
                 </a> 
                 <a href="#" class="text-decoration-none">                            
-                    <img src="images/neutral/twitter_icon.png" alt="" style="height: 33px;">
+                    <img src="NeutralHome_Graphics/twitter_icon.png" alt="" style="height: 33px;">
                 </a>                    
                 <a href="/" class="text-decoration-none">
-                    <img src="images/neutral/linked-in_icon.png" alt="" style="height: 33px;">
+                    <img src="NeutralHome_Graphics/linked-in_icon.png" alt="" style="height: 33px;">
                 </a> 
                 <a href="/" class="text-decoration-none">
-                    <img src="images/neutral/instagram_icon.png" alt="" style="height: 33px;">
+                    <img src="NeutralHome_Graphics/instagram_icon.png" alt="" style="height: 33px;">
                 </a>
                 <a href="/" class="text-decoration-none">
-                    <img src="images/neutral/youtube_icon.png" alt="" style="height: 33px;">
+                    <img src="NeutralHome_Graphics/youtube_icon.png" alt="" style="height: 33px;">
                 </a>
             </div>
         </div>
@@ -48,7 +48,7 @@
     <div class="container-fluid footer-bottom">
                 <div class="row">
             <div>
-                Powered by &nbsp; <img src="images/neutral/LM_white_logo.png" alt="" width="100px">
+                Powered by &nbsp; <img src="NeutralHome_Graphics/LM_white_logo.png" alt="" width="100px">
             </div>
         </div>  
     </div>

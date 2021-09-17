@@ -10,7 +10,7 @@
                             <div class="card">
                                 <div class="card-body text-center">
                                     <h5 class="card-title display-6 py-3">ASSIST</h5>
-                                    <img class="rounded mx-auto d-block img-logo " src="images/neutral/02_Product_Assist_ver_3.png" alt="Assist" height="100">
+                                    <img class="rounded mx-auto d-block img-logo " src="NeutralHome_Graphics/02_Product_Assist_ver_3.png" alt="Assist" height="100">
                                     <br><p>FREE Legal Assessment</p>
                                     <a href="#" class="btn btn-primary btn-lg">Ask Lawyers</a>
                                 </div>
@@ -20,7 +20,7 @@
                             <div class="card">
                                 <div class="card-body text-center">
                                     <h5 class="card-title display-6 py-3">CONSULT</h5>
-                                    <img class="rounded mx-auto d-block img-logo " src="images/neutral/01_Product_Consult_ver_3.png" alt="Assist" height="100">
+                                    <img class="rounded mx-auto d-block img-logo " src="NeutralHome_Graphics/01_Product_Consult_ver_3.png" alt="Assist" height="100">
                                     <br><p>PAID Legal Consultation</p>
                                     <a href="#" class="btn btn-primary btn-lg">Submit Legal Problem</a>
                                 </div>
@@ -30,7 +30,7 @@
                             <div class="card">
                                 <div class="card-body text-center">
                                     <h5 class="card-title display-6 py-3">WORKS</h5>
-                                    <img class="rounded mx-auto d-block img-logo " src="images/neutral/03_Product_Works_ver_3.png" alt="Assist" height="100">
+                                    <img class="rounded mx-auto d-block img-logo " src="NeutralHome_Graphics/03_Product_Works_ver_3.png" alt="Assist" height="100">
                                     <br><p>FREE Legal Fee Crowdsourcing and PAID Legal Works Escrow Delivery</p>
                                     <a href="#" class="btn btn-primary btn-lg">Request Proposal</a>
                                 </div>
@@ -40,7 +40,7 @@
                             <div class="card ">
                                 <div class="card-body text-center">
                                     <h1 class="card-title display-6 py-3">DOCS</h1>
-                                    <img class="rounded mx-auto d-block img-logo " src="images/neutral/04_Product_Docs_ver_3.png" alt="Assist" height="100">
+                                    <img class="rounded mx-auto d-block img-logo " src="NeutralHome_Graphics/04_Product_Docs_ver_3.png" alt="Assist" height="100">
                                     <br><p>CREATE your own LEGAL DOCUMENTS from hundreds of templates</p>
                                     <a href="#" class="btn btn-primary btn-lg">Create Legal Document</a>
                                 </div>

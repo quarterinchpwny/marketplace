@@ -21,7 +21,7 @@
          </div>
       </div>
       <div class="columns image" id="law-updates-media">
-         <img id="law-updates-image"src="images/neutral/law_updates_banner.png" alt="Law Updates">
+         <img id="law-updates-image"src="NeutralHome_Graphics/law_updates_banner.png" alt="Law Updates">
          &nbsp;
       </div>
    </div>
