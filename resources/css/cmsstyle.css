@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+
+body {
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  background: rgb(94,27,137);
+  background: linear-gradient(345deg, rgba(94,27,137,1) 0%, rgba(157,113,188,1) 31%, rgba(255,127,77,1) 74%, rgba(244,81,44,1) 99%);
+
+}
+
+#viewport {
+  padding-left: 250px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+/* Sidebar  */
+.sidebar-nav #line{
+  height: 5px;
+  margin-top: 48px;
+}
+.sidebar-nav {
+  z-index: 1000;
+  position: fixed;
+  left: 250px;
+  width: 280px;
+  height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.sidebar-logo{
+    width: 200px;
+    height: 40px;
+    margin:10px 33px;
+
+}
+.sidebar-nav .nav{
+    width: 250px;
+    height: 80%;
+    margin-top: 50px;
+}
+
+.sidebar-nav .nav-item  a:hover{
+  background-color: #FF7F4D;
+  color: white;
+
+}
+
+.sidebar-nav .nav-item .active{
+  background-color: #FF7F4D;
+  color: white;
+}
+
+.sidenav-logo{
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  font-size: 15px;
+  margin: 0px auto;
+   
+}
+.nav-link{
+  display: block;
+  padding: 5rem 1rem;
+  color :black;
+
+}
+/* Top Navigation */
+
+/*Homepage Content */
+.page-content-wrapper  {
+  padding: 80px 60px;
+  height: 760px;
+  
+}
+.row2{
+  margin: 30px auto;
+  border-radius: 15px;
+  padding: 20px 0PX;
+  width:1170px;
+}
+.btn{
+  background-color: #9D71BC;
+}
+.row3{
+  background-color: #E8E4E4;
+  right: 10px;
+  padding: 10px;
+  margin-left: 50px;
+  width: 1141px;
+  margin: 10px 0px;
+}
+.tab-content{
+  margin: 10px 0px;
+}
+.row4 .mb-3{
+  margin: 10px 20px;
+}
+.row4 .col-lg-10{
+  margin: 10px 50px;
+  
+}
+.row4{
+  padding: 10px;
+}
+
+
+/* For other pages.. di pa maayos*/
+.policyheader{
+  padding: 15px;
+}
+.texteditor{
+  border-right: 2px solid #FF7F4D !important;
+}
+.row-options{
+  padding: 10px;
+}
+.col-sm-7{
+  margin-top: 20px;
+}
+.previewbutton {
+  margin-bottom: 20px;
+  margin-left: 4px;
+}
+.editor{
+  max-height: 500px;
+}
+
+

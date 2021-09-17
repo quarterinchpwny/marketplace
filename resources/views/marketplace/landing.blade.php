@@ -11,12 +11,10 @@
           <a class=" btn w-25 btn-lg btn-orange" href="{{route('step1')}}">Start Here</a>
           </div>
         </div>
-       
         <div class="col">
         <img class="mw-100" style="margin-top:auto" src="/images/devices.png" alt="">
         </div>
     </div>
-    
     </div>
   </header>
   
