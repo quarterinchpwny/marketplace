@@ -10,7 +10,7 @@
             <div class="main">Congratulations on Your Subscription!</div>
             <div class="subheading">Start adding contents on your website to start e-Lawyering</div>
             <div class="heading"> LEXWEB WEBSITE BUILDER</div>
-            <a class="w-100 btn btn-lg btnviolet" href="{{route('step7', \Request::all())}}">EDIT</a>
+            <a class="w-100 btn btn-lg btnviolet" href="{{route('dashboard')}}">GO TO DASHBOARD</a>
           </div>
          
           <div class="col">

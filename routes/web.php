@@ -25,8 +25,6 @@ Route::middleware(['guest'])->group(function () {
     Route::get('step4', [App\Http\Controllers\MarketplaceContentController::class, 'step4'])->name('step4');
     Route::get('step5', [App\Http\Controllers\MarketplaceContentController::class, 'step5'])->name('step5');
     Route::get('step6', [App\Http\Controllers\MarketplaceContentController::class, 'step6'])->name('step6');
-    Route::get('step7', [App\Http\Controllers\MarketplaceContentController::class, 'step7'])->name('step7');
-    Route::get('step8', [App\Http\Controllers\MarketplaceContentController::class, 'step8'])->name('step8');
   });
   Route::get('login', [App\Http\Controllers\LoginController::class, 'index'])->name('login');
   Route::post('login', [App\Http\Controllers\LoginController::class, 'logIn'])->name('post.login'); 
@@ -38,6 +36,12 @@ Route::post('logout', [App\Http\Controllers\LoginController::class, 'logOut'])->
 
 // Athenticated Routes
 Route::middleware(['auth'])->group(function () {
+
+  Route::group(['prefix'=>'marketplace'],function () {
+    Route::get('step7', [App\Http\Controllers\MarketplaceContentController::class, 'step7'])->name('step7');
+    Route::get('step8', [App\Http\Controllers\MarketplaceContentController::class, 'step8'])->name('step8');
+  });
+
   Route::get('dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
   Route::group(['prefix' => 'account'], function () {
       Route::get('/', [App\Http\Controllers\AccountController::class, 'index'])->name('account');
