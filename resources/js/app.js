@@ -1,5 +1,8 @@
 require('./bootstrap');
 
+import 'bootstrap';
+import $ from 'jquery'
+
 var menu_btn = document.querySelector("#menu-btn");
 var sidebar = document.querySelector("#sidebar");
 var container = document.querySelector(".main-container");
