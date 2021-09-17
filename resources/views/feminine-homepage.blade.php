@@ -21,7 +21,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/feminine.css') }}" rel="stylesheet">  
 
-    <title>LexHome</title>
+    <title>LexHomepage - Feminine</title>
 </head>
 <body>    
     @include('feminine-layouts.header')
