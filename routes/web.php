@@ -15,9 +15,10 @@ use App\Http\Controllers\LoginController;
 |
 */
 
+Route::get('/', [App\Http\Controllers\MarketplaceContentController::class, 'index'])->name('home');  
+
 Route::middleware(['guest'])->group(function () {
   Route::group(['prefix'=>'marketplace'],function () {
-    Route::get('/', [App\Http\Controllers\MarketplaceContentController::class, 'index'])->name('home');  
     Route::get('step1', [App\Http\Controllers\MarketplaceContentController::class, 'step1'])->name('step1');
     Route::get('step2', [App\Http\Controllers\MarketplaceContentController::class, 'step2'])->name('step2');
     Route::get('step3', [App\Http\Controllers\MarketplaceContentController::class, 'step3'])->name('step3');
@@ -28,15 +29,12 @@ Route::middleware(['guest'])->group(function () {
     Route::get('step8', [App\Http\Controllers\MarketplaceContentController::class, 'step8'])->name('step8');
   });
   Route::get('login', [App\Http\Controllers\LoginController::class, 'index'])->name('login');
-  Route::post('login', [App\Http\Controllers\LoginController::class, 'logIn'])->name('post.login');
-  // Route::post('login/success', [App\Http\Controllers\LoginController::class, 'sheesh'])->name('post.login'); 
+  Route::post('login', [App\Http\Controllers\LoginController::class, 'logIn'])->name('post.login'); 
   Route::get('register', [App\Http\Controllers\RegisterController::class, 'index'])->name('register');
   Route::post('register', [App\Http\Controllers\RegisterController::class, 'register'])->name('post.register');
+  
+  Route::post('logout', [App\Http\Controllers\LoginController::class, 'logOut'])->name('logout');
 });
-
-
-Route::post('logout', [App\Http\Controllers\LoginController::class, 'logOut'])->name('logout');
-
 // Athenticated Routes
 Route::middleware(['auth'])->group(function () {
   Route::get('dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
@@ -101,6 +99,13 @@ Route::get('/banner-area', [App\Http\Controllers\BannerController::class, 'index
 Route::get('/sample', [App\Http\Controllers\SampleController::class, 'index'])->name('sample');
 Route::get('/testing-area', [App\Http\Controllers\TestingController::class, 'index'])->name('testing-area');
 Route::get('/NeutralHome', [App\Http\Controllers\NeutralHomeController::class, 'index'])->name('neutralhome');
+
+Route::get('/Masculine', function(){
+  return view('masculine-layouts.masculineTemplate');
+}); 
+Route::get('/masculine', function(){
+  return view('masculine-layouts.masculineTemplate');
+}); 
 
 // Carl Note
 // if route changes not work try to run "php artisan optimize"
