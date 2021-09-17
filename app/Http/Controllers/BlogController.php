@@ -31,7 +31,6 @@ class BlogController extends Controller
             'blog'=>Blog::find($blog_id)
         ]);
     }
-
     public function update($blog_id, Request $request) 
     {
         Blog::find($blog_id)->update($request->all());

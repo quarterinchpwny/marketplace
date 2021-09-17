@@ -12,7 +12,7 @@
     <div class="row">
       <div class="col-md-3 border-right">
         <div class="d-flex flex-column align-items-center text-center p-3 py-0">
-          <img class="rounded-circle mt-2" width="100px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg">
+          <img class="rounded-circle mt-4" width="100px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg">
           <span class="font-weight-bold">Lawyer</span>
           <span class="text-black-50">lawyer@gmail.com</span><span> </span>
         </div> 
@@ -34,21 +34,21 @@
                       <input type="text" class="form-control " placeholder="Last Name" value="">
                     </div>
                 </div>
-                <div class="row mt-2">
+                <div class="row mt-1">
                     <div class="col-md-12">
                       <label class="labels"><b>About Me</b></label>
                       <textarea class="form-control" placeholder="About Me" id="floatingTextarea" rows="2"></textarea>
                     </div>
                 </div>
-                <div class="row mt-2">
-                <div class="col-md-12">
-                      <label class="labels"><b>Citizenship</b></label>
-                      <input type="text" class="form-control " placeholder="Citizenship" value="">
-                    </div>
-                    <div class="col-md-12">
-                      <label class="labels"><b>Contact Number</b></label>
-                      <input type="text" class="form-control" placeholder="Contact Number" value="">
-                    </div>
+                <div class="row mt-1">
+                      <div class="col-md-6">
+                        <label class="labels"><b>Citizenship</b></label>
+                        <input type="text" class="form-control " placeholder="Citizenship" value="">
+                      </div>
+                      <div class="col-md-6">
+                        <label class="labels"><b>Contact Number</b></label>
+                        <input type="text" class="form-control" placeholder="Contact Number" value="">
+                      </div>
                     <div class="col-md-12">
                       <label class="labels"><b>Address</b></label>
                       <input type="text" class="form-control" placeholder="Address" value="">
@@ -59,7 +59,7 @@
                     </div>
                     <div class="col-md-6">
                       <label class="labels"><b>City</b></label>
-                      <input type="text" class="form-control" placeholder="Vity" value="">
+                      <input type="text" class="form-control" placeholder="City" value="">
                     </div>
                     <div class="col-md-12">
                       <label class="labels"><b>Year Admitted to the Bar</b></label>

@@ -87,7 +87,7 @@ class PrivacyPolicyController extends Controller
     }
     public function storeDisclaimer(Request $request)
     {
-        Disclaimer::create( $request->all() + ['lawyer_profile_id'=>Auth::user()->lawyer->lawyer_profile_id ] ) ;
+        Disclaimer::create( $request->all() + ['lawyer_profile_id'=>Auth::user()->lawyer->lawyer_profile_id]);
         return redirect(route ('cmsPrivacyPolicy'));
     }
 

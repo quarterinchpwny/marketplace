@@ -43,12 +43,6 @@ class DashboardController extends Controller
     {
         return view('cmsRegistration');
     }
-
-    public function lawUpdates()
-    {
-        return view('cmsLawUpdate');
-    }
-
     public function lawyersProfile()
     {
         return view('cmsLawyersProfile');
@@ -68,11 +62,6 @@ class DashboardController extends Controller
     {
         return view('cmsLawFirmPractice');
     }
-
-    public function addPostLawUpdate(){
-        return view('addNewPostLawUpdate');
-    }
-
     public function contactUs()
     {
         return view('cmsContactUs');

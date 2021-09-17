@@ -33,7 +33,7 @@
           <a href="{{route ('cmsLawyersBlog') }}" class="nav-link">Lawyer's Blog Section</a>
         </li>
         <li class="nav-item">
-          <a href="{{url ('/cmsLawUpdate') }}" class="nav-link">Law Update Section</a>
+          <a href="{{route ('cmsLawUpdate') }}" class="nav-link">Law Update Section</a>
         </li>
         <li class="nav-item">
           <a href="{{url ('/cmsEverydayLaw') }}" class="nav-link">Everyday Law</a>
