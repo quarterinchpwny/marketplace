@@ -22,13 +22,13 @@
 <body>
   <!-- Header and Navbar -->
   <div class="container-fluid" id="topContent">
-      <a href="/Masculine">
+      <a href="/masculine">
         <img src="/images/masculineImages/rizalLogo.png" alt="Rizal Logo" id="headerLogo"></a>
     </div>
 
 
   <div id="app">
-     @include('layouts.navHome', ['from' => 'app'])
+     @include('masculine-layouts.navHome', ['from' => 'app'])
      @yield('content');
   </div>
   

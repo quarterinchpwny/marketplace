@@ -10,10 +10,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;400&family=Poppins:wght@200;600&family=Roboto&display=swap" rel="stylesheet">
 <!-- Header and Navbar -->
 <div class="container-fluid" id="topContent">
-      <a href="/Masculine">
+      <a href="/home">
         <img src="/images/masculineImages/rizalLogo.png" alt="Rizal Logo" id="headerLogo"></a>
     </div>
-@include('layouts.navM', ['from' => 'app'])
+@include('masculine-layouts.navM', ['from' => 'app'])
 <!-- Styles -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <link href="{{ asset('css/masculine.css') }}" rel="stylesheet">
@@ -30,9 +30,9 @@ function closeModal(){
   document.querySelector("body").style.overflow = "scroll";
 }
 </script>
-@include('layouts.signUpM')
-@include('layouts.servicesM')
-@include('layouts.practiceAreasM')
-@include('layouts.lawUpdatesM')
-@include('layouts.everydayLawM')
-@include('layouts.footerM')
+@include('masculine-layouts.signUpM')
+@include('masculine-layouts.servicesM')
+@include('masculine-layouts.practiceAreasM')
+@include('masculine-layouts.lawUpdatesM')
+@include('masculine-layouts.everydayLawM')
+@include('masculine-layouts.footerM')

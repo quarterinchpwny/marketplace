@@ -48,7 +48,7 @@
               <a href="url"><strong>Forgot Password?</strong></a>
         </div>
 
-        <div class="col-sm-7 signupButton">
+        <div class="col-sm-4 signupButton mx-auto">
          <a href="url">Don't have an account yet? <strong>Sign Up.</strong></a>
         </div>
 
