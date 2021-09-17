@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Contact;
+
 
 class DashboardController extends Controller
 {
@@ -23,7 +25,66 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        return view('dashboard');
+        return view('cms');
+    }
+    public function services()
+    {
+        return view('cmsServices');
+    }
+
+    public function addBanner()
+    {
+        return view('addBanner');
+    }
+
+    public function registration()
+    {
+        return view('cmsRegistration');
+    }
+
+    public function lawUpdates()
+    {
+        return view('cmsLawUpdate');
+    }
+
+    public function lawyersProfile()
+    {
+        return view('cmsLawyersProfile');
+    }
+
+    public function everyDayLaw()
+    {
+        return view('cmsEverydayLaw');
+    }
+
+    public function lawFirmPractice()
+    {
+        return view('cmsLawFirmPractice');
+    }
+
+    public function addPostLawUpdate(){
+        return view('addNewPostLawUpdate');
+    }
+
+    public function contactUs()
+    {
+        return view('cmsContactUs');
+    }
+
+    public function addNewAddress()
+    {
+        return view('addAddress');
+    }
+    
+    public function storeAddress(Request $request)
+    {
+        Contact::create($request->all());
+        return redirect(route('cmsContactUs'))->withSuccess('Success');
+    } 
+
+    public function domainSettings()
+    {
+        return view('cmsDomainSettings');
     }
 
     public function test()

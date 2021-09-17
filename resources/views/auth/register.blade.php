@@ -5,7 +5,7 @@
     <div class="col-md-4 col-offset-4">
       <div class="card">
         <div class="card-header text-center h5">{{ __('Register') }}</div>
-        <div class="card-body">
+        <div class="card-body registerBody">
           @if (session('error'))
             <div class="alert alert-danger" role="alert">
               {{ session('error') }}

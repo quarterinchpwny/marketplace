@@ -1,2 +1,13 @@
+<<<<<<< HEAD
 @import 'marketplace';
 @import 'neutral';
+=======
+@import 'feminine';
+@import 'marketplace';
+@import 'neutral';
+@import 'masculine';
+.bg-primary{
+background-color: #CEDDEF !important;
+}
+
+>>>>>>> release
