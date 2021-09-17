@@ -9,12 +9,13 @@
     <div class="row row2 container-fluid"  style="height: 570px; background-color:#F8FFFE; margin-left: 5px; ">
         <div class="col-xl container-fluid texteditor" style="width: 300px;">
             <script src="https://cdn.ckeditor.com/ckeditor5/29.2.0/decoupled-document/ckeditor.js"></script>
-            <h5>View</h5>
-            {{$blog->title}}
+            <div class="col-12">
+                <h4><a href="{{route ('cmsLawyersBlog') }}" ><button type="button" class="btn-close" aria-label="Close"></button></a>View Post</h4>
+            </div>
+            <br>
+            <div class = "col-12 mt-2 "><h5>{{$blog->title}}</h5></div>
             </br>
-            {{$blog->body}}
-          
-
+            <div class="col-12 mt-3">{{$blog->body}}</div>
             <!--  
             <div id="editor">
                 <p>Add text here.</p>
@@ -38,12 +39,6 @@
                     <div class="row ">
                         <h6>Publish</h6>
                     </div> 
-                    <div class="col-sm-7">
-                        <button type="button" class="btn btn-primary btn-sm">SAVE AS DRAFT</button>
-                    </div>
-                    <div class="col-sm-4">
-                        <button type="button" class="btn btn-primary btn-sm">PREVIEW</button>
-                    </div>
                 </div>     
             </div>
         </div>     

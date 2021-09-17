@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Contact;
+use App\Models\Lawyer;
+
 
 
 class DashboardController extends Controller
@@ -50,6 +52,11 @@ class DashboardController extends Controller
     public function lawyersProfile()
     {
         return view('cmsLawyersProfile');
+    }
+    public function editLawyersProfile()
+    {
+        return view('editLawyersProfile'/*,[
+        'lawyer'=>Lawyer::find($lawyer_profile_id)]*/);
     }
 
     public function everyDayLaw()

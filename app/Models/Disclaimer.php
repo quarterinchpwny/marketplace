@@ -5,18 +5,17 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Terms extends Model
+class Disclaimer extends Model
 {
     use HasFactory;
 
-    protected $table = 'terms_of_use';
+    protected $table = 'disclaimers';
 
-    protected $primaryKey = 'term_id';
+    protected $primaryKey = 'disclaimer_id';
 
     protected $fillable = [
         'lawyer_profile_id',
         'title',
         'body'
     ];
-
 }

@@ -14,7 +14,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 
 </head>
-<body>
+<body class = "cmsdashboard">
     <div id="viewport">
     <!-- Sidebar --> 
     <div class="flex-column flex-shrink-0 p-3 sidebar-nav offcanvas offcanvas-start" style=" background-color: #F8FFFE;" >

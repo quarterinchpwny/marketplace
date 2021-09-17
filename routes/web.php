@@ -49,6 +49,9 @@ Route::middleware(['auth'])->group(function () {
   Route::get('cmsServices', [App\Http\Controllers\DashboardController::class, 'services'])->name('cmsServices');
   Route::get('cmsLawUpdate', [App\Http\Controllers\DashboardController::class, 'lawUpdates'])->name('cmsLawUpdate');
   Route::get('cmsLawyersProfile', [App\Http\Controllers\DashboardController::class, 'lawyersProfile'])->name('cmsLawyersProfile');
+  Route::get('editLawyersProfile', [App\Http\Controllers\DashboardController::class, 'editLawyersProfile'])->name('lawyersprofile.edit');
+  
+  
   Route::get('cmsEverydayLaw', [App\Http\Controllers\DashboardController::class, 'everyDayLaw'])->name('cmsEverydayLaw');
   Route::get('cmsLawFirmPractice', [App\Http\Controllers\DashboardController::class, 'lawFirmPractice'])->name('cmsLawFirmPractice');
   Route::get('addBanner', [App\Http\Controllers\DashboardController::class, 'addBanner'])->name('addBanner');
@@ -89,6 +92,11 @@ Route::middleware(['auth'])->group(function () {
     Route::get('editTermsofUse/{term_id}', [App\Http\Controllers\PrivacyPolicyController::class, 'editTerms'])->name('termsofuse.edit');
     Route::post('updateTermsofUse/{term_id}', [App\Http\Controllers\PrivacyPolicyController::class, 'updateTerms'])->name('termsofuse.update');
     Route::get('deleteTerms/{term_id}', [App\Http\Controllers\PrivacyPolicyController::class, 'destroyTerms'])->name('termsofuse.delete');
+    Route::get('viewTerms/{term_id}', [App\Http\Controllers\PrivacyPolicyController::class, 'showTerms'])->name('termsofuse.view');
+  
+    //Disclaimers
+    Route::get('createDisclaimers', [App\Http\Controllers\PrivacyPolicyController::class, 'createDisclaimer'])->name('disclaimer.create');
+    Route::post('storeDisclaimers', [App\Http\Controllers\PrivacyPolicyController::class, 'storeDisclaimer'])->name('disclaimer.storedisclaimer');
   });
 });
 

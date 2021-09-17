@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\PrivacyPolicy;
 use App\Models\Terms;
+use App\Models\Disclaimer;
 use Auth;
 
 class PrivacyPolicyController extends Controller
@@ -14,8 +15,8 @@ class PrivacyPolicyController extends Controller
     {
         return view('cmsPrivacyPolicy',
         ['privacypolicy'=>PrivacyPolicy::paginate(5)],
-        ['termsofuse'=>Terms::paginate(5)]);
-      
+        ['termsofuse'=>Terms::paginate(5)],
+        ['disclaimer'=>Disclaimer::paginate(5)] );   
     }
     public function addPrivacyPolicy()
     {
@@ -73,6 +74,23 @@ class PrivacyPolicyController extends Controller
     {
         Terms::find($term_id)->delete();
         return redirect(route ('cmsPrivacyPolicy'));
-        
     }
+    public function showTerms($term_id){
+        return view('viewTermsofUse',[
+            'terms'=>Terms::find($term_id)
+        ]);
+    }
+    //Disclaimers
+    public function createDisclaimer()
+    {
+        return view('createDisclaimers');
+    }
+    public function storeDisclaimer(Request $request)
+    {
+        Disclaimer::create( $request->all() + ['lawyer_profile_id'=>Auth::user()->lawyer->lawyer_profile_id ] ) ;
+        return redirect(route ('cmsPrivacyPolicy'));
+    }
+
+
+
 }
