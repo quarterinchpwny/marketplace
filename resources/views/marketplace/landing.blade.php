@@ -1,5 +1,4 @@
-
-@extends('layouts.layout')
+@extends('marketplace.layout')
 <header class = "masthead">
     <div class="container"style="margin-top:auto">
       <div class="row align-items-center justify-content-between ">

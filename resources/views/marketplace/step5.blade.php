@@ -1,5 +1,4 @@
-@extends('layouts.layout')
-
+@extends('marketplace.layout')
 <div class="container " style="padding-top: 2.4rem;padding-bottom: 2.4rem;" id="step5">
     <div class="tracking-progress-bar text-center">
       <div class="tracking-progress-bar__item tracking-progress-bar__item--first tracking-progress-bar__item--active">1</div>
