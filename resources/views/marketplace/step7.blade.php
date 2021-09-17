@@ -1,4 +1,4 @@
-@extends('layouts.layout')
+@extends('marketplace.layout')
 <div class="container " style="padding-top: 2.4rem;padding-bottom: 2.4rem;" id="step7">
   <div class="tracking-progress-bar text-center">
     <div class="tracking-progress-bar__item tracking-progress-bar__item--first tracking-progress-bar__item--active">1</div>
@@ -47,7 +47,7 @@
               <h2 class="mb-4 ">Payment Method</h2>
             </div>
           <!--Paypal-->
-          <div class="accordion accordion-flush" id="Paypal">
+          <div class="accordion accordion-flush">
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-Paypal">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsePaypal" aria-expanded="false" aria-controls="flush-collapsePaypal">
@@ -61,7 +61,7 @@
                       <div class="row">
                         <div class="col-md-6 mb-3">
                           <label for="firstName">First name</label>
-                          <input type="text" class="form-control" id="paypalfirstName" placeholder="" value="" required="">
+                          <input type="text" class ="form-control"id="paypalfirstName" placeholder="" value="" required="">
                           <div class="invalid-feedback">
                             Valid first name is required.
                           </div>

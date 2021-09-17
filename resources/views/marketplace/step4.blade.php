@@ -1,4 +1,4 @@
-@extends('layouts.layout')
+@extends('marketplace.layout')
 <script>
   localStorage.clear();
 </script>

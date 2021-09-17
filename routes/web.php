@@ -15,27 +15,26 @@ use App\Http\Controllers\LoginController;
 |
 */
 
-// Public Routes
-// Route::get('/', [App\Http\Controllers\AppController::class, 'index'])->name('index');
-
-
-Route::get('/', [App\Http\Controllers\ContentController::class, 'index'])->name('content');
-Route::get('step1', [App\Http\Controllers\ContentController::class, 'step1'])->name('step1');
-Route::get('step2', [App\Http\Controllers\ContentController::class, 'step2'])->name('step2');
-Route::get('step3', [App\Http\Controllers\ContentController::class, 'step3'])->name('step3');
-Route::get('step4', [App\Http\Controllers\ContentController::class, 'step4'])->name('step4');
-Route::get('step5', [App\Http\Controllers\ContentController::class, 'step5'])->name('step5');
-Route::get('step6', [App\Http\Controllers\ContentController::class, 'step6'])->name('step6');
-Route::get('step7', [App\Http\Controllers\ContentController::class, 'step7'])->name('step7');
-Route::get('step8', [App\Http\Controllers\ContentController::class, 'step8'])->name('step8');
-
 Route::middleware(['guest'])->group(function () {
+  Route::group(['prefix'=>'marketplace'],function () {
+    Route::get('/', [App\Http\Controllers\MarketplaceContentController::class, 'index'])->name('home');  
+    Route::get('step1', [App\Http\Controllers\MarketplaceContentController::class, 'step1'])->name('step1');
+    Route::get('step2', [App\Http\Controllers\MarketplaceContentController::class, 'step2'])->name('step2');
+    Route::get('step3', [App\Http\Controllers\MarketplaceContentController::class, 'step3'])->name('step3');
+    Route::get('step4', [App\Http\Controllers\MarketplaceContentController::class, 'step4'])->name('step4');
+    Route::get('step5', [App\Http\Controllers\MarketplaceContentController::class, 'step5'])->name('step5');
+    Route::get('step6', [App\Http\Controllers\MarketplaceContentController::class, 'step6'])->name('step6');
+    Route::get('step7', [App\Http\Controllers\MarketplaceContentController::class, 'step7'])->name('step7');
+    Route::get('step8', [App\Http\Controllers\MarketplaceContentController::class, 'step8'])->name('step8');
+  });
   Route::get('login', [App\Http\Controllers\LoginController::class, 'index'])->name('login');
   Route::post('login', [App\Http\Controllers\LoginController::class, 'logIn'])->name('post.login');
   // Route::post('login/success', [App\Http\Controllers\LoginController::class, 'sheesh'])->name('post.login'); 
   Route::get('register', [App\Http\Controllers\RegisterController::class, 'index'])->name('register');
   Route::post('register', [App\Http\Controllers\RegisterController::class, 'register'])->name('post.register');
 });
+
+
 Route::post('logout', [App\Http\Controllers\LoginController::class, 'logOut'])->name('logout');
 
 // Athenticated Routes
