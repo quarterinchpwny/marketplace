@@ -3595,6 +3595,7 @@ Axios.prototype.request = function request(config) {
   }
 
   var transitional = config.transitional;
+<<<<<<< HEAD
 
   if (transitional !== undefined) {
     validator.assertOptions(transitional, {
@@ -3604,6 +3605,17 @@ Axios.prototype.request = function request(config) {
     }, false);
   }
 
+=======
+
+  if (transitional !== undefined) {
+    validator.assertOptions(transitional, {
+      silentJSONParsing: validators.transitional(validators.boolean, '1.0.0'),
+      forcedJSONParsing: validators.transitional(validators.boolean, '1.0.0'),
+      clarifyTimeoutError: validators.transitional(validators.boolean, '1.0.0')
+    }, false);
+  }
+
+>>>>>>> 1ff3abb57c8db1cd456b9936c795904a66a0382d
   // filter out skipped interceptors
   var requestInterceptorChain = [];
   var synchronousRequestInterceptors = true;

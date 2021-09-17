@@ -14,9 +14,9 @@
         <!-- Script -->
         <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 
-        <!-- CSS -->
+         <!-- CSS -->    
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-        <link href="{{ asset('css/feminine.css') }}" rel="stylesheet"> 
+        <link href="{{ asset('css/feminine.css') }}" rel="stylesheet">  
 
         <title>Law Office - Homepage</title>    
 
@@ -39,15 +39,15 @@
                             <div id="login_title"><p>Welcome to</p></div>
 
                             <div>
-                                <img class="img-fluid" src="Feminine-Images/Logo2.png" alt="logo2" width="50px"> 
-                                <img id="logo_icon" class="img-fluid" src="Feminine-Images/Logo1.png" alt="logo1" width="250px">  
+                                <img class="img-fluid" src="images/feminine/Logo2.png" alt="logo2" width="50px"> 
+                                <img id="logo_icon" class="img-fluid" src="images/feminine/Logo1.png" alt="logo1" width="250px">  
                             </div>
 
                             <br>
 
                             <div id="social_icons">
-                                <a id="login_social" href="#" class="btn btn-primary btn-md" style="padding-left: 2px;"> <img id="iconsg" src="Feminine-Images/google.png" alt="" style="padding-left: 10px; padding-right: 5px;" width="55px">Login with Google</a> <p> </p>
-                                <a id="login_social" href="#" class="btn btn-primary btn-md" style="padding-left: 2px;"> <img id="iconsf" src="Feminine-Images/facebook.png" alt="" style="padding-left: 10px; padding-right: 5px;" width="47px">Login with Facebook</a>
+                                <a id="login_social" href="#" class="btn btn-primary btn-md" style="padding-left: 2px;"> <img id="iconsg" src="images/feminine/google.png" alt="" style="padding-left: 10px; padding-right: 5px;" width="55px">Login with Google</a> <p> </p>
+                                <a id="login_social" href="#" class="btn btn-primary btn-md" style="padding-left: 2px;"> <img id="iconsf" src="images/feminine/facebook.png" alt="" style="padding-left: 10px; padding-right: 5px;" width="47px">Login with Facebook</a>
                             </div>
 
                             <div class="break-line"> 
@@ -79,7 +79,7 @@
                             </div>   
 
                             <div id="powered">
-                                Powered by <img src="Feminine-Images/power1.png" alt="" width="100px" >
+                                Powered by <img src="images/feminine/power1.png" alt="" width="100px" >
                             </div>
 
                         </div>
@@ -99,8 +99,8 @@
                         </div>
 
                         <div id="social_icons">
-                                <a id="signup_social" href="#" class="btn btn-primary btn-md" style="padding-left: 5px;"> <img src="Feminine-Images/google.png" alt="" style="padding-left: 10px; padding-right: 5px;" width="55px">Sign up with Google</a> <p> </p>
-                                <a id="signup_social" href="#" class="btn btn-primary btn-md" style="padding-left: 0px;"> <img src="Feminine-Images/facebook.png" alt="" style="padding-left: 10px; padding-right: 5px;" width="47px">Sign up with Facebook</a>
+                                <a id="signup_social" href="#" class="btn btn-primary btn-md" style="padding-left: 5px;"> <img src="images/feminine/google.png" alt="" style="padding-left: 10px; padding-right: 5px;" width="55px">Sign up with Google</a> <p> </p>
+                                <a id="signup_social" href="#" class="btn btn-primary btn-md" style="padding-left: 0px;"> <img src="images/feminine/facebook.png" alt="" style="padding-left: 10px; padding-right: 5px;" width="47px">Sign up with Facebook</a>
                         </div>
 
                         <div class="modal-body">
@@ -139,7 +139,7 @@
                             </div>
     
                             <div id="powered">
-                                Powered by <img src="Feminine-Images/power1.png" alt="" width="100px" >
+                                Powered by <img src="images/feminine/power1.png" alt="" width="100px" >
                             </div>
                             
                         </div>
@@ -155,15 +155,15 @@
                             <div id="login_title"><p>Welcome to</p></div>
 
                             <div>
-                                <img class="img-fluid" src="Feminine-Images/Logo2.png" alt="logo2" width="50px"> 
-                                <img id="logo_icon" class="img-fluid" src="Feminine-Images/Logo1.png" alt="logo1" width="250px">  
+                                <img class="img-fluid" src="images/feminine/Logo2.png" alt="logo2" width="50px"> 
+                                <img id="logo_icon" class="img-fluid" src="images/feminine/Logo1.png" alt="logo1" width="250px">  
                             </div>
 
                             <br>
 
                             <div id="social_icons">
-                                <a id="login_social" href="#" class="btn btn-primary btn-md" style="padding-left: 2px;"> <img id="iconsg" src="Feminine-Images/google.png" alt="" style="padding-left: 10px; padding-right: 5px;" width="55px">Login with Google</a> <p> </p>
-                                <a id="login_social" href="#" class="btn btn-primary btn-md" style="padding-left: 2px;"> <img id="iconsf" src="Feminine-Images/facebook.png" alt="" style="padding-left: 10px; padding-right: 5px;" width="47px">Login with Facebook</a>
+                                <a id="login_social" href="#" class="btn btn-primary btn-md" style="padding-left: 2px;"> <img id="iconsg" src="images/feminine/google.png" alt="" style="padding-left: 10px; padding-right: 5px;" width="55px">Login with Google</a> <p> </p>
+                                <a id="login_social" href="#" class="btn btn-primary btn-md" style="padding-left: 2px;"> <img id="iconsf" src="images/feminine/facebook.png" alt="" style="padding-left: 10px; padding-right: 5px;" width="47px">Login with Facebook</a>
                             </div>
 
                             <div class="break-line"> 
@@ -195,7 +195,7 @@
                             </div>   
 
                             <div id="powered">
-                                Powered by <img src="Feminine-Images/power1.png" alt="" width="100px" >
+                                Powered by <img src="images/feminine/power1.png" alt="" width="100px" >
                             </div>
 
                         </div>
@@ -203,10 +203,11 @@
                     
                 </div>
 
-                <div class="bannerDiv">
+            <div class="bannerDiv">
                     <p>banner image</p>
-                    <img src="Feminine-Images/banner-header-image.jpeg" alt="">
-                </div>
+                    <img src="images/feminine/banner-header-image.jpeg" alt="">
+            </div>
+       
 
         <!-- Option 1: Bootstrap Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

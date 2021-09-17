@@ -19,8 +19,7 @@
         <title>Header</title>
 
         <!-- CSS -->
-        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-        <link href="{{ asset('css/feminine.css') }}" rel="stylesheet"> 
+
     </head>
 
     <body>
@@ -42,7 +41,7 @@
                                 <div class = "col-xl-3 col-lg-6 col-md-6 col-xs-2 mb-4 p-3">
                                     <div class="service-card card align-items-center">
                                     <div class = "service-icons-con mb-5 mt-5">
-                                        <img src="{{ URL::to('/') }}/Feminine-Images/assist.png" class="card-img-top" alt="Assist">
+                                        <img src="{{ URL::to('/') }}/images/feminine/assist.png" class="card-img-top" alt="Assist">
                                     </div>
 
                                     <div class = "service-label-holder mt-5 mb-4">
@@ -61,7 +60,7 @@
                                 <div class = "col-xl-3 col-lg-6 col-md-6 col-xs-2 mb-4 p-3">
                                     <div class="service-card card align-items-center">
                                     <div class = "service-icons-con mb-5 mt-5">
-                                        <img src="{{ URL::to('/') }}/Feminine-Images/consult.png" class="card-img-top" alt="Consult">
+                                        <img src="{{ URL::to('/') }}/images/feminine/consult.png" class="card-img-top" alt="Consult">
                                     </div>
 
                                     <div class = "service-label-holder mt-5 mb-4">
@@ -81,7 +80,7 @@
                                 <div class = "col-xl-3 col-lg-6 col-md-6 col-xs-2 mb-4 p-3">
                                     <div class="service-card card align-items-center">
                                     <div class = "service-icons-con mb-5 mt-5">
-                                        <img src="{{ URL::to('/') }}/Feminine-Images/Works.png" class="card-img-top" alt="Works">
+                                        <img src="{{ URL::to('/') }}/images/feminine/Works.png" class="card-img-top" alt="Works">
                                     </div>
 
                                     <div class = "service-label-holder mt-5 mb-4">
@@ -100,7 +99,7 @@
                                 <div class = "col-xl-3 col-lg-6 col-md-6 col-xs-2 mb-4 p-3">
                                     <div class="service-card card align-items-center">
                                     <div class = "service-icons-con mb-5 mt-5">
-                                        <img src="{{ URL::to('/') }}/Feminine-Images/docs.png" class="card-img-top" alt="Docs">
+                                        <img src="{{ URL::to('/') }}/images/feminine/docs.png" class="card-img-top" alt="Docs">
                                     </div>
                                     <div class = "service-label-holder mt-5 mb-4">
                                         <p class = "service-label-con text-center h4">
