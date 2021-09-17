@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [App\Http\Controllers\AppController::class, 'index'])->name('home');
 
 Route::middleware(['guest'])->group(function () {
-  Route::get('content', [App\Http\Controllers\MarketplaceContentController::class, 'index'])->name('content');
+  Route::get('/', [App\Http\Controllers\MarketplaceContentController::class, 'index'])->name('home');  
   Route::get('step1', [App\Http\Controllers\MarketplaceContentController::class, 'step1'])->name('step1');
   Route::get('step2', [App\Http\Controllers\MarketplaceContentController::class, 'step2'])->name('step2');
   Route::get('step3', [App\Http\Controllers\MarketplaceContentController::class, 'step3'])->name('step3');
