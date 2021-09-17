@@ -32,9 +32,10 @@ Route::middleware(['guest'])->group(function () {
   Route::post('login', [App\Http\Controllers\LoginController::class, 'logIn'])->name('post.login'); 
   Route::get('register', [App\Http\Controllers\RegisterController::class, 'index'])->name('register');
   Route::post('register', [App\Http\Controllers\RegisterController::class, 'register'])->name('post.register');
-  
-  Route::post('logout', [App\Http\Controllers\LoginController::class, 'logOut'])->name('logout');
 });
+
+Route::post('logout', [App\Http\Controllers\LoginController::class, 'logOut'])->name('logout');
+
 // Athenticated Routes
 Route::middleware(['auth'])->group(function () {
   Route::get('dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');

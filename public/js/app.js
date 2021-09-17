@@ -3595,7 +3595,6 @@ Axios.prototype.request = function request(config) {
   }
 
   var transitional = config.transitional;
-<<<<<<< HEAD
 
   if (transitional !== undefined) {
     validator.assertOptions(transitional, {
@@ -3605,17 +3604,6 @@ Axios.prototype.request = function request(config) {
     }, false);
   }
 
-=======
-
-  if (transitional !== undefined) {
-    validator.assertOptions(transitional, {
-      silentJSONParsing: validators.transitional(validators.boolean, '1.0.0'),
-      forcedJSONParsing: validators.transitional(validators.boolean, '1.0.0'),
-      clarifyTimeoutError: validators.transitional(validators.boolean, '1.0.0')
-    }, false);
-  }
-
->>>>>>> 1ff3abb57c8db1cd456b9936c795904a66a0382d
   // filter out skipped interceptors
   var requestInterceptorChain = [];
   var synchronousRequestInterceptors = true;
@@ -38431,6 +38419,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/sass/masculine.scss":
+/*!***************************************!*\
+  !*** ./resources/sass/masculine.scss ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./resources/sass/feminine.scss":
 /*!**************************************!*\
   !*** ./resources/sass/feminine.scss ***!
@@ -41417,6 +41418,7 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 		var installedChunks = {
 /******/ 			"/js/app": 0,
 /******/ 			"css/neutral": 0,
+/******/ 			"css/masculine": 0,
 /******/ 			"css/app": 0,
 /******/ 			"css/feminine": 0,
 /******/ 			"css/marketplace": 0
@@ -41469,11 +41471,12 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/neutral","css/app","css/feminine","css/marketplace"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/neutral","css/app","css/feminine","css/marketplace"], () => (__webpack_require__("./resources/sass/app.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/neutral","css/app","css/feminine","css/marketplace"], () => (__webpack_require__("./resources/sass/marketplace.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/neutral","css/app","css/feminine","css/marketplace"], () => (__webpack_require__("./resources/sass/feminine.scss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/neutral","css/app","css/feminine","css/marketplace"], () => (__webpack_require__("./resources/sass/neutral.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/neutral","css/masculine","css/app","css/feminine","css/marketplace"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/neutral","css/masculine","css/app","css/feminine","css/marketplace"], () => (__webpack_require__("./resources/sass/app.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/neutral","css/masculine","css/app","css/feminine","css/marketplace"], () => (__webpack_require__("./resources/sass/marketplace.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/neutral","css/masculine","css/app","css/feminine","css/marketplace"], () => (__webpack_require__("./resources/sass/masculine.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/neutral","css/masculine","css/app","css/feminine","css/marketplace"], () => (__webpack_require__("./resources/sass/feminine.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/neutral","css/masculine","css/app","css/feminine","css/marketplace"], () => (__webpack_require__("./resources/sass/neutral.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
