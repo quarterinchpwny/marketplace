@@ -19,7 +19,8 @@
         <title>Header</title>
 
         <!-- CSS -->
-        <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/feminine.css') }}" rel="stylesheet"> 
         
     </head>
 
@@ -34,7 +35,7 @@
                 <div class="practices-firsthalf ">
                     <div class="practice-card card align-items-center col-lg-3 col-md-6">
                         <a href="#" class="icons-con rounded-circle p-4">
-                            <img  src="{{ URL::to('/') }}/images/practices1_family.png" class="card-img-top" alt="Personal & Family Law">
+                            <img  src="{{ URL::to('/') }}/Feminine-Images/practices1_family.png" class="card-img-top" alt="Personal & Family Law">
                         </a>
 
                         <div class="card-body align-content-center text-center pt-4 pb-5">
@@ -44,7 +45,7 @@
 
                     <div class="practice-card card align-items-center col-lg-3 col-md-6">
                         <a href="#" class="icons-con rounded-circle p-4">
-                            <img src="{{ URL::to('/') }}/images/practices2_briefcase.png" class="card-img-top" alt="Labor Law">
+                            <img src="{{ URL::to('/') }}/Feminine-Images/practices2_briefcase.png" class="card-img-top" alt="Labor Law">
                         </a>
 
                         <div class="card-body align-content-center text-center pt-4 pb-5">
@@ -54,7 +55,7 @@
 
                     <div class="practice-card card align-items-center col-lg-3 col-md-6">
                         <a href="#" class="icons-con rounded-circle p-4">
-                            <img src="{{ URL::to('/') }}/images/practices3_rights.png" class="card-img-top" alt="Civil Law">
+                            <img src="{{ URL::to('/') }}/Feminine-Images/practices3_rights.png" class="card-img-top" alt="Civil Law">
                         </a>
 
                         <div class="card-body align-content-center text-center pt-4 pb-5">
@@ -64,7 +65,7 @@
 
                     <div class="practice-card card align-items-center col-lg-3 col-md-6">
                         <a href="#" class="icons-con rounded-circle p-4">
-                            <img src="{{ URL::to('/') }}/images/practices4_passport.png" class="card-img-top" alt="Immigration Law">
+                            <img src="{{ URL::to('/') }}/Feminine-Images/practices4_passport.png" class="card-img-top" alt="Immigration Law">
                         </a>
 
                         <div class="card-body align-content-center text-center pt-4 pb-5">
@@ -77,7 +78,7 @@
                 <div class="practices-secondhalf ">
                     <div class="practice-card card align-items-center col-lg-3 col-md-6">
                         <a href="#" class="icons-con rounded-circle p-4">
-                            <img src="{{ URL::to('/') }}/images/practices5_cuffs.png" class="card-img-top" alt="Criminal Law">
+                            <img src="{{ URL::to('/') }}/Feminine-Images/practices5_cuffs.png" class="card-img-top" alt="Criminal Law">
                         </a>
 
                         <div class="card-body align-content-center text-center pt-4 pb-4">
@@ -87,7 +88,7 @@
 
                     <div class="practice-card card align-items-center col-lg-3 col-md-6">
                         <a href="#" class="icons-con rounded-circle p-4">
-                            <img src="{{ URL::to('/') }}/images/practices6_team.png" class="card-img-top" alt="Commercial Law">
+                            <img src="{{ URL::to('/') }}/Feminine-Images/practices6_team.png" class="card-img-top" alt="Commercial Law">
                         </a>
 
                         <div class="card-body align-content-center text-center pt-4 pb-4">
@@ -97,7 +98,7 @@
 
                     <div class="practice-card card align-items-center col-lg-3 col-md-6">
                         <a href="#" class="icons-con rounded-circle p-4">
-                            <img src="{{ URL::to('/') }}/images/practices7_tax.png" class="card-img-top" alt="Taxation Law">
+                            <img src="{{ URL::to('/') }}/Feminine-Images/practices7_tax.png" class="card-img-top" alt="Taxation Law">
                         </a>
 
                         <div class="card-body align-content-center text-center pt-4 pb-4">
@@ -107,7 +108,7 @@
 
                     <div class="practice-card card align-items-center col-lg-3 col-md-6">
                         <a href="#" class="icons-con rounded-circle p-4">
-                            <img src="{{ URL::to('/') }}/images/practices8_hammer.png" class="card-img-top" alt="Special Services">
+                            <img src="{{ URL::to('/') }}/Feminine-Images/practices8_hammer.png" class="card-img-top" alt="Special Services">
                         </a>
 
                         <div class="card-body align-content-center text-center pt-4 pb-4">

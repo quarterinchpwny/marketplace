@@ -19,13 +19,12 @@ Color Palette
 - B5375B (pink)
 - 733657 (dark purple)
 */
-
 /* ---------- HEADER ---------- */
 
 .header-main-con {
   background-color: white;
   border-bottom: 5px solid #B5375B;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   color: white;
   line-height: 0.5cm;
@@ -60,10 +59,6 @@ Color Palette
 
 /* ---------- MAIN BANNER ---------- */
 
-//@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Raleway:wght@500;700&display=swap');
-
-//@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Raleway:wght@700&display=swap');
-
 .col-1 {
   margin: 0 !important;
   padding: 0 !important;
@@ -74,14 +69,14 @@ Color Palette
 }
 
 .row {
+  margin: 0 !important;
+  padding: 0 !important;
+
   &::after {
     content: "";
     clear: both;
     display: block;
   }
-
-  margin: 0 !important;
-  padding: 0 !important;
 }
 
 .banner-image {
@@ -96,7 +91,7 @@ Color Palette
   border-top: 0;
 }
 
-[class*="col-"] {
+[class*=col-] {
   float: left;
   padding: 0px;
 }
@@ -113,21 +108,19 @@ Color Palette
   width: 50%;
 
   h1 {
-    font-family: 'Libre Baskerville';
+    font-family: "Libre Baskerville";
     font-size: 45px;
     text-shadow: 2px 2px 5px grey;
     color: #733657;
   }
 
   p {
-    font-family: 'Raleway';
+    font-family: "Raleway";
     font-size: 20px;
     color: #641F43;
     padding-right: 15px;
   }
 }
-
-#login_container {}
 
 .aside {
   background-color: #FFE2EA;
@@ -147,7 +140,7 @@ Color Palette
 #login_title {
   color: #641F43;
   font-size: 48px;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-weight: bold;
   padding-top: 30px;
 }
@@ -172,6 +165,7 @@ Color Palette
   border: solid 1px #B5375B;
   font-weight: 700;
   font-size: 24px;
+  color: white;
 
   &:hover {
     background-color: #FFFF;
@@ -252,12 +246,12 @@ Color Palette
   font-weight: 500;
   text-align: center;
   color: #B5375B;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   padding-bottom: 20px;
 }
 
 .break-line p {
-  color: rgb(100, 31, 67);
+  color: #641f43;
   font-weight: bolder;
   padding-top: 5px;
   font-size: 16px;
@@ -271,9 +265,9 @@ Color Palette
 }
 
 #signup_title {
-  color: rgb(100, 31, 67);
+  color: #641f43;
   font-size: 48px;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-weight: bold;
   text-align: center;
   padding-top: 30px;
@@ -304,6 +298,7 @@ Color Palette
   border: solid 1px #B5375B;
   font-weight: 700;
   font-size: 24px;
+  color: white;
 
   &:hover {
     background-color: #FFFF;
@@ -328,9 +323,10 @@ Color Palette
   border: solid 1px #641F43;
   font-weight: 700;
   padding-top: 10px;
-  text-align: right;
+  text-align: left;
   color: #641F43;
   font-size: 18px;
+  padding-right: 0px;
 
   &:hover {
     background-color: #FFFF;
@@ -364,7 +360,7 @@ Color Palette
 }
 
 .break-line-signup p {
-  color: rgb(100, 31, 67);
+  color: #641f43;
   font-weight: bolder;
   padding-top: 5px;
   font-size: 16px;
@@ -423,7 +419,7 @@ Color Palette
 @media only screen and (max-width: 767px) {
   /* For mobile phones: */
 
-  [class*="col-"] {
+  [class*=col-] {
     width: 100%;
   }
 
@@ -434,6 +430,7 @@ Color Palette
   .banner-image {
     width: 100%;
     height: 243px;
+    -o-object-fit: fill;
     object-fit: fill;
   }
 
@@ -575,7 +572,7 @@ Color Palette
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   /* For tablets: */
 
-  [class*="col-"] {
+  [class*=col-] {
     width: 100%;
   }
 
@@ -586,6 +583,7 @@ Color Palette
   .banner-image {
     width: 100%;
     height: 350px;
+    -o-object-fit: fill;
     object-fit: fill;
   }
 
@@ -729,6 +727,7 @@ Color Palette
   .banner-image {
     width: 100%;
     height: 615px;
+    -o-object-fit: fill;
     object-fit: fill;
   }
 
@@ -835,6 +834,7 @@ Color Palette
   .banner-image {
     width: 100%;
     height: 750px;
+    -o-object-fit: fill;
     object-fit: fill;
   }
 
@@ -897,7 +897,7 @@ Color Palette
 
 .service-header {
   color: #ffffff;
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
   font-weight: 700 !important;
 }
 
@@ -920,7 +920,7 @@ Color Palette
 
 .service-label-con {
   text-decoration: none;
-  font-family: 'Raleway', serif;
+  font-family: "Raleway", serif;
   font-weight: 700 !important;
   color: #733657;
 }
@@ -929,7 +929,7 @@ Color Palette
   background-color: #B5375B;
   border: 1px solid #B5375B;
   border-radius: 10px;
-  font-family: 'Raleway', serif;
+  font-family: "Raleway", serif;
   color: white;
   font-weight: 700;
   width: 230px;
@@ -956,7 +956,7 @@ Color Palette
 
 .practice-header {
   color: #733657;
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
   font-weight: 700 !important;
 }
 
@@ -975,9 +975,6 @@ Color Palette
   max-width: 150px;
   max-height: 150px;
   text-decoration: none;
-  -webkit-transition: all 500ms ease;
-  -moz-transition: all 500ms ease;
-  -ms-transition: all 500ms ease;
   transition: all 500ms ease;
 
   &:hover {
@@ -988,12 +985,9 @@ Color Palette
 
 .label-con {
   text-decoration: none;
-  font-family: 'Raleway', serif;
+  font-family: "Raleway", serif;
   font-weight: 700 !important;
   color: #733657;
-  -webkit-transition: all 300ms ease;
-  -moz-transition: all 300ms ease;
-  -ms-transition: all 300ms ease;
   transition: all 300ms ease;
 
   &:hover {
@@ -1005,13 +999,10 @@ Color Palette
   background-color: #B5375B;
   border: 1px solid #B5375B;
   border-radius: 10px;
-  font-family: 'Raleway', serif;
+  font-family: "Raleway", serif;
   color: white;
   font-weight: 700;
   margin-top: auto;
-  -webkit-transition: all 300ms ease;
-  -moz-transition: all 300ms ease;
-  -ms-transition: all 300ms ease;
   transition: all 300ms ease;
 
   &:hover {
@@ -1025,7 +1016,7 @@ Color Palette
 /* ---------- LAW UPDATES and EVERYDAY LAW ---------- */
 
 .update-everyday-section {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 500 !important;
   color: black;
   line-height: 0.7cm;
@@ -1058,12 +1049,12 @@ Color Palette
 }
 
 .law-updates-header, .everyday-law-header {
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
   font-weight: 700 !important;
 }
 
 .law-updates-blog-title, .everyday-law-blog-title {
-  font-family: 'Raleway', serif;
+  font-family: "Raleway", serif;
   font-weight: 700 !important;
 }
 
@@ -1075,9 +1066,6 @@ Color Palette
   font-weight: 700;
   bottom: 4rem;
   margin-top: auto;
-  -webkit-transition: all 300ms ease;
-  -moz-transition: all 300ms ease;
-  -ms-transition: all 300ms ease;
   transition: all 300ms ease;
 }
 
@@ -1089,9 +1077,6 @@ Color Palette
   font-weight: 700;
   bottom: 4rem;
   margin-top: auto;
-  -webkit-transition: all 300ms ease;
-  -moz-transition: all 300ms ease;
-  -ms-transition: all 300ms ease;
   transition: all 300ms ease;
 
   &:hover {
@@ -1112,7 +1097,7 @@ Color Palette
 .footer-main-con {
   background-color: #733657;
   border-top: 5px solid #B5375B;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 300;
   color: white;
   line-height: 0.5cm;
@@ -1155,9 +1140,6 @@ Color Palette
   font-weight: 700;
   font-style: italic;
   color: white;
-  -webkit-transition: all 300ms ease;
-  -moz-transition: all 300ms ease;
-  -ms-transition: all 300ms ease;
   transition: all 300ms ease;
 
   &:hover {
