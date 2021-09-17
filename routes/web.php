@@ -38,7 +38,7 @@ Route::get('/Masculine', function(){
   return view('layouts.app');
 }); 
 Route::get('/loginTemplate', function(){
-  return view('layouts.masculineTemplate');
+  return view('layouts.masculine-layout.masculineTemplate');
 }); 
 
 // Carl Note
