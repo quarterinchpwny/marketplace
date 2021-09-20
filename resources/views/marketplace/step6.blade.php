@@ -1,4 +1,5 @@
 @extends('marketplace.layout')
+
 <form method="POST" action="{{ route('register') }}">
 
 <div class="container " style="padding-top: 2.4rem;padding-bottom: 10rem;" id="step6">

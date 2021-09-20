@@ -70,15 +70,6 @@
 
   }
  
-  function toStore(){
-    
-      localStorage.setItem("firstName", document.getElementById("first_name").value);
-      localStorage.setItem("lastName", document.getElementById("last_name").value);
-      localStorage.setItem("email",  document.getElementById("email").value);
-      localStorage.setItem("address",  document.getElementById("address").value);
-      localStorage.setItem("contact",  document.getElementById("contact").value);
-    }
-
 
 
   function toCompute(){

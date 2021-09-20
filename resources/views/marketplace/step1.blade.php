@@ -5,7 +5,8 @@
   </symbol>
 </svg>
       
-  
+
+
 <div class="container" style="padding-top: 2.4rem;padding-bottom: 2.4rem; max-width: 960px;" id="step1">
   <div class="tracking-progress-bar text-center">
     <div class="tracking-progress-bar__item tracking-progress-bar__item--first tracking-progress-bar__item--active">1</div>
@@ -98,7 +99,11 @@
                   </tbody>
                   
                 </table>
-                  <a class="w-100 btn btn-lg btn-orange" href="{{route('step2', ['plan' => 'basic'])}}">Select</a>
+                <form method ="POST" action="{{route('onboarding', [ 'plan'=>'basic','next_step'=>'step2'] )}}">
+                  @csrf
+                  <button type="submit" class="w-100 btn btn-lg btn-orange "  >Next</button>
+                  
+                  </form>          
               </div>
           </div>
         </div>
@@ -167,7 +172,11 @@
                     </tr>
                   </tbody>
                 </table>
-                <a type="button" class="w-100 btn btn-lg btnviolet" href="{{route('step2', ['plan' => 'Unlimited'])}}">Select</a>
+                <form method ="POST" action="{{route('onboarding', [ 'plan'=>'unlimited','next_step'=>'step2'] )}}">
+                  @csrf
+                  <button type="submit" class="w-100 btn btn-lg btnviolet "  >Next</button>
+                  
+                  </form>
               </div>
           </div>
         </div>
@@ -236,7 +245,11 @@
                     </tr>
                   </tbody>
                 </table>
-                <a type="button" class="w-100 btn btn-lg btn-orange" href="{{route('step2', ['plan' => 'Pro'])}}">Select</a>
+                <form method ="POST" action="{{route('onboarding', [ 'plan'=>'pro','next_step'=>'step2'] )}}">
+                  @csrf
+                  <button type="submit" class="w-100 btn btn-lg btn-orange "  >Next</button>
+                  
+                  </form>
               </div>
           </div>
         </div>

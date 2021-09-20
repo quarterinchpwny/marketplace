@@ -53,7 +53,11 @@
                         <h3>Feminine</h3>
                       </div>
                       <div class="p-3">
-                          <a type="button" class="w-100 btn btn-orange" href="{{route('step4', ['template' => 'fem'] + \Request::all())}}">Select</a>
+                        <form method ="POST" action="{{route('onboarding', [ 'template'=>'feminine','next_step'=>'step4']  +\Request::all())}}">
+                          @csrf
+                          <button type="submit" class="w-100 btn btn-lg btn-orange "  >Select</button>
+                          
+                          </form>      
                       </div>
                     </div>
                   </div>
@@ -88,7 +92,11 @@
                         <h3>Neutral</h3>
                       </div>
                       <div class="p-3">
-                          <a type="button" class="w-100 btn btn-orange" href="{{route('step4', ['template' => 'neut'] + \Request::all())}}">Select</a>
+                        <form method ="POST" action="{{route('onboarding', [ 'template'=>'neutral','next_step'=>'step4']  +\Request::all())}}">
+                          @csrf
+                          <button type="submit" class="w-100 btn btn-lg btn-orange "  >Select</button>
+                          
+                          </form>       
                       </div>
                     </div>
                   </div>
@@ -124,7 +132,11 @@
                         <h3>Masculine</h3>
                       </div>
                       <div class="p-3">
-                        <a type="button" class="w-100 btn btn-orange" href="{{route('step4', ['template' => 'mas'] + \Request::all())}}">Select</a>
+                        <form method ="POST" action="{{route('onboarding', [ 'template'=>'masculine','next_step'=>'step4'] +\Request::all() )}}">
+                          @csrf
+                          <button type="submit" class="w-100 btn btn-lg btn-orange " >Select</button>
+                          
+                          </form>       
                       </div>
                     </div>
                   </div>
