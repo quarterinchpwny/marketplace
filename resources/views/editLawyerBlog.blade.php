@@ -10,22 +10,22 @@
         <div class="col-xl container-fluid texteditor" style="width: 300px;">
             <script src="https://cdn.ckeditor.com/ckeditor5/29.2.0/decoupled-document/ckeditor.js"></script>
             <h5>Edit Post</h5>
-    
            <form method="post" action ="{{ route('blog.update', $blog->blog_id)}}" >
                @csrf
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput" name="title" value="{{$blog->title}}" placeholder="title">
-                    <label for="floatingInput"> Enter title here</label>
+                <div class="mb-3">
+                    <label for="Input1" class="form-label">Title</label>
+                    <input type="text" class="form-control form-control-lg" id="Input1" name="title" value="{{$blog->title}}" placeholder="title">
                 </div> 
-                <div class="form-floating mb-3">
-                    <textarea name="body" > 
-                        {{$blog->body}}
-                    </textarea>
+                <div class="mb-3">
+                    <label for="Textarea1" class="form-label">Content</label>
+                    <textarea class="form-control" id="Textarea1" rows="9" name="body" >{{$blog->body}}</textarea>
                 </div>
-                    <button type = "submit"> Submit</button>
-
+                <br>
+                <div class="mt-4 text-end">
+                    <button type="submit" class="btn text-white addnewbtn" style = "background-color: #9D71BC;"> Submit</button>
+                    <a href="{{route ('cmsLawyersBlog') }}" ><button class="btn text-white" type="button" style = "background-color: #9D71BC;">Cancel</button></a>
+                </div>
            </form>  
-
             <!--  
             <div id="editor">
                 <p>Add text here.</p>
@@ -49,12 +49,12 @@
                     <div class="row ">
                         <h6>Publish</h6>
                     </div> 
-                    <div class="col-sm-7">
+                    <!--<div class="col-sm-7">
                         <button type="button" class="btn btn-primary btn-sm">SAVE AS DRAFT</button>
                     </div>
                     <div class="col-sm-4">
                         <button type="button" class="btn btn-primary btn-sm">PREVIEW</button>
-                    </div>
+                    </div>-->
                 </div>     
             </div>
         </div>     

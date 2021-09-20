@@ -1,6 +1,6 @@
 @extends('layouts.cmsnavigation')
 @section('content')
-    <div class="row row1">
+  <div class="row row1">
         <div class="col-10">
             <p class="fs-5 fw-bold text-white">Contact Us</p> 
         </div>
@@ -180,5 +180,6 @@
                 </div>
             </div>
         </div>
-    </div>       
+    </div>     
+    
 @endsection

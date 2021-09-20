@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CMS</title>
-    <link href="{{ URL::asset('cms-css/cmsstyle.css'); }}" rel="stylesheet">
+   <!-- <link href="{{ URL::asset('cms-css/cmsstyle.css'); }}" rel="stylesheet"> -->
+    <link href="{{ asset('cms-css/cmsstyle.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
@@ -13,7 +14,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 
 </head>
-<body>
+<body class = "cmsdashboard">
     <div id="viewport">
     <!-- Sidebar --> 
     <div class="flex-column flex-shrink-0 p-3 sidebar-nav offcanvas offcanvas-start" style=" background-color: #F8FFFE;" >
@@ -32,7 +33,7 @@
           <a href="{{route ('cmsLawyersBlog') }}" class="nav-link">Lawyer's Blog Section</a>
         </li>
         <li class="nav-item">
-          <a href="{{url ('/cmsLawUpdate') }}" class="nav-link">Law Update Section</a>
+          <a href="{{route ('cmsLawUpdate') }}" class="nav-link">Law Update Section</a>
         </li>
         <li class="nav-item">
           <a href="{{url ('/cmsEverydayLaw') }}" class="nav-link">Everyday Law</a>

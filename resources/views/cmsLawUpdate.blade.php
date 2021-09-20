@@ -10,57 +10,31 @@
   </div>
         <div class="row2 container-fluid"  style="height: 580px; background-color:#F8FFFE; ">
         <div class="col-sm-2">
-        <a href="{{url ('/addNewPostLawUpdate') }}"><button type="button" style = "background-color: #9D71BC; " class="d-flex btn  text-white">Add Post</button></a>
+        <a href="{{route ('addNewPostLawUpdate')}}"><button type="button" style = "background-color: #9D71BC; " class="d-flex btn  text-white">Add Post</button></a>
       </div>
             <div class="table-responsive-xl">
                 <table class="table table-striped table-hover">
                   <thead>
                     <tr>
-                      <th scope="col">#</th>
-                      <th scope="col">ID</th>
-                      <th scope="col">Title</th>
-                      <th scope="col">Author</th>
-                      <th scope="col">Action</th>
+                    <th scope="col" width="30%">Title</th>
+                    <th scope="col" width="40%">Body</th>
+                    <th scope="col" width="30%">Action</th>
                     </tr>
                   </thead>
                   <tbody>
+                  @foreach($lawupdates as $lawupdate)
                     <tr>
-                      <th scope="row">1</th>
-                      <td>Cell</td>
-                      <td>Cell</td>
-                      <td>Cell</td>
-                      <td><div class="btn">
-                      <button type="button" class="btn btn-secondary"><i class="fas fa-eye"></i> View</button>
-                        <button type="button" class="btn btn-secondary"><i class="fas fa-pencil-alt"></i> Edit</button>
-                        <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i> Delete</button>
-                      </div></td>
-                     
+                      <td>{{$lawupdate->title  }}</td>
+                      <td>{{$lawupdate->body  }}</td>
+                      <td>
+                        <div class="btn">
+                          <a href=""> <button type="button" class="btn btn-outline-dark btn-sm"><i class="fas fa-eye"></i> View</button></a>  
+                          <a href="" ><button type="button" class="btn btn-outline-dark btn-sm"><i class="fas fa-pencil-alt"></i> Edit</button></a> 
+                          <a href=""> <button type="button" class="btn btn-outline-dark btn-sm"><i class="fas fa-trash-alt"></i> Delete</button></a>
+                        </div>
+                      </td>
                     </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Cell</td>
-                      <td>Cell</td>
-                      <td>Cell</td>
-                      <td><div class="btn">
-                      <button type="button" class="btn btn-secondary"><i class="fas fa-eye"></i> View</button>
-                        <button type="button" class="btn btn-secondary"><i class="fas fa-pencil-alt"></i> Edit</button>
-                        <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i> Delete</button>
-                      </div>
-                    </td>
-                      
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>Cell</td>
-                      <td>Cell</td>
-                      <td>Cell</td>
-                      <td><div class="btn">
-                      <button type="button" class="btn btn-secondary"><i class="fas fa-eye"></i> View</button>
-                        <button type="button" class="btn btn-secondary"><i class="fas fa-pencil-alt"></i> Edit</button>
-                        <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i> Delete</button>
-                      </div></td>
-                   
-                    </tr>
+                  @endforeach
                   </tbody>
                 </table>
                 

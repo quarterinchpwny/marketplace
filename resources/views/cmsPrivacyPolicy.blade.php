@@ -1,11 +1,11 @@
 @extends('layouts.cmsnavigation')
 @section('content') 
-<div class="row row1">
+    <div class="row row1">
         <div class="col-10">
             <p class="fs-5 fw-bold text-white">Privacy Policy</p> 
         </div>
         <div class="col-1">
-          <button type="button" class="btn text-white addnewbtn" style = "background-color: #9D71BC;"> Preview</button>       
+            <button type="button" class="btn text-white addnewbtn" style = "background-color: #9D71BC;"> Preview</button>       
         </div>
     </div>
     <div class="row2 container-fluid"  style="height: 580px; background-color:#F8FFFE; ">
@@ -31,7 +31,6 @@
                             <tbody>
                             @foreach($privacypolicy as $policy)
                                 <tr>
-                    
                                     <td scope="col" width="30%">{{$policy->title  }}</td>
                                     <td scope="col" width="40%">{{$policy->body  }}</td>
                                     <td scope="col" width="30%">
@@ -76,7 +75,7 @@
                                     <td scope="col" width="30%">{{$terms->title  }}</td>
                                     <td scope="col" width="40%">{{$terms->body  }}</td>
                                     <td scope="col" width="30%">
-                                        <a href="#" class="btn btn-outline-dark btn-sm"><i class="fas fa-eye"></i> View</a>
+                                        <a href="{{route ('termsofuse.view',$terms->term_id )}}" class="btn btn-outline-dark btn-sm"><i class="fas fa-eye"></i> View</a>
                                         <a href="{{route ('termsofuse.edit',$terms->term_id )}}" class="btn btn-outline-dark btn-sm"><i class="fas fa-pencil-alt"></i> Edit</a>
                                         <a href="{{route ('termsofuse.delete',$terms->term_id )}}" class="btn btn-outline-dark btn-sm"><i class="fas fa-trash-alt"></i> Delete</a>
                                     </td>
@@ -114,21 +113,20 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <th scope="row">1</th>
-                                    <td></td>
-                                    <td>
+                                    <td scope="col" width="30%"></td>
+                                    <td scope="col" width="40%"></td>
+                                    <td scope="col" width="30%">
                                         <a href="#" class="btn btn-outline-dark btn-sm"><i class="fas fa-eye"></i> View</a>
                                         <a href="#" class="btn btn-outline-dark btn-sm"><i class="fas fa-pencil-alt"></i> Edit</a>
                                         <a href="#" class="btn btn-outline-dark btn-sm"><i class="fas fa-trash-alt"></i> Delete</a>
                                     </td>
                                 </tr>
-
                             </tbody>
                             </table>
                         </div>    
                         <div class="row container-fluid">
                             <div class="col-3 offset-11 ">
-                                <a href="" class="btn btn-outline-dark btn-sm"><i class="fas fa-plus-circle"></i> Add New</a>
+                                <a href="{{route ('disclaimer.create')}}" class="btn btn-outline-dark btn-sm"><i class="fas fa-plus-circle"></i> Add New</a>
                             </div>
                         </div>
                     </div>

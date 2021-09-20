@@ -27,14 +27,14 @@
             <table class="table table-hover">
               <thead>
                 <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">ID</th>
-                  <th scope="col">Title</th>
-                  <th scope="col">Image</th>
-                  <th scope="col">From</th>
-                  <th scope="col">To</th>
-                  <th scope="col">Status</th>
-                  <th scope="col">Action</th>
+                  <th scope="col" width="5%"">#</th>
+                  <th scope="col" width="5%"">ID</th>
+                  <th scope="col" width="15%"">Title</th>
+                  <th scope="col" width="10%"">Image</th>
+                  <th scope="col" width="10%"">From</th>
+                  <th scope="col" width="10%"">To</th>
+                  <th scope="col" width="15%"">Status</th>
+                  <th scope="col" width="30%"">Action</th>
                 </tr>
               </thead>
               <tbody>
@@ -47,58 +47,14 @@
                   <td>Cell</td>
                   <td>Cell</td>
                   <td>
-                    <div class="dropdown">
-                      <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown button
-                      </button>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      </ul>
+                      <div class="btn">
+                      <a href="#"> <button type="button" class="btn btn-outline-dark btn-sm"><i class="fas fa-eye"></i> View</button></a>  
+                      <a href="#" ><button type="button" class="btn btn-outline-dark btn-sm"><i class="fas fa-pencil-alt"></i> Edit</button></a> 
+                      <a href="#"> <button type="button" class="btn btn-outline-dark btn-sm"><i class="fas fa-trash-alt"></i> Delete</button></a>
                     </div>
                   </td>
                 </tr>
-                <tr>
-                  <th scope="row">2</th>
-                    <td>Cell</td>
-                    <td>Cell</td>
-                    <td>Cell</td>
-                    <td>Cell</td>
-                    <td>Cell</td>
-                    <td>Cell</td>
-                    <td>
-                      <div class="dropdown">
-                          <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown button
-                          </button>
-                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                          </ul>
-                        </div>
-                    </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>Cell</td>
-                      <td>Cell</td>
-                      <td>Cell</td>
-                      <td>Cell</td>
-                      <td>Cell</td>
-                      <td>Cell</td>
-                      <td><div class="dropdown">
-                          <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown button
-                          </button>
-                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                          </ul>
-                        </div></td>
-                    </tr>
+                
                   </tbody>
                 </table>
               </div>

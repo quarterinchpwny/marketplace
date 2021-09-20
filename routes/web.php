@@ -49,15 +49,16 @@ Route::middleware(['auth'])->group(function () {
   });
   Route::get('cms', [App\Http\Controllers\DashboardController::class, 'index'])->name('cms');
   Route::get('cmsServices', [App\Http\Controllers\DashboardController::class, 'services'])->name('cmsServices');
-  Route::get('cmsLawUpdate', [App\Http\Controllers\DashboardController::class, 'lawUpdates'])->name('cmsLawUpdate');
+  
   Route::get('cmsLawyersProfile', [App\Http\Controllers\DashboardController::class, 'lawyersProfile'])->name('cmsLawyersProfile');
+  Route::get('editLawyersProfile', [App\Http\Controllers\DashboardController::class, 'editLawyersProfile'])->name('lawyersprofile.edit');
+  
+  
   Route::get('cmsEverydayLaw', [App\Http\Controllers\DashboardController::class, 'everyDayLaw'])->name('cmsEverydayLaw');
   Route::get('cmsLawFirmPractice', [App\Http\Controllers\DashboardController::class, 'lawFirmPractice'])->name('cmsLawFirmPractice');
   Route::get('addBanner', [App\Http\Controllers\DashboardController::class, 'addBanner'])->name('addBanner');
   Route::get('cmsRegistration', [App\Http\Controllers\DashboardController::class, 'registration'])->name('cmsRegistration');
 
- 
-  Route::get('addNewPostLawUpdate', [App\Http\Controllers\DashboardController::class, 'addPostLawUpdate'])->name('addNewPostLawUpdate');
   Route::get('cmsContactUs', [App\Http\Controllers\DashboardController::class, 'contactUs'])->name('cmsContactUs');
   Route::get('addAddress', [App\Http\Controllers\DashboardController::class, 'addNewAddress'])->name('addAddress');
   Route::post('addAddress/post', [App\Http\Controllers\DashboardController::class, 'storeAddress'])->name('addAddress.post');
@@ -74,6 +75,16 @@ Route::middleware(['auth'])->group(function () {
     Route::get('delete/{blog_id}', [App\Http\Controllers\BlogController::class, 'destroy'])->name('blog.delete');
     Route::get('view/{blog_id}', [App\Http\Controllers\BlogController::class, 'show'])->name('blog.view');
   });
+
+  //law update
+  Route::group(['prefix' => 'lawupdate'], function () {
+    Route::get('cmsLawUpdate', [App\Http\Controllers\LawUpdateController::class, 'lawUpdates'])->name('cmsLawUpdate');
+    Route::get('addNewPostLawUpdate', [App\Http\Controllers\LawUpdateController::class, 'addPostLawUpdate'])->name('addNewPostLawUpdate');
+    Route::post('storeLawUpdate', [App\Http\Controllers\LawUpdateController::class, 'storeLawUpdate'])->name('lawupdate.store');
+   // Route::get('editLawUpdate/{law_update_id}', [App\Http\Controllers\BlogController::class, 'editLawUpdate'])->name('lawupdate.edit');
+   // Route::post('updateLawUpdate/{law_update_id}', [App\Http\Controllers\BlogController::class, 'updateLawUpdate'])->name('lawupdate.update');
+  });
+  
   
   //privacy policy
   Route::group(['prefix' => 'privacypolicy'], function () {
@@ -91,6 +102,11 @@ Route::middleware(['auth'])->group(function () {
     Route::get('editTermsofUse/{term_id}', [App\Http\Controllers\PrivacyPolicyController::class, 'editTerms'])->name('termsofuse.edit');
     Route::post('updateTermsofUse/{term_id}', [App\Http\Controllers\PrivacyPolicyController::class, 'updateTerms'])->name('termsofuse.update');
     Route::get('deleteTerms/{term_id}', [App\Http\Controllers\PrivacyPolicyController::class, 'destroyTerms'])->name('termsofuse.delete');
+    Route::get('viewTerms/{term_id}', [App\Http\Controllers\PrivacyPolicyController::class, 'showTerms'])->name('termsofuse.view');
+  
+    //Disclaimers
+    Route::get('createDisclaimers', [App\Http\Controllers\PrivacyPolicyController::class, 'createDisclaimer'])->name('disclaimer.create');
+    Route::post('storeDisclaimers', [App\Http\Controllers\PrivacyPolicyController::class, 'storeDisclaimer'])->name('disclaimer.storedisclaimer');
   });
 });
 

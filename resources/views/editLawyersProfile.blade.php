@@ -2,22 +2,26 @@
 @section('content')   
   <div class="row">
     <div class="col-10">
-      <p class="fs-5 fw-bold text-white">Lawyer's Profile</p> 
+      <p class="fs-5 fw-bold text-white">Edit Lawyer's Profile</p> 
     </div>
     <div class="col-1">
       <button type="button" class="btn text-white addnewbtn" style = "background-color: #9D71BC;"> Preview</button>
     </div>
   </div>
+  <form  action ="" >
   <div class="row2 container-fluid"  style="height: 580px; background-color:#F8FFFE; ">
     <div class="row">
       <div class="col-md-3 border-right">
-        <div class="d-flex flex-column align-items-center text-center p-3 py-0">
-          <img class="rounded-circle mt-4" width="100px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg">
-          <span class="font-weight-bold">Lawyer</span>
-          <span class="text-black-50">lawyer@gmail.com</span><span> </span>
-        </div> 
+      <a href="{{route ('cmsLawyersProfile')}}"><button type="button" class="btn-close" aria-label="Close"></button></a>
+        <div class="d-flex flex-column align-items-center text-center p-3 py-0"><img class="rounded-circle mt-2" width="100px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"><span class="font-weight-bold">Lawyer</span><span class="text-black-50">lawyer@gmail.com</span><span> </span></div>
+        <div class="text-center mt-3">
+          <div class="file btn btn-sm upload text-white" style = "background-color: #9D71BC;">
+                Upload
+                <input class="uploadInput"type="file" name="file"/>
+            </div>
+        </div>   
       </div>
-        <div class="col-md-5 border-right">
+      <div class="col-md-5 border-right">
             <div class="p-3 py-0">
                 <div class="row mt-2">
                     <label class="labels"><b>Laywer's Name</b></label>
@@ -71,7 +75,7 @@
                     </div>  
                 </div>
                 <div class="mt-1 text-center">
-                <a href="{{route ('lawyersprofile.edit')}}"><button class="btn btn-sm profile-button text-white" style = "background-color: #9D71BC;" type="submit">Edit Profile</button></a>
+                <a href=""><button class="btn btn-sm profile-button text-white" style = "background-color: #9D71BC;" type="submit">Save Profile</button></a>
                 </div>
             </div>
         </div>
@@ -111,7 +115,7 @@
                           </tr>
                         </tbody>
                       </table>
-
+                      <a href="#" class="btn btn-outline-dark btn-sm"><i class="fas fa-plus-circle"></i> Add New</a>
                     </div>
                   </div>
                 </div>
@@ -148,7 +152,7 @@
                           </tr>
                         </tbody>
                       </table>
-                     
+                      <a href="#" class="btn btn-outline-dark btn-sm"><i class="fas fa-plus-circle"></i> Add New</a>
                     </div>
                   </div>
                 </div>
@@ -185,6 +189,7 @@
                           </tr>
                         </tbody>
                       </table>
+                      <a href="#" class="btn btn-outline-dark btn-sm"><i class="fas fa-plus-circle"></i> Add New</a>
                     </div>
                   </div>
                 </div>
@@ -193,5 +198,6 @@
         </div>
     </div>
   </div> 
+</form>
    
 @endsection
