@@ -38,10 +38,10 @@
                             <div class = "row justify-content-center mb-3">
 
                                 <!-- Assist -->
-                                <div class = "col-xl-3 col-lg-6 col-md-6 col-xs-2 mb-4">
+                                <div class = "col-xl-3 col-lg-6 col-md-6 col-xs-2 mb-4 p-3">
                                     <div class="service-card card align-items-center">
                                     <div class = "service-icons-con mb-5 mt-5">
-                                        <img src="{{ URL::to('/') }}/images/assist.png" class="card-img-top" alt="Assist">
+                                        <img src="{{ URL::to('/') }}/Feminine-images/feminine/assist.png" class="card-img-top" alt="Assist">
                                     </div>
 
                                     <div class = "service-label-holder mt-5 mb-4">
@@ -57,10 +57,10 @@
                                 </div> 
                                 </div>
                                 <!-- Consult -->
-                                <div class = "col-xl-3 col-lg-6 col-md-6 col-xs-2 mb-4">
+                                <div class = "col-xl-3 col-lg-6 col-md-6 col-xs-2 mb-4 p-3">
                                     <div class="service-card card align-items-center">
                                     <div class = "service-icons-con mb-5 mt-5">
-                                        <img src="{{ URL::to('/') }}/images/consult.png" class="card-img-top" alt="Consult">
+                                        <img src="{{ URL::to('/') }}/Feminine-images/feminine/consult.png" class="card-img-top" alt="Consult">
                                     </div>
 
                                     <div class = "service-label-holder mt-5 mb-4">
@@ -77,10 +77,10 @@
                                 </div> 
                                 </div>
                                 <!-- Works -->
-                                <div class = "col-xl-3 col-lg-6 col-md-6 col-xs-2 mb-4">
+                                <div class = "col-xl-3 col-lg-6 col-md-6 col-xs-2 mb-4 p-3">
                                     <div class="service-card card align-items-center">
                                     <div class = "service-icons-con mb-5 mt-5">
-                                        <img src="{{ URL::to('/') }}/images/Works.png" class="card-img-top" alt="Works">
+                                        <img src="{{ URL::to('/') }}/Feminine-images/feminine/Works.png" class="card-img-top" alt="Works">
                                     </div>
 
                                     <div class = "service-label-holder mt-5 mb-4">
@@ -96,10 +96,10 @@
                                 </div> 
                                 </div>
                                 <!-- Docs -->
-                                <div class = "col-xl-3 col-lg-6 col-md-6 col-xs-2 mb-4">
+                                <div class = "col-xl-3 col-lg-6 col-md-6 col-xs-2 mb-4 p-3">
                                     <div class="service-card card align-items-center">
                                     <div class = "service-icons-con mb-5 mt-5">
-                                        <img src="{{ URL::to('/') }}/images/docs.png" class="card-img-top" alt="Docs">
+                                        <img src="{{ URL::to('/') }}/Feminine-images/feminine/docs.png" class="card-img-top" alt="Docs">
                                     </div>
                                     <div class = "service-label-holder mt-5 mb-4">
                                         <p class = "service-label-con text-center h4">

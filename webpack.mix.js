@@ -14,4 +14,9 @@ const mix = require('laravel-mix');
 mix.js('resources/js/app.js', 'public/js')
 .sass('resources/sass/app.scss', 'public/css')
 .sass('resources/sass/cms.scss', 'public/cms-css/cmsstyle.css')
+.sass('resources/sass/marketplace.scss', 'public/css/marketplace.css')
+.sass('resources/sass/masculine.scss', 'public/css/masculine.css')
+.sass('resources/sass/feminine.scss', 'public/css/feminine.css')
+.sass('resources/sass/neutral.scss', 'public/css/neutral.css');
+
 mix.version();

@@ -18,8 +18,10 @@
         <!-- Title -->
         <title>Footer</title>
 
-        <!-- CSS -->
+        <!-- CSS -->    
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/feminine.css') }}" rel="stylesheet">  
+
     </head>
 
     <body>
@@ -29,14 +31,14 @@
                 <div class="footer-brand col-lg-3">
                     <div class="card-body">
                         <div class="footer-brand-group">
-                            <img class="footer-brand-logo" src="{{ URL::to('/') }}/images/Rizal_Law_Office_Logo V2 White.png" alt="Rizal Law Office Brand Logo"> <br>
-                            <img class="footer-brand-name" src="{{ URL::to('/') }}/images/Rizal_Law_Office_Logo V1 White.png" alt="Rizal Law Office Brand Name"> <br>
+                            <img class="footer-brand-logo" src="{{ URL::to('/') }}/Feminine-images/feminine/Rizal_Law_Office_Logo V2 White.png" alt="Rizal Law Office Brand Logo"> <br>
+                            <img class="footer-brand-name" src="{{ URL::to('/') }}/Feminine-images/feminine/Rizal_Law_Office_Logo V1 White.png" alt="Rizal Law Office Brand Name"> <br>
                         </div>
 
                         <span class="footer-brand-tagline"></span> Lorem ipsum dolor sit amet. <br>
 
                         <div class="footer-powered-by mt-4">
-                            Powered by <img class="footer-brand-lexmeet" src="{{ URL::to('/') }}/images/LexMeet Logo V5 White.png" alt="LexMeet Brand"> <br>
+                            Powered by <img class="footer-brand-lexmeet" src="{{ URL::to('/') }}/Feminine-images/feminine/LexMeet Logo V5 White.png" alt="LexMeet Brand"> <br>
                         </div>
                     </div>
                 </div>

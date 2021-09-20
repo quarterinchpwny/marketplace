@@ -1,0 +1,11 @@
+<main class="py-0">
+            @yield('signUp')
+            @yield('Services')
+            @yield('PracticeAreas')
+            @yield('LawUpdates')
+            @yield('EverydayLaw')
+            @yield('Footer')
+      </main> 
+asdk;asdkas;ld
+<button type="button" id="buttonStart">Get Started</button>
+  
