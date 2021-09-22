@@ -21,7 +21,6 @@ class MarketplaceContentController extends Controller
             return redirect(route($request->next_step,['onboarding_id'=>$id]));
         }
         else{
-            
             $onboarding = Onboarding::create($request->except(['next_step']));
             return redirect(route($request->next_step,['onboarding_id'=>$onboarding->onboarding_id]));
         }
@@ -42,6 +41,7 @@ class MarketplaceContentController extends Controller
         return view('marketplace.step5');
     }
     public function step6(){
+        
         return view('marketplace.step6');
     }
     public function step7(){

@@ -38,8 +38,14 @@
             </table>
           </div>
         </div>
+      
+        <form method = "POST"action="{{route('onboarding', ['next_step'=>'step6'] +\Request::all() )}}">
+          @csrf
+        <input type="hidden" id ="details" name = "details"/>
         <a class = "w-25 btn  btn-orange" href="{{route('step4', \Request::all())}}">Back </a>
-        <a type="button" class="w-25 btn  btnviolet" onClick = "toCompute()" href="{{route('step6', \Request::all())}}">Next</a>
+        <button type="submit" class="w-25 btn  btnviolet" onClick = "toJson()">Next</button>
+        
+        </form>
     </div>
   </div>
 
@@ -178,6 +184,70 @@ function onDeleteRow(e) {
 
 tableEl.addEventListener("click", onDeleteRow);
 
+
+
+
+function toJson() {
+
+  
+
+
+    var data = [];
+    var table = document.getElementById("tables");
+    // first row needs to be headers
+    var headers = [];
+    for (var i=0; i<table.rows[0].cells.length; i++) {
+      if(table.rows[0].cells[i].innerHTML.toLowerCase()=="quantity" || table.rows[0].cells[i].innerHTML.toLowerCase()=="action" ){
+        continue;
+      }
+      else{
+        headers[i] = table.rows[0].cells[i].innerHTML.toLowerCase().replace(/ /gi,'');
+      }
+       
+    }
+
+    // go through cells
+    for (var i=1; i<table.rows.length; i++) {
+
+        var tableRow = table.rows[i];
+        var rowData = {};
+
+        for (var j=0; j<tableRow.cells.length; j++) {
+          if(headers[j] != null){
+            rowData[ headers[j] ] = tableRow.cells[j].innerText;
+
+          }
+          else{
+            continue;
+          }
+          
+        }
+
+        data.push(rowData);
+    }    
+    document.getElementById("details").value = JSON.stringify(data);
+   
+    
+
+
+    for(let x=1;x<=5;x++){
+     var element = document.getElementById("box".concat(x));
+    if(element!= null){
+      var value = parseInt(element.value);
+      if(value>=1){
+      localStorage.setItem("prod".concat(x), document.getElementById("prod".concat(x)).innerText);
+      localStorage.setItem("qty".concat(x), document.getElementById("box".concat(x)).value);
+      localStorage.setItem("tp".concat(x),  document.getElementById("val".concat(x)).innerText);
+
+      }
+
+    }
+    else
+      continue;
+   
+  
+  }
+}
 
 
 

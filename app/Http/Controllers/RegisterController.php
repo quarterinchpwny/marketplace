@@ -8,6 +8,7 @@ use App\Models\Lawyer;
 use Auth;
 use Hash;
 use App\Http\Requests\RegisterRequest;
+use App\Models\Onboarding;
 
 class RegisterController extends Controller
 {
@@ -41,7 +42,11 @@ class RegisterController extends Controller
                     //     return redirect()->intended('dashboard')->withSuccess('You are logged in!');
                     // }
 
-                    
+                    if(!empty($request->onboarding_id)){
+
+                        Onboarding::find($request->onboarding_id)->update($request->except(['next_step','_token']));
+
+                    }
                     Auth::login($user);
 
                     return redirect(route('step7'))->withSuccess('Register Success.');

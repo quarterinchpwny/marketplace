@@ -72,27 +72,7 @@
  
 
 
-  function toCompute(){
-    
-  for(let x=1;x<=5;x++){
-     var element = document.getElementById("box".concat(x));
-    if(element!= null){
-      var value = parseInt(element.value);
-      if(value>=1){
-      localStorage.setItem("prod".concat(x), document.getElementById("prod".concat(x)).innerText);
-      localStorage.setItem("qty".concat(x), document.getElementById("box".concat(x)).value);
-      localStorage.setItem("tp".concat(x),  document.getElementById("val".concat(x)).innerText);
-
-      }
-
-    }
-    else
-      continue;
-   
-  
-  }
-  
-  }
+ 
 </script>
 
 </head>

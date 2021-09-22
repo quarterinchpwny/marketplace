@@ -1,5 +1,4 @@
 @extends('marketplace.layout')
-{{ json_encode(\Request::input('onboarding_id')) }}
 
 
 <div class="container " style="padding-top: 2.4rem;" id="step2">

@@ -15,6 +15,15 @@ class Onboarding extends Model
     protected $fillable = [
         'plan',
         'url',
-        'template'
+        'template',
+        'details'
     ];
+    protected $casts = [
+        'details' => 'array',
+    ];
+
+    public function getDetailsAttribute($value)
+    {
+        return json_decode($value) ?? (object)[];
+    }
 }

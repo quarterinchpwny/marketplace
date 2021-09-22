@@ -18,6 +18,7 @@ class CreateOnboardingsTable extends Migration
             $table->string('plan', 50)->nullable();
             $table->string('url', 50)->nullable();
             $table->string('template', 50)->nullable();
+            $table->json('details')->nullable();
             $table->timestamps();
         });
     }
