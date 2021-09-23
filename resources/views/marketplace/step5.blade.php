@@ -205,7 +205,6 @@ function toJson() {
       }
        
     }
-
     // go through cells
     for (var i=1; i<table.rows.length; i++) {
 
@@ -220,16 +219,11 @@ function toJson() {
           else{
             continue;
           }
-          
         }
-
         data.push(rowData);
     }    
     document.getElementById("details").value = JSON.stringify(data);
    
-    
-
-
     for(let x=1;x<=5;x++){
      var element = document.getElementById("box".concat(x));
     if(element!= null){
@@ -245,7 +239,6 @@ function toJson() {
     else
       continue;
    
-  
   }
 }
 

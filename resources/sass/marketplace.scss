@@ -33,6 +33,19 @@ body {
   width: 97px;
   z-index: 2;
 }
+.tracking-progress-bar__item__bar--active {
+  background: #F4512C;
+}
+
+.tracking-progress-bar__item--first {
+  margin-left: 0;
+}
+
+.tracking-progress-bar__item--active {
+  background: #F4512C;
+  color: #fff;
+}
+
 
 .sm-appear, .phide {
   display: none;
@@ -99,18 +112,6 @@ body {
   color: black;
 }
 
-.tracking-progress-bar__item__bar--active {
-  background: #F4512C;
-}
-
-.tracking-progress-bar__item--first {
-  margin-left: 0;
-}
-
-.tracking-progress-bar__item--active {
-  background: #F4512C;
-  color: #fff;
-}
 
 .btnviolet, .violet {
   background-color: #5E1B89;

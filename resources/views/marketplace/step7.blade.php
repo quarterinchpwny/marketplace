@@ -39,7 +39,7 @@
                 <tbody id="tbv">
                 </tbody>
               </table>
-                  <h5 class = "text-end p-2" >Total amount: <b id= "total"></b></h5>
+                  <h5 class = "text-end p-2" >Total amount: ₱ <b id= "total"></b></h5>
             </div>
           </div>
           <div class="col-lg bg-light m-3 p-3 overflow-auto scrollbar scrollbar-primary" style="height: 34rem">
@@ -283,15 +283,13 @@
      
         tbodyEl.innerHTML += `
         <tr>
-        <td><p  class = "step5p" id = 'prod`+x+`'></p></td>
-        <td><p class = "step5p" >5000</p></td>
-        <td><p class = "step5p"  id = 'qty`+x+`'></p></td>
-        <td><p  class = "step5p" id = 'val`+x+`'></p></td>
-      
+        <td><span><p class = "step5p" id = 'prod`+x+`'></p></span></td>
+        <td><span><p class = "step5p" >5000</p></span></td>
+        <td><span><p class = "step5p"  id = 'qty`+x+`'></p></span></td>
+        <td><span>₱<b  class = "step5p" id = 'val`+x+`'></b></span></td>
         </tr>
         `;
-      
-        
+  
         document.getElementById('prod'.concat(x)).innerHTML = localStorage.getItem("prod".concat(x));
         document.getElementById('qty'.concat(x)).innerHTML = localStorage.getItem("qty".concat(x));
         document.getElementById('val'.concat(x)).innerHTML = localStorage.getItem("tp".concat(x));

@@ -25,7 +25,6 @@ Route::middleware(['guest'])->group(function () {
     Route::get('step4', [App\Http\Controllers\MarketplaceContentController::class, 'step4'])->name('step4');
     Route::get('step5', [App\Http\Controllers\MarketplaceContentController::class, 'step5'])->name('step5');
     Route::get('step6', [App\Http\Controllers\MarketplaceContentController::class, 'step6'])->name('step6');
-    
     Route::post('onboarding', [App\Http\Controllers\MarketplaceContentController::class, 'onboarding'])->name('onboarding');
 
   });

@@ -25,7 +25,6 @@
     function onAddWebsite(){
       if (checkBoxLogo.checked == true){
         localStorage.setItem("l", "1");
-
       } 
       if (checkBoxTemplate.checked == true){
         localStorage.setItem("t", "1");
@@ -45,6 +44,7 @@
     }
 
   var data = 1;
+  
   function dec(x){
     data=parseInt(document.getElementById("box".concat(x)).value);
     if(parseInt(document.getElementById("box".concat(x)).value )>1){
@@ -64,11 +64,7 @@
     document.getElementById("box".concat(x)).value=data;
     document.getElementById("val".concat(x)).innerText=data*5000;
   }
-  function urlStore(){
-    
-    localStorage.setItem("url", document.getElementById("url").value);
 
-  }
  
 
 
