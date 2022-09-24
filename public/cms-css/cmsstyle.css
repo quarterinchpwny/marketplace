@@ -1,31 +1,23 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
-
-.cmsdashboard{
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500);
+body {
   overflow-x: hidden;
-
   font-size: 16px;
-  background: rgb(94,27,137);
-  background: linear-gradient(345deg, rgba(94,27,137,1) 0%, rgba(157,113,188,1) 31%, rgba(255,127,77,1) 74%, rgba(244,81,44,1) 99%);
-
+  background: #5e1b89;
+  background: linear-gradient(345deg, #5e1b89 0%, #9d71bc 31%, #ff7f4d 74%, #f4512c 99%);
 }
-.btn1{
+
+.btn1 {
   background-color: #9D71BC;
   text-decoration: none;
 }
 
 #viewport {
   padding-left: 250px;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
 /* Sidebar  */
-.sidebar-nav #line{
-  height: 6px;
-  margin-top: 48px;
-}
+
 .sidebar-nav {
   z-index: 1000;
   position: fixed;
@@ -34,71 +26,74 @@
   height: 100%;
   margin-left: -250px;
   overflow-y: auto;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-.sidebar-logo{
-    width: 200px;
-    height: 40px;
-    margin:10px 30px;
 
-}
-.sidebar-nav .nav{
-    width: 250px;
-    height: 80%;
-    margin-top: 50px;
+.sidebar-nav #line {
+  height: 6px;
+  margin-top: 48px;
 }
 
-.sidebar-nav .nav-item  a:hover{
+.sidebar-logo {
+  width: 200px;
+  height: 40px;
+  margin: 10px 30px;
+}
+
+.sidebar-nav .nav {
+  width: 250px;
+  height: 80%;
+  margin-top: 50px;
+}
+
+.sidebar-nav .nav-item a:hover,
+.sidebar-nav ul li.active a {
   background-color: #FF7F4D;
   color: white;
-
 }
 
-.sidebar-nav ul li.active a{
-  background-color: #FF7F4D;
-  color: white;
-}
-
-.sidenav-logo{
+.sidenav-logo {
   position: absolute;
   bottom: 20px;
   left: 30px;
   font-size: 15px;
   margin: 0px auto;
-   
 }
-.nav-link{
+
+.nav-link {
   display: block;
   padding: 5rem 1rem;
-  color :black;
-
+  color: black;
 }
+
 /* Top Navigation */
 
 /*Homepage Content */
-.page-content-wrapper  {
+
+.page-content-wrapper {
   padding: 80px 60px;
   max-height: 763px;
 }
-.row1{
+
+.row1 {
   margin-top: 10px;
   margin-bottom: 20px;
 }
-.row2{
+
+.row2 {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
   border-radius: 10px;
   padding: 20px 0px;
-  width:1170px;
+  width: 1170px;
 }
-.btn{
+
+.btn {
   background-color: #9D71BC;
 }
-.row3{
+
+.row3 {
   background-color: #E8E4E4;
   right: 10px;
   padding: 10px;
@@ -107,72 +102,79 @@
   margin: 10px 0px;
 }
 
-.tab-content{
+.tab-content {
   margin: 10px 0px;
 }
-.row4 .mb-3{
-  margin: 10px 20px;
-}
-.row4 .col-lg-10{
-  margin: 10px 50px;
-  
-}
-.row4{
+
+.row4 {
   padding: 10px;
 }
-/*Lawyer's Blog Section*/
-.addpostbtn{
-  bottom: 10px;
+
+.row4 .mb-3 {
+  margin: 10px 20px;
 }
 
+.row4 .col-lg-10 {
+  margin: 10px 50px;
+}
 
+/*Lawyer's Blog Section*/
 
-
+.addpostbtn {
+  bottom: 10px;
+}
 
 /* For other pages.. di pa maayos*/
 
 /*Privacy Policy*/
-.policyheader{
+
+.policyheader {
   padding: 15px;
 }
-.addnewbtn{
+
+.addnewbtn {
   margin-left: 85px;
 }
 
-
-
-.texteditor{
+.texteditor {
   border-right: 2px solid #FF7F4D !important;
 }
-.row-options{
+
+.row-options {
   padding: 10px;
 }
-.col-sm-7{
+
+.col-sm-7 {
   margin-top: 20px;
 }
+
 .previewbutton {
   margin-bottom: 20px;
   margin-left: 4px;
 }
-.editor{
+
+.editor {
   max-height: 500px;
 }
 
 /* Contact Us */
 
-
-
 /* Lawyer's Profile */
-.row2 .uploadButton, .saveButton{
+
+.row2 .uploadButton,
+.saveButton {
   padding-top: 5px;
 }
+
 .labels {
-  font-size: 12px
+  font-size: 12px;
 }
-.upload{
+
+.upload {
   position: relative;
   overflow: hidden;
 }
+
 .uploadInput {
   position: absolute;
   font-size: 50px;
@@ -180,26 +182,40 @@
   right: 0;
   top: 0;
 }
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  font-size: 9pt; 
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: red;
+  font-size: 9pt;
 }
-::-moz-placeholder { /* Firefox 19+ */
-  font-size: 12pt; 
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: red;
+  font-size: 12pt;
 }
-:-ms-input-placeholder { /* IE 10+ */
-  font-size: 9pt; 
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: red;
+  font-size: 9pt;
 }
-:-moz-placeholder { /* Firefox 18- */
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: red;
   font-size: 5pt;
 }
+
 /* Law Update */
-.col-sm-1{
+
+.col-sm-1 {
   margin-left: 2px;
 }
 
 .form-control:focus {
   box-shadow: none;
-  border-color: #BA68C8
+  border-color: #BA68C8;
 }
 
 

@@ -38393,9 +38393,35 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
 /***/ }),
 
+/***/ "./resources/sass/neutral.scss":
+/*!*************************************!*\
+  !*** ./resources/sass/neutral.scss ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./resources/sass/app.scss":
 /*!*********************************!*\
   !*** ./resources/sass/app.scss ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/sass/cms.scss":
+/*!*********************************!*\
+  !*** ./resources/sass/cms.scss ***!
   \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -38436,19 +38462,6 @@ __webpack_require__.r(__webpack_exports__);
 /*!**************************************!*\
   !*** ./resources/sass/feminine.scss ***!
   \**************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
-/***/ "./resources/sass/neutral.scss":
-/*!*************************************!*\
-  !*** ./resources/sass/neutral.scss ***!
-  \*************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -41417,9 +41430,10 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
 /******/ 			"/js/app": 0,
-/******/ 			"css/neutral": 0,
 /******/ 			"css/masculine": 0,
+/******/ 			"cms-css/cmsstyle": 0,
 /******/ 			"css/app": 0,
+/******/ 			"css/neutral": 0,
 /******/ 			"css/feminine": 0,
 /******/ 			"css/marketplace": 0
 /******/ 		};
@@ -41471,12 +41485,13 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/neutral","css/masculine","css/app","css/feminine","css/marketplace"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/neutral","css/masculine","css/app","css/feminine","css/marketplace"], () => (__webpack_require__("./resources/sass/app.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/neutral","css/masculine","css/app","css/feminine","css/marketplace"], () => (__webpack_require__("./resources/sass/marketplace.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/neutral","css/masculine","css/app","css/feminine","css/marketplace"], () => (__webpack_require__("./resources/sass/masculine.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/neutral","css/masculine","css/app","css/feminine","css/marketplace"], () => (__webpack_require__("./resources/sass/feminine.scss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/neutral","css/masculine","css/app","css/feminine","css/marketplace"], () => (__webpack_require__("./resources/sass/neutral.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/masculine","cms-css/cmsstyle","css/app","css/neutral","css/feminine","css/marketplace"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/masculine","cms-css/cmsstyle","css/app","css/neutral","css/feminine","css/marketplace"], () => (__webpack_require__("./resources/sass/app.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/masculine","cms-css/cmsstyle","css/app","css/neutral","css/feminine","css/marketplace"], () => (__webpack_require__("./resources/sass/cms.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/masculine","cms-css/cmsstyle","css/app","css/neutral","css/feminine","css/marketplace"], () => (__webpack_require__("./resources/sass/marketplace.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/masculine","cms-css/cmsstyle","css/app","css/neutral","css/feminine","css/marketplace"], () => (__webpack_require__("./resources/sass/masculine.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/masculine","cms-css/cmsstyle","css/app","css/neutral","css/feminine","css/marketplace"], () => (__webpack_require__("./resources/sass/feminine.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/masculine","cms-css/cmsstyle","css/app","css/neutral","css/feminine","css/marketplace"], () => (__webpack_require__("./resources/sass/neutral.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

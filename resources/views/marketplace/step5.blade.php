@@ -189,9 +189,6 @@ tableEl.addEventListener("click", onDeleteRow);
 
 function toJson() {
 
-  
-
-
     var data = [];
     var table = document.getElementById("tables");
     // first row needs to be headers
